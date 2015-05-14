@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0225CA7A1B04D87A0087B3C4 /* CACHORRO.png in Resources */ = {isa = PBXBuildFile; fileRef = 0225CA791B04D87A0087B3C4 /* CACHORRO.png */; };
+		0225CA7C1B04D89A0087B3C4 /* PASSARO.png in Resources */ = {isa = PBXBuildFile; fileRef = 0225CA7B1B04D89A0087B3C4 /* PASSARO.png */; };
+		0225CA7E1B04D8B30087B3C4 /* GATO.png in Resources */ = {isa = PBXBuildFile; fileRef = 0225CA7D1B04D8B30087B3C4 /* GATO.png */; };
 		0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299891B04BBAA003BD890 /* AppDelegate.swift */; };
 		0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0242998B1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld */; };
 		0242998F1B04BBAA003BD890 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242998E1B04BBAA003BD890 /* ViewController.swift */; };
@@ -15,6 +18,7 @@
 		024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024299951B04BBAA003BD890 /* LaunchScreen.xib */; };
 		024299A31B04BBAA003BD890 /* MiniChallenge3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */; };
 		02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CCF6661B04C442001AA118 /* Animals.storyboard */; };
+		02CCF66E1B04C7A2001AA118 /* GameAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CCF66D1B04C7A2001AA118 /* GameAnimalsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0225CA791B04D87A0087B3C4 /* CACHORRO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CACHORRO.png; sourceTree = "<group>"; };
+		0225CA7B1B04D89A0087B3C4 /* PASSARO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PASSARO.png; sourceTree = "<group>"; };
+		0225CA7D1B04D8B30087B3C4 /* GATO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GATO.png; sourceTree = "<group>"; };
 		024299841B04BBAA003BD890 /* MiniChallenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024299881B04BBAA003BD890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024299891B04BBAA003BD890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 		024299A11B04BBAA003BD890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge3Tests.swift; sourceTree = "<group>"; };
 		02CCF6661B04C442001AA118 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Animals.storyboard; path = ../Animals.storyboard; sourceTree = "<group>"; };
+		02CCF66D1B04C7A2001AA118 /* GameAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAnimalsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0225CA781B04D84A0087B3C4 /* AnimalsImages */ = {
+			isa = PBXGroup;
+			children = (
+				0225CA791B04D87A0087B3C4 /* CACHORRO.png */,
+				0225CA7B1B04D89A0087B3C4 /* PASSARO.png */,
+				0225CA7D1B04D8B30087B3C4 /* GATO.png */,
+			);
+			name = AnimalsImages;
+			sourceTree = "<group>";
+		};
 		0242997B1B04BBAA003BD890 = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +155,9 @@
 		02CCF66A1B04C4AE001AA118 /* Science */ = {
 			isa = PBXGroup;
 			children = (
+				0225CA781B04D84A0087B3C4 /* AnimalsImages */,
 				02CCF6661B04C442001AA118 /* Animals.storyboard */,
+				02CCF66D1B04C7A2001AA118 /* GameAnimalsViewController.swift */,
 			);
 			name = Science;
 			sourceTree = "<group>";
@@ -222,10 +242,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0225CA7A1B04D87A0087B3C4 /* CACHORRO.png in Resources */,
 				024299921B04BBAA003BD890 /* Main.storyboard in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
+				0225CA7E1B04D8B30087B3C4 /* GATO.png in Resources */,
 				024299941B04BBAA003BD890 /* Images.xcassets in Resources */,
+				0225CA7C1B04D89A0087B3C4 /* PASSARO.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CCF66E1B04C7A2001AA118 /* GameAnimalsViewController.swift in Sources */,
 				0242998F1B04BBAA003BD890 /* ViewController.swift in Sources */,
 				0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,

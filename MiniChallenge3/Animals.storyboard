@@ -1,7 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cpM-Jk-ArL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Game Animals View Controller-->
+        <scene sceneID="r3u-4h-SkB">
+            <objects>
+                <viewController storyboardIdentifier="GameAnimals" id="cpM-Jk-ArL" customClass="GameAnimalsViewController" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QGR-L6-YqV"/>
+                        <viewControllerLayoutGuide type="bottom" id="9nL-HS-OfF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ndm-al-DB1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adivinhe o animal!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-fN-8Me">
+                                <rect key="frame" x="230" y="28" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C32-pP-D0x">
+                                <rect key="frame" x="150" y="159" width="300" height="300"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nad-Jk-b9N">
+                                <rect key="frame" x="277" y="501" width="38" height="30"/>
+                                <state key="normal" title="Troca">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonNext:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="odV-4W-lo5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wi2-YB-dSf">
+                                <rect key="frame" x="150" y="106" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8KI-qO-TeA"/>
+                                    <constraint firstAttribute="width" constant="300" id="H1x-P8-Lex"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldAction:" destination="cpM-Jk-ArL" eventType="editingChanged" id="JMd-gO-kl6"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Nad-Jk-b9N" secondAttribute="centerX" id="Ne3-Iz-Fs4"/>
+                            <constraint firstItem="wi2-YB-dSf" firstAttribute="top" secondItem="wdS-fN-8Me" secondAttribute="bottom" constant="57" id="TpZ-nI-89p"/>
+                            <constraint firstAttribute="centerX" secondItem="wdS-fN-8Me" secondAttribute="centerX" id="jrF-aX-zPs"/>
+                            <constraint firstAttribute="centerY" secondItem="C32-pP-D0x" secondAttribute="centerY" id="l85-Lr-ubv"/>
+                            <constraint firstItem="wdS-fN-8Me" firstAttribute="top" secondItem="QGR-L6-YqV" secondAttribute="bottom" constant="8" id="mhm-El-ON3"/>
+                            <constraint firstItem="9nL-HS-OfF" firstAttribute="top" secondItem="Nad-Jk-b9N" secondAttribute="bottom" constant="69" id="miD-ry-V6e"/>
+                            <constraint firstAttribute="centerX" secondItem="C32-pP-D0x" secondAttribute="centerX" id="rHN-aH-S3o"/>
+                            <constraint firstAttribute="centerX" secondItem="wi2-YB-dSf" secondAttribute="centerX" id="zJi-Fg-F3q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonNextOutlet" destination="Nad-Jk-b9N" id="dET-TG-nHb"/>
+                        <outlet property="imageView" destination="C32-pP-D0x" id="Mpy-Ua-s39"/>
+                        <outlet property="textField" destination="wi2-YB-dSf" id="vc2-Xh-qtU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSv-mE-OBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="612"/>
+        </scene>
+    </scenes>
 </document>
