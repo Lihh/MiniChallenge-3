@@ -44,6 +44,7 @@ class GameAnimalsViewController: UIViewController {
         } else {
             numAnimal = 0
         }
+        
     }
 
     @IBAction func textFieldAction(sender: UITextField) {
