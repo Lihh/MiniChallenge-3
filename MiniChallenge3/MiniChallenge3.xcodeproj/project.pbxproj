@@ -14,6 +14,7 @@
 		024299941B04BBAA003BD890 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024299931B04BBAA003BD890 /* Images.xcassets */; };
 		024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024299951B04BBAA003BD890 /* LaunchScreen.xib */; };
 		024299A31B04BBAA003BD890 /* MiniChallenge3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */; };
+		02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CCF6661B04C442001AA118 /* Animals.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		0242999C1B04BBAA003BD890 /* MiniChallenge3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniChallenge3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		024299A11B04BBAA003BD890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge3Tests.swift; sourceTree = "<group>"; };
+		02CCF6661B04C442001AA118 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Animals.storyboard; path = ../Animals.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,9 @@
 		024299861B04BBAA003BD890 /* MiniChallenge3 */ = {
 			isa = PBXGroup;
 			children = (
+				02CCF66A1B04C4AE001AA118 /* Science */,
+				02CCF6691B04C47E001AA118 /* Portugues */,
+				02CCF6681B04C46E001AA118 /* Math */,
 				024299891B04BBAA003BD890 /* AppDelegate.swift */,
 				0242998E1B04BBAA003BD890 /* ViewController.swift */,
 				024299901B04BBAA003BD890 /* Main.storyboard */,
@@ -113,6 +118,28 @@
 				024299A11B04BBAA003BD890 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02CCF6681B04C46E001AA118 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		02CCF6691B04C47E001AA118 /* Portugues */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Portugues;
+			sourceTree = "<group>";
+		};
+		02CCF66A1B04C4AE001AA118 /* Science */ = {
+			isa = PBXGroup;
+			children = (
+				02CCF6661B04C442001AA118 /* Animals.storyboard */,
+			);
+			name = Science;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +224,7 @@
 			files = (
 				024299921B04BBAA003BD890 /* Main.storyboard in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
+				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
 				024299941B04BBAA003BD890 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +443,7 @@
 				024299A81B04BBAA003BD890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		024299A91B04BBAA003BD890 /* Build configuration list for PBXNativeTarget "MiniChallenge3Tests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +452,7 @@
 				024299AB1B04BBAA003BD890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
