@@ -12,8 +12,6 @@
 		0225CA7E1B04D8B30087B3C4 /* GATO.png in Resources */ = {isa = PBXBuildFile; fileRef = 0225CA7D1B04D8B30087B3C4 /* GATO.png */; };
 		0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299891B04BBAA003BD890 /* AppDelegate.swift */; };
 		0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0242998B1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld */; };
-		0242998F1B04BBAA003BD890 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242998E1B04BBAA003BD890 /* ViewController.swift */; };
-		024299921B04BBAA003BD890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024299901B04BBAA003BD890 /* Main.storyboard */; };
 		024299941B04BBAA003BD890 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024299931B04BBAA003BD890 /* Images.xcassets */; };
 		024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024299951B04BBAA003BD890 /* LaunchScreen.xib */; };
 		024299A31B04BBAA003BD890 /* MiniChallenge3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */; };
@@ -22,6 +20,13 @@
 		02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */; };
 		0BDA0EC81B04C5EB00D89C20 /* gameSyllables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDA0EC71B04C5EB00D89C20 /* gameSyllables.storyboard */; };
 		0BDA0ECA1B04C65900D89C20 /* SyllablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA0EC91B04C65900D89C20 /* SyllablesViewController.swift */; };
+		EC2E555B1B04FB3900D2D953 /* CircleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */; };
+		EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */; };
+		EC2E555F1B04FB4600D2D953 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E555E1B04FB4600D2D953 /* MainViewController.swift */; };
+		EC2E55611B04FB4B00D2D953 /* MathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E55601B04FB4B00D2D953 /* MathViewController.swift */; };
+		EC2E55631B04FB5000D2D953 /* PortugueseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E55621B04FB5000D2D953 /* PortugueseViewController.swift */; };
+		EC2E55651B04FB5600D2D953 /* ScienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E55641B04FB5600D2D953 /* ScienceViewController.swift */; };
+		EC2E55671B04FB5C00D2D953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2E55661B04FB5C00D2D953 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +46,6 @@
 		024299841B04BBAA003BD890 /* MiniChallenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024299891B04BBAA003BD890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0242998C1B04BBAA003BD890 /* MiniChallenge3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniChallenge3.xcdatamodel; sourceTree = "<group>"; };
-		0242998E1B04BBAA003BD890 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		024299911B04BBAA003BD890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		024299931B04BBAA003BD890 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		024299961B04BBAA003BD890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0242999C1B04BBAA003BD890 /* MiniChallenge3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniChallenge3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +56,13 @@
 		02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAnimalsViewController.swift; sourceTree = "<group>"; };
 		0BDA0EC71B04C5EB00D89C20 /* gameSyllables.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = gameSyllables.storyboard; sourceTree = "<group>"; };
 		0BDA0EC91B04C65900D89C20 /* SyllablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllablesViewController.swift; sourceTree = "<group>"; };
+		EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleSegue.swift; sourceTree = "<group>"; };
+		EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPInspectableView.swift; sourceTree = "<group>"; };
+		EC2E555E1B04FB4600D2D953 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EC2E55601B04FB4B00D2D953 /* MathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathViewController.swift; sourceTree = "<group>"; };
+		EC2E55621B04FB5000D2D953 /* PortugueseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortugueseViewController.swift; sourceTree = "<group>"; };
+		EC2E55641B04FB5600D2D953 /* ScienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScienceViewController.swift; sourceTree = "<group>"; };
+		EC2E55661B04FB5C00D2D953 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +114,11 @@
 		024299861B04BBAA003BD890 /* MiniChallenge3 */ = {
 			isa = PBXGroup;
 			children = (
+				EC2E55591B04FB0600D2D953 /* Main */,
 				02CCF66A1B04C4AE001AA118 /* Science */,
 				02CCF6691B04C47E001AA118 /* Portugues */,
 				02CCF6681B04C46E001AA118 /* Math */,
 				024299891B04BBAA003BD890 /* AppDelegate.swift */,
-				0242998E1B04BBAA003BD890 /* ViewController.swift */,
-				024299901B04BBAA003BD890 /* Main.storyboard */,
 				024299931B04BBAA003BD890 /* Images.xcassets */,
 				024299951B04BBAA003BD890 /* LaunchScreen.xib */,
 				0242998B1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld */,
@@ -167,6 +176,20 @@
 				02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */,
 			);
 			name = Science;
+			sourceTree = "<group>";
+		};
+		EC2E55591B04FB0600D2D953 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */,
+				EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */,
+				EC2E555E1B04FB4600D2D953 /* MainViewController.swift */,
+				EC2E55601B04FB4B00D2D953 /* MathViewController.swift */,
+				EC2E55621B04FB5000D2D953 /* PortugueseViewController.swift */,
+				EC2E55641B04FB5600D2D953 /* ScienceViewController.swift */,
+				EC2E55661B04FB5C00D2D953 /* Main.storyboard */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,12 +273,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0225CA7A1B04D87A0087B3C4 /* CACHORRO.png in Resources */,
-				024299921B04BBAA003BD890 /* Main.storyboard in Resources */,
 				02F88C661B04EB85003C41E3 /* Info.plist in Resources */,
 				0BDA0EC81B04C5EB00D89C20 /* gameSyllables.storyboard in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
 				0225CA7E1B04D8B30087B3C4 /* GATO.png in Resources */,
+				EC2E55671B04FB5C00D2D953 /* Main.storyboard in Resources */,
 				024299941B04BBAA003BD890 /* Images.xcassets in Resources */,
 				0225CA7C1B04D89A0087B3C4 /* PASSARO.png in Resources */,
 			);
@@ -275,10 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0242998F1B04BBAA003BD890 /* ViewController.swift in Sources */,
+				EC2E555F1B04FB4600D2D953 /* MainViewController.swift in Sources */,
+				EC2E55651B04FB5600D2D953 /* ScienceViewController.swift in Sources */,
 				0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */,
 				0BDA0ECA1B04C65900D89C20 /* SyllablesViewController.swift in Sources */,
+				EC2E55631B04FB5000D2D953 /* PortugueseViewController.swift in Sources */,
+				EC2E555B1B04FB3900D2D953 /* CircleSegue.swift in Sources */,
+				EC2E55611B04FB4B00D2D953 /* MathViewController.swift in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,
+				EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */,
 				02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,14 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		024299901B04BBAA003BD890 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				024299911B04BBAA003BD890 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		024299951B04BBAA003BD890 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
