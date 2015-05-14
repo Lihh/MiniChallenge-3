@@ -18,6 +18,8 @@
 		024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024299951B04BBAA003BD890 /* LaunchScreen.xib */; };
 		024299A31B04BBAA003BD890 /* MiniChallenge3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */; };
 		02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CCF6661B04C442001AA118 /* Animals.storyboard */; };
+		02F88C661B04EB85003C41E3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F88C651B04EB85003C41E3 /* Info.plist */; };
+		02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */; };
 		0BDA0EC81B04C5EB00D89C20 /* gameSyllables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDA0EC71B04C5EB00D89C20 /* gameSyllables.storyboard */; };
 		0BDA0ECA1B04C65900D89C20 /* SyllablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA0EC91B04C65900D89C20 /* SyllablesViewController.swift */; };
 /* End PBXBuildFile section */
@@ -37,7 +39,6 @@
 		0225CA7B1B04D89A0087B3C4 /* PASSARO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PASSARO.png; sourceTree = "<group>"; };
 		0225CA7D1B04D8B30087B3C4 /* GATO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GATO.png; sourceTree = "<group>"; };
 		024299841B04BBAA003BD890 /* MiniChallenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		024299881B04BBAA003BD890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024299891B04BBAA003BD890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0242998C1B04BBAA003BD890 /* MiniChallenge3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniChallenge3.xcdatamodel; sourceTree = "<group>"; };
 		0242998E1B04BBAA003BD890 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +49,8 @@
 		024299A11B04BBAA003BD890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge3Tests.swift; sourceTree = "<group>"; };
 		02CCF6661B04C442001AA118 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Animals.storyboard; path = ../Animals.storyboard; sourceTree = "<group>"; };
+		02F88C651B04EB85003C41E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAnimalsViewController.swift; sourceTree = "<group>"; };
 		0BDA0EC71B04C5EB00D89C20 /* gameSyllables.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = gameSyllables.storyboard; sourceTree = "<group>"; };
 		0BDA0EC91B04C65900D89C20 /* SyllablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllablesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,7 +121,7 @@
 		024299871B04BBAA003BD890 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				024299881B04BBAA003BD890 /* Info.plist */,
+				02F88C651B04EB85003C41E3 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,7 +164,7 @@
 			children = (
 				0225CA781B04D84A0087B3C4 /* AnimalsImages */,
 				02CCF6661B04C442001AA118 /* Animals.storyboard */,
-				02CCF66D1B04C7A2001AA118 /* GameAnimalsViewController.swift */,
+				02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */,
 			);
 			name = Science;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			files = (
 				0225CA7A1B04D87A0087B3C4 /* CACHORRO.png in Resources */,
 				024299921B04BBAA003BD890 /* Main.storyboard in Resources */,
+				02F88C661B04EB85003C41E3 /* Info.plist in Resources */,
 				0BDA0EC81B04C5EB00D89C20 /* gameSyllables.storyboard in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
@@ -271,11 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CCF66E1B04C7A2001AA118 /* GameAnimalsViewController.swift in Sources */,
 				0242998F1B04BBAA003BD890 /* ViewController.swift in Sources */,
 				0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */,
 				0BDA0ECA1B04C65900D89C20 /* SyllablesViewController.swift in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,
+				02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
