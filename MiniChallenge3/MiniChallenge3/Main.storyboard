@@ -35,13 +35,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDm-4G-E1g" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="82" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="IU4-cu-fSq"/>
                                     <constraint firstAttribute="height" constant="100" id="d8E-5X-Cm8"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="76"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="2" maxY="0.0"/>
                                 <state key="normal" title="1">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -52,13 +54,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dh-pa-KSV" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="82" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.33000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="7ze-2D-JT6"/>
                                     <constraint firstAttribute="width" constant="100" id="ykf-Tz-sd6"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="76"/>
                                 <state key="normal" title="2">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -69,13 +72,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCh-hX-l5m" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="82" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.33000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="16d-ra-k54"/>
                                     <constraint firstAttribute="width" constant="100" id="dw0-pG-zTD"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="76"/>
                                 <state key="normal" title="3">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -86,13 +90,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqV-sx-ryg" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="250" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.33000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="fwR-u4-zcg"/>
                                     <constraint firstAttribute="width" constant="100" id="vAt-UF-Y3u"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="76"/>
                                 <state key="normal" title="4">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -103,13 +108,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-dq-usV" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="250" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.33000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Zvo-A4-JfG"/>
                                     <constraint firstAttribute="height" constant="100" id="aqg-lU-Jf6"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="76"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -120,13 +126,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-Sy-vbz" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="418" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.33000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="CTd-0h-jNh"/>
                                     <constraint firstAttribute="width" constant="100" id="eC9-wF-4md"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="76"/>
                                 <state key="normal" title="7">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -137,13 +144,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfX-nk-fJ6" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="418" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.33000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="fhI-x1-JtQ"/>
                                     <constraint firstAttribute="height" constant="100" id="vu5-Ol-vSQ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="76"/>
                                 <state key="normal" title="8">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -154,13 +162,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3i-mo-sEM" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="418" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.33000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Bmc-Cx-x4W"/>
                                     <constraint firstAttribute="height" constant="100" id="PFv-aZ-GpF"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="76"/>
                                 <state key="normal" title="9">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -184,13 +193,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bI-LX-JPO" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.33000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="BQ6-ZO-Xur"/>
                                     <constraint firstAttribute="height" constant="100" id="hBs-sY-0LM"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="76"/>
                                 <state key="normal" title="5">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -199,11 +209,35 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-100" translatesAutoresizingMaskIntoConstraints="NO" id="AeM-ji-3FH">
+                                <rect key="frame" x="87" y="190" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XX0-nT-HV6"/>
+                                    <constraint firstAttribute="width" constant="30" id="k28-uv-Xdz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-100" translatesAutoresizingMaskIntoConstraints="NO" id="eA7-6V-yzx">
+                                <rect key="frame" x="122" y="190" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JWX-jq-QPp"/>
+                                    <constraint firstAttribute="width" constant="30" id="WGD-EH-A98"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-100" translatesAutoresizingMaskIntoConstraints="NO" id="vj9-K3-dUg">
+                                <rect key="frame" x="52" y="190" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R4m-rX-mHA"/>
+                                    <constraint firstAttribute="width" constant="30" id="vGZ-43-lAt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="xfX-nk-fJ6" secondAttribute="centerY" constant="-168" id="028-Sa-1PZ"/>
+                            <constraint firstAttribute="centerY" secondItem="vj9-K3-dUg" secondAttribute="centerY" constant="95" id="2dA-Dy-Yfb"/>
                             <constraint firstAttribute="centerX" secondItem="b3i-mo-sEM" secondAttribute="centerX" constant="-198" id="2ms-jl-XD7"/>
+                            <constraint firstAttribute="centerX" secondItem="vj9-K3-dUg" secondAttribute="centerX" constant="233" id="30X-4G-gI9"/>
+                            <constraint firstAttribute="centerX" secondItem="AeM-ji-3FH" secondAttribute="centerX" constant="198" id="3GF-CJ-Ju5"/>
                             <constraint firstAttribute="centerX" secondItem="LDm-4G-E1g" secondAttribute="centerX" constant="198" id="4Tw-Oy-iZt"/>
                             <constraint firstAttribute="centerY" secondItem="0dh-pa-KSV" secondAttribute="centerY" constant="168" id="66F-8d-l0B"/>
                             <constraint firstAttribute="centerX" secondItem="0dh-pa-KSV" secondAttribute="centerX" id="9vj-wT-4Wo"/>
@@ -217,6 +251,7 @@
                             <constraint firstItem="2bI-LX-JPO" firstAttribute="leading" secondItem="kqV-sx-ryg" secondAttribute="trailing" constant="103" id="PFY-KP-3fc"/>
                             <constraint firstAttribute="centerY" secondItem="kqV-sx-ryg" secondAttribute="centerY" id="Q7M-la-yoy"/>
                             <constraint firstAttribute="centerX" secondItem="kqV-sx-ryg" secondAttribute="centerX" constant="198" id="QD6-jr-7Xd"/>
+                            <constraint firstAttribute="centerX" secondItem="eA7-6V-yzx" secondAttribute="centerX" constant="163" id="Qre-bO-UkX"/>
                             <constraint firstAttribute="centerY" secondItem="KCh-hX-l5m" secondAttribute="centerY" constant="168" id="RJw-Z6-7zc"/>
                             <constraint firstItem="xfX-nk-fJ6" firstAttribute="top" secondItem="2bI-LX-JPO" secondAttribute="bottom" constant="108" id="Wxy-aK-5Ik"/>
                             <constraint firstAttribute="centerX" secondItem="ICd-Sy-vbz" secondAttribute="centerX" constant="198" id="Z0X-1u-fn7"/>
@@ -225,8 +260,10 @@
                             <constraint firstAttribute="centerX" secondItem="KCh-hX-l5m" secondAttribute="centerX" constant="-198" id="bbA-u6-uO0"/>
                             <constraint firstAttribute="centerY" secondItem="LDm-4G-E1g" secondAttribute="centerY" constant="168" id="hJX-xg-WBX"/>
                             <constraint firstItem="bKi-dq-usV" firstAttribute="leading" secondItem="2bI-LX-JPO" secondAttribute="trailing" constant="98" id="iUM-Ee-DVV"/>
+                            <constraint firstAttribute="centerY" secondItem="AeM-ji-3FH" secondAttribute="centerY" constant="95" id="izg-Ks-LfV"/>
                             <constraint firstAttribute="centerX" secondItem="xfX-nk-fJ6" secondAttribute="centerX" id="nEy-wa-O3f"/>
                             <constraint firstItem="xfX-nk-fJ6" firstAttribute="top" secondItem="2bI-LX-JPO" secondAttribute="bottom" constant="88" id="sIA-0C-EHl"/>
+                            <constraint firstAttribute="centerY" secondItem="eA7-6V-yzx" secondAttribute="centerY" constant="95" id="trf-Mq-quh"/>
                             <constraint firstAttribute="centerY" secondItem="bKi-dq-usV" secondAttribute="centerY" id="uFR-My-P22"/>
                             <constraint firstItem="2bI-LX-JPO" firstAttribute="top" secondItem="0dh-pa-KSV" secondAttribute="bottom" constant="88" id="ud6-hz-qzf"/>
                         </constraints>
@@ -600,6 +637,9 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="JDY-dJ-TxS" eventType="touchUpInside" id="AT5-9h-veJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENk-uv-otJ" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="82" width="100" height="100"/>
@@ -777,5 +817,6 @@
     <resources>
         <image name="backArrow" width="30" height="30"/>
         <image name="mathIcon" width="32" height="32"/>
+        <image name="star-100" width="100" height="100"/>
     </resources>
 </document>

@@ -16,7 +16,6 @@
 		024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024299951B04BBAA003BD890 /* LaunchScreen.xib */; };
 		024299A31B04BBAA003BD890 /* MiniChallenge3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */; };
 		02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CCF6661B04C442001AA118 /* Animals.storyboard */; };
-		02F88C661B04EB85003C41E3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02F88C651B04EB85003C41E3 /* Info.plist */; };
 		02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */; };
 		0BDA0EC81B04C5EB00D89C20 /* gameSyllables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDA0EC71B04C5EB00D89C20 /* gameSyllables.storyboard */; };
 		0BDA0ECA1B04C65900D89C20 /* SyllablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA0EC91B04C65900D89C20 /* SyllablesViewController.swift */; };
@@ -273,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0225CA7A1B04D87A0087B3C4 /* CACHORRO.png in Resources */,
-				02F88C661B04EB85003C41E3 /* Info.plist in Resources */,
 				0BDA0EC81B04C5EB00D89C20 /* gameSyllables.storyboard in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,

@@ -24,6 +24,14 @@ class ScienceViewController: UIViewController {
     @IBAction func backToMainViewController() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func transitionToLevel(sender: KPButton) {
+        let exerciseStoryboard = UIStoryboard(name: "Animals", bundle: nil)
+        if let viewController = exerciseStoryboard.instantiateInitialViewController() as? UIViewController {
+            viewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+            presentViewController(viewController, animated: true, completion: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 
