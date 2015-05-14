@@ -27,7 +27,11 @@
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIMainStoryboardFile~ipad</key>
+<<<<<<< HEAD
 	<string>Main</string>
+=======
+	<string>gameSyllables</string>
+>>>>>>> 160973af0b00f156e399ea9e5ef6fd3162946ad4
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -35,7 +39,10 @@
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+<<<<<<< HEAD
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+=======
+>>>>>>> 160973af0b00f156e399ea9e5ef6fd3162946ad4
 	</array>
 </dict>
 </plist>
