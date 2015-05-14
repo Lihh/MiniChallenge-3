@@ -15,6 +15,8 @@
 		024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024299951B04BBAA003BD890 /* LaunchScreen.xib */; };
 		024299A31B04BBAA003BD890 /* MiniChallenge3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */; };
 		02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CCF6661B04C442001AA118 /* Animals.storyboard */; };
+		0BDA0EC81B04C5EB00D89C20 /* gameSyllables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDA0EC71B04C5EB00D89C20 /* gameSyllables.storyboard */; };
+		0BDA0ECA1B04C65900D89C20 /* SyllablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA0EC91B04C65900D89C20 /* SyllablesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		024299A11B04BBAA003BD890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge3Tests.swift; sourceTree = "<group>"; };
 		02CCF6661B04C442001AA118 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Animals.storyboard; path = ../Animals.storyboard; sourceTree = "<group>"; };
+		0BDA0EC71B04C5EB00D89C20 /* gameSyllables.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = gameSyllables.storyboard; sourceTree = "<group>"; };
+		0BDA0EC91B04C65900D89C20 /* SyllablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllablesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 		02CCF6691B04C47E001AA118 /* Portugues */ = {
 			isa = PBXGroup;
 			children = (
+				0BDA0EC71B04C5EB00D89C20 /* gameSyllables.storyboard */,
+				0BDA0EC91B04C65900D89C20 /* SyllablesViewController.swift */,
 			);
 			name = Portugues;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				024299921B04BBAA003BD890 /* Main.storyboard in Resources */,
+				0BDA0EC81B04C5EB00D89C20 /* gameSyllables.storyboard in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
 				024299941B04BBAA003BD890 /* Images.xcassets in Resources */,
@@ -245,6 +252,7 @@
 			files = (
 				0242998F1B04BBAA003BD890 /* ViewController.swift in Sources */,
 				0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */,
+				0BDA0ECA1B04C65900D89C20 /* SyllablesViewController.swift in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
