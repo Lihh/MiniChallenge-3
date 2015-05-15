@@ -19,6 +19,8 @@
 		026C93D81B061DB8004E8CA8 /* GameHumanBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C93D71B061DB8004E8CA8 /* GameHumanBodyViewController.swift */; };
 		02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CCF6661B04C442001AA118 /* Animals.storyboard */; };
 		02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */; };
+		0B7259161B06230000117B4F /* completeTheWord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7259151B06230000117B4F /* completeTheWord.storyboard */; };
+		0B7259191B06234300117B4F /* CompleteTheWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */; };
 		0BC905031B057B8700E15B67 /* gameSyllables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */; };
 		0BC905041B057B8700E15B67 /* jacare.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC904FF1B057B8700E15B67 /* jacare.png */; };
 		0BC905051B057B8700E15B67 /* lapis.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BC905001B057B8700E15B67 /* lapis.png */; };
@@ -61,6 +63,8 @@
 		02CCF6661B04C442001AA118 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Animals.storyboard; path = ../Animals.storyboard; sourceTree = "<group>"; };
 		02F88C651B04EB85003C41E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAnimalsViewController.swift; sourceTree = "<group>"; };
+		0B7259151B06230000117B4F /* completeTheWord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = completeTheWord.storyboard; sourceTree = "<group>"; };
+		0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTheWordViewController.swift; sourceTree = "<group>"; };
 		0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = gameSyllables.storyboard; sourceTree = "<group>"; };
 		0BC904FF1B057B8700E15B67 /* jacare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jacare.png; sourceTree = "<group>"; };
 		0BC905001B057B8700E15B67 /* lapis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lapis.png; sourceTree = "<group>"; };
@@ -200,9 +204,8 @@
 		02CCF6691B04C47E001AA118 /* Portugues */ = {
 			isa = PBXGroup;
 			children = (
-				0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */,
-				0BC905021B057B8700E15B67 /* SyllablesViewController.swift */,
-				0BC905081B057B9200E15B67 /* images */,
+				0B7259141B0622CF00117B4F /* Jogo Complete a Palavra */,
+				0B7259131B0622C000117B4F /* Jogo Descubra a Palavra */,
 			);
 			name = Portugues;
 			sourceTree = "<group>";
@@ -216,14 +219,41 @@
 			name = Science;
 			sourceTree = "<group>";
 		};
-		0BC905081B057B9200E15B67 /* images */ = {
+		0B7259131B0622C000117B4F /* Jogo Descubra a Palavra */ = {
+			isa = PBXGroup;
+			children = (
+				0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */,
+				0BC905021B057B8700E15B67 /* SyllablesViewController.swift */,
+				0BC905081B057B9200E15B67 /* imagens */,
+			);
+			name = "Jogo Descubra a Palavra";
+			sourceTree = "<group>";
+		};
+		0B7259141B0622CF00117B4F /* Jogo Complete a Palavra */ = {
+			isa = PBXGroup;
+			children = (
+				0B7259151B06230000117B4F /* completeTheWord.storyboard */,
+				0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */,
+				0B7259171B06230E00117B4F /* imagens */,
+			);
+			name = "Jogo Complete a Palavra";
+			sourceTree = "<group>";
+		};
+		0B7259171B06230E00117B4F /* imagens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = imagens;
+			sourceTree = "<group>";
+		};
+		0BC905081B057B9200E15B67 /* imagens */ = {
 			isa = PBXGroup;
 			children = (
 				0BC904FF1B057B8700E15B67 /* jacare.png */,
 				0BC905001B057B8700E15B67 /* lapis.png */,
 				0BC905011B057B8700E15B67 /* neve.png */,
 			);
-			name = images;
+			name = imagens;
 			sourceTree = "<group>";
 		};
 		EC2E55591B04FB0600D2D953 /* Main */ = {
@@ -325,6 +355,7 @@
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
 				026C93D61B061D97004E8CA8 /* HumanBody.storyboard in Resources */,
 				0BC905041B057B8700E15B67 /* jacare.png in Resources */,
+				0B7259161B06230000117B4F /* completeTheWord.storyboard in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
 				0225CA7E1B04D8B30087B3C4 /* GATO.png in Resources */,
 				0BC905031B057B8700E15B67 /* gameSyllables.storyboard in Resources */,
@@ -356,6 +387,7 @@
 				0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */,
 				EC2E55631B04FB5000D2D953 /* PortugueseViewController.swift in Sources */,
 				0BC905071B057B8700E15B67 /* SyllablesViewController.swift in Sources */,
+				0B7259191B06234300117B4F /* CompleteTheWordViewController.swift in Sources */,
 				EC2E555B1B04FB3900D2D953 /* CircleSegue.swift in Sources */,
 				EC2E55611B04FB4B00D2D953 /* MathViewController.swift in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,
