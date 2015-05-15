@@ -159,6 +159,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		026C93CE1B06145B004E8CA8 /* Game Animals */ = {
+			isa = PBXGroup;
+			children = (
+				0225CA781B04D84A0087B3C4 /* AnimalsImages */,
+				02CCF6661B04C442001AA118 /* Animals.storyboard */,
+				02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */,
+			);
+			name = "Game Animals";
+			sourceTree = "<group>";
+		};
 		02CCF6681B04C46E001AA118 /* Math */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,9 +189,7 @@
 		02CCF66A1B04C4AE001AA118 /* Science */ = {
 			isa = PBXGroup;
 			children = (
-				0225CA781B04D84A0087B3C4 /* AnimalsImages */,
-				02CCF6661B04C442001AA118 /* Animals.storyboard */,
-				02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */,
+				026C93CE1B06145B004E8CA8 /* Game Animals */,
 			);
 			name = Science;
 			sourceTree = "<group>";
