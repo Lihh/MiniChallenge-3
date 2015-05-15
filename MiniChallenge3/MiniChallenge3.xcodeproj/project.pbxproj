@@ -17,6 +17,8 @@
 		024299A31B04BBAA003BD890 /* MiniChallenge3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */; };
 		026C93D61B061D97004E8CA8 /* HumanBody.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026C93D51B061D97004E8CA8 /* HumanBody.storyboard */; };
 		026C93D81B061DB8004E8CA8 /* GameHumanBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C93D71B061DB8004E8CA8 /* GameHumanBodyViewController.swift */; };
+		026C93DC1B06345E004E8CA8 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026C93DB1B06345E004E8CA8 /* Calculator.storyboard */; };
+		026C93DE1B063473004E8CA8 /* GameCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C93DD1B063473004E8CA8 /* GameCalculatorViewController.swift */; };
 		02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CCF6661B04C442001AA118 /* Animals.storyboard */; };
 		02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */; };
 		0BC905031B057B8700E15B67 /* gameSyllables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */; };
@@ -58,6 +60,8 @@
 		024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge3Tests.swift; sourceTree = "<group>"; };
 		026C93D51B061D97004E8CA8 /* HumanBody.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HumanBody.storyboard; sourceTree = "<group>"; };
 		026C93D71B061DB8004E8CA8 /* GameHumanBodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHumanBodyViewController.swift; sourceTree = "<group>"; };
+		026C93DB1B06345E004E8CA8 /* Calculator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
+		026C93DD1B063473004E8CA8 /* GameCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCalculatorViewController.swift; sourceTree = "<group>"; };
 		02CCF6661B04C442001AA118 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Animals.storyboard; path = ../Animals.storyboard; sourceTree = "<group>"; };
 		02F88C651B04EB85003C41E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAnimalsViewController.swift; sourceTree = "<group>"; };
@@ -190,9 +194,19 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		026C93DA1B063441004E8CA8 /* Game Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				026C93DB1B06345E004E8CA8 /* Calculator.storyboard */,
+				026C93DD1B063473004E8CA8 /* GameCalculatorViewController.swift */,
+			);
+			name = "Game Calculator";
+			sourceTree = "<group>";
+		};
 		02CCF6681B04C46E001AA118 /* Math */ = {
 			isa = PBXGroup;
 			children = (
+				026C93DA1B063441004E8CA8 /* Game Calculator */,
 			);
 			name = Math;
 			sourceTree = "<group>";
@@ -322,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0225CA7A1B04D87A0087B3C4 /* CACHORRO.png in Resources */,
+				026C93DC1B06345E004E8CA8 /* Calculator.storyboard in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
 				026C93D61B061D97004E8CA8 /* HumanBody.storyboard in Resources */,
 				0BC905041B057B8700E15B67 /* jacare.png in Resources */,
@@ -358,6 +373,7 @@
 				0BC905071B057B8700E15B67 /* SyllablesViewController.swift in Sources */,
 				EC2E555B1B04FB3900D2D953 /* CircleSegue.swift in Sources */,
 				EC2E55611B04FB4B00D2D953 /* MathViewController.swift in Sources */,
+				026C93DE1B063473004E8CA8 /* GameCalculatorViewController.swift in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,
 				EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */,
 				ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */,
