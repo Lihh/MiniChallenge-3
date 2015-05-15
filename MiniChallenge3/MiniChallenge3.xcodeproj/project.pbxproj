@@ -15,6 +15,8 @@
 		024299941B04BBAA003BD890 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024299931B04BBAA003BD890 /* Images.xcassets */; };
 		024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 024299951B04BBAA003BD890 /* LaunchScreen.xib */; };
 		024299A31B04BBAA003BD890 /* MiniChallenge3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */; };
+		026C93D61B061D97004E8CA8 /* HumanBody.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026C93D51B061D97004E8CA8 /* HumanBody.storyboard */; };
+		026C93D81B061DB8004E8CA8 /* GameHumanBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C93D71B061DB8004E8CA8 /* GameHumanBodyViewController.swift */; };
 		02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CCF6661B04C442001AA118 /* Animals.storyboard */; };
 		02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */; };
 		0BC905031B057B8700E15B67 /* gameSyllables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */; };
@@ -54,6 +56,8 @@
 		0242999C1B04BBAA003BD890 /* MiniChallenge3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniChallenge3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		024299A11B04BBAA003BD890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge3Tests.swift; sourceTree = "<group>"; };
+		026C93D51B061D97004E8CA8 /* HumanBody.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HumanBody.storyboard; sourceTree = "<group>"; };
+		026C93D71B061DB8004E8CA8 /* GameHumanBodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHumanBodyViewController.swift; sourceTree = "<group>"; };
 		02CCF6661B04C442001AA118 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Animals.storyboard; path = ../Animals.storyboard; sourceTree = "<group>"; };
 		02F88C651B04EB85003C41E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAnimalsViewController.swift; sourceTree = "<group>"; };
@@ -90,14 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0225CA781B04D84A0087B3C4 /* AnimalsImages */ = {
+		0225CA781B04D84A0087B3C4 /* images */ = {
 			isa = PBXGroup;
 			children = (
 				0225CA791B04D87A0087B3C4 /* CACHORRO.png */,
 				0225CA7B1B04D89A0087B3C4 /* PASSARO.png */,
 				0225CA7D1B04D8B30087B3C4 /* GATO.png */,
 			);
-			name = AnimalsImages;
+			name = images;
 			sourceTree = "<group>";
 		};
 		0242997B1B04BBAA003BD890 = {
@@ -162,11 +166,28 @@
 		026C93CE1B06145B004E8CA8 /* Game Animals */ = {
 			isa = PBXGroup;
 			children = (
-				0225CA781B04D84A0087B3C4 /* AnimalsImages */,
+				0225CA781B04D84A0087B3C4 /* images */,
 				02CCF6661B04C442001AA118 /* Animals.storyboard */,
 				02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */,
 			);
 			name = "Game Animals";
+			sourceTree = "<group>";
+		};
+		026C93D41B061D74004E8CA8 /* Game Human Body */ = {
+			isa = PBXGroup;
+			children = (
+				026C93D91B06210F004E8CA8 /* images */,
+				026C93D51B061D97004E8CA8 /* HumanBody.storyboard */,
+				026C93D71B061DB8004E8CA8 /* GameHumanBodyViewController.swift */,
+			);
+			name = "Game Human Body";
+			sourceTree = "<group>";
+		};
+		026C93D91B06210F004E8CA8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 		02CCF6681B04C46E001AA118 /* Math */ = {
@@ -189,6 +210,7 @@
 		02CCF66A1B04C4AE001AA118 /* Science */ = {
 			isa = PBXGroup;
 			children = (
+				026C93D41B061D74004E8CA8 /* Game Human Body */,
 				026C93CE1B06145B004E8CA8 /* Game Animals */,
 			);
 			name = Science;
@@ -301,6 +323,7 @@
 			files = (
 				0225CA7A1B04D87A0087B3C4 /* CACHORRO.png in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
+				026C93D61B061D97004E8CA8 /* HumanBody.storyboard in Resources */,
 				0BC905041B057B8700E15B67 /* jacare.png in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
 				0225CA7E1B04D8B30087B3C4 /* GATO.png in Resources */,
@@ -327,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026C93D81B061DB8004E8CA8 /* GameHumanBodyViewController.swift in Sources */,
 				EC2E555F1B04FB4600D2D953 /* MainViewController.swift in Sources */,
 				EC2E55651B04FB5600D2D953 /* ScienceViewController.swift in Sources */,
 				0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */,
