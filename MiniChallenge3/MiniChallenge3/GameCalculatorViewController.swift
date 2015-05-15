@@ -73,9 +73,7 @@ class GameCalculatorViewController: UIViewController {
             if answerOp1.text == levels[level].correctAnswer1
             {
                 answerOp1.layer.borderColor = UIColor.greenColor().CGColor
-            }
-            else
-            {
+            } else {
                 answerOp1.layer.borderColor = UIColor.redColor().CGColor
                 wrongAnimation(answerOp1)
             }
@@ -83,9 +81,7 @@ class GameCalculatorViewController: UIViewController {
             if answerOp2.text == levels[level].correctAnswer2
             {
                 answerOp2.layer.borderColor = UIColor.greenColor().CGColor
-            }
-            else
-            {
+            } else {
                 answerOp2.layer.borderColor = UIColor.redColor().CGColor
                 wrongAnimation(answerOp2)
             }
@@ -114,5 +110,7 @@ class GameCalculatorViewController: UIViewController {
                 })
         }
 
-}
+    }
+    
+    
 }
