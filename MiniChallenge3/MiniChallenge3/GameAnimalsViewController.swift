@@ -10,31 +10,27 @@ import UIKit
 
 class GameAnimalsViewController: UIViewController {
 
-    @IBOutlet weak var blurView: UIVisualEffectView!
     @IBOutlet weak var buttonNextOutlet: UIButton!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     let arrayAnimals = ["CACHORRO", "GATO", "PASSARO", "PEIXE", "CAVALO", "COELHO"]
     var level = 0
     var nameAnimal: String!
+    var notificationCenter = NSNotificationCenter.defaultCenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getImage(level)
+        notificationCenter.addObserver(self, selector: Selector("getImage:"), name: "CurrentLevel", object: nil)
+        
+//        getImage(level)
 
         buttonNextOutlet.enabled = false
         
     }
     
     override func viewWillAppear(animated: Bool) {
-        
-        textField.layer.borderWidth = 2
-        textField.layer.borderColor = UIColor .grayColor().CGColor
-        textField.layer.cornerRadius = 10
-        
-        buttonNextOutlet.layer.borderColor = UIColor .whiteColor().CGColor
-        buttonNextOutlet.layer.cornerRadius = 20
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,8 +38,16 @@ class GameAnimalsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getImage(number: Int) {
-        nameAnimal = arrayAnimals[number]
+    func teste() {
+        println("oi")
+    }
+    
+    func getImage(notification: NSNotification) {
+        var teste = notification.userInfo!["title"] as! String
+        level = teste.toInt()!
+        level = level - 1
+        
+        nameAnimal = arrayAnimals[level]
         var var1 = NSBundle.mainBundle().pathForResource("\(nameAnimal)", ofType: "png")
         var img = UIImage(contentsOfFile: var1!)
         imageView.image = img
@@ -82,11 +86,11 @@ class GameAnimalsViewController: UIViewController {
         var userText = textField.text.uppercaseString
         
         if userText == nameAnimal {
-            UIView.congratulationView(self.view)
+//            UIView.congratulationView(self.view)
             println("Acertou!")
             textField.layer.borderColor = UIColor.greenColor().CGColor
             textField.text = ""
-            //self.dismissViewControllerAnimated(true, completion: {})
+            self.dismissViewControllerAnimated(true, completion: {})
         } else {
             println("Errou...")
             textField.text = ""

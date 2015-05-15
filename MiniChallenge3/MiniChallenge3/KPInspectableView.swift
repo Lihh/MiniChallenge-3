@@ -47,3 +47,6 @@ class KPButton : UIButton {}
 
 @IBDesignable
 class KPImageView: UIImageView {}
+
+@IBDesignable
+class KPTextField: UITextField {}

@@ -9,6 +9,8 @@
 import UIKit
 
 class ScienceViewController: UIViewController {
+    
+   var notificationCenter = NSNotificationCenter.defaultCenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,20 +28,14 @@ class ScienceViewController: UIViewController {
     }
     
     @IBAction func transitionToLevel(sender: KPButton) {
+        let buttonTitle: AnyObject = sender.currentTitle!
+        var dictionary = ["title" : buttonTitle]
         let exerciseStoryboard = UIStoryboard(name: "Animals", bundle: nil)
+        
         if let viewController = exerciseStoryboard.instantiateInitialViewController() as? UIViewController {
             viewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
             presentViewController(viewController, animated: true, completion: nil)
+            notificationCenter.postNotificationName("CurrentLevel", object: self, userInfo: dictionary)
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
