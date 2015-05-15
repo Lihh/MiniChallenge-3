@@ -13,14 +13,14 @@ class GameAnimalsViewController: UIViewController {
     @IBOutlet weak var buttonNextOutlet: UIButton!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
-    let arrayAnimals = ["CACHORRO", "GATO", "PASSARO"]
-    var numAnimal = 0
+    let arrayAnimals = ["CACHORRO", "GATO", "PASSARO", "PEIXE", "CAVALO", "COELHO"]
+    var level = 0
     var nameAnimal: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getImage(numAnimal)
+        getImage(level)
 
         buttonNextOutlet.enabled = false
         
@@ -37,15 +37,6 @@ class GameAnimalsViewController: UIViewController {
         var img = UIImage(contentsOfFile: var1!)
         imageView.image = img
     }
-    
-    func changeAnimal(){
-        if numAnimal < 2 {
-            numAnimal += 1
-        } else {
-            numAnimal = 0
-        }
-        
-    }
 
     @IBAction func textFieldAction(sender: UITextField) {
         if textField.text != "" {
@@ -61,8 +52,7 @@ class GameAnimalsViewController: UIViewController {
         if userText == nameAnimal {
             println("Acertou!")
             textField.text = ""
-            changeAnimal()
-            self.viewDidLoad()
+            self.dismissViewControllerAnimated(true, completion: {})
         } else {
             println("Errou...")
             textField.text = ""
