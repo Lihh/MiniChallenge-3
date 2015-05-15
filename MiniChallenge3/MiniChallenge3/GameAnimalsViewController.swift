@@ -17,20 +17,16 @@ class GameAnimalsViewController: UIViewController {
     var level = 0
     var nameAnimal: String!
     var notificationCenter = NSNotificationCenter.defaultCenter()
+    var correct = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        correct = 3
         notificationCenter.addObserver(self, selector: Selector("getImage:"), name: "CurrentLevel", object: nil)
-        
-//        getImage(level)
 
         buttonNextOutlet.enabled = false
         
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,17 +34,13 @@ class GameAnimalsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func teste() {
-        println("oi")
-    }
-    
     func getImage(notification: NSNotification) {
-        var teste = notification.userInfo!["title"] as! String
-        level = teste.toInt()!
+        var currentLevel = notification.userInfo!["title"] as! String
+        level = currentLevel.toInt()!
         level = level - 1
         
         nameAnimal = arrayAnimals[level]
-        var var1 = NSBundle.mainBundle().pathForResource("\(nameAnimal)", ofType: "png")
+        var var1 = NSBundle.mainBundle().pathForResource(nameAnimal, ofType: "png")
         var img = UIImage(contentsOfFile: var1!)
         imageView.image = img
     }
@@ -90,8 +82,15 @@ class GameAnimalsViewController: UIViewController {
             println("Acertou!")
             textField.layer.borderColor = UIColor.greenColor().CGColor
             textField.text = ""
+            
+            var dictionary = ["Stars" : correct]
+            notificationCenter.postNotificationName("QuantityOfStars", object: self, userInfo: dictionary)
             self.dismissViewControllerAnimated(true, completion: {})
         } else {
+            if correct == 0 {
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+            correct--
             println("Errou...")
             textField.text = ""
             textField.layer.borderColor = UIColor.redColor().CGColor

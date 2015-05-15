@@ -37,11 +37,11 @@ class MainViewController: UIViewController {
             toViewController = segue.destinationViewController as! MathViewController
         case "segueTwo":
             self.transition.animationChild = portugueseButton
-            self.transition.animationColor = UIColor(red: 246/255, green: 141/255, blue: 21/255, alpha: 1)
+            self.transition.animationColor = UIColor(red: 18/255, green: 143/255, blue: 250/255, alpha: 1)
             toViewController = segue.destinationViewController as! PortugueseViewController
         case "segueThree":
             self.transition.animationChild = scienceButton
-            self.transition.animationColor = UIColor(red: 238/255, green: 222/255, blue: 32/255, alpha: 1.0)
+            self.transition.animationColor = UIColor(red: 46/255, green: 209/255, blue: 133/255, alpha: 1.0)
             toViewController = segue.destinationViewController as! ScienceViewController
         default:
             return;

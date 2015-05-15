@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0225CA7A1B04D87A0087B3C4 /* CACHORRO.png in Resources */ = {isa = PBXBuildFile; fileRef = 0225CA791B04D87A0087B3C4 /* CACHORRO.png */; };
-		0225CA7C1B04D89A0087B3C4 /* PASSARO.png in Resources */ = {isa = PBXBuildFile; fileRef = 0225CA7B1B04D89A0087B3C4 /* PASSARO.png */; };
-		0225CA7E1B04D8B30087B3C4 /* GATO.png in Resources */ = {isa = PBXBuildFile; fileRef = 0225CA7D1B04D8B30087B3C4 /* GATO.png */; };
 		0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024299891B04BBAA003BD890 /* AppDelegate.swift */; };
 		0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0242998B1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld */; };
 		024299941B04BBAA003BD890 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024299931B04BBAA003BD890 /* Images.xcassets */; };
@@ -31,7 +28,15 @@
 		EC2E55631B04FB5000D2D953 /* PortugueseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E55621B04FB5000D2D953 /* PortugueseViewController.swift */; };
 		EC2E55651B04FB5600D2D953 /* ScienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E55641B04FB5600D2D953 /* ScienceViewController.swift */; };
 		EC2E55671B04FB5C00D2D953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2E55661B04FB5C00D2D953 /* Main.storyboard */; };
+		EC2FBB5F1B0667A0008A6C67 /* GATO.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2FBB5E1B0667A0008A6C67 /* GATO.png */; };
+		EC2FBB611B066817008A6C67 /* CACHORRO.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2FBB601B066817008A6C67 /* CACHORRO.png */; };
+		EC2FBB661B066FD9008A6C67 /* Blogger Sans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC2FBB641B066FD9008A6C67 /* Blogger Sans-Light.otf */; };
+		EC2FBB671B066FD9008A6C67 /* Blogger Sans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC2FBB651B066FD9008A6C67 /* Blogger Sans-Medium.otf */; };
+		EC8647231B068B9D00EB45DB /* MathLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8647221B068B9D00EB45DB /* MathLevelsViewController.swift */; };
+		EC8647251B068D5500EB45DB /* PortugueseLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8647241B068D5500EB45DB /* PortugueseLevelsViewController.swift */; };
+		EC8647271B068DC100EB45DB /* ScienceLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8647261B068DC100EB45DB /* ScienceLevelsViewController.swift */; };
 		ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB21DA51B061C4A00246898 /* Extensions.swift */; };
+		ECCD590A1B06657F003565BD /* PASSARO.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCD59091B06657F003565BD /* PASSARO.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0225CA791B04D87A0087B3C4 /* CACHORRO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CACHORRO.png; sourceTree = "<group>"; };
-		0225CA7B1B04D89A0087B3C4 /* PASSARO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PASSARO.png; sourceTree = "<group>"; };
-		0225CA7D1B04D8B30087B3C4 /* GATO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GATO.png; sourceTree = "<group>"; };
 		024299841B04BBAA003BD890 /* MiniChallenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024299891B04BBAA003BD890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0242998C1B04BBAA003BD890 /* MiniChallenge3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniChallenge3.xcdatamodel; sourceTree = "<group>"; };
@@ -73,7 +75,15 @@
 		EC2E55621B04FB5000D2D953 /* PortugueseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortugueseViewController.swift; sourceTree = "<group>"; };
 		EC2E55641B04FB5600D2D953 /* ScienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScienceViewController.swift; sourceTree = "<group>"; };
 		EC2E55661B04FB5C00D2D953 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EC2FBB5E1B0667A0008A6C67 /* GATO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GATO.png; sourceTree = "<group>"; };
+		EC2FBB601B066817008A6C67 /* CACHORRO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CACHORRO.png; sourceTree = "<group>"; };
+		EC2FBB641B066FD9008A6C67 /* Blogger Sans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Light.otf"; sourceTree = "<group>"; };
+		EC2FBB651B066FD9008A6C67 /* Blogger Sans-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Medium.otf"; sourceTree = "<group>"; };
+		EC8647221B068B9D00EB45DB /* MathLevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathLevelsViewController.swift; sourceTree = "<group>"; };
+		EC8647241B068D5500EB45DB /* PortugueseLevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortugueseLevelsViewController.swift; sourceTree = "<group>"; };
+		EC8647261B068DC100EB45DB /* ScienceLevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScienceLevelsViewController.swift; sourceTree = "<group>"; };
 		ECB21DA51B061C4A00246898 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ECCD59091B06657F003565BD /* PASSARO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PASSARO.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +107,9 @@
 		0225CA781B04D84A0087B3C4 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				0225CA791B04D87A0087B3C4 /* CACHORRO.png */,
-				0225CA7B1B04D89A0087B3C4 /* PASSARO.png */,
-				0225CA7D1B04D8B30087B3C4 /* GATO.png */,
+				EC2FBB5E1B0667A0008A6C67 /* GATO.png */,
+				ECCD59091B06657F003565BD /* PASSARO.png */,
+				EC2FBB601B066817008A6C67 /* CACHORRO.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -229,16 +239,45 @@
 		EC2E55591B04FB0600D2D953 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EC8647211B068B5800EB45DB /* LevelsViews */,
+				EC8647201B068B1000EB45DB /* CategoryGames */,
+				EC86471F1B068AE900EB45DB /* Fonts */,
 				EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */,
 				ECB21DA51B061C4A00246898 /* Extensions.swift */,
 				EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */,
 				EC2E555E1B04FB4600D2D953 /* MainViewController.swift */,
-				EC2E55601B04FB4B00D2D953 /* MathViewController.swift */,
-				EC2E55621B04FB5000D2D953 /* PortugueseViewController.swift */,
-				EC2E55641B04FB5600D2D953 /* ScienceViewController.swift */,
 				EC2E55661B04FB5C00D2D953 /* Main.storyboard */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		EC86471F1B068AE900EB45DB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EC2FBB651B066FD9008A6C67 /* Blogger Sans-Medium.otf */,
+				EC2FBB641B066FD9008A6C67 /* Blogger Sans-Light.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		EC8647201B068B1000EB45DB /* CategoryGames */ = {
+			isa = PBXGroup;
+			children = (
+				EC2E55601B04FB4B00D2D953 /* MathViewController.swift */,
+				EC2E55621B04FB5000D2D953 /* PortugueseViewController.swift */,
+				EC2E55641B04FB5600D2D953 /* ScienceViewController.swift */,
+			);
+			name = CategoryGames;
+			sourceTree = "<group>";
+		};
+		EC8647211B068B5800EB45DB /* LevelsViews */ = {
+			isa = PBXGroup;
+			children = (
+				EC8647221B068B9D00EB45DB /* MathLevelsViewController.swift */,
+				EC8647241B068D5500EB45DB /* PortugueseLevelsViewController.swift */,
+				EC8647261B068DC100EB45DB /* ScienceLevelsViewController.swift */,
+			);
+			name = LevelsViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,18 +360,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0225CA7A1B04D87A0087B3C4 /* CACHORRO.png in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
 				026C93D61B061D97004E8CA8 /* HumanBody.storyboard in Resources */,
 				0BC905041B057B8700E15B67 /* jacare.png in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
-				0225CA7E1B04D8B30087B3C4 /* GATO.png in Resources */,
+				EC2FBB661B066FD9008A6C67 /* Blogger Sans-Light.otf in Resources */,
+				ECCD590A1B06657F003565BD /* PASSARO.png in Resources */,
 				0BC905031B057B8700E15B67 /* gameSyllables.storyboard in Resources */,
+				EC2FBB671B066FD9008A6C67 /* Blogger Sans-Medium.otf in Resources */,
 				EC2E55671B04FB5C00D2D953 /* Main.storyboard in Resources */,
+				EC2FBB5F1B0667A0008A6C67 /* GATO.png in Resources */,
+				EC2FBB611B066817008A6C67 /* CACHORRO.png in Resources */,
 				0BC905061B057B8700E15B67 /* neve.png in Resources */,
 				0BC905051B057B8700E15B67 /* lapis.png in Resources */,
 				024299941B04BBAA003BD890 /* Images.xcassets in Resources */,
-				0225CA7C1B04D89A0087B3C4 /* PASSARO.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +391,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8647251B068D5500EB45DB /* PortugueseLevelsViewController.swift in Sources */,
 				026C93D81B061DB8004E8CA8 /* GameHumanBodyViewController.swift in Sources */,
 				EC2E555F1B04FB4600D2D953 /* MainViewController.swift in Sources */,
+				EC8647231B068B9D00EB45DB /* MathLevelsViewController.swift in Sources */,
 				EC2E55651B04FB5600D2D953 /* ScienceViewController.swift in Sources */,
 				0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */,
 				EC2E55631B04FB5000D2D953 /* PortugueseViewController.swift in Sources */,
@@ -362,6 +405,7 @@
 				EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */,
 				ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */,
 				02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */,
+				EC8647271B068DC100EB45DB /* ScienceLevelsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
