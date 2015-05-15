@@ -31,6 +31,7 @@
 		EC2E55631B04FB5000D2D953 /* PortugueseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E55621B04FB5000D2D953 /* PortugueseViewController.swift */; };
 		EC2E55651B04FB5600D2D953 /* ScienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E55641B04FB5600D2D953 /* ScienceViewController.swift */; };
 		EC2E55671B04FB5C00D2D953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2E55661B04FB5C00D2D953 /* Main.storyboard */; };
+		ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB21DA51B061C4A00246898 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		EC2E55621B04FB5000D2D953 /* PortugueseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortugueseViewController.swift; sourceTree = "<group>"; };
 		EC2E55641B04FB5600D2D953 /* ScienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScienceViewController.swift; sourceTree = "<group>"; };
 		EC2E55661B04FB5C00D2D953 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ECB21DA51B061C4A00246898 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +129,6 @@
 				02CCF66A1B04C4AE001AA118 /* Science */,
 				02CCF6691B04C47E001AA118 /* Portugues */,
 				02CCF6681B04C46E001AA118 /* Math */,
-				024299891B04BBAA003BD890 /* AppDelegate.swift */,
-				024299931B04BBAA003BD890 /* Images.xcassets */,
-				024299951B04BBAA003BD890 /* LaunchScreen.xib */,
-				0242998B1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld */,
 				024299871B04BBAA003BD890 /* Supporting Files */,
 			);
 			path = MiniChallenge3;
@@ -139,6 +137,10 @@
 		024299871B04BBAA003BD890 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				024299891B04BBAA003BD890 /* AppDelegate.swift */,
+				024299931B04BBAA003BD890 /* Images.xcassets */,
+				024299951B04BBAA003BD890 /* LaunchScreen.xib */,
+				0242998B1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld */,
 				02F88C651B04EB85003C41E3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */,
+				ECB21DA51B061C4A00246898 /* Extensions.swift */,
 				EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */,
 				EC2E555E1B04FB4600D2D953 /* MainViewController.swift */,
 				EC2E55601B04FB4B00D2D953 /* MathViewController.swift */,
@@ -357,6 +360,7 @@
 				EC2E55611B04FB4B00D2D953 /* MathViewController.swift in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,
 				EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */,
+				ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */,
 				02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@ import UIKit
 
 class GameAnimalsViewController: UIViewController {
 
+    @IBOutlet weak var blurView: UIVisualEffectView!
     @IBOutlet weak var buttonNextOutlet: UIButton!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
@@ -81,10 +82,11 @@ class GameAnimalsViewController: UIViewController {
         var userText = textField.text.uppercaseString
         
         if userText == nameAnimal {
+            UIView.congratulationView(self.view)
             println("Acertou!")
             textField.layer.borderColor = UIColor.greenColor().CGColor
             textField.text = ""
-            self.dismissViewControllerAnimated(true, completion: {})
+            //self.dismissViewControllerAnimated(true, completion: {})
         } else {
             println("Errou...")
             textField.text = ""
