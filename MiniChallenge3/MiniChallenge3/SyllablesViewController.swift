@@ -13,8 +13,11 @@ class SyllablesViewController: UIViewController {
     // MARK: - Properties and Outlets
     //================================================================================
     
+    // Erros
+    var erros: Int = 0
+    
     // Level
-    var level: Int = 0
+    var level: Int = 1
     
     // Levels Array for images and syllables
     var levels: [( level:Int,    correctWord:String, correctImage:String,
@@ -26,12 +29,25 @@ class SyllablesViewController: UIViewController {
               = [(1, "JANELA",     "janela.jpg",
                      "jacare.png", "JA", "CARÉ",
                      "neve.png",   "NE", "VE",
-                     "lapis.png",  "LA", "PIS")]
+                     "lapis.png",  "LA", "PIS"),
+                 (2, "PANELA",     "panela.jpg",
+                     "aa.png", "PA", "R",
+                     "bb.png", "CO", "CA",
+                     "cc.png", "CA", "O")]
     
     // Outlets
+    @IBOutlet weak var imgImage1: UIImageView!
+    @IBOutlet weak var lblDeleteSyllable1: UILabel!
     @IBOutlet weak var txtSyllable1: UITextField!
+    
+    @IBOutlet weak var imgImage2: UIImageView!
+    @IBOutlet weak var lblDeleteSyllable2: UILabel!
     @IBOutlet weak var txtSyllable2: UITextField!
+    
+    @IBOutlet weak var imgImage3: UIImageView!
+    @IBOutlet weak var lblDeleteSyllable3: UILabel!
     @IBOutlet weak var txtSyllable3: UITextField!
+    
     @IBOutlet weak var btnConfirm:   UIButton!
     //================================================================================
     
@@ -42,6 +58,15 @@ class SyllablesViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        imgImage1.image = UIImage(contentsOfFile: levels[level-1].image1)
+        lblDeleteSyllable1.text = levels[level-1].deleteSyllable1
+        
+        imgImage2.image = UIImage(contentsOfFile: levels[level-1].image2)
+        lblDeleteSyllable2.text = levels[level-1].deleteSyllable2
+        
+        imgImage3.image = UIImage(contentsOfFile: levels[level-1].image3)
+        lblDeleteSyllable3.text = levels[level-1].deleteSyllable3
     }
     
     override func viewWillAppear(animated: Bool)
@@ -82,15 +107,15 @@ class SyllablesViewController: UIViewController {
     {
         // Correct Answer
         //-------------------------------------------------
-        if (txtSyllable1.text == levels[level].syllable1 &&
-            txtSyllable2.text == levels[level].syllable2 &&
-            txtSyllable3.text == levels[level].syllable3)
+        if (txtSyllable1.text == levels[level-1].syllable1 &&
+            txtSyllable2.text == levels[level-1].syllable2 &&
+            txtSyllable3.text == levels[level-1].syllable3)
         {
             txtSyllable1.layer.borderColor = UIColor .greenColor().CGColor
             txtSyllable2.layer.borderColor = UIColor .greenColor().CGColor
             txtSyllable3.layer.borderColor = UIColor .greenColor().CGColor
             self.addBlurEffect()
-            println("Acertou")
+            println("Acertou! erros: \(erros)")
         }
         //-------------------------------------------------
         else
@@ -99,7 +124,7 @@ class SyllablesViewController: UIViewController {
         //-------------------------------------------------
         {
             // Confirm Syllable 1
-            if txtSyllable1.text == levels[level].syllable1
+            if txtSyllable1.text == levels[level-1].syllable1
             {
                 txtSyllable1.layer.borderColor = UIColor.greenColor().CGColor
             }
@@ -110,7 +135,7 @@ class SyllablesViewController: UIViewController {
             }
             
             // Confirm Syllable 2
-            if txtSyllable2.text == levels[level].syllable2
+            if txtSyllable2.text == levels[level-1].syllable2
             {
                 txtSyllable2.layer.borderColor = UIColor.greenColor().CGColor
             }
@@ -121,7 +146,7 @@ class SyllablesViewController: UIViewController {
             }
             
             // Confirm Syllable 3
-            if txtSyllable3.text == levels[level].syllable3
+            if txtSyllable3.text == levels[level-1].syllable3
             {
                 txtSyllable3.layer.borderColor = UIColor.greenColor().CGColor
             }
@@ -130,6 +155,10 @@ class SyllablesViewController: UIViewController {
                 txtSyllable3.layer.borderColor = UIColor.redColor().CGColor
                 wrongAnimation(txtSyllable3)
             }
+            
+            // Somar erro
+            erros++
+            println("Errou \(erros)x")
         }
         //-------------------------------------------------
     }
@@ -153,7 +182,6 @@ class SyllablesViewController: UIViewController {
                         UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
                             textFieldAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
                         }, completion: { (finished) -> Void in
-                            println("Errou")
                         })
                     })
                 })
