@@ -17,23 +17,7 @@ class SyllablesViewController: UIViewController {
     var erros: Int = 0
     
     // Level
-    var level: Int = 1
-    
-    // Levels Array for images and syllables
-    var levels: [( level:Int,    correctWord:String, correctImage:String,
-                  image1:String, syllable1:String,   deleteSyllable1:String,
-                  image2:String, syllable2:String,   deleteSyllable2:String,
-                  image3:String, syllable3:String,   deleteSyllable3:String)]
-    
-    // TESTE
-              = [(1, "JANELA",     "janela.jpg",
-                     "jacare.png", "JA", "CARÉ",
-                     "neve.png",   "NE", "VE",
-                     "lapis.png",  "LA", "PIS"),
-                 (2, "PANELA",     "panela.jpg",
-                     "aa.png", "PA", "R",
-                     "bb.png", "CO", "CA",
-                     "cc.png", "CA", "O")]
+    var level: Int = 3
     
     // Outlets
     @IBOutlet weak var imgImage1: UIImageView!
@@ -49,6 +33,30 @@ class SyllablesViewController: UIViewController {
     @IBOutlet weak var txtSyllable3: UITextField!
     
     @IBOutlet weak var btnConfirm:   UIButton!
+    
+    // Levels Array for images and syllables
+    var levels: [( level:Int,    correctWord:String, correctImage:String,
+                  image1:String, syllable1:String,   deleteSyllable1:String,
+                  image2:String, syllable2:String,   deleteSyllable2:String,
+                  image3:String, syllable3:String,   deleteSyllable3:String)]
+    
+    // Level 1
+    = [(1, "JANELA", "imagem.jpg",
+        "jacare.png", "JA", "CARÉ",
+        "neve.png",   "NE", "VE",
+        "lapis.png",  "LA", "PIS"),
+        
+    // Level 2
+        (2, "PACOCA", "imagem.jpg",
+        "imagem.png", "PA", "R",
+        "imagem.png", "CO", "CA",
+        "imagem.png", "CA", "O"),
+        
+    // Level 3
+        (2, "MOCHILA", "imagem.jpg",
+        "imagem.png", "MO",  "VEL",
+        "imagem.png", "CHI", "CA",
+        "imagem.png", "LA",  "TA")]
     //================================================================================
     
     
@@ -59,6 +67,28 @@ class SyllablesViewController: UIViewController {
     {
         super.viewDidLoad()
         
+        gameElementsConfiguration()
+        levelConfiguration()
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        // code
+    }
+
+    override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
+    }
+    //================================================================================
+    
+    
+    
+    // MARK: - Game Configuration
+    //================================================================================
+    func levelConfiguration()
+    {
+        // Images and Syllables
         imgImage1.image = UIImage(contentsOfFile: levels[level-1].image1)
         lblDeleteSyllable1.text = levels[level-1].deleteSyllable1
         
@@ -69,7 +99,7 @@ class SyllablesViewController: UIViewController {
         lblDeleteSyllable3.text = levels[level-1].deleteSyllable3
     }
     
-    override func viewWillAppear(animated: Bool)
+    func gameElementsConfiguration()
     {
         // Border
         txtSyllable1.layer.borderWidth = 2
@@ -92,13 +122,8 @@ class SyllablesViewController: UIViewController {
         // Button Color
         btnConfirm.layer.backgroundColor = UIColor .greenColor().CGColor
     }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-    }
     //================================================================================
-
+    
     
     
     // MARK: - Confirm Answers
@@ -191,7 +216,7 @@ class SyllablesViewController: UIViewController {
     
     
     
-    // MARK: - Blur Effect
+    // MARK: - Correct Answer
     //================================================================================
     func addBlurEffect()
     {
