@@ -11,31 +11,28 @@ import UIKit
 class ScienceLevelsViewController: UIViewController {
 
     var notificationCenter = NSNotificationCenter.defaultCenter()
+    var exercise = ""
+    
     @IBOutlet weak var starsImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         notificationCenter.addObserver(self, selector: Selector("changeQuantityOfStars:"), name: "QuantityOfStars", object: nil)
-        // Do any additional setup after loading the view.
+        notificationCenter.addObserver(self, selector: Selector("discoverExercise:"), name: "ScienceExercise", object: nil)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func backToMainViewController() {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    func discoverExercise(notification: NSNotification) {
+        exercise = notification.userInfo!["Exercise"] as! String
     }
     
     @IBAction func transitionToLevel(sender: KPButton) {
         let buttonTitle: AnyObject = sender.currentTitle!
         var dictionary = ["title" : buttonTitle]
-        let exerciseStoryboard = UIStoryboard(name: "Animals", bundle: nil)
+        let exerciseStoryboard = UIStoryboard(name: exercise, bundle: nil)
         
         if let viewController = exerciseStoryboard.instantiateInitialViewController() as? UIViewController {
-            viewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+            viewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
             presentViewController(viewController, animated: true, completion: nil)
             notificationCenter.postNotificationName("CurrentLevel", object: self, userInfo: dictionary)
         }
@@ -52,6 +49,10 @@ class ScienceLevelsViewController: UIViewController {
         } else if quantityOfStars == 1 {
             starsImage.image = UIImage(named: "OneStarFilled")
         }
+    }
+    
+    @IBAction func backToMainViewController() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

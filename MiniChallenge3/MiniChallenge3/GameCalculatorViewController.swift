@@ -49,11 +49,6 @@ class GameCalculatorViewController: UIViewController {
 
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func getOps(number: Int) {
         op1.text = levels[number].firstOp
@@ -75,7 +70,7 @@ class GameCalculatorViewController: UIViewController {
                 answerOp1.layer.borderColor = UIColor.greenColor().CGColor
             } else {
                 answerOp1.layer.borderColor = UIColor.redColor().CGColor
-                wrongAnimation(answerOp1)
+                UIView.wrongAnimation(self.view, textFieldAnimate:answerOp1)
             }
         
             if answerOp2.text == levels[level].correctAnswer2
@@ -83,34 +78,8 @@ class GameCalculatorViewController: UIViewController {
                 answerOp2.layer.borderColor = UIColor.greenColor().CGColor
             } else {
                 answerOp2.layer.borderColor = UIColor.redColor().CGColor
-                wrongAnimation(answerOp2)
+                UIView.wrongAnimation(self.view, textFieldAnimate:answerOp2)
             }
-
         }
-        
-        
     }
-    
-    func wrongAnimation(textFieldAnimate: UITextField)
-    {
-        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            textFieldAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+20, 0);
-            }) { (finished) -> Void in
-                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    textFieldAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x-20, 0);
-                    }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            textFieldAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+20, 0);
-                            }, completion: { (finished) -> Void in
-                                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                                    textFieldAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
-                                    }, completion: { (finished) -> Void in
-                                })
-                        })
-                })
-        }
-
-    }
-    
-    
 }

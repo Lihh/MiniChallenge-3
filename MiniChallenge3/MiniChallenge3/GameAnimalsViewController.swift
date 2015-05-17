@@ -28,11 +28,6 @@ class GameAnimalsViewController: UIViewController {
         buttonNextOutlet.enabled = false
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func getImage(notification: NSNotification) {
         var currentLevel = notification.userInfo!["title"] as! String
@@ -43,27 +38,6 @@ class GameAnimalsViewController: UIViewController {
         var var1 = NSBundle.mainBundle().pathForResource(nameAnimal, ofType: "png")
         var img = UIImage(contentsOfFile: var1!)
         imageView.image = img
-    }
-    
-    func wrongAnimation(textFieldAnimate: UITextField)
-    {
-        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            textFieldAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+20, 0);
-            }) { (finished) -> Void in
-                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    textFieldAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x-20, 0);
-                    }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            textFieldAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+20, 0);
-                            }, completion: { (finished) -> Void in
-                                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                                    textFieldAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
-                                    }, completion: { (finished) -> Void in
-                                        println("Errou")
-                                })
-                        })
-                })
-        }
     }
 
     @IBAction func textFieldAction(sender: UITextField) {
@@ -87,14 +61,14 @@ class GameAnimalsViewController: UIViewController {
             notificationCenter.postNotificationName("QuantityOfStars", object: self, userInfo: dictionary)
             self.dismissViewControllerAnimated(true, completion: {})
         } else {
-            if correct == 0 {
+            if correct == 1 {
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
             correct--
             println("Errou...")
             textField.text = ""
             textField.layer.borderColor = UIColor.redColor().CGColor
-            wrongAnimation(textField)
+            UIView.wrongAnimation(self.view, textFieldAnimate: textField)
         }
         
     }

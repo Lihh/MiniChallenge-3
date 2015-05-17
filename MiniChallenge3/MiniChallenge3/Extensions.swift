@@ -19,4 +19,25 @@ extension UIView {
         congratulationsView.backgroundColor = UIColor.redColor()
         view.addSubview(congratulationsView)
     }
+    
+    static func wrongAnimation(view: UIView, textFieldAnimate: UITextField) {
+        
+        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            textFieldAnimate.transform = CGAffineTransformMakeTranslation(view.frame.origin.x+20, 0);
+            }) { (finished) -> Void in
+                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                    textFieldAnimate.transform = CGAffineTransformMakeTranslation(view.frame.origin.x-20, 0);
+                    }, completion: { (finished) -> Void in
+                        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                            textFieldAnimate.transform = CGAffineTransformMakeTranslation(view.frame.origin.x+20, 0);
+                            }, completion: { (finished) -> Void in
+                                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                                    textFieldAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
+                                    }, completion: nil
+                                )
+                        })
+                })
+        }
+
+    }
 }

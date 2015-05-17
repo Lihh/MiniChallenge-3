@@ -55,7 +55,7 @@
         <!--Math Levels View Controller-->
         <scene sceneID="WNt-n2-4kP">
             <objects>
-                <viewController id="bC5-cL-3ua" customClass="MathLevelsViewController" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MathLevels" id="bC5-cL-3ua" customClass="MathLevelsViewController" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p1T-ET-bS6"/>
                         <viewControllerLayoutGuide type="bottom" id="1w5-FT-RFV"/>
@@ -88,6 +88,9 @@
                                         <color key="value" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="bC5-cL-3ua" eventType="touchUpInside" id="UQZ-4o-OJq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dh-pa-KSV" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="82" width="100" height="100"/>
@@ -110,6 +113,9 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="bC5-cL-3ua" eventType="touchUpInside" id="cCU-fM-rs2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCh-hX-l5m" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="82" width="100" height="100"/>
@@ -135,6 +141,9 @@
                                         <color key="value" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="bC5-cL-3ua" eventType="touchUpInside" id="07d-km-vf1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqV-sx-ryg" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="250" width="100" height="100"/>
@@ -160,6 +169,9 @@
                                         <color key="value" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="bC5-cL-3ua" eventType="touchUpInside" id="gym-Ss-bwt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-dq-usV" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="250" width="100" height="100"/>
@@ -185,6 +197,9 @@
                                         <color key="value" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="bC5-cL-3ua" eventType="touchUpInside" id="oge-mF-esD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-Sy-vbz" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="418" width="100" height="100"/>
@@ -210,6 +225,9 @@
                                         <color key="value" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="bC5-cL-3ua" eventType="touchUpInside" id="akl-4G-bai"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfX-nk-fJ6" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="418" width="100" height="100"/>
@@ -235,6 +253,9 @@
                                         <color key="value" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="bC5-cL-3ua" eventType="touchUpInside" id="O4a-aj-9OT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3i-mo-sEM" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="418" width="100" height="100"/>
@@ -260,6 +281,9 @@
                                         <color key="value" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="bC5-cL-3ua" eventType="touchUpInside" id="A1O-Tn-0ux"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDh-aa-qKS">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
@@ -298,6 +322,9 @@
                                         <color key="value" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="bC5-cL-3ua" eventType="touchUpInside" id="jYv-zG-oh9"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="1Hq-Ed-wFG">
                                 <rect key="frame" x="250" y="190" width="100" height="30"/>
@@ -635,7 +662,7 @@
         <!--Portuguese Levels View Controller-->
         <scene sceneID="qfH-gB-eo3">
             <objects>
-                <viewController id="Qy0-cx-rh3" customClass="PortugueseLevelsViewController" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PortugueseLevels" id="Qy0-cx-rh3" customClass="PortugueseLevelsViewController" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OCH-TV-1g9"/>
                         <viewControllerLayoutGuide type="bottom" id="75l-0f-tg3"/>
@@ -675,6 +702,9 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="i11-X5-Xgx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNE-ok-Fy9" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="82" width="100" height="100"/>
@@ -694,6 +724,9 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="QcB-LV-so7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vce-1k-9ot" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="250" width="100" height="100"/>
@@ -713,6 +746,9 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="Xgk-Yj-eH7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ekr-K0-kWC" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
@@ -732,6 +768,9 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="eUg-sr-0Xb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ES-G8-1yi" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="250" width="100" height="100"/>
@@ -751,6 +790,9 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="yBM-78-G2i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1o-C8-BUw" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="418" width="100" height="100"/>
@@ -770,6 +812,9 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="oh0-wc-aUe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XG-ns-gWS" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="418" width="100" height="100"/>
@@ -789,6 +834,9 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="FnT-Bb-GGj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAK-iV-xOI" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="418" width="100" height="100"/>
@@ -808,6 +856,9 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="7GS-5J-5IG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dF-Eu-un0" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="82" width="100" height="100"/>
@@ -827,6 +878,9 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="Yvg-VR-AUM"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="E0I-19-Ukz">
                                 <rect key="frame" x="52" y="190" width="100" height="30"/>
@@ -1080,7 +1134,7 @@
                                     <constraint firstAttribute="width" constant="100" id="2Xw-1I-mQX"/>
                                     <constraint firstAttribute="height" constant="100" id="bq0-QR-WOr"/>
                                 </constraints>
-                                <state key="normal" title="Oper">
+                                <state key="normal" title="Calculator">
                                     <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1090,7 +1144,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="bC5-cL-3ua" kind="presentation" id="5ge-wt-2G2"/>
+                                    <action selector="exerciseButtons:" destination="QBu-Aw-KsU" eventType="touchUpInside" id="j9h-e8-DMy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQH-jj-MRw">
@@ -1133,13 +1187,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-6Q-ul6" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <rect key="frame" x="151" y="250" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="bFg-5t-KLJ"/>
                                     <constraint firstAttribute="height" constant="100" id="hbI-l9-bYI"/>
                                 </constraints>
-                                <state key="normal" title="Syllab">
+                                <state key="normal" title="gameSyllables">
                                     <color key="titleColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1147,9 +1201,12 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Qy0-cx-rh3" kind="presentation" id="u4L-B0-JO9"/>
+                                    <action selector="exerciseButtons:" destination="0E7-rl-yE5" eventType="touchUpInside" id="oTk-Op-Nj1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZT-aO-h2p">
@@ -1165,12 +1222,37 @@
                                     <action selector="backToMainViewController" destination="0E7-rl-yE5" eventType="touchUpInside" id="JCz-NA-jMm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvo-g0-CXK" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="350" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GnK-Rc-zge"/>
+                                    <constraint firstAttribute="width" constant="100" id="g4D-Wy-JtX"/>
+                                </constraints>
+                                <state key="normal" title="completeTheWord">
+                                    <color key="titleColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="exerciseButtons:" destination="0E7-rl-yE5" eventType="touchUpInside" id="2yt-2E-1y7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jZT-aO-h2p" firstAttribute="top" secondItem="1OZ-pF-6n9" secondAttribute="bottom" constant="8" id="5uR-3k-Urs"/>
-                            <constraint firstAttribute="centerX" secondItem="1Sp-6Q-ul6" secondAttribute="centerX" id="G2w-Zv-Con"/>
+                            <constraint firstAttribute="centerX" secondItem="1Sp-6Q-ul6" secondAttribute="centerX" constant="99" id="G2w-Zv-Con"/>
                             <constraint firstAttribute="centerY" secondItem="1Sp-6Q-ul6" secondAttribute="centerY" id="ZoW-Iv-KHM"/>
+                            <constraint firstAttribute="centerY" secondItem="cvo-g0-CXK" secondAttribute="centerY" id="jdy-T9-FGV"/>
+                            <constraint firstAttribute="centerX" secondItem="cvo-g0-CXK" secondAttribute="centerX" constant="-100" id="nPr-wU-bOx"/>
                             <constraint firstItem="jZT-aO-h2p" firstAttribute="leading" secondItem="zta-ia-tsJ" secondAttribute="leadingMargin" id="xIp-qY-Wb2"/>
                         </constraints>
                     </view>
@@ -1192,13 +1274,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOU-fU-amg" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <rect key="frame" x="150" y="250" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Yo6-2J-KBd"/>
                                     <constraint firstAttribute="width" constant="100" id="v8s-rT-N26"/>
                                 </constraints>
-                                <state key="normal" title="Anim">
+                                <state key="normal" title="Animals">
                                     <color key="titleColor" red="0.17858598689999999" green="0.81815280560000003" blue="0.52179843479999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1208,7 +1290,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="JDY-dJ-TxS" kind="presentation" id="3zS-ec-eCr"/>
+                                    <action selector="exerciseButtons:" destination="3Sd-3y-i2g" eventType="touchUpInside" id="iJN-lv-9hp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIL-nw-idM">
@@ -1224,12 +1306,34 @@
                                     <action selector="backToMainViewController" destination="3Sd-3y-i2g" eventType="touchUpInside" id="sDe-T6-dyJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDw-xl-2VW" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="351" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="XeM-Hg-hul"/>
+                                    <constraint firstAttribute="width" constant="100" id="bdR-qQ-gaa"/>
+                                </constraints>
+                                <state key="normal" title="HumanBody">
+                                    <color key="titleColor" red="0.17858598689999999" green="0.81815280560000003" blue="0.52179843479999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="exerciseButtons:" destination="3Sd-3y-i2g" eventType="touchUpInside" id="blq-sO-Og9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.17858598689999999" green="0.81815280560000003" blue="0.52179843479999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="gOU-fU-amg" secondAttribute="centerY" id="DPZ-u8-xNq"/>
-                            <constraint firstAttribute="centerX" secondItem="gOU-fU-amg" secondAttribute="centerX" id="GjN-lZ-MAu"/>
+                            <constraint firstAttribute="centerX" secondItem="gOU-fU-amg" secondAttribute="centerX" constant="100" id="GjN-lZ-MAu"/>
                             <constraint firstItem="jIL-nw-idM" firstAttribute="top" secondItem="dGz-LO-k3L" secondAttribute="bottom" constant="8" id="Kag-0z-pQz"/>
+                            <constraint firstAttribute="centerX" secondItem="DDw-xl-2VW" secondAttribute="centerX" constant="-101" id="ryf-3Q-cQG"/>
+                            <constraint firstAttribute="centerY" secondItem="DDw-xl-2VW" secondAttribute="centerY" id="wAp-WR-97T"/>
                             <constraint firstItem="jIL-nw-idM" firstAttribute="leading" secondItem="6sn-oL-NgC" secondAttribute="leadingMargin" id="xR8-qr-Qsn"/>
                         </constraints>
                     </view>
@@ -1241,7 +1345,7 @@
         <!--Science Levels View Controller-->
         <scene sceneID="gp9-l2-mzp">
             <objects>
-                <viewController id="JDY-dJ-TxS" customClass="ScienceLevelsViewController" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScienceLevels" id="JDY-dJ-TxS" customClass="ScienceLevelsViewController" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nmW-iN-Y5g"/>
                         <viewControllerLayoutGuide type="bottom" id="zRx-71-arI"/>

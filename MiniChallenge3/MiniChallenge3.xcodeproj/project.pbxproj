@@ -21,6 +21,7 @@
 		0B7259191B06234300117B4F /* CompleteTheWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */; };
 		0BC905031B057B8700E15B67 /* gameSyllables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */; };
 		0BC905071B057B8700E15B67 /* SyllablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC905021B057B8700E15B67 /* SyllablesViewController.swift */; };
+		EC055C1F1B083B6200BFB3D0 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC055C1E1B083B6200BFB3D0 /* Calculator.storyboard */; };
 		EC2E555B1B04FB3900D2D953 /* CircleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */; };
 		EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */; };
 		EC2E555F1B04FB4600D2D953 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E555E1B04FB4600D2D953 /* MainViewController.swift */; };
@@ -60,7 +61,6 @@
 		024299A21B04BBAA003BD890 /* MiniChallenge3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniChallenge3Tests.swift; sourceTree = "<group>"; };
 		026C93D51B061D97004E8CA8 /* HumanBody.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HumanBody.storyboard; sourceTree = "<group>"; };
 		026C93D71B061DB8004E8CA8 /* GameHumanBodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHumanBodyViewController.swift; sourceTree = "<group>"; };
-		026C93DB1B06345E004E8CA8 /* Calculator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		026C93DD1B063473004E8CA8 /* GameCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCalculatorViewController.swift; sourceTree = "<group>"; };
 		02CCF6661B04C442001AA118 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Animals.storyboard; path = ../Animals.storyboard; sourceTree = "<group>"; };
 		02F88C651B04EB85003C41E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +69,7 @@
 		0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTheWordViewController.swift; sourceTree = "<group>"; };
 		0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = gameSyllables.storyboard; sourceTree = "<group>"; };
 		0BC905021B057B8700E15B67 /* SyllablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllablesViewController.swift; sourceTree = "<group>"; };
+		EC055C1E1B083B6200BFB3D0 /* Calculator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleSegue.swift; sourceTree = "<group>"; };
 		EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPInspectableView.swift; sourceTree = "<group>"; };
 		EC2E555E1B04FB4600D2D953 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -204,7 +205,7 @@
 		026C93DA1B063441004E8CA8 /* Game Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				026C93DB1B06345E004E8CA8 /* Calculator.storyboard */,
+				EC055C1E1B083B6200BFB3D0 /* Calculator.storyboard */,
 				026C93DD1B063473004E8CA8 /* GameCalculatorViewController.swift */,
 			);
 			name = "Game Calculator";
@@ -274,7 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				EC8647211B068B5800EB45DB /* LevelsViews */,
-				EC8647201B068B1000EB45DB /* CategoryGames */,
+				EC8647201B068B1000EB45DB /* CategoryExercises */,
 				EC86471F1B068AE900EB45DB /* Fonts */,
 				EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */,
 				ECB21DA51B061C4A00246898 /* Extensions.swift */,
@@ -294,14 +295,14 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
-		EC8647201B068B1000EB45DB /* CategoryGames */ = {
+		EC8647201B068B1000EB45DB /* CategoryExercises */ = {
 			isa = PBXGroup;
 			children = (
 				EC2E55601B04FB4B00D2D953 /* MathViewController.swift */,
 				EC2E55621B04FB5000D2D953 /* PortugueseViewController.swift */,
 				EC2E55641B04FB5600D2D953 /* ScienceViewController.swift */,
 			);
-			name = CategoryGames;
+			name = CategoryExercises;
 			sourceTree = "<group>";
 		};
 		EC8647211B068B5800EB45DB /* LevelsViews */ = {
@@ -395,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
+				EC055C1F1B083B6200BFB3D0 /* Calculator.storyboard in Resources */,
 				026C93D61B061D97004E8CA8 /* HumanBody.storyboard in Resources */,
 				0B7259161B06230000117B4F /* completeTheWord.storyboard in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,

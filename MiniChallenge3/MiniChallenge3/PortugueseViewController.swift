@@ -9,29 +9,26 @@
 import UIKit
 
 class PortugueseViewController: UIViewController {
+    
+    var notificationCenter = NSNotificationCenter.defaultCenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func exerciseButtons(sender: KPButton) {
+        let exercise = sender.currentTitle!
+        let dictionary = ["Exercise" : exercise]
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("PortugueseLevels") as! UIViewController
+        storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+        presentViewController(storyBoardLevels, animated: true) { () -> Void in
+            self.notificationCenter.postNotificationName("PortugueseExercise", object: self, userInfo: dictionary)
+        }
     }
     
     @IBAction func backToMainViewController() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
