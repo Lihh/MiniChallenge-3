@@ -463,10 +463,10 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="PbG-rn-z6f"/>
                                         <exclude reference="cQ5-3N-JRu"/>
                                         <exclude reference="uQs-hH-WQu"/>
                                         <exclude reference="ziH-ST-MJN"/>
-                                        <exclude reference="PbG-rn-z6f"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -1626,9 +1626,9 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="QCo-eM-DP0"/>
-                                        <exclude reference="vGb-Ad-zff"/>
                                         <exclude reference="iop-IE-szO"/>
                                         <exclude reference="s5V-mf-trd"/>
+                                        <exclude reference="vGb-Ad-zff"/>
                                     </mask>
                                 </variation>
                             </imageView>
