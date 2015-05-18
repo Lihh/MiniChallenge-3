@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameCalculatorViewController: UIViewController {
+class GameCalculatorViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var op1: UILabel!
     @IBOutlet weak var op2: UILabel!
@@ -46,8 +46,24 @@ class GameCalculatorViewController: UIViewController {
         answerOp2.layer.cornerRadius = 10
         
         getOps(level)
-
         
+        self.answerOp1.delegate = self
+        self.answerOp2.delegate = self
+
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        answerOp1.resignFirstResponder()
+        answerOp2.resignFirstResponder()
     }
     
     func getOps(number: Int) {
@@ -81,5 +97,9 @@ class GameCalculatorViewController: UIViewController {
                 UIView.wrongAnimation(self.view, textFieldAnimate:answerOp2)
             }
         }
+    }
+    
+    @IBAction func btnBack(sender: KPButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

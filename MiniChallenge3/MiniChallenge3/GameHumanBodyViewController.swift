@@ -24,5 +24,9 @@ class GameHumanBodyViewController: UIViewController {
     }
     
 
+    @IBAction func buttonBack(sender: KPButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
     
 }

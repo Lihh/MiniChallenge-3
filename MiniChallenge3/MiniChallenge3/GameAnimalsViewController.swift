@@ -94,4 +94,8 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         textField.resignFirstResponder()
     }
+    
+    @IBAction func buttonBack(sender: KPButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }

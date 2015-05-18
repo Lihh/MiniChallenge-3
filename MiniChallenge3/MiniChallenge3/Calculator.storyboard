@@ -64,8 +64,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N4-rc-uBj" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <state key="normal" image="backArrow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="hto-YU-b2e" eventType="touchUpInside" id="WbP-fQ-WvY"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.40000000000000002" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="0wh-Ls-BVg" firstAttribute="top" secondItem="0i5-kk-Siu" secondAttribute="bottom" constant="3" id="4Pa-DH-Wsy"/>
                             <constraint firstItem="x6B-cd-iVE" firstAttribute="top" secondItem="0wh-Ls-BVg" secondAttribute="bottom" constant="80" id="9yB-ey-XYc"/>
@@ -93,4 +102,7 @@
             <point key="canvasLocation" x="348" y="513"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backArrow" width="30" height="30"/>
+    </resources>
 </document>
