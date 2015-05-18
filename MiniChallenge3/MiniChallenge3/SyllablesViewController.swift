@@ -41,22 +41,22 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
                   image3:String, syllable3:String,   deleteSyllable3:String)]
     
     // Level 1
-    = [(1, "JANELA", "imagem.jpg",
+    = [(1, "JANELA", "CACHORRO",
         "CACHORRO", "JA", "CARÉ",
         "CACHORRO",   "NE", "VE",
         "CACHORRO",  "LA", "PIS"),
         
     // Level 2
-        (2, "PACOCA", "imagem.jpg",
-        "imagem", "PA", "R",
-        "imagem", "CO", "CA",
-        "imagem", "CA", "O"),
+        (2, "PACOCA", "CACHORRO",
+        "CACHORRO", "PA", "R",
+        "CACHORRO", "CO", "CA",
+        "CACHORRO", "CA", "O"),
         
     // Level 3
-        (2, "MOCHILA", "imagem.jpg",
-        "imagem", "MO",  "VEL",
-        "imagem", "CHI", "CA",
-        "imagem", "LA",  "TA")]
+        (2, "MOCHILA", "CACHORRO",
+        "CACHORRO", "MO",  "VEL",
+        "CACHORRO", "CHI", "CA",
+        "CACHORRO", "LA",  "TA")]
     //================================================================================
     
     
