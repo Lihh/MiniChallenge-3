@@ -43,7 +43,6 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
     
     func getImage(notification: NSNotification) {
         var currentLevel = notification.userInfo!["title"] as! String
-        println(currentLevel)
         level = currentLevel.toInt()!
         level = level - 1
         
@@ -71,13 +70,12 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
             textField.layer.borderColor = UIColor.greenColor().CGColor
             textField.text = ""
             
-            var image = UIImage(named: "ThreeStarsFilled")
-            var data = UIImagePNGRepresentation(image)
-            persistence.newScore("Animals", level: level, quantityOfStars: data)
+            
+            persistence.newScore("Animals", level: level, quantityOfStars: correct)
             
             var dictionary = ["Stars" : correct]
             notificationCenter.postNotificationName("QuantityOfStars", object: self, userInfo: dictionary)
-//            self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismissViewControllerAnimated(true, completion: nil)
         } else {
             if correct == 1 {
                 self.dismissViewControllerAnimated(true, completion: nil)

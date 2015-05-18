@@ -29,7 +29,7 @@ public class Persistence {
         }
     }
     
-    func newScore(exercise: String, level: Int, quantityOfStars: NSData) {
+    func newScore(exercise: String, level: Int, quantityOfStars: Int) {
         let entity = NSEntityDescription.entityForName(Persistence.entityName, inManagedObjectContext: managedContext)
         let score = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext) as! Score
         
@@ -38,5 +38,18 @@ public class Persistence {
         score.quantityOfStars = quantityOfStars
         
         self.saveContext()
+    }
+    
+    func findScores(exercise: String) -> [Score] {
+        let fetchRequest = NSFetchRequest()
+        let entityDescription = NSEntityDescription.entityForName(Persistence.entityName, inManagedObjectContext: managedContext)
+        fetchRequest.entity = entityDescription
+        var error:NSError?
+        var predicate = NSPredicate(format: "exercise contains[cd] %@", exercise)
+        
+        fetchRequest.predicate = predicate
+        let fetchedResults = managedContext.executeFetchRequest(fetchRequest, error: &error) as! [Score]
+        
+        return fetchedResults
     }
 }
