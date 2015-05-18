@@ -8,12 +8,12 @@
 
 import UIKit
 
-class GameAnimalsViewController: UIViewController {
+class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var buttonNextOutlet: UIButton!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
-    let arrayAnimals = ["CACHORRO", "GATO", "PASSARO", "PEIXE", "CAVALO", "COELHO"]
+    let arrayAnimals = ["CACHORRO", "GATO", "PASSARO", "PEIXE", "CAVALO"]
     var level = 0
     var nameAnimal: String!
     var notificationCenter = NSNotificationCenter.defaultCenter()
@@ -27,6 +27,17 @@ class GameAnimalsViewController: UIViewController {
 
         buttonNextOutlet.enabled = false
         
+        self.textField.delegate = self
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     func getImage(notification: NSNotification) {
@@ -46,6 +57,7 @@ class GameAnimalsViewController: UIViewController {
         } else {
             buttonNextOutlet.enabled = false
         }
+        
     }
     
     @IBAction func buttonNext(sender: AnyObject) {
@@ -71,5 +83,9 @@ class GameAnimalsViewController: UIViewController {
             UIView.wrongAnimation(self.view, textFieldAnimate: textField)
         }
         
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        textField.resignFirstResponder()
     }
 }
