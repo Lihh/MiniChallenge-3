@@ -42,21 +42,21 @@ class SyllablesViewController: UIViewController {
     
     // Level 1
     = [(1, "JANELA", "imagem.jpg",
-        "jacare.png", "JA", "CARÉ",
-        "neve.png",   "NE", "VE",
-        "lapis.png",  "LA", "PIS"),
+        "CACHORRO", "JA", "CARÉ",
+        "CACHORRO",   "NE", "VE",
+        "CACHORRO",  "LA", "PIS"),
         
     // Level 2
         (2, "PACOCA", "imagem.jpg",
-        "imagem.png", "PA", "R",
-        "imagem.png", "CO", "CA",
-        "imagem.png", "CA", "O"),
+        "imagem", "PA", "R",
+        "imagem", "CO", "CA",
+        "imagem", "CA", "O"),
         
     // Level 3
         (2, "MOCHILA", "imagem.jpg",
-        "imagem.png", "MO",  "VEL",
-        "imagem.png", "CHI", "CA",
-        "imagem.png", "LA",  "TA")]
+        "imagem", "MO",  "VEL",
+        "imagem", "CHI", "CA",
+        "imagem", "LA",  "TA")]
     //================================================================================
     
     
@@ -89,13 +89,16 @@ class SyllablesViewController: UIViewController {
     func levelConfiguration()
     {
         // Images and Syllables
-        imgImage1.image = UIImage(contentsOfFile: levels[level-1].image1)
+        var imgAux = NSBundle.mainBundle().pathForResource(levels[level-1].image1, ofType: "png")
+        imgImage1.image = UIImage(contentsOfFile: imgAux!)
         lblDeleteSyllable1.text = levels[level-1].deleteSyllable1
         
-        imgImage2.image = UIImage(contentsOfFile: levels[level-1].image2)
+        imgAux = NSBundle.mainBundle().pathForResource(levels[level-1].image2, ofType: "png")
+        imgImage2.image = UIImage(contentsOfFile: imgAux!)
         lblDeleteSyllable2.text = levels[level-1].deleteSyllable2
         
-        imgImage3.image = UIImage(contentsOfFile: levels[level-1].image3)
+        imgAux = NSBundle.mainBundle().pathForResource(levels[level-1].image3, ofType: "png")
+        imgImage3.image = UIImage(contentsOfFile: imgAux!)
         lblDeleteSyllable3.text = levels[level-1].deleteSyllable3
     }
     
