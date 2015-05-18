@@ -18,6 +18,7 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
     var nameAnimal: String!
     var notificationCenter = NSNotificationCenter.defaultCenter()
     var correct = Int()
+    let persistence = Persistence.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +70,10 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
             println("Acertou!")
             textField.layer.borderColor = UIColor.greenColor().CGColor
             textField.text = ""
+            
+            var image = UIImage(named: "ThreeStarsFilled")
+            var data = UIImagePNGRepresentation(image)
+            persistence.newScore("Animals", level: level, quantityOfStars: data)
             
             var dictionary = ["Stars" : correct]
             notificationCenter.postNotificationName("QuantityOfStars", object: self, userInfo: dictionary)
