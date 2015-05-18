@@ -84,6 +84,11 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func btnBack(sender: KPButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     //================================================================================
     
     

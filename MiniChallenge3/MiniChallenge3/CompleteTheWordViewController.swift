@@ -79,6 +79,10 @@ class CompleteTheWordViewController: UIViewController {
     {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func btnBack(sender: KPButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     //============================================================
     
     
