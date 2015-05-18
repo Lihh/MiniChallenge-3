@@ -31,6 +31,7 @@ class GameAnimalsViewController: UIViewController {
     
     func getImage(notification: NSNotification) {
         var currentLevel = notification.userInfo!["title"] as! String
+        println(currentLevel)
         level = currentLevel.toInt()!
         level = level - 1
         

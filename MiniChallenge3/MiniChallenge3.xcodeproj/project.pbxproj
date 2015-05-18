@@ -39,6 +39,8 @@
 		EC8647231B068B9D00EB45DB /* MathLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8647221B068B9D00EB45DB /* MathLevelsViewController.swift */; };
 		EC8647251B068D5500EB45DB /* PortugueseLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8647241B068D5500EB45DB /* PortugueseLevelsViewController.swift */; };
 		EC8647271B068DC100EB45DB /* ScienceLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8647261B068DC100EB45DB /* ScienceLevelsViewController.swift */; };
+		EC8A114D1B0A0D0900C8BE36 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A114C1B0A0D0900C8BE36 /* Persistence.swift */; };
+		EC8A114F1B0A0E4A00C8BE36 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A114E1B0A0E4A00C8BE36 /* Score.swift */; };
 		ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB21DA51B061C4A00246898 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		EC8647221B068B9D00EB45DB /* MathLevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathLevelsViewController.swift; sourceTree = "<group>"; };
 		EC8647241B068D5500EB45DB /* PortugueseLevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortugueseLevelsViewController.swift; sourceTree = "<group>"; };
 		EC8647261B068DC100EB45DB /* ScienceLevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScienceLevelsViewController.swift; sourceTree = "<group>"; };
+		EC8A114C1B0A0D0900C8BE36 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EC8A114E1B0A0E4A00C8BE36 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		ECB21DA51B061C4A00246898 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -280,6 +284,7 @@
 		EC2E55591B04FB0600D2D953 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EC8A114B1B0A0CD400C8BE36 /* Persistencia */,
 				EC8647211B068B5800EB45DB /* LevelsViews */,
 				EC8647201B068B1000EB45DB /* CategoryExercises */,
 				EC86471F1B068AE900EB45DB /* Fonts */,
@@ -319,6 +324,15 @@
 				EC8647261B068DC100EB45DB /* ScienceLevelsViewController.swift */,
 			);
 			name = LevelsViews;
+			sourceTree = "<group>";
+		};
+		EC8A114B1B0A0CD400C8BE36 /* Persistencia */ = {
+			isa = PBXGroup;
+			children = (
+				EC8A114C1B0A0D0900C8BE36 /* Persistence.swift */,
+				EC8A114E1B0A0E4A00C8BE36 /* Score.swift */,
+			);
+			name = Persistencia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +384,7 @@
 				TargetAttributes = {
 					024299831B04BBAA003BD890 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 9WJKK289EM;
+						DevelopmentTeam = 66BPT5DT27;
 					};
 					0242999B1B04BBAA003BD890 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -442,10 +456,12 @@
 				0242998D1B04BBAA003BD890 /* MiniChallenge3.xcdatamodeld in Sources */,
 				EC2E55631B04FB5000D2D953 /* PortugueseViewController.swift in Sources */,
 				0BC905071B057B8700E15B67 /* SyllablesViewController.swift in Sources */,
+				EC8A114D1B0A0D0900C8BE36 /* Persistence.swift in Sources */,
 				0B7259191B06234300117B4F /* CompleteTheWordViewController.swift in Sources */,
 				EC2E555B1B04FB3900D2D953 /* CircleSegue.swift in Sources */,
 				EC2E55611B04FB4B00D2D953 /* MathViewController.swift in Sources */,
 				026C93DE1B063473004E8CA8 /* GameCalculatorViewController.swift in Sources */,
+				EC8A114F1B0A0E4A00C8BE36 /* Score.swift in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,
 				EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */,
 				ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */,
