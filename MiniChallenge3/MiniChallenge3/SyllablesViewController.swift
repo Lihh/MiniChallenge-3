@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SyllablesViewController: UIViewController {
+class SyllablesViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - Properties and Outlets
     //================================================================================
@@ -69,6 +69,10 @@ class SyllablesViewController: UIViewController {
         
         gameElementsConfiguration()
         levelConfiguration()
+        
+        self.txtSyllable1.delegate = self
+        self.txtSyllable2.delegate = self
+        self.txtSyllable3.delegate = self
     }
     
     override func viewWillAppear(animated: Bool)
@@ -189,6 +193,17 @@ class SyllablesViewController: UIViewController {
             println("Errou \(erros)x")
         }
         //-------------------------------------------------
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        txtSyllable1.resignFirstResponder()
+        txtSyllable2.resignFirstResponder()
+        txtSyllable3.resignFirstResponder()
     }
     //================================================================================
     
