@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SyllablesViewController: UIViewController {
+class SyllablesViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - Properties and Outlets
     //================================================================================
@@ -41,22 +41,22 @@ class SyllablesViewController: UIViewController {
                   image3:String, syllable3:String,   deleteSyllable3:String)]
     
     // Level 1
-    = [(1, "JANELA", "imagem.jpg",
-        "jacare.png", "JA", "CARÉ",
-        "neve.png",   "NE", "VE",
-        "lapis.png",  "LA", "PIS"),
+    = [(1, "JANELA", "CACHORRO",
+        "CACHORRO", "JA", "CARÉ",
+        "CACHORRO",   "NE", "VE",
+        "CACHORRO",  "LA", "PIS"),
         
     // Level 2
-        (2, "PACOCA", "imagem.jpg",
-        "imagem.png", "PA", "R",
-        "imagem.png", "CO", "CA",
-        "imagem.png", "CA", "O"),
+        (2, "PACOCA", "CACHORRO",
+        "CACHORRO", "PA", "R",
+        "CACHORRO", "CO", "CA",
+        "CACHORRO", "CA", "O"),
         
     // Level 3
-        (2, "MOCHILA", "imagem.jpg",
-        "imagem.png", "MO",  "VEL",
-        "imagem.png", "CHI", "CA",
-        "imagem.png", "LA",  "TA")]
+        (2, "MOCHILA", "CACHORRO",
+        "CACHORRO", "MO",  "VEL",
+        "CACHORRO", "CHI", "CA",
+        "CACHORRO", "LA",  "TA")]
     //================================================================================
     
     
@@ -69,6 +69,10 @@ class SyllablesViewController: UIViewController {
         
         gameElementsConfiguration()
         levelConfiguration()
+        
+        self.txtSyllable1.delegate = self
+        self.txtSyllable2.delegate = self
+        self.txtSyllable3.delegate = self
     }
     
     override func viewWillAppear(animated: Bool)
@@ -89,13 +93,16 @@ class SyllablesViewController: UIViewController {
     func levelConfiguration()
     {
         // Images and Syllables
-        imgImage1.image = UIImage(contentsOfFile: levels[level-1].image1)
+        var imgAux = NSBundle.mainBundle().pathForResource(levels[level-1].image1, ofType: "png")
+        imgImage1.image = UIImage(contentsOfFile: imgAux!)
         lblDeleteSyllable1.text = levels[level-1].deleteSyllable1
         
-        imgImage2.image = UIImage(contentsOfFile: levels[level-1].image2)
+        imgAux = NSBundle.mainBundle().pathForResource(levels[level-1].image2, ofType: "png")
+        imgImage2.image = UIImage(contentsOfFile: imgAux!)
         lblDeleteSyllable2.text = levels[level-1].deleteSyllable2
         
-        imgImage3.image = UIImage(contentsOfFile: levels[level-1].image3)
+        imgAux = NSBundle.mainBundle().pathForResource(levels[level-1].image3, ofType: "png")
+        imgImage3.image = UIImage(contentsOfFile: imgAux!)
         lblDeleteSyllable3.text = levels[level-1].deleteSyllable3
     }
     
@@ -186,6 +193,17 @@ class SyllablesViewController: UIViewController {
             println("Errou \(erros)x")
         }
         //-------------------------------------------------
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        txtSyllable1.resignFirstResponder()
+        txtSyllable2.resignFirstResponder()
+        txtSyllable3.resignFirstResponder()
     }
     //================================================================================
     

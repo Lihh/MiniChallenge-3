@@ -26,6 +26,8 @@
 		0B7259191B06234300117B4F /* CompleteTheWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */; };
 		0BC905031B057B8700E15B67 /* gameSyllables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */; };
 		0BC905071B057B8700E15B67 /* SyllablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC905021B057B8700E15B67 /* SyllablesViewController.swift */; };
+		0BD3B8391B0A09AC007295AC /* counting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD3B8381B0A09AC007295AC /* counting.storyboard */; };
+		0BD3B83B1B0A09C8007295AC /* CountingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3B83A1B0A09C8007295AC /* CountingViewController.swift */; };
 		EC055C1F1B083B6200BFB3D0 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC055C1E1B083B6200BFB3D0 /* Calculator.storyboard */; };
 		EC2E555B1B04FB3900D2D953 /* CircleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */; };
 		EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */; };
@@ -78,6 +80,8 @@
 		0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTheWordViewController.swift; sourceTree = "<group>"; };
 		0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = gameSyllables.storyboard; sourceTree = "<group>"; };
 		0BC905021B057B8700E15B67 /* SyllablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllablesViewController.swift; sourceTree = "<group>"; };
+		0BD3B8381B0A09AC007295AC /* counting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = counting.storyboard; sourceTree = "<group>"; };
+		0BD3B83A1B0A09C8007295AC /* CountingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
 		EC055C1E1B083B6200BFB3D0 /* Calculator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleSegue.swift; sourceTree = "<group>"; };
 		EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPInspectableView.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 		02CCF6681B04C46E001AA118 /* Math */ = {
 			isa = PBXGroup;
 			children = (
+				0BD3B8371B0A0988007295AC /* Game Counting */,
 				026C93DA1B063441004E8CA8 /* Game Calculator */,
 			);
 			name = Math;
@@ -279,6 +284,15 @@
 			children = (
 			);
 			name = imagens;
+			sourceTree = "<group>";
+		};
+		0BD3B8371B0A0988007295AC /* Game Counting */ = {
+			isa = PBXGroup;
+			children = (
+				0BD3B8381B0A09AC007295AC /* counting.storyboard */,
+				0BD3B83A1B0A09C8007295AC /* CountingViewController.swift */,
+			);
+			name = "Game Counting";
 			sourceTree = "<group>";
 		};
 		EC2E55591B04FB0600D2D953 /* Main */ = {
@@ -417,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				022C4B5F1B097B3400CA160C /* PASSARO.png in Resources */,
+				0BD3B8391B0A09AC007295AC /* counting.storyboard in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
 				022C4B631B097BB000CA160C /* CAVALO.png in Resources */,
 				EC055C1F1B083B6200BFB3D0 /* Calculator.storyboard in Resources */,
@@ -458,6 +473,7 @@
 				0BC905071B057B8700E15B67 /* SyllablesViewController.swift in Sources */,
 				EC8A114D1B0A0D0900C8BE36 /* Persistence.swift in Sources */,
 				0B7259191B06234300117B4F /* CompleteTheWordViewController.swift in Sources */,
+				0BD3B83B1B0A09C8007295AC /* CountingViewController.swift in Sources */,
 				EC2E555B1B04FB3900D2D953 /* CircleSegue.swift in Sources */,
 				EC2E55611B04FB4B00D2D953 /* MathViewController.swift in Sources */,
 				026C93DE1B063473004E8CA8 /* GameCalculatorViewController.swift in Sources */,
