@@ -52,14 +52,14 @@ class GameAnimalsViewController: UIViewController {
         var userText = textField.text.uppercaseString
         
         if userText == nameAnimal {
-//            UIView.congratulationView(self.view)
+            UIView.congratulationView(self.view)
             println("Acertou!")
             textField.layer.borderColor = UIColor.greenColor().CGColor
             textField.text = ""
             
             var dictionary = ["Stars" : correct]
             notificationCenter.postNotificationName("QuantityOfStars", object: self, userInfo: dictionary)
-            self.dismissViewControllerAnimated(true, completion: {})
+//            self.dismissViewControllerAnimated(true, completion: nil)
         } else {
             if correct == 1 {
                 self.dismissViewControllerAnimated(true, completion: nil)

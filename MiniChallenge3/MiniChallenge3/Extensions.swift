@@ -14,10 +14,26 @@ extension UIView {
         let blurView = UIVisualEffectView(effect: blurEffect)
         blurView.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.width, view.frame.height)
         view.addSubview(blurView)
-
-        var congratulationsView = UIView(frame: CGRectMake(view.frame.midX-100, view.frame.midY-100, 200.0, 200.0))
+        
+//        let exerciseStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        
+//        if let viewController = exerciseStoryboard.instantiateViewControllerWithIdentifier("CongratulationsView") as? UIViewController {
+//            viewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+//            view.addSubview(viewController.view)
+//        }
+        
+        let congratulationsView = UIView(frame: CGRectMake(blurView.frame.midX-200, blurView.frame.midY-100, 400.0, 200.0))
         congratulationsView.backgroundColor = UIColor.redColor()
-        view.addSubview(congratulationsView)
+        blurView.addSubview(congratulationsView)
+        
+        let congratulationsLabel = UILabel(frame: CGRectMake(view.frame.midX-75, view.frame.midY-80, 150.0, 40.0))
+        congratulationsLabel.font = UIFont(name: "BloggerSans-Light", size: 40.0)
+        congratulationsLabel.text = "Parabéns"
+        view.addSubview(congratulationsLabel)
+        
+        let starsImage = UIImageView(frame: CGRectMake(view.frame.midX-50, view.frame.midY-35, 100.0, 30.0))
+        starsImage.image = UIImage(named: "ThreeStarsFilled")
+        view.addSubview(starsImage)
     }
     
     static func wrongAnimation(view: UIView, textFieldAnimate: UITextField) {
