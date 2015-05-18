@@ -46,15 +46,15 @@ class CompleteTheWordViewController: UIViewController {
                   button4Text: String, button4Correct:Bool, button4Displacement: CGFloat,
                   button5Text: String, button5Correct:Bool, button5Displacement: CGFloat)]
     // Level 1
-    = [(1, "casa.png", "C _ S A", 1,
+    = [(1, "CACHORRO", "C _ S A", 1,
        "A", true, 1, "B", false, 0, "C", false, 0, "D", false, 0, "E", false, 0),
     
     // Level 2
-       (2, "sapato.png", "S _ _ A T _", 3,
+       (2, "CACHORRO", "S _ _ A T _", 3,
        "A", true, 1, "F", false, 0, "P", true, 2, "E", false, 0, "O", true, 5),
         
     // Level 3
-       (2, "pipoca.png", "P _ P _ C _", 3,
+       (3, "CACHORRO", "P _ P _ C _", 3,
        "A", true, 5, "E", false, 0, "I", true, 1, "O", true, 3, "U", false, 0)]
     //============================================================
     
@@ -88,7 +88,8 @@ class CompleteTheWordViewController: UIViewController {
     func levelConfiguration()
     {
         // Set Image
-        imgImage.image = UIImage(contentsOfFile: levels[level-1].wordImage)
+        var imgAux = NSBundle.mainBundle().pathForResource(levels[level-1].wordImage, ofType: "png")
+        imgImage.image = UIImage(contentsOfFile: imgAux!)
         
         // Set Incomplete Word
         lblWord.text = levels[level-1].incompleteWord
