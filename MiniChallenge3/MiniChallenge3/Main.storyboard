@@ -1566,7 +1566,7 @@
                                     <action selector="transitionToLevel:" destination="JDY-dJ-TxS" eventType="touchUpInside" id="AT5-9h-veJ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="NzG-8Q-zr2">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="NzG-8Q-zr2">
                                 <rect key="frame" x="448" y="190" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="0jX-lI-Ne1"/>
@@ -1585,7 +1585,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="0SM-Mv-kwS">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="0SM-Mv-kwS">
                                 <rect key="frame" x="52" y="358" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4G0-5J-sim"/>
@@ -1604,7 +1604,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="xoO-Ak-x7H">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="xoO-Ak-x7H">
                                 <rect key="frame" x="250" y="358" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7tC-Fu-pPw"/>
@@ -1623,7 +1623,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-L2-fgv">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-L2-fgv">
                                 <rect key="frame" x="448" y="358" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7Ky-sU-jO4"/>
@@ -1642,7 +1642,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="1rh-PI-fkp">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="1rh-PI-fkp">
                                 <rect key="frame" x="52" y="526" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="HjP-3h-lFb"/>
@@ -1661,7 +1661,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="2Df-c6-oC0">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="2Df-c6-oC0">
                                 <rect key="frame" x="250" y="526" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="DYe-md-cTE"/>
@@ -1680,7 +1680,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="HRV-56-3s0">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="HRV-56-3s0">
                                 <rect key="frame" x="448" y="526" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4qK-ZS-veY"/>
@@ -1699,7 +1699,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="D53-ya-rcd">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="D53-ya-rcd">
                                 <rect key="frame" x="250" y="190" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4Vg-TR-FXk"/>
@@ -1787,7 +1787,24 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="starsImage" destination="RjC-Zp-AG1" id="Mqg-eF-Jsk"/>
+                        <outlet property="buttonLevelEight" destination="H4G-Zf-7La" id="t7g-ZD-RTm"/>
+                        <outlet property="buttonLevelFive" destination="G7S-PP-OzH" id="TAF-fZ-kdp"/>
+                        <outlet property="buttonLevelFour" destination="nk4-7a-Kst" id="jah-ex-mx3"/>
+                        <outlet property="buttonLevelNine" destination="e8T-CT-XrQ" id="45p-nw-TZq"/>
+                        <outlet property="buttonLevelOne" destination="TJH-7Z-9mS" id="YH5-lo-jOn"/>
+                        <outlet property="buttonLevelSeven" destination="LMJ-1s-gtm" id="LfL-yn-us0"/>
+                        <outlet property="buttonLevelSix" destination="dua-Mw-g0t" id="VSD-ig-rgS"/>
+                        <outlet property="buttonLevelThree" destination="cHv-9v-Opc" id="ytB-Zw-bPN"/>
+                        <outlet property="buttonLevelTwo" destination="ENk-uv-otJ" id="Ydv-Es-9Td"/>
+                        <outlet property="starsLevelEight" destination="2Df-c6-oC0" id="SAe-Oj-TiZ"/>
+                        <outlet property="starsLevelFive" destination="xoO-Ak-x7H" id="vle-te-BYN"/>
+                        <outlet property="starsLevelFour" destination="0SM-Mv-kwS" id="WdV-H5-y9M"/>
+                        <outlet property="starsLevelNine" destination="HRV-56-3s0" id="gMJ-lh-VbJ"/>
+                        <outlet property="starsLevelOne" destination="RjC-Zp-AG1" id="W22-uM-wQh"/>
+                        <outlet property="starsLevelSeven" destination="1rh-PI-fkp" id="Ajc-Dj-fxG"/>
+                        <outlet property="starsLevelSix" destination="Arh-L2-fgv" id="md9-Jy-J1t"/>
+                        <outlet property="starsLevelThree" destination="NzG-8Q-zr2" id="KLy-tL-ihg"/>
+                        <outlet property="starsLevelTwo" destination="D53-ya-rcd" id="ag4-eS-miz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="09q-Vh-Qla" userLabel="First Responder" sceneMemberID="firstResponder"/>

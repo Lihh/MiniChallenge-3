@@ -14,6 +14,6 @@ class Score: NSManagedObject {
 
     @NSManaged var exercise: String
     @NSManaged var level: NSNumber
-    @NSManaged var quantityOfStars: NSData
+    @NSManaged var quantityOfStars: NSNumber
 
 }

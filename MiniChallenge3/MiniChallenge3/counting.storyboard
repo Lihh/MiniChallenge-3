@@ -16,135 +16,569 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clique apenas nos..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-JQ-L0k">
-                                <rect key="frame" x="29" y="36" width="533" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-JQ-L0k">
+                                <rect key="frame" x="29" y="20" width="533" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="iSP-eo-npW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPp-a3-9ih">
-                                <rect key="frame" x="100" y="140" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPp-a3-9ih">
+                                <rect key="frame" x="100" y="74" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Jq3-hL-jtO"/>
+                                    <constraint firstAttribute="width" constant="50" id="jJU-QU-ktD"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="wWP-CO-oJS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhe-QP-nBJ">
-                                <rect key="frame" x="215" y="140" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhe-QP-nBJ">
+                                <rect key="frame" x="215" y="74" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Pxy-yS-ZZN"/>
+                                    <constraint firstAttribute="width" constant="50" id="f5J-2f-bPR"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="4v7-FH-juq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oph-1z-pUH">
-                                <rect key="frame" x="334" y="140" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oph-1z-pUH">
+                                <rect key="frame" x="334" y="74" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="et1-8M-Pbx"/>
+                                    <constraint firstAttribute="height" constant="50" id="yTV-mQ-0dU"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="OQo-yl-UIg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n77-3o-6oR">
-                                <rect key="frame" x="455" y="140" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n77-3o-6oR">
+                                <rect key="frame" x="455" y="74" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OyI-iU-TTN"/>
+                                    <constraint firstAttribute="width" constant="50" id="iMV-Rr-EDy"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="epk-oZ-ef7"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R31-hX-6dY">
-                                <rect key="frame" x="100" y="217" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R31-hX-6dY">
+                                <rect key="frame" x="100" y="151" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3Rt-qU-osF"/>
+                                    <constraint firstAttribute="height" constant="50" id="Rpd-Ay-QLX"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="88D-d8-PWs"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb8-cS-xUJ">
-                                <rect key="frame" x="215" y="217" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb8-cS-xUJ">
+                                <rect key="frame" x="215" y="151" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="aKC-K9-R3o"/>
+                                    <constraint firstAttribute="height" constant="50" id="gvr-h4-wFP"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="9Bv-fp-Bbp"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gO2-JM-UEA">
-                                <rect key="frame" x="334" y="217" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gO2-JM-UEA">
+                                <rect key="frame" x="334" y="151" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Imo-1k-wU4"/>
+                                    <constraint firstAttribute="width" constant="50" id="LLQ-V3-P4T"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="uZZ-uw-898"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMO-3h-X6M">
-                                <rect key="frame" x="455" y="217" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMO-3h-X6M">
+                                <rect key="frame" x="455" y="151" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HTz-Mj-Drb"/>
+                                    <constraint firstAttribute="width" constant="50" id="Nbq-d1-atz"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="1Q3-z6-Rsz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee5-gz-FGa">
-                                <rect key="frame" x="100" y="299" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee5-gz-FGa">
+                                <rect key="frame" x="100" y="233" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3lI-iR-RFu"/>
+                                    <constraint firstAttribute="width" constant="50" id="7ck-mK-Giv"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="TdS-Ln-D41"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cL-Tn-pTd">
-                                <rect key="frame" x="215" y="299" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cL-Tn-pTd">
+                                <rect key="frame" x="215" y="233" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="e4M-pn-Uy9"/>
+                                    <constraint firstAttribute="width" constant="50" id="v4V-k0-fh2"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="OxW-ze-Fgs"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7O-mL-QsO">
-                                <rect key="frame" x="334" y="299" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7O-mL-QsO">
+                                <rect key="frame" x="334" y="233" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CZ7-Ao-TOX"/>
+                                    <constraint firstAttribute="height" constant="50" id="NjB-DN-FHg"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="AMh-DY-C5b"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxU-Mv-EQx">
-                                <rect key="frame" x="455" y="299" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxU-Mv-EQx">
+                                <rect key="frame" x="455" y="233" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cy0-vV-fJj"/>
+                                    <constraint firstAttribute="width" constant="50" id="nsK-Fa-sM3"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="KGE-If-alW"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTI-JM-yFy">
-                                <rect key="frame" x="100" y="378" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTI-JM-yFy">
+                                <rect key="frame" x="100" y="312" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Biy-Z6-JxL"/>
+                                    <constraint firstAttribute="width" constant="50" id="MhS-bM-S4J"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="WPr-s9-NYX"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgk-Yv-erZ">
-                                <rect key="frame" x="215" y="378" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgk-Yv-erZ">
+                                <rect key="frame" x="215" y="312" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="dCM-Rn-6tM"/>
+                                    <constraint firstAttribute="height" constant="50" id="gbe-7J-Cji"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="Hba-mM-adt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4G-hg-07S">
-                                <rect key="frame" x="334" y="378" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4G-hg-07S">
+                                <rect key="frame" x="334" y="312" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="I4T-O9-nsR"/>
+                                    <constraint firstAttribute="width" constant="50" id="ehz-vW-ha6"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="5Un-B8-dqW"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lia-9a-jh7">
-                                <rect key="frame" x="455" y="378" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lia-9a-jh7">
+                                <rect key="frame" x="455" y="312" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0xC-yK-XOu"/>
+                                    <constraint firstAttribute="height" constant="50" id="4fM-Si-gb1"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="uKd-8e-lRV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xk-0Q-EuU">
-                                <rect key="frame" x="100" y="470" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xk-0Q-EuU">
+                                <rect key="frame" x="100" y="404" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1No-Vn-Xiv"/>
+                                    <constraint firstAttribute="width" constant="50" id="v88-bz-ETl"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="gSF-67-jQY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqJ-Wl-bQt">
-                                <rect key="frame" x="215" y="470" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVs-A7-uwT">
+                                <rect key="frame" x="334" y="404" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DC1-sa-i3V"/>
+                                    <constraint firstAttribute="height" constant="50" id="gSb-RO-YX8"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="jwI-fL-wEv"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVs-A7-uwT">
-                                <rect key="frame" x="334" y="470" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqJ-Wl-bQt">
+                                <rect key="frame" x="215" y="404" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5co-hE-fxS"/>
+                                    <constraint firstAttribute="width" constant="50" id="qJD-wb-Ij3"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="8Y4-cn-ZwP"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2c-e4-K4j">
-                                <rect key="frame" x="455" y="470" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2c-e4-K4j">
+                                <rect key="frame" x="455" y="404" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Olv-lx-YyF"/>
+                                    <constraint firstAttribute="height" constant="50" id="dir-7g-OxS"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="Jmm-bi-ZnW"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" tag="21" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2t-hX-K17">
+                                <rect key="frame" x="100" y="519" width="50" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DeL-5p-ZV2"/>
+                                    <constraint firstAttribute="height" constant="50" id="IPO-qR-BqV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="58c-E3-NqQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpj-dG-gZW">
+                                <rect key="frame" x="215" y="519" width="50" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="krA-fz-5HN"/>
+                                    <constraint firstAttribute="width" constant="50" id="pZF-ik-icx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="CgG-1C-QSh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="23" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJe-OM-wZp">
+                                <rect key="frame" x="334" y="519" width="50" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8ds-SX-I0Y"/>
+                                    <constraint firstAttribute="height" constant="50" id="PEj-2s-6wh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="RKr-Gm-o6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="24" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FY-sd-ni6">
+                                <rect key="frame" x="455" y="519" width="50" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="7Xz-H1-0g2"/>
+                                    <constraint firstAttribute="height" constant="50" id="dFE-cY-dAh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="ZVT-uD-ueQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-9w-olC">
+                                <rect key="frame" x="34" y="478" width="533" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="yo5-RW-0p4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="K2t-hX-K17" secondAttribute="centerY" constant="-255" id="0fJ-oB-tBt"/>
+                            <constraint firstAttribute="centerY" secondItem="gO2-JM-UEA" secondAttribute="centerY" constant="124" id="0rq-ER-lvQ"/>
+                            <constraint firstAttribute="centerY" secondItem="9IY-9w-olC" secondAttribute="centerY" constant="-196" id="2gG-9k-okg"/>
+                            <constraint firstAttribute="centerX" secondItem="lb8-cS-xUJ" secondAttribute="centerX" constant="60" id="4Rq-On-4zq"/>
+                            <constraint firstAttribute="centerY" secondItem="Chr-JQ-L0k" secondAttribute="centerY" constant="262" id="6ES-RV-c5Q"/>
+                            <constraint firstAttribute="centerX" secondItem="3FY-sd-ni6" secondAttribute="centerX" constant="-180" id="6FN-KA-oPs"/>
+                            <constraint firstAttribute="centerY" secondItem="j7O-mL-QsO" secondAttribute="centerY" constant="42" id="6Ra-fp-dDQ"/>
+                            <constraint firstAttribute="centerY" secondItem="lb8-cS-xUJ" secondAttribute="centerY" constant="124" id="81U-pl-WbH"/>
+                            <constraint firstAttribute="centerX" secondItem="9IY-9w-olC" secondAttribute="centerX" id="AMa-SZ-kgs"/>
+                            <constraint firstAttribute="centerY" secondItem="3FY-sd-ni6" secondAttribute="centerY" constant="-255" id="CU4-pU-C0A"/>
+                            <constraint firstAttribute="centerX" secondItem="Gpj-dG-gZW" secondAttribute="centerX" constant="60" id="Cok-d0-4Pg"/>
+                            <constraint firstAttribute="centerX" secondItem="Chr-JQ-L0k" secondAttribute="centerX" constant="4.5" id="EBI-51-BtX"/>
+                            <constraint firstAttribute="centerY" secondItem="Gpj-dG-gZW" secondAttribute="centerY" constant="-255" id="EEs-0r-IUj"/>
+                            <constraint firstAttribute="centerX" secondItem="K2t-hX-K17" secondAttribute="centerX" constant="175" id="Fbm-3r-CW0"/>
+                            <constraint firstAttribute="centerY" secondItem="Jgk-Yv-erZ" secondAttribute="centerY" constant="-37" id="Gyd-Sz-omi"/>
+                            <constraint firstAttribute="centerX" secondItem="4cL-Tn-pTd" secondAttribute="centerX" constant="60" id="HYv-mH-rrN"/>
+                            <constraint firstAttribute="centerX" secondItem="lia-9a-jh7" secondAttribute="centerX" constant="-180" id="KvI-6p-rpU"/>
+                            <constraint firstAttribute="centerY" secondItem="YPp-a3-9ih" secondAttribute="centerY" constant="201" id="ODg-mf-uiH"/>
+                            <constraint firstAttribute="centerX" secondItem="UTI-JM-yFy" secondAttribute="centerX" constant="175" id="OSj-zc-4yL"/>
+                            <constraint firstAttribute="centerX" secondItem="BJe-OM-wZp" secondAttribute="centerX" constant="-59" id="PQo-lI-4Om"/>
+                            <constraint firstAttribute="centerY" secondItem="lia-9a-jh7" secondAttribute="centerY" constant="-37" id="Pui-rc-sP5"/>
+                            <constraint firstAttribute="centerX" secondItem="Jgk-Yv-erZ" secondAttribute="centerX" constant="60" id="QAj-zW-wyF"/>
+                            <constraint firstAttribute="centerY" secondItem="BJe-OM-wZp" secondAttribute="centerY" constant="-255" id="QH2-08-Zup"/>
+                            <constraint firstAttribute="centerY" secondItem="Dhe-QP-nBJ" secondAttribute="centerY" constant="201" id="Roc-x2-xpG"/>
+                            <constraint firstAttribute="centerY" secondItem="gVs-A7-uwT" secondAttribute="centerY" constant="-129" id="TH4-W7-lJ0"/>
+                            <constraint firstAttribute="centerX" secondItem="0Xk-0Q-EuU" secondAttribute="centerX" constant="175" id="Uer-fx-QzB"/>
+                            <constraint firstAttribute="centerX" secondItem="E4G-hg-07S" secondAttribute="centerX" constant="-59" id="VMa-ZU-E8D"/>
+                            <constraint firstAttribute="centerY" secondItem="R31-hX-6dY" secondAttribute="centerY" constant="124" id="X4d-V2-01Y"/>
+                            <constraint firstAttribute="centerX" secondItem="T2c-e4-K4j" secondAttribute="centerX" constant="-180" id="XE9-9i-NHs"/>
+                            <constraint firstAttribute="centerY" secondItem="UTI-JM-yFy" secondAttribute="centerY" constant="-37" id="aId-bQ-vyv"/>
+                            <constraint firstAttribute="centerY" secondItem="4cL-Tn-pTd" secondAttribute="centerY" constant="42" id="bVu-oF-AEG"/>
+                            <constraint firstAttribute="centerY" secondItem="ee5-gz-FGa" secondAttribute="centerY" constant="42" id="bo1-hy-itf"/>
+                            <constraint firstAttribute="centerX" secondItem="n77-3o-6oR" secondAttribute="centerX" constant="-180" id="cVE-ve-5rE"/>
+                            <constraint firstAttribute="centerY" secondItem="0Xk-0Q-EuU" secondAttribute="centerY" constant="-129" id="dV9-u4-Er7"/>
+                            <constraint firstAttribute="centerX" secondItem="jqJ-Wl-bQt" secondAttribute="centerX" constant="60" id="eCL-Nv-VEV"/>
+                            <constraint firstAttribute="centerY" secondItem="YxU-Mv-EQx" secondAttribute="centerY" constant="42" id="fmL-pH-tPp"/>
+                            <constraint firstAttribute="centerX" secondItem="gO2-JM-UEA" secondAttribute="centerX" constant="-59" id="g8y-3a-gim"/>
+                            <constraint firstAttribute="centerX" secondItem="XMO-3h-X6M" secondAttribute="centerX" constant="-180" id="geJ-gy-6Di"/>
+                            <constraint firstAttribute="centerX" secondItem="R31-hX-6dY" secondAttribute="centerX" constant="175" id="i3J-5E-Pnv"/>
+                            <constraint firstAttribute="centerX" secondItem="j7O-mL-QsO" secondAttribute="centerX" constant="-59" id="i4s-Q6-gw9"/>
+                            <constraint firstAttribute="centerY" secondItem="T2c-e4-K4j" secondAttribute="centerY" constant="-129" id="jzw-j6-7rQ"/>
+                            <constraint firstAttribute="centerX" secondItem="Dhe-QP-nBJ" secondAttribute="centerX" constant="60" id="mdL-9g-GoD"/>
+                            <constraint firstAttribute="centerY" secondItem="E4G-hg-07S" secondAttribute="centerY" constant="-37" id="nH3-CR-lB0"/>
+                            <constraint firstAttribute="centerX" secondItem="ee5-gz-FGa" secondAttribute="centerX" constant="175" id="nPz-aZ-Hb9"/>
+                            <constraint firstAttribute="centerY" secondItem="n77-3o-6oR" secondAttribute="centerY" constant="201" id="nSF-zs-SdQ"/>
+                            <constraint firstAttribute="centerX" secondItem="YxU-Mv-EQx" secondAttribute="centerX" constant="-180" id="p16-33-xIG"/>
+                            <constraint firstAttribute="centerY" secondItem="Oph-1z-pUH" secondAttribute="centerY" constant="201" id="qaP-Io-DAw"/>
+                            <constraint firstAttribute="centerY" secondItem="XMO-3h-X6M" secondAttribute="centerY" constant="124" id="qfU-6z-lYc"/>
+                            <constraint firstAttribute="centerX" secondItem="gVs-A7-uwT" secondAttribute="centerX" constant="-59" id="tCK-mp-A1y"/>
+                            <constraint firstAttribute="centerX" secondItem="YPp-a3-9ih" secondAttribute="centerX" constant="175" id="uOr-7A-Rxt"/>
+                            <constraint firstAttribute="centerX" secondItem="Oph-1z-pUH" secondAttribute="centerX" constant="-59" id="wdF-r8-M8K"/>
+                            <constraint firstAttribute="centerY" secondItem="jqJ-Wl-bQt" secondAttribute="centerY" constant="-129" id="wfk-3z-JyB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnOption1" destination="K2t-hX-K17" id="7eF-FU-AK8"/>
+                        <outlet property="btnOption2" destination="Gpj-dG-gZW" id="hrV-zp-3xC"/>
+                        <outlet property="btnOption3" destination="BJe-OM-wZp" id="f2j-dK-Mzy"/>
+                        <outlet property="btnOption4" destination="3FY-sd-ni6" id="xyu-uX-4xc"/>
+                        <outlet property="button1" destination="YPp-a3-9ih" id="JlR-vF-rV4"/>
+                        <outlet property="button10" destination="4cL-Tn-pTd" id="UrA-9Q-rHf"/>
+                        <outlet property="button11" destination="j7O-mL-QsO" id="Vcr-jG-Qln"/>
+                        <outlet property="button12" destination="YxU-Mv-EQx" id="yUw-ay-35S"/>
+                        <outlet property="button13" destination="UTI-JM-yFy" id="oNY-to-8O5"/>
+                        <outlet property="button14" destination="Jgk-Yv-erZ" id="ckT-4S-BDq"/>
+                        <outlet property="button15" destination="E4G-hg-07S" id="Plx-iU-b4Y"/>
+                        <outlet property="button16" destination="lia-9a-jh7" id="b34-lI-LbG"/>
+                        <outlet property="button17" destination="0Xk-0Q-EuU" id="W3g-Gn-LSi"/>
+                        <outlet property="button18" destination="jqJ-Wl-bQt" id="uct-Sz-gSo"/>
+                        <outlet property="button19" destination="gVs-A7-uwT" id="OO4-EK-qNb"/>
+                        <outlet property="button2" destination="Dhe-QP-nBJ" id="giA-Hf-vsh"/>
+                        <outlet property="button20" destination="T2c-e4-K4j" id="LLP-je-N3I"/>
+                        <outlet property="button3" destination="Oph-1z-pUH" id="u2J-gR-y13"/>
+                        <outlet property="button4" destination="n77-3o-6oR" id="2I7-So-hQ0"/>
+                        <outlet property="button5" destination="R31-hX-6dY" id="Hu2-KB-zfb"/>
+                        <outlet property="button6" destination="lb8-cS-xUJ" id="t0p-Ut-99Z"/>
+                        <outlet property="button7" destination="gO2-JM-UEA" id="pvU-pT-43X"/>
+                        <outlet property="button8" destination="XMO-3h-X6M" id="pXD-5F-Z1i"/>
+                        <outlet property="button9" destination="ee5-gz-FGa" id="9aF-b4-XRS"/>
+                        <outlet property="lblQuestion" destination="9IY-9w-olC" id="JZB-hl-uYJ"/>
+                        <outlet property="lblTitle" destination="Chr-JQ-L0k" id="gjp-c9-wWd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZ0-zc-iEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
