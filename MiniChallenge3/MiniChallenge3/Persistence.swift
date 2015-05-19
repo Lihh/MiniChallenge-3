@@ -58,7 +58,7 @@ public class Persistence {
         var index = 0
         
         for index; index < scores.count; index++ {
-            if scores[index].level == level {
+            if (scores[index].level == level && scores[index].quantityOfStars.integerValue < numberOfStars) {
                 scores[index].quantityOfStars = numberOfStars
             }
         }
