@@ -21,6 +21,7 @@
 		026C93DE1B063473004E8CA8 /* GameCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C93DD1B063473004E8CA8 /* GameCalculatorViewController.swift */; };
 		02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CCF6661B04C442001AA118 /* Animals.storyboard */; };
 		02D0EEA21B0B5DC700CA9750 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0EEA11B0B5DC700CA9750 /* CongratulationsViewController.swift */; };
+		02F31FD81B0B68FB00E50C2E /* CACHORRO.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F31FD71B0B68FB00E50C2E /* CACHORRO.png */; };
 		02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */; };
 		0B7259161B06230000117B4F /* completeTheWord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7259151B06230000117B4F /* completeTheWord.storyboard */; };
 		0B7259191B06234300117B4F /* CompleteTheWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */; };
@@ -38,7 +39,6 @@
 		EC2E55671B04FB5C00D2D953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2E55661B04FB5C00D2D953 /* Main.storyboard */; };
 		EC2FBB661B066FD9008A6C67 /* Blogger Sans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC2FBB641B066FD9008A6C67 /* Blogger Sans-Light.otf */; };
 		EC2FBB671B066FD9008A6C67 /* Blogger Sans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC2FBB651B066FD9008A6C67 /* Blogger Sans-Medium.otf */; };
-		EC5B55371B0A30A600EBCB49 /* CACHORRO.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5B55361B0A30A600EBCB49 /* CACHORRO.png */; };
 		EC5B553C1B0A7C5800EBCB49 /* TwoStarsFilled.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5B55381B0A7C5800EBCB49 /* TwoStarsFilled.png */; };
 		EC5B553D1B0A7C5800EBCB49 /* OneStarFilled.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5B55391B0A7C5800EBCB49 /* OneStarFilled.png */; };
 		EC5B553E1B0A7C5800EBCB49 /* ThreeStarsFilled.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5B553A1B0A7C5800EBCB49 /* ThreeStarsFilled.png */; };
@@ -79,6 +79,7 @@
 		026C93DD1B063473004E8CA8 /* GameCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCalculatorViewController.swift; sourceTree = "<group>"; };
 		02CCF6661B04C442001AA118 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Animals.storyboard; path = ../Animals.storyboard; sourceTree = "<group>"; };
 		02D0EEA11B0B5DC700CA9750 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
+		02F31FD71B0B68FB00E50C2E /* CACHORRO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CACHORRO.png; sourceTree = "<group>"; };
 		02F88C651B04EB85003C41E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAnimalsViewController.swift; sourceTree = "<group>"; };
 		0B7259151B06230000117B4F /* completeTheWord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = completeTheWord.storyboard; sourceTree = "<group>"; };
@@ -97,7 +98,6 @@
 		EC2E55661B04FB5C00D2D953 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EC2FBB641B066FD9008A6C67 /* Blogger Sans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Light.otf"; sourceTree = "<group>"; };
 		EC2FBB651B066FD9008A6C67 /* Blogger Sans-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Medium.otf"; sourceTree = "<group>"; };
-		EC5B55361B0A30A600EBCB49 /* CACHORRO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CACHORRO.png; sourceTree = "<group>"; };
 		EC5B55381B0A7C5800EBCB49 /* TwoStarsFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoStarsFilled.png; sourceTree = "<group>"; };
 		EC5B55391B0A7C5800EBCB49 /* OneStarFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OneStarFilled.png; sourceTree = "<group>"; };
 		EC5B553A1B0A7C5800EBCB49 /* ThreeStarsFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThreeStarsFilled.png; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				EC5B55391B0A7C5800EBCB49 /* OneStarFilled.png */,
 				EC5B553A1B0A7C5800EBCB49 /* ThreeStarsFilled.png */,
 				EC5B553B1B0A7C5800EBCB49 /* HollowStars.png */,
-				EC5B55361B0A30A600EBCB49 /* CACHORRO.png */,
+				02F31FD71B0B68FB00E50C2E /* CACHORRO.png */,
 				022C4B5E1B097B3400CA160C /* PASSARO.png */,
 				022C4B601B097BAC00CA160C /* PEIXE.png */,
 				022C4B621B097BB000CA160C /* CAVALO.png */,
@@ -413,7 +413,7 @@
 				TargetAttributes = {
 					024299831B04BBAA003BD890 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 66BPT5DT27;
+						DevelopmentTeam = 9WJKK289EM;
 					};
 					0242999B1B04BBAA003BD890 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -445,7 +445,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5B55371B0A30A600EBCB49 /* CACHORRO.png in Resources */,
 				022C4B5F1B097B3400CA160C /* PASSARO.png in Resources */,
 				0BD3B8391B0A09AC007295AC /* counting.storyboard in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
@@ -454,6 +453,7 @@
 				026C93D61B061D97004E8CA8 /* HumanBody.storyboard in Resources */,
 				0B7259161B06230000117B4F /* completeTheWord.storyboard in Resources */,
 				EC5B553F1B0A7C5800EBCB49 /* HollowStars.png in Resources */,
+				02F31FD81B0B68FB00E50C2E /* CACHORRO.png in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
 				EC5B553C1B0A7C5800EBCB49 /* TwoStarsFilled.png in Resources */,
 				EC5B553D1B0A7C5800EBCB49 /* OneStarFilled.png in Resources */,

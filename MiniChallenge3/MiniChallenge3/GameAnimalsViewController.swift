@@ -75,7 +75,7 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
             
             var dictionary = ["Stars" : correct]
             notificationCenter.postNotificationName("QuantityOfStars", object: self, userInfo: dictionary)
-            self.dismissViewControllerAnimated(true, completion: nil)
+            //self.dismissViewControllerAnimated(true, completion: nil)
         } else {
             if correct == 1 {
                 self.dismissViewControllerAnimated(true, completion: nil)

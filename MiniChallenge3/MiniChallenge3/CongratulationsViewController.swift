@@ -33,7 +33,8 @@ class CongratulationsViewController: UIViewController {
     */
 
     @IBAction func btnBack(sender: KPButton) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        //self.dismissViewControllerAnimated(true, completion: nil)
+        self.removeFromParentViewController()
     }
     
     @IBAction func btnReplay(sender: KPButton) {
