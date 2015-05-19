@@ -15,25 +15,26 @@ extension UIView {
         blurView.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.width, view.frame.height)
         view.addSubview(blurView)
         
-//        let exerciseStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let exerciseStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if let viewController = exerciseStoryboard.instantiateViewControllerWithIdentifier("CongratulationsView") as? UIViewController {
+            viewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+            viewController.view.center = view.center
+            view.addSubview(viewController.view)
+        }
+        
+//        let congratulationsView = UIView(frame: CGRectMake(blurView.frame.midX-200, blurView.frame.midY-100, 400.0, 200.0))
+//        congratulationsView.backgroundColor = UIColor.redColor()
+//        blurView.addSubview(congratulationsView)
 //        
-//        if let viewController = exerciseStoryboard.instantiateViewControllerWithIdentifier("CongratulationsView") as? UIViewController {
-//            viewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-//            view.addSubview(viewController.view)
-//        }
-        
-        let congratulationsView = UIView(frame: CGRectMake(blurView.frame.midX-200, blurView.frame.midY-100, 400.0, 200.0))
-        congratulationsView.backgroundColor = UIColor.redColor()
-        blurView.addSubview(congratulationsView)
-        
-        let congratulationsLabel = UILabel(frame: CGRectMake(view.frame.midX-75, view.frame.midY-80, 150.0, 40.0))
-        congratulationsLabel.font = UIFont(name: "BloggerSans-Light", size: 40.0)
-        congratulationsLabel.text = "Parabéns"
-        view.addSubview(congratulationsLabel)
-        
-        let starsImage = UIImageView(frame: CGRectMake(view.frame.midX-50, view.frame.midY-35, 100.0, 30.0))
-        starsImage.image = UIImage(named: "ThreeStarsFilled")
-        view.addSubview(starsImage)
+//        let congratulationsLabel = UILabel(frame: CGRectMake(view.frame.midX-75, view.frame.midY-80, 150.0, 40.0))
+//        congratulationsLabel.font = UIFont(name: "BloggerSans-Light", size: 40.0)
+//        congratulationsLabel.text = "Parabéns"
+//        view.addSubview(congratulationsLabel)
+//        
+//        let starsImage = UIImageView(frame: CGRectMake(view.frame.midX-50, view.frame.midY-35, 100.0, 30.0))
+//        starsImage.image = UIImage(named: "ThreeStarsFilled")
+//        view.addSubview(starsImage)
     }
     
     static func wrongAnimation(view: UIView, textFieldAnimate: UITextField) {
