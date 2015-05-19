@@ -129,10 +129,6 @@
 		0225CA781B04D84A0087B3C4 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B55381B0A7C5800EBCB49 /* TwoStarsFilled.png */,
-				EC5B55391B0A7C5800EBCB49 /* OneStarFilled.png */,
-				EC5B553A1B0A7C5800EBCB49 /* ThreeStarsFilled.png */,
-				EC5B553B1B0A7C5800EBCB49 /* HollowStars.png */,
 				EC5B55361B0A30A600EBCB49 /* CACHORRO.png */,
 				022C4B5E1B097B3400CA160C /* PASSARO.png */,
 				022C4B601B097BAC00CA160C /* PEIXE.png */,
@@ -310,6 +306,10 @@
 		EC2E55591B04FB0600D2D953 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EC5B55381B0A7C5800EBCB49 /* TwoStarsFilled.png */,
+				EC5B55391B0A7C5800EBCB49 /* OneStarFilled.png */,
+				EC5B553A1B0A7C5800EBCB49 /* ThreeStarsFilled.png */,
+				EC5B553B1B0A7C5800EBCB49 /* HollowStars.png */,
 				EC8A114B1B0A0CD400C8BE36 /* Persistencia */,
 				EC8647211B068B5800EB45DB /* LevelsViews */,
 				EC8647201B068B1000EB45DB /* CategoryExercises */,

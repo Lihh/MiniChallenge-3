@@ -33,11 +33,15 @@ class ScienceLevelsViewController: UIViewController {
     var notificationCenter = NSNotificationCenter.defaultCenter()
     var exercise = ""
     var persistence = Persistence.sharedInstance
-    var stars = [Score]()
+    var scores = [Score]()
     var completedLevels = 0
+    var buttons = [UIButton]()
+    var stars = [UIImageView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        buttons = [buttonLevelOne, buttonLevelTwo, buttonLevelThree, buttonLevelFour, buttonLevelFive, buttonLevelSix, buttonLevelSeven, buttonLevelEight, buttonLevelNine]
+        stars = [starsLevelOne, starsLevelTwo, starsLevelThree, starsLevelFour, starsLevelFive, starsLevelSix, starsLevelSeven, starsLevelEight, starsLevelNine]
     }
     
     func discoverExercise(notification: NSNotification) {
@@ -45,8 +49,8 @@ class ScienceLevelsViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        stars = persistence.findScores(exercise)
-        if stars.count != 0 {
+        scores = persistence.findScores(exercise)
+        if scores.count != 0 {
             self.configLevels()
         }
     }
@@ -65,34 +69,48 @@ class ScienceLevelsViewController: UIViewController {
     
     
     func configLevels() {
-        starsLevelOne.image = self.quantityOfStars()
+        var index = 0
+        for index; index < scores.count; index++ {
+            buttons[index].alpha = 1
+            stars[index].image = self.quantityOfStars(scores[index], index: index)
+        }
+        
+        if index == scores.count {
+            self.openNextLevel(index)
+        }
     }
     
     @IBAction func backToMainViewController() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func quantityOfStars() -> UIImage {
+    func quantityOfStars(score: Score, index: Int) -> UIImage {
         
-        if completedLevels <= stars.count {
-          let quantity = stars[completedLevels].quantityOfStars
+          let quantity = score.quantityOfStars
+//        if scores.count != index {
             if quantity == 1 {
-                completedLevels++
                 let data = NSBundle.mainBundle().pathForResource("OneStarFilled", ofType: "png")
                 return UIImage(contentsOfFile: data!)!
             } else if quantity == 2 {
-                completedLevels++
                 let data = NSBundle.mainBundle().pathForResource("TwoStarsFilled", ofType: "png")
                 return UIImage(contentsOfFile: data!)!
             } else if quantity == 3 {
-                completedLevels++
                 let data = NSBundle.mainBundle().pathForResource("ThreeStarsFilled", ofType: "png")
                 return UIImage(contentsOfFile: data!)!
             }
-        }
-        completedLevels++
+//        } else {
+//            buttons[index+1].alpha = 1
+//            stars[index+1].hidden = false
+//        }
+
         let data = NSBundle.mainBundle().pathForResource("HollowStars", ofType: "png")
         return UIImage(contentsOfFile: data!)!
+    }
+    
+    func openNextLevel(index: Int) {
+        buttons[index].alpha = 1
+        buttons[index].enabled = true
+        stars[index].hidden = false
     }
 
 }
