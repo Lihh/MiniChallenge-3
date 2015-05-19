@@ -42,6 +42,12 @@ class ScienceLevelsViewController: UIViewController {
         super.viewDidLoad()
         buttons = [buttonLevelOne, buttonLevelTwo, buttonLevelThree, buttonLevelFour, buttonLevelFive, buttonLevelSix, buttonLevelSeven, buttonLevelEight, buttonLevelNine]
         stars = [starsLevelOne, starsLevelTwo, starsLevelThree, starsLevelFour, starsLevelFive, starsLevelSix, starsLevelSeven, starsLevelEight, starsLevelNine]
+        
+        var index = 1
+        for index; index < stars.count; index++ {
+            stars[index].hidden = true
+            buttons[index].enabled = false
+        }
     }
     
     func discoverExercise(notification: NSNotification) {
@@ -67,12 +73,13 @@ class ScienceLevelsViewController: UIViewController {
         }
     }
     
-    
     func configLevels() {
         var index = 0
         for index; index < scores.count; index++ {
             buttons[index].alpha = 1
+            buttons[index].enabled = true
             stars[index].image = self.quantityOfStars(scores[index], index: index)
+            stars[index].hidden = false
         }
         
         if index == scores.count {
@@ -87,7 +94,6 @@ class ScienceLevelsViewController: UIViewController {
     func quantityOfStars(score: Score, index: Int) -> UIImage {
         
           let quantity = score.quantityOfStars
-//        if scores.count != index {
             if quantity == 1 {
                 let data = NSBundle.mainBundle().pathForResource("OneStarFilled", ofType: "png")
                 return UIImage(contentsOfFile: data!)!
@@ -98,10 +104,6 @@ class ScienceLevelsViewController: UIViewController {
                 let data = NSBundle.mainBundle().pathForResource("ThreeStarsFilled", ofType: "png")
                 return UIImage(contentsOfFile: data!)!
             }
-//        } else {
-//            buttons[index+1].alpha = 1
-//            stars[index+1].hidden = false
-//        }
 
         let data = NSBundle.mainBundle().pathForResource("HollowStars", ofType: "png")
         return UIImage(contentsOfFile: data!)!

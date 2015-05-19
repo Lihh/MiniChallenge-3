@@ -52,4 +52,28 @@ public class Persistence {
         
         return fetchedResults
     }
+    
+    func updateNumberOfStars(exercise: String, level: Int, numberOfStars: Int) {
+        var scores = self.findScores(exercise)
+        var index = 0
+        
+        for index; index < scores.count; index++ {
+            if scores[index].level == level {
+                scores[index].quantityOfStars = numberOfStars
+            }
+        }
+        self.saveContext()
+    }
+    
+    func verifyExistenceOfALevel(exercise: String, level: Int) -> Bool {
+        var scores = self.findScores(exercise)
+        var index = 0
+        
+        for index; index < scores.count; index++ {
+            if scores[index].level == level {
+                return true
+            }
+        }
+        return false
+    }
 }

@@ -70,12 +70,16 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
             textField.layer.borderColor = UIColor.greenColor().CGColor
             textField.text = ""
             
+            if persistence.verifyExistenceOfALevel("Animals", level: level) {
+                persistence.updateNumberOfStars("Animals", level: level, numberOfStars: correct)
+            } else {
+                persistence.newScore("Animals", level: level, quantityOfStars: correct)
+            }
             
-            persistence.newScore("Animals", level: level, quantityOfStars: correct)
             
             var dictionary = ["Stars" : correct]
             notificationCenter.postNotificationName("QuantityOfStars", object: self, userInfo: dictionary)
-            //self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismissViewControllerAnimated(true, completion: nil)
         } else {
             if correct == 1 {
                 self.dismissViewControllerAnimated(true, completion: nil)
