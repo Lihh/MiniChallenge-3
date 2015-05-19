@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Clique nos PASSAROS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-JQ-L0k">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-JQ-L0k">
                                 <rect key="frame" x="29" y="20" width="533" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="iSP-eo-npW"/>
@@ -31,7 +31,8 @@
                                     <constraint firstAttribute="height" constant="50" id="Jq3-hL-jtO"/>
                                     <constraint firstAttribute="width" constant="50" id="jJU-QU-ktD"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="PASSARO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -49,7 +50,8 @@
                                     <constraint firstAttribute="height" constant="50" id="Pxy-yS-ZZN"/>
                                     <constraint firstAttribute="width" constant="50" id="f5J-2f-bPR"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -67,7 +69,8 @@
                                     <constraint firstAttribute="width" constant="50" id="et1-8M-Pbx"/>
                                     <constraint firstAttribute="height" constant="50" id="yTV-mQ-0dU"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -85,7 +88,8 @@
                                     <constraint firstAttribute="height" constant="50" id="OyI-iU-TTN"/>
                                     <constraint firstAttribute="width" constant="50" id="iMV-Rr-EDy"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -103,7 +107,8 @@
                                     <constraint firstAttribute="width" constant="50" id="3Rt-qU-osF"/>
                                     <constraint firstAttribute="height" constant="50" id="Rpd-Ay-QLX"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -121,7 +126,8 @@
                                     <constraint firstAttribute="width" constant="50" id="aKC-K9-R3o"/>
                                     <constraint firstAttribute="height" constant="50" id="gvr-h4-wFP"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="PASSARO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -139,7 +145,8 @@
                                     <constraint firstAttribute="height" constant="50" id="Imo-1k-wU4"/>
                                     <constraint firstAttribute="width" constant="50" id="LLQ-V3-P4T"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -157,7 +164,8 @@
                                     <constraint firstAttribute="height" constant="50" id="HTz-Mj-Drb"/>
                                     <constraint firstAttribute="width" constant="50" id="Nbq-d1-atz"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -175,7 +183,8 @@
                                     <constraint firstAttribute="height" constant="50" id="3lI-iR-RFu"/>
                                     <constraint firstAttribute="width" constant="50" id="7ck-mK-Giv"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -193,7 +202,8 @@
                                     <constraint firstAttribute="height" constant="50" id="e4M-pn-Uy9"/>
                                     <constraint firstAttribute="width" constant="50" id="v4V-k0-fh2"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -211,7 +221,8 @@
                                     <constraint firstAttribute="width" constant="50" id="CZ7-Ao-TOX"/>
                                     <constraint firstAttribute="height" constant="50" id="NjB-DN-FHg"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="PASSARO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -229,7 +240,8 @@
                                     <constraint firstAttribute="height" constant="50" id="Cy0-vV-fJj"/>
                                     <constraint firstAttribute="width" constant="50" id="nsK-Fa-sM3"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -247,7 +259,8 @@
                                     <constraint firstAttribute="height" constant="50" id="Biy-Z6-JxL"/>
                                     <constraint firstAttribute="width" constant="50" id="MhS-bM-S4J"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -265,7 +278,8 @@
                                     <constraint firstAttribute="width" constant="50" id="dCM-Rn-6tM"/>
                                     <constraint firstAttribute="height" constant="50" id="gbe-7J-Cji"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -283,7 +297,8 @@
                                     <constraint firstAttribute="height" constant="50" id="I4T-O9-nsR"/>
                                     <constraint firstAttribute="width" constant="50" id="ehz-vW-ha6"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -301,7 +316,8 @@
                                     <constraint firstAttribute="width" constant="50" id="0xC-yK-XOu"/>
                                     <constraint firstAttribute="height" constant="50" id="4fM-Si-gb1"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="PASSARO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -319,7 +335,8 @@
                                     <constraint firstAttribute="height" constant="50" id="1No-Vn-Xiv"/>
                                     <constraint firstAttribute="width" constant="50" id="v88-bz-ETl"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -331,13 +348,33 @@
                                     <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="gSF-67-jQY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVs-A7-uwT">
+                                <rect key="frame" x="334" y="404" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DC1-sa-i3V"/>
+                                    <constraint firstAttribute="height" constant="50" id="gSb-RO-YX8"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="jwI-fL-wEv"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqJ-Wl-bQt">
                                 <rect key="frame" x="215" y="404" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5co-hE-fxS"/>
                                     <constraint firstAttribute="width" constant="50" id="qJD-wb-Ij3"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -355,7 +392,8 @@
                                     <constraint firstAttribute="width" constant="50" id="Olv-lx-YyF"/>
                                     <constraint firstAttribute="height" constant="50" id="dir-7g-OxS"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="PASSARO.png">
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -367,14 +405,14 @@
                                     <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="Jmm-bi-ZnW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2t-hX-K17">
-                                <rect key="frame" x="100" y="530" width="50" height="50"/>
+                            <button opaque="NO" tag="21" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2t-hX-K17">
+                                <rect key="frame" x="100" y="519" width="50" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="DeL-5p-ZV2"/>
                                     <constraint firstAttribute="height" constant="50" id="IPO-qR-BqV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="1">
+                                <state key="normal" title="X">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -387,14 +425,14 @@
                                     <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="58c-E3-NqQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpj-dG-gZW">
-                                <rect key="frame" x="215" y="530" width="50" height="50"/>
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpj-dG-gZW">
+                                <rect key="frame" x="215" y="519" width="50" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="krA-fz-5HN"/>
                                     <constraint firstAttribute="width" constant="50" id="pZF-ik-icx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="2">
+                                <state key="normal" title="X">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -407,14 +445,14 @@
                                     <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="CgG-1C-QSh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJe-OM-wZp">
-                                <rect key="frame" x="334" y="530" width="50" height="50"/>
+                            <button opaque="NO" tag="23" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJe-OM-wZp">
+                                <rect key="frame" x="334" y="519" width="50" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="8ds-SX-I0Y"/>
                                     <constraint firstAttribute="height" constant="50" id="PEj-2s-6wh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="4">
+                                <state key="normal" title="X">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -427,14 +465,14 @@
                                     <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="RKr-Gm-o6U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FY-sd-ni6">
-                                <rect key="frame" x="455" y="530" width="50" height="50"/>
+                            <button opaque="NO" tag="24" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FY-sd-ni6">
+                                <rect key="frame" x="455" y="519" width="50" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="7Xz-H1-0g2"/>
                                     <constraint firstAttribute="height" constant="50" id="dFE-cY-dAh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="5">
+                                <state key="normal" title="X">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -447,7 +485,7 @@
                                     <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="ZVT-uD-ueQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quantos PASSAROS ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-9w-olC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-9w-olC">
                                 <rect key="frame" x="34" y="478" width="533" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="yo5-RW-0p4"/>
@@ -456,24 +494,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVs-A7-uwT">
-                                <rect key="frame" x="334" y="404" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="DC1-sa-i3V"/>
-                                    <constraint firstAttribute="height" constant="50" id="gSb-RO-YX8"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="CACHORRO.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="jwI-fL-wEv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -565,8 +585,4 @@
             <point key="canvasLocation" x="814" y="644"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="CACHORRO.png" width="700" height="700"/>
-        <image name="PASSARO.png" width="700" height="700"/>
-    </resources>
 </document>

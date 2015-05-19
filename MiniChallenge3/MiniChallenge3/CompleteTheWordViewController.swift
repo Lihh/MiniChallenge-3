@@ -22,13 +22,6 @@ class CompleteTheWordViewController: UIViewController {
     // Finish - Number of correct buttons
     var finish: Int = 0
     
-    // Correct Buttons
-    var button1Correct: Bool! = false
-    var button2Correct: Bool! = false
-    var button3Correct: Bool! = false
-    var button4Correct: Bool! = false
-    var button5Correct: Bool! = false
-    
     // Outlets
     @IBOutlet weak var imgImage: UIImageView!
     @IBOutlet weak var lblWord: UILabel!
@@ -80,7 +73,8 @@ class CompleteTheWordViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func btnBack(sender: KPButton) {
+    @IBAction func btnBack(sender: KPButton)
+    {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     //============================================================
@@ -97,13 +91,6 @@ class CompleteTheWordViewController: UIViewController {
         
         // Set Incomplete Word
         lblWord.text = levels[level-1].incompleteWord
-        
-        // Configure correct/wrong Buttons
-        button1Correct = levels[level-1].button1Correct
-        button2Correct = levels[level-1].button2Correct
-        button3Correct = levels[level-1].button3Correct
-        button4Correct = levels[level-1].button4Correct
-        button5Correct = levels[level-1].button5Correct
     }
     
     func buttonsConfiguration()
@@ -134,49 +121,44 @@ class CompleteTheWordViewController: UIViewController {
     
     // MARK: - Buttons Click
     //============================================================
-    @IBAction func clickButton1(sender: AnyObject)
-    {
-       if button1Correct == true
-       { correctAnimation(button1, displacementX: levels[level-1].button1Displacement) }
-       
-       else
-       { wrongAnimation(button1) }
-    }
     
-    @IBAction func clickButton2(sender: AnyObject)
+    @IBAction func buttonClick(sender: AnyObject)
     {
-        if button2Correct == true
-        { correctAnimation(button2, displacementX: levels[level-1].button2Displacement) }
+        switch sender.tag
+        {
+        case 1:
+            if levels[level-1].button1Correct == true
+            { correctAnimation(button1, displacementX: levels[level-1].button1Displacement) }
+            else
+            { wrongAnimation(button1) }
             
-        else
-        { wrongAnimation(button2) }
-    }
-    
-    @IBAction func clickButton3(sender: AnyObject)
-    {
-        if button3Correct == true
-        { correctAnimation(button3, displacementX: levels[level-1].button3Displacement) }
+        case 2:
+            if levels[level-1].button2Correct == true
+            { correctAnimation(button2, displacementX: levels[level-1].button2Displacement) }
+            else
+            { wrongAnimation(button2) }
             
-        else
-        { wrongAnimation(button3) }
-    }
-    
-    @IBAction func clickButton4(sender: AnyObject)
-    {
-        if button4Correct == true
-        { correctAnimation(button4, displacementX: levels[level-1].button4Displacement) }
+        case 3:
+            if levels[level-1].button3Correct == true
+            { correctAnimation(button3, displacementX: levels[level-1].button3Displacement) }
+            else
+            { wrongAnimation(button3) }
             
-        else
-        { wrongAnimation(button4) }
-    }
-    
-    @IBAction func clickButton5(sender: AnyObject)
-    {
-        if button5Correct == true
-        { correctAnimation(button5, displacementX: levels[level-1].button5Displacement) }
+        case 4:
+            if levels[level-1].button4Correct == true
+            { correctAnimation(button4, displacementX: levels[level-1].button4Displacement) }
+            else
+            { wrongAnimation(button4) }
             
-        else
-        { wrongAnimation(button5) }
+        case 5:
+            if levels[level-1].button5Correct == true
+            { correctAnimation(button5, displacementX: levels[level-1].button5Displacement) }
+            else
+            { wrongAnimation(button5) }
+            
+        default:
+            println("outro")
+        }
     }
     //============================================================
     
