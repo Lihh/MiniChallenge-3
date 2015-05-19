@@ -26,7 +26,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh9-E6-uJ2">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh9-E6-uJ2">
                                 <rect key="frame" x="94" y="433" width="50" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="YiG-fZ-DsW"/>
@@ -49,10 +49,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="clickButton1:" destination="WUd-yW-iPo" eventType="touchUpInside" id="kso-JW-IBl"/>
+                                    <action selector="buttonClick:" destination="WUd-yW-iPo" eventType="touchUpInside" id="lSy-S9-IgQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHk-2u-vGx">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHk-2u-vGx">
                                 <rect key="frame" x="191" y="433" width="50" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="FC5-Rx-bML"/>
@@ -75,10 +75,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="clickButton2:" destination="WUd-yW-iPo" eventType="touchUpInside" id="eb9-BL-ngg"/>
+                                    <action selector="buttonClick:" destination="WUd-yW-iPo" eventType="touchUpInside" id="cD8-cq-7sQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJW-fz-9Ir">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJW-fz-9Ir">
                                 <rect key="frame" x="280" y="433" width="50" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Gs8-Kr-eHj"/>
@@ -101,10 +101,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="clickButton3:" destination="WUd-yW-iPo" eventType="touchUpInside" id="gJU-qb-auQ"/>
+                                    <action selector="buttonClick:" destination="WUd-yW-iPo" eventType="touchUpInside" id="5A8-Nq-DrP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS6-46-BYg">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS6-46-BYg">
                                 <rect key="frame" x="365" y="433" width="50" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="9KM-Rq-dkL"/>
@@ -127,10 +127,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="clickButton4:" destination="WUd-yW-iPo" eventType="touchUpInside" id="Air-GH-OcM"/>
+                                    <action selector="buttonClick:" destination="WUd-yW-iPo" eventType="touchUpInside" id="Pxe-MT-Vhb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37L-hn-7Zk">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37L-hn-7Zk">
                                 <rect key="frame" x="452" y="433" width="50" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="5p8-Hj-p6K"/>
@@ -153,7 +153,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="clickButton5:" destination="WUd-yW-iPo" eventType="touchUpInside" id="rxG-eO-a32"/>
+                                    <action selector="buttonClick:" destination="WUd-yW-iPo" eventType="touchUpInside" id="bL9-np-zYs"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vwn-dG-5MG">

@@ -85,7 +85,8 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func btnBack(sender: KPButton) {
+    @IBAction func btnBack(sender: KPButton)
+    {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -200,12 +201,14 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         //-------------------------------------------------
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
         self.view.endEditing(true)
         return false
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
+    {
         txtSyllable1.resignFirstResponder()
         txtSyllable2.resignFirstResponder()
         txtSyllable3.resignFirstResponder()
