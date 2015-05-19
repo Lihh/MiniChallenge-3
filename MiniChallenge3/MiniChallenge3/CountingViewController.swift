@@ -52,18 +52,33 @@ class CountingViewController: UIViewController {
     
     // Levels Array
     var levels:[(level:Int, gameTitle:String, finish:Int, question:String, correctImage:String, wrongImage:String,
-                 button1Correct:Bool, button2Correct:Bool, button3Correct:Bool, button4Correct:Bool, button5Correct:Bool, button6Correct:Bool, button7Correct:Bool, button8Correct:Bool,
-    button9Correct:Bool, button10Correct:Bool, button11Correct:Bool, button12Correct:Bool, button13Correct:Bool, button14Correct:Bool, button15Correct:Bool, button16Correct:Bool,
-    button17Correct:Bool, button18Correct:Bool, button19Correct:Bool, button20Correct:Bool,
-    option1Correct:Bool, option1Text:String, option2Correct:Bool, option2Text:String, option3Correct:Bool, option3Text:String, option4Correct:Bool, option4Text:String)]
+                 button1Correct: Bool, button2Correct: Bool, button3Correct: Bool, button4Correct: Bool,
+                 button5Correct: Bool, button6Correct: Bool, button7Correct: Bool, button8Correct: Bool,
+                 button9Correct: Bool, button10Correct:Bool, button11Correct:Bool, button12Correct:Bool,
+                 button13Correct:Bool, button14Correct:Bool, button15Correct:Bool, button16Correct:Bool,
+                 button17Correct:Bool, button18Correct:Bool, button19Correct:Bool, button20Correct:Bool,
+                 option1Correct: Bool, option1Text:  String, option2Correct: Bool, option2Text:  String,
+                 option3Correct: Bool, option3Text:  String, option4Correct: Bool, option4Text:  String)]
     
     // Level 1
-    = [(1, "CLIQUE NOS PASSAROS", 5, "QUANTOS PASSAROS ?", "PASSARO", "CACHORRO",
-        true, false, false, false, false, true, false, false,
-        false, false, true, false, false, false, false, true,
-        false, false, false, true,
-        false, "2", false, "3", false, "4", true, "5")]
+    = [ (1, "CLIQUE NOS PASSAROS", 5, "QUANTOS PASSAROS ?", "PASSARO", "CACHORRO",
+        /*button  1*/  true, /*button  2*/ false, /*button  3*/ false, /*button  4*/ false,
+        /*button  5*/ false, /*button  6*/  true, /*button  7*/ false, /*button  8*/ false,
+        /*button  9*/ false, /*button 10*/ false, /*button 11*/  true, /*button 12*/ false,
+        /*button 13*/ false, /*button 14*/ false, /*button 15*/ false, /*button 16*/  true,
+        /*button 17*/ false, /*button 18*/ false, /*button 19*/ false, /*button 20*/  true,
+        /*option  1*/ false, /*  text   */   "2", /*option  2*/ false, /*  text   */   "3",
+        /*option  3*/ false, /*  text   */   "4", /*option  4*/  true, /*text     */   "5"),
     
+    // Level 2
+        (2, "CLIQUE NOS PASSAROS", 5, "QUANTOS PASSAROS ?", "PASSARO", "CACHORRO",
+        /*button  1*/  true, /*button  2*/ false, /*button  3*/ false, /*button  4*/ false,
+        /*button  5*/ false, /*button  6*/  true, /*button  7*/ false, /*button  8*/ false,
+        /*button  9*/ false, /*button 10*/ false, /*button 11*/  true, /*button 12*/ false,
+        /*button 13*/ false, /*button 14*/ false, /*button 15*/ false, /*button 16*/  true,
+        /*button 17*/ false, /*button 18*/ false, /*button 19*/ false, /*button 20*/  true,
+        /*option  1*/ false, /*  text   */   "2", /*option  2*/ false, /*  text   */   "3",
+        /*option  3*/ false, /*  text   */   "4", /*option  4*/  true, /*text     */   "5")]
     //================================================================================
     
     
@@ -90,17 +105,23 @@ class CountingViewController: UIViewController {
     //================================================================================
     
     
+    
+    // MARK: - Game Configuration
+    //================================================================================
     func levelConfiguration()
     {
+        // Set Label Texts
         lblTitle.text = levels[level-1].gameTitle
         lblQuestion.text = levels[level-1].question
         lblQuestion.hidden = true
         
+        // Button Option
         btnOption1.setTitle(levels[level-1].option1Text, forState: UIControlState.Normal)
         btnOption2.setTitle(levels[level-1].option2Text, forState: UIControlState.Normal)
         btnOption3.setTitle(levels[level-1].option3Text, forState: UIControlState.Normal)
         btnOption4.setTitle(levels[level-1].option4Text, forState: UIControlState.Normal)
         
+        // Hide Options
         btnOption1.hidden = true
         btnOption2.hidden = true
         btnOption3.hidden = true
@@ -109,7 +130,7 @@ class CountingViewController: UIViewController {
     
     func buttonsConfiguration()
     {
-        // Set Image
+        // Correct/Wrong Images
         var imgAuxCorrect = NSBundle.mainBundle().pathForResource(levels[level-1].correctImage, ofType: "png")
         var imgAuxWrong = NSBundle.mainBundle().pathForResource(levels[level-1].wrongImage, ofType: "png")
         
@@ -213,9 +234,11 @@ class CountingViewController: UIViewController {
         else
         { button20.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
     }
+    //================================================================================
     
     
-    // MARK: - Button Click
+    
+    // MARK: - Buttons Click
     //================================================================================
     @IBAction func buttonClick(sender: AnyObject)
     {
@@ -429,13 +452,15 @@ class CountingViewController: UIViewController {
                 })
         }
         
-        if finish >= levels[level-1].finish
+        if finish == levels[level-1].finish
         { println("\n\nGanhou!!") }
+        else if finish >= levels[level-1].finish
+        { addViewBlurEffect() }
     }
-    
     
     func showQuestion()
     {
+        // Disable Buttons
         button1.enabled = false
         button2.enabled = false
         button3.enabled = false
@@ -457,11 +482,20 @@ class CountingViewController: UIViewController {
         button19.enabled = false
         button20.enabled = false
         
+        // Show Option Buttons
         lblQuestion.hidden = false
         btnOption1.hidden = false
         btnOption2.hidden = false
         btnOption3.hidden = false
         btnOption4.hidden = false
+    }
+    
+    func addViewBlurEffect()
+    {
+        var effect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        var effectView = UIVisualEffectView(effect: effect)
+        effectView.frame = CGRectMake(0, 0, view.bounds.width, view.bounds.height)
+        view.addSubview(effectView)
     }
     //============================================================
     
