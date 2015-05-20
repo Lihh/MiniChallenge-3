@@ -40,6 +40,7 @@ class ScienceLevelsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         buttons = [buttonLevelOne, buttonLevelTwo, buttonLevelThree, buttonLevelFour, buttonLevelFive, buttonLevelSix, buttonLevelSeven, buttonLevelEight, buttonLevelNine]
         stars = [starsLevelOne, starsLevelTwo, starsLevelThree, starsLevelFour, starsLevelFive, starsLevelSix, starsLevelSeven, starsLevelEight, starsLevelNine]
         
@@ -50,26 +51,10 @@ class ScienceLevelsViewController: UIViewController {
         }
     }
     
-    func discoverExercise(notification: NSNotification) {
-        exercise = notification.userInfo!["Exercise"] as! String
-    }
-    
     override func viewWillAppear(animated: Bool) {
         scores = persistence.findScores(exercise)
         if scores.count != 0 {
             self.configLevels()
-        }
-    }
-    
-    @IBAction func transitionToLevel(sender: KPButton) {
-        let buttonTitle: AnyObject = sender.currentTitle!
-        var dictionary = ["title" : buttonTitle]
-        let exerciseStoryboard = UIStoryboard(name: exercise, bundle: nil)
-        
-        if let viewController = exerciseStoryboard.instantiateInitialViewController() as? UIViewController {
-            viewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-            presentViewController(viewController, animated: true, completion: nil)
-            notificationCenter.postNotificationName("CurrentLevel", object: self, userInfo: dictionary)
         }
     }
     
@@ -87,24 +72,20 @@ class ScienceLevelsViewController: UIViewController {
         }
     }
     
-    @IBAction func backToMainViewController() {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
     func quantityOfStars(score: Score, index: Int) -> UIImage {
         
-          let quantity = score.quantityOfStars
-            if quantity == 1 {
-                let data = NSBundle.mainBundle().pathForResource("OneStarFilled", ofType: "png")
-                return UIImage(contentsOfFile: data!)!
-            } else if quantity == 2 {
-                let data = NSBundle.mainBundle().pathForResource("TwoStarsFilled", ofType: "png")
-                return UIImage(contentsOfFile: data!)!
-            } else if quantity == 3 {
-                let data = NSBundle.mainBundle().pathForResource("ThreeStarsFilled", ofType: "png")
-                return UIImage(contentsOfFile: data!)!
-            }
-
+        let quantity = score.quantityOfStars
+        if quantity == 1 {
+            let data = NSBundle.mainBundle().pathForResource("OneStarFilled", ofType: "png")
+            return UIImage(contentsOfFile: data!)!
+        } else if quantity == 2 {
+            let data = NSBundle.mainBundle().pathForResource("TwoStarsFilled", ofType: "png")
+            return UIImage(contentsOfFile: data!)!
+        } else if quantity == 3 {
+            let data = NSBundle.mainBundle().pathForResource("ThreeStarsFilled", ofType: "png")
+            return UIImage(contentsOfFile: data!)!
+        }
+        
         let data = NSBundle.mainBundle().pathForResource("HollowStars", ofType: "png")
         return UIImage(contentsOfFile: data!)!
     }
@@ -113,6 +94,22 @@ class ScienceLevelsViewController: UIViewController {
         buttons[index].alpha = 1
         buttons[index].enabled = true
         stars[index].hidden = false
+    }
+    
+    @IBAction func transitionToLevel(sender: KPButton) {
+        let buttonTitle = sender.currentTitle!
+        var dictionary = ["level" : buttonTitle]
+        let exerciseStoryboard = UIStoryboard(name: exercise, bundle: nil)
+        
+        if let viewController = exerciseStoryboard.instantiateInitialViewController() as? UIViewController {
+            viewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+            presentViewController(viewController, animated: true, completion: nil)
+            notificationCenter.postNotificationName("CurrentLevel", object: self, userInfo: dictionary)
+        }
+    }
+    
+    @IBAction func backToMainViewController() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

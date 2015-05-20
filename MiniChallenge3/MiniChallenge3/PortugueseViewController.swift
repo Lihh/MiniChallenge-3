@@ -18,14 +18,12 @@ class PortugueseViewController: UIViewController {
     
     @IBAction func exerciseButtons(sender: KPButton) {
         let exercise = sender.currentTitle!
-        let dictionary = ["Exercise" : exercise]
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("PortugueseLevels") as! UIViewController
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("PortugueseLevels") as! PortugueseLevelsViewController
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-        presentViewController(storyBoardLevels, animated: true) { () -> Void in
-            self.notificationCenter.postNotificationName("PortugueseExercise", object: self, userInfo: dictionary)
-        }
+        storyBoardLevels.exercise = exercise
+        presentViewController(storyBoardLevels, animated: true, completion: nil)
     }
     
     @IBAction func backToMainViewController() {

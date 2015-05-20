@@ -839,28 +839,6 @@
                                     <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="FnT-Bb-GGj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAK-iV-xOI" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="448" y="418" width="100" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="78M-yU-iHN"/>
-                                    <constraint firstAttribute="height" constant="100" id="u3e-nx-WIu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="76"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="9">
-                                    <color key="titleColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="7GS-5J-5IG"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dF-Eu-un0" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="82" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1054,6 +1032,28 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAK-iV-xOI" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="448" y="418" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="78M-yU-iHN"/>
+                                    <constraint firstAttribute="height" constant="100" id="u3e-nx-WIu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="76"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="7GS-5J-5IG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.070588235289999995" green="0.56011523238684213" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1111,6 +1111,26 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="buttonLevelEight" destination="6XG-ns-gWS" id="wmN-xc-c2F"/>
+                        <outlet property="buttonLevelFive" destination="Ekr-K0-kWC" id="FcL-FY-Me7"/>
+                        <outlet property="buttonLevelFour" destination="Vce-1k-9ot" id="AoL-vr-65J"/>
+                        <outlet property="buttonLevelNine" destination="fAK-iV-xOI" id="MvI-zd-ZiW"/>
+                        <outlet property="buttonLevelOne" destination="0dF-Eu-un0" id="4OK-bP-4tI"/>
+                        <outlet property="buttonLevelSeven" destination="E1o-C8-BUw" id="0jq-J5-27o"/>
+                        <outlet property="buttonLevelSix" destination="8ES-G8-1yi" id="B0q-mm-6gN"/>
+                        <outlet property="buttonLevelThree" destination="TNE-ok-Fy9" id="rOR-3J-caG"/>
+                        <outlet property="buttonLevelTwo" destination="YYC-FA-EIJ" id="mAY-Mp-RsL"/>
+                        <outlet property="starsLevelEight" destination="Mi5-7Y-2uT" id="OyJ-0y-oAP"/>
+                        <outlet property="starsLevelFive" destination="oZq-9b-dST" id="Hgn-au-i72"/>
+                        <outlet property="starsLevelFour" destination="qwW-Po-hyT" id="Cv8-4i-c5b"/>
+                        <outlet property="starsLevelNine" destination="PU0-fF-zWH" id="nVm-AH-bsz"/>
+                        <outlet property="starsLevelOne" destination="E0I-19-Ukz" id="KfZ-Ln-0Lt"/>
+                        <outlet property="starsLevelSeven" destination="Bal-8X-unc" id="tyK-A4-1k9"/>
+                        <outlet property="starsLevelSix" destination="Q0n-eL-LfI" id="xOu-6V-NSp"/>
+                        <outlet property="starsLevelThree" destination="Nex-PO-Gq9" id="08G-TE-4cf"/>
+                        <outlet property="starsLevelTwo" destination="NW0-Bt-8bn" id="Jdw-kL-MDR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHh-52-7IV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1853,7 +1873,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIL-Xf-REU">
                                 <rect key="frame" x="187" y="70" width="127" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

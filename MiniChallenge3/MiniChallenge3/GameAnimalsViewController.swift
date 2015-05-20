@@ -10,30 +10,26 @@ import UIKit
 
 class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var buttonNextOutlet: UIButton!
+    @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     let arrayAnimals = ["CACHORRO", "GATO", "PASSARO", "PEIXE", "CAVALO"]
     var level = 0
     var nameAnimal: String!
     var notificationCenter = NSNotificationCenter.defaultCenter()
-    var correct = Int()
+    var lifesInExercise = Int()
     let persistence = Persistence.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        correct = 3
+        lifesInExercise = 3
         notificationCenter.addObserver(self, selector: Selector("getImage:"), name: "CurrentLevel", object: nil)
 
-        buttonNextOutlet.enabled = false
+        confirmButton.enabled = false
         
         self.textField.delegate = self
         
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -42,7 +38,7 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
     }
     
     func getImage(notification: NSNotification) {
-        var currentLevel = notification.userInfo!["title"] as! String
+        var currentLevel = notification.userInfo!["level"] as! String
         level = currentLevel.toInt()!
         level = level - 1
         
@@ -54,38 +50,35 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func textFieldAction(sender: UITextField) {
         if textField.text != "" {
-            buttonNextOutlet.enabled = true
+            confirmButton.enabled = true
         } else {
-            buttonNextOutlet.enabled = false
+            confirmButton.enabled = false
         }
         
     }
     
-    @IBAction func buttonNext(sender: AnyObject) {
+    @IBAction func ConfirmButton() {
         var userText = textField.text.uppercaseString
         
         if userText == nameAnimal {
             UIView.congratulationView(self.view)
-            println("Acertou!")
             textField.layer.borderColor = UIColor.greenColor().CGColor
             textField.text = ""
             
             if persistence.verifyExistenceOfALevel("Animals", level: level) {
-                persistence.updateNumberOfStars("Animals", level: level, numberOfStars: correct)
+                persistence.updateNumberOfStars("Animals", level: level, numberOfStars: lifesInExercise)
             } else {
-                persistence.newScore("Animals", level: level, quantityOfStars: correct)
-            }
+                persistence.newScore("Animals", level: level, quantityOfStars: lifesInExercise)
+            } 
             
-            
-            var dictionary = ["Stars" : correct]
+            var dictionary = ["Stars" : lifesInExercise]
             notificationCenter.postNotificationName("QuantityOfStars", object: self, userInfo: dictionary)
             self.dismissViewControllerAnimated(true, completion: nil)
         } else {
-            if correct == 1 {
+            if lifesInExercise == 1 {
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
-            correct--
-            println("Errou...")
+            lifesInExercise--
             textField.text = ""
             textField.layer.borderColor = UIColor.redColor().CGColor
             UIView.wrongAnimation(self.view, textFieldAnimate: textField)
