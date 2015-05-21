@@ -8,13 +8,13 @@
 
 import UIKit
 
-class GameCalculatorViewController: UIViewController, UITextFieldDelegate {
+class GameCalculatorViewController: UIViewController {
 
     @IBOutlet weak var op1: UILabel!
     @IBOutlet weak var op2: UILabel!
     
-    @IBOutlet weak var answerOp1: UITextField!
-    @IBOutlet weak var answerOp2: UITextField!
+    @IBOutlet weak var answerOp1: UILabel!
+    @IBOutlet weak var answerOp2: UILabel!
     
     var level = 0
     
@@ -38,32 +38,20 @@ class GameCalculatorViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         answerOp1.layer.borderWidth = 2
-        answerOp1.layer.borderColor = UIColor .grayColor().CGColor
+        answerOp1.layer.borderColor = UIColor .whiteColor().CGColor
         answerOp1.layer.cornerRadius = 10
         
         answerOp2.layer.borderWidth = 2
-        answerOp2.layer.borderColor = UIColor .grayColor().CGColor
+        answerOp2.layer.borderColor = UIColor .whiteColor().CGColor
         answerOp2.layer.cornerRadius = 10
         
         getOps(level)
         
-        self.answerOp1.delegate = self
-        self.answerOp2.delegate = self
 
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return false
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        answerOp1.resignFirstResponder()
-        answerOp2.resignFirstResponder()
     }
     
     func getOps(number: Int) {
@@ -86,7 +74,7 @@ class GameCalculatorViewController: UIViewController, UITextFieldDelegate {
                 answerOp1.layer.borderColor = UIColor.greenColor().CGColor
             } else {
                 answerOp1.layer.borderColor = UIColor.redColor().CGColor
-                UIView.wrongAnimation(self.view, textFieldAnimate:answerOp1)
+                //UIView.wrongAnimation(self.view, textFieldAnimate:answerOp1)
             }
         
             if answerOp2.text == levels[level].correctAnswer2
@@ -94,7 +82,7 @@ class GameCalculatorViewController: UIViewController, UITextFieldDelegate {
                 answerOp2.layer.borderColor = UIColor.greenColor().CGColor
             } else {
                 answerOp2.layer.borderColor = UIColor.redColor().CGColor
-                UIView.wrongAnimation(self.view, textFieldAnimate:answerOp2)
+                //UIView.wrongAnimation(self.view, textFieldAnimate:answerOp2)
             }
         }
     }
