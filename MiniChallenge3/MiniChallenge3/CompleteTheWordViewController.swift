@@ -244,8 +244,6 @@ class CompleteTheWordViewController: UIViewController {
                         } else {
                             self.persistence.newScore("completeTheWord", level: self.level, quantityOfStars: self.lifes)
                         }
-                        var dictionary = ["Stars" : self.lifes]
-                        self.notificationCenter.postNotificationName("QuantityOfStars", object: self, userInfo: dictionary)
                         self.dismissViewControllerAnimated(true, completion: nil)
                     }
                     }, completion: { (finished) -> Void in

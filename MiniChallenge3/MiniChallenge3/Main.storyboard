@@ -560,6 +560,26 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="buttonLevelEight" destination="xfX-nk-fJ6" id="d3U-MA-NUB"/>
+                        <outlet property="buttonLevelFive" destination="2bI-LX-JPO" id="fi4-ng-dph"/>
+                        <outlet property="buttonLevelFour" destination="kqV-sx-ryg" id="mfx-SQ-GeM"/>
+                        <outlet property="buttonLevelNine" destination="b3i-mo-sEM" id="KaZ-zG-FhP"/>
+                        <outlet property="buttonLevelOne" destination="LDm-4G-E1g" id="szb-A2-1Zc"/>
+                        <outlet property="buttonLevelSeven" destination="ICd-Sy-vbz" id="0TG-VH-6zI"/>
+                        <outlet property="buttonLevelSix" destination="bKi-dq-usV" id="KS9-VN-3FL"/>
+                        <outlet property="buttonLevelThree" destination="KCh-hX-l5m" id="zYv-oD-jHh"/>
+                        <outlet property="buttonLevelTwo" destination="0dh-pa-KSV" id="oij-Bu-Y3M"/>
+                        <outlet property="starsLevelEight" destination="aCQ-Yx-tv9" id="TFx-IM-1Fb"/>
+                        <outlet property="starsLevelFive" destination="eMk-S2-W2W" id="Esu-Cn-Y8b"/>
+                        <outlet property="starsLevelFour" destination="aYD-l2-bvR" id="BtV-eV-AeL"/>
+                        <outlet property="starsLevelNine" destination="lHo-Ng-aLF" id="t93-a3-MML"/>
+                        <outlet property="starsLevelOne" destination="Szz-Op-887" id="adM-B2-wu1"/>
+                        <outlet property="starsLevelSeven" destination="dyX-xy-gMt" id="hPz-p8-dKA"/>
+                        <outlet property="starsLevelSix" destination="N7e-6o-m1H" id="Hqc-mF-bZa"/>
+                        <outlet property="starsLevelThree" destination="hzw-dg-lyU" id="3Kz-PA-y7n"/>
+                        <outlet property="starsLevelTwo" destination="1Hq-Ed-wFG" id="SWT-HY-7A4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUk-R8-kdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1149,7 +1169,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-gN-x2M" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <rect key="frame" x="150" y="250" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2Xw-1I-mQX"/>
@@ -1181,14 +1201,44 @@
                                     <action selector="backToMainViewController" destination="QBu-Aw-KsU" eventType="touchUpInside" id="oWJ-gj-V71"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-vc-d50" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="351" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="97U-hs-CLE"/>
+                                    <constraint firstAttribute="height" constant="100" id="aTl-GJ-jMQ"/>
+                                </constraints>
+                                <state key="normal" title="Counting">
+                                    <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="exerciseButtons:" destination="QBu-Aw-KsU" eventType="touchUpInside" id="Ypc-k3-zQa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="LS6-gN-x2M" secondAttribute="centerX" constant="100" id="1hx-PC-aRG"/>
                             <constraint firstItem="bQH-jj-MRw" firstAttribute="top" secondItem="YPT-fO-QBl" secondAttribute="bottom" constant="8" id="3R4-rS-BqC"/>
                             <constraint firstItem="bQH-jj-MRw" firstAttribute="leading" secondItem="ZJ1-bE-9TB" secondAttribute="leadingMargin" id="4Dc-ZS-xEt"/>
+                            <constraint firstAttribute="centerY" secondItem="LS6-gN-x2M" secondAttribute="centerY" id="BT5-TZ-jmK"/>
                             <constraint firstAttribute="centerY" secondItem="LS6-gN-x2M" secondAttribute="centerY" id="DlT-UW-aXD"/>
                             <constraint firstAttribute="centerX" secondItem="LS6-gN-x2M" secondAttribute="centerX" id="GCG-on-4V7"/>
+                            <constraint firstAttribute="centerX" secondItem="XfR-vc-d50" secondAttribute="centerX" constant="-101" id="ciQ-Qt-D3e"/>
+                            <constraint firstAttribute="centerY" secondItem="XfR-vc-d50" secondAttribute="centerY" id="ppT-t9-dMR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DlT-UW-aXD"/>
+                                <exclude reference="GCG-on-4V7"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKm-nP-Iwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1207,29 +1257,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-6Q-ul6" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="151" y="250" width="100" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="bFg-5t-KLJ"/>
-                                    <constraint firstAttribute="height" constant="100" id="hbI-l9-bYI"/>
-                                </constraints>
-                                <state key="normal" title="gameSyllables">
-                                    <color key="titleColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="exerciseButtons:" destination="0E7-rl-yE5" eventType="touchUpInside" id="oTk-Op-Nj1"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZT-aO-h2p">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
                                 <constraints>
@@ -1244,13 +1271,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvo-g0-CXK" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="350" y="250" width="100" height="100"/>
+                                <rect key="frame" x="351" y="250" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="GnK-Rc-zge"/>
                                     <constraint firstAttribute="width" constant="100" id="g4D-Wy-JtX"/>
                                 </constraints>
-                                <state key="normal" title="completeTheWord">
+                                <state key="normal" title="CompleteTheWord">
                                     <color key="titleColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1266,14 +1293,37 @@
                                     <action selector="exerciseButtons:" destination="0E7-rl-yE5" eventType="touchUpInside" id="2yt-2E-1y7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-6Q-ul6" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="150" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bFg-5t-KLJ"/>
+                                    <constraint firstAttribute="height" constant="100" id="hbI-l9-bYI"/>
+                                </constraints>
+                                <state key="normal" title="GameSyllables">
+                                    <color key="titleColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="exerciseButtons:" destination="0E7-rl-yE5" eventType="touchUpInside" id="oTk-Op-Nj1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jZT-aO-h2p" firstAttribute="top" secondItem="1OZ-pF-6n9" secondAttribute="bottom" constant="8" id="5uR-3k-Urs"/>
-                            <constraint firstAttribute="centerX" secondItem="1Sp-6Q-ul6" secondAttribute="centerX" constant="99" id="G2w-Zv-Con"/>
+                            <constraint firstAttribute="centerX" secondItem="1Sp-6Q-ul6" secondAttribute="centerX" constant="100" id="G2w-Zv-Con"/>
                             <constraint firstAttribute="centerY" secondItem="1Sp-6Q-ul6" secondAttribute="centerY" id="ZoW-Iv-KHM"/>
                             <constraint firstAttribute="centerY" secondItem="cvo-g0-CXK" secondAttribute="centerY" id="jdy-T9-FGV"/>
-                            <constraint firstAttribute="centerX" secondItem="cvo-g0-CXK" secondAttribute="centerX" constant="-100" id="nPr-wU-bOx"/>
+                            <constraint firstAttribute="centerX" secondItem="cvo-g0-CXK" secondAttribute="centerX" constant="-101" id="nPr-wU-bOx"/>
                             <constraint firstItem="jZT-aO-h2p" firstAttribute="leading" secondItem="zta-ia-tsJ" secondAttribute="leadingMargin" id="xIp-qY-Wb2"/>
                         </constraints>
                     </view>

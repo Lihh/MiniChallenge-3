@@ -13,14 +13,17 @@ class CountingViewController: UIViewController {
     // MARK: - Properties and Outlets
     //================================================================================
     
-    // Erros
-    var errors: Int = 0
+    // Lifes
+    var lifes: Int = 3
     
     // Level
     var level: Int = 1
     
     // Finish - Number of correct buttons
     var finish: Int = 0
+    
+    var notificationCenter = NSNotificationCenter.defaultCenter()
+    var persistence = Persistence.sharedInstance
     
     // Outlets
     @IBOutlet weak var lblTitle: UILabel!
@@ -89,8 +92,8 @@ class CountingViewController: UIViewController {
     {
         super.viewDidLoad()
         
-        levelConfiguration()
-        buttonsConfiguration()
+        notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelMathExercise", object: nil)
+
     }
     
     override func viewWillAppear(animated: Bool)
@@ -108,18 +111,27 @@ class CountingViewController: UIViewController {
     
     // MARK: - Game Configuration
     //================================================================================
+    func discoverLevel(notification: NSNotification) {
+        var currentLevel = notification.userInfo!["level"] as! String
+        level = currentLevel.toInt()!
+        level = level - 1
+        
+        levelConfiguration()
+        buttonsConfiguration()
+    }
+    
     func levelConfiguration()
     {
         // Set Label Texts
-        lblTitle.text = levels[level-1].gameTitle
-        lblQuestion.text = levels[level-1].question
+        lblTitle.text = levels[level].gameTitle
+        lblQuestion.text = levels[level].question
         lblQuestion.hidden = true
         
         // Button Option
-        btnOption1.setTitle(levels[level-1].option1Text, forState: UIControlState.Normal)
-        btnOption2.setTitle(levels[level-1].option2Text, forState: UIControlState.Normal)
-        btnOption3.setTitle(levels[level-1].option3Text, forState: UIControlState.Normal)
-        btnOption4.setTitle(levels[level-1].option4Text, forState: UIControlState.Normal)
+        btnOption1.setTitle(levels[level].option1Text, forState: UIControlState.Normal)
+        btnOption2.setTitle(levels[level].option2Text, forState: UIControlState.Normal)
+        btnOption3.setTitle(levels[level].option3Text, forState: UIControlState.Normal)
+        btnOption4.setTitle(levels[level].option4Text, forState: UIControlState.Normal)
         
         // Hide Options
         btnOption1.hidden = true
@@ -131,105 +143,105 @@ class CountingViewController: UIViewController {
     func buttonsConfiguration()
     {
         // Correct/Wrong Images
-        var imgAuxCorrect = NSBundle.mainBundle().pathForResource(levels[level-1].correctImage, ofType: "png")
-        var imgAuxWrong = NSBundle.mainBundle().pathForResource(levels[level-1].wrongImage, ofType: "png")
+        var imgAuxCorrect = NSBundle.mainBundle().pathForResource(levels[level].correctImage, ofType: "png")
+        var imgAuxWrong = NSBundle.mainBundle().pathForResource(levels[level].wrongImage, ofType: "png")
         
-        if levels[level-1].button1Correct == true
+        if levels[level].button1Correct == true
         { button1.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button1.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button2Correct == true
+        if levels[level].button2Correct == true
         { button2.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button2.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button3Correct == true
+        if levels[level].button3Correct == true
         { button3.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button3.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button4Correct == true
+        if levels[level].button4Correct == true
         { button4.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button4.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button5Correct == true
+        if levels[level].button5Correct == true
         { button5.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button5.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button6Correct == true
+        if levels[level].button6Correct == true
         { button6.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button6.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button7Correct == true
+        if levels[level].button7Correct == true
         { button7.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button7.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button8Correct == true
+        if levels[level].button8Correct == true
         { button8.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button8.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button9Correct == true
+        if levels[level].button9Correct == true
         { button9.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button9.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button10Correct == true
+        if levels[level].button10Correct == true
         { button10.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button10.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button11Correct == true
+        if levels[level].button11Correct == true
         { button11.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button11.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button12Correct == true
+        if levels[level].button12Correct == true
         { button12.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button12.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button13Correct == true
+        if levels[level].button13Correct == true
         { button13.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button13.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button14Correct == true
+        if levels[level].button14Correct == true
         { button14.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button14.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button15Correct == true
+        if levels[level].button15Correct == true
         { button15.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button15.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button16Correct == true
+        if levels[level].button16Correct == true
         { button16.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button16.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button17Correct == true
+        if levels[level].button17Correct == true
         { button17.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button17.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button18Correct == true
+        if levels[level].button18Correct == true
         { button18.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button18.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button19Correct == true
+        if levels[level].button19Correct == true
         { button19.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button19.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
         
-        if levels[level-1].button20Correct == true
+        if levels[level].button20Correct == true
         { button20.setImage(UIImage(contentsOfFile: imgAuxCorrect!), forState: UIControlState.Normal) }
         else
         { button20.setImage(UIImage(contentsOfFile: imgAuxWrong!), forState: UIControlState.Normal) }
@@ -245,145 +257,145 @@ class CountingViewController: UIViewController {
         switch sender.tag
         {
         case 1:
-            if levels[level-1].button1Correct == true
+            if levels[level].button1Correct == true
             { correctAnimation(button1) }
             else
             { wrongAnimation(button1) }
             
         case 2:
-            if levels[level-1].button2Correct == true
+            if levels[level].button2Correct == true
             { correctAnimation(button2) }
             else
             { wrongAnimation(button2) }
             
         case 3:
-            if levels[level-1].button3Correct == true
+            if levels[level].button3Correct == true
             { correctAnimation(button3) }
             else
             { wrongAnimation(button3) }
             
         case 4:
-            if levels[level-1].button4Correct == true
+            if levels[level].button4Correct == true
             { correctAnimation(button4) }
             else
             { wrongAnimation(button4) }
             
         case 5:
-            if levels[level-1].button5Correct == true
+            if levels[level].button5Correct == true
             { correctAnimation(button5) }
             else
             { wrongAnimation(button5) }
             
         case 6:
-            if levels[level-1].button6Correct == true
+            if levels[level].button6Correct == true
             { correctAnimation(button6) }
             else
             { wrongAnimation(button6) }
             
         case 7:
-            if levels[level-1].button7Correct == true
+            if levels[level].button7Correct == true
             { correctAnimation(button7) }
             else
             { wrongAnimation(button7) }
             
         case 8:
-            if levels[level-1].button8Correct == true
+            if levels[level].button8Correct == true
             { correctAnimation(button8) }
             else
             { wrongAnimation(button8) }
             
         case 9:
-            if levels[level-1].button9Correct == true
+            if levels[level].button9Correct == true
             { correctAnimation(button9) }
             else
             { wrongAnimation(button9) }
             
         case 10:
-            if levels[level-1].button10Correct == true
+            if levels[level].button10Correct == true
             { correctAnimation(button10) }
             else
             { wrongAnimation(button10) }
             
         case 11:
-            if levels[level-1].button11Correct == true
+            if levels[level].button11Correct == true
             { correctAnimation(button11) }
             else
             { wrongAnimation(button11) }
             
         case 12:
-            if levels[level-1].button12Correct == true
+            if levels[level].button12Correct == true
             { correctAnimation(button12) }
             else
             { wrongAnimation(button12) }
             
         case 13:
-            if levels[level-1].button13Correct == true
+            if levels[level].button13Correct == true
             { correctAnimation(button13) }
             else
             { wrongAnimation(button13) }
             
         case 14:
-            if levels[level-1].button14Correct == true
+            if levels[level].button14Correct == true
             { correctAnimation(button14) }
             else
             { wrongAnimation(button14) }
             
         case 15:
-            if levels[level-1].button15Correct == true
+            if levels[level].button15Correct == true
             { correctAnimation(button15) }
             else
             { wrongAnimation(button15) }
             
         case 16:
-            if levels[level-1].button16Correct == true
+            if levels[level].button16Correct == true
             { correctAnimation(button16) }
             else
             { wrongAnimation(button16) }
             
         case 17:
-            if levels[level-1].button17Correct == true
+            if levels[level].button17Correct == true
             { correctAnimation(button17) }
             else
             { wrongAnimation(button17) }
             
         case 18:
-            if levels[level-1].button18Correct == true
+            if levels[level].button18Correct == true
             { correctAnimation(button18) }
             else
             { wrongAnimation(button18) }
             
         case 19:
-            if levels[level-1].button19Correct == true
+            if levels[level].button19Correct == true
             { correctAnimation(button19) }
             else
             { wrongAnimation(button19) }
             
         case 20:
-            if levels[level-1].button20Correct == true
+            if levels[level].button20Correct == true
             { correctAnimation(button20) }
             else
             { wrongAnimation(button20) }
             
         case 21:
-            if levels[level-1].option1Correct == true
+            if levels[level].option1Correct == true
             { correctAnimation(btnOption1) }
             else
             { wrongAnimation(btnOption1) }
             
         case 22:
-            if levels[level-1].option2Correct == true
+            if levels[level].option2Correct == true
             { correctAnimation(btnOption2) }
             else
             { wrongAnimation(btnOption2) }
             
         case 23:
-            if levels[level-1].option3Correct == true
+            if levels[level].option3Correct == true
             { correctAnimation(btnOption3) }
             else
             { wrongAnimation(btnOption3) }
             
         case 24:
-            if levels[level-1].option4Correct == true
+            if levels[level].option4Correct == true
             { correctAnimation(btnOption4) }
             else
             { wrongAnimation(btnOption4) }
@@ -418,8 +430,10 @@ class CountingViewController: UIViewController {
                         })
                 })
         }
-        errors++
-        println("Errou \(errors)x")
+        lifes--
+        if lifes == 0 {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
     //============================================================
     
@@ -430,7 +444,6 @@ class CountingViewController: UIViewController {
     func correctAnimation(buttonAnimate: UIButton)
     {
         finish++
-        println("Acertou")
         
         UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             buttonAnimate.transform = CGAffineTransformMakeTranslation(0, self.view.frame.origin.y+15);
@@ -452,10 +465,15 @@ class CountingViewController: UIViewController {
                 })
         }
         
-        if finish == levels[level-1].finish
-        { println("\n\nGanhou!!") }
-        else if finish >= levels[level-1].finish
-        { addViewBlurEffect() }
+        if finish >= levels[level].finish+1 {
+            if persistence.verifyExistenceOfALevel("Counting", level: level) {
+                persistence.updateNumberOfStars("Counting", level: level, numberOfStars: lifes)
+            } else {
+                persistence.newScore("Counting", level: level, quantityOfStars: lifes)
+            }
+            self.dismissViewControllerAnimated(true, completion: nil)
+//            addViewBlurEffect()
+        }
     }
     
     func showQuestion()

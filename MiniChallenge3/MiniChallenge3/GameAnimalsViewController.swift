@@ -17,14 +17,13 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
     var level = 0
     var nameAnimal: String!
     var notificationCenter = NSNotificationCenter.defaultCenter()
-    var lifesInExercise = Int()
+    var lifes = 3
     let persistence = Persistence.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        lifesInExercise = 3
-        notificationCenter.addObserver(self, selector: Selector("getImage:"), name: "CurrentLevel", object: nil)
+        notificationCenter.addObserver(self, selector: Selector("getImage:"), name: "CurrentLevelScienceExercise", object: nil)
 
         confirmButton.enabled = false
         
@@ -66,19 +65,17 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
             textField.text = ""
             
             if persistence.verifyExistenceOfALevel("Animals", level: level) {
-                persistence.updateNumberOfStars("Animals", level: level, numberOfStars: lifesInExercise)
+                persistence.updateNumberOfStars("Animals", level: level, numberOfStars: lifes)
             } else {
-                persistence.newScore("Animals", level: level, quantityOfStars: lifesInExercise)
-            } 
-            
-            var dictionary = ["Stars" : lifesInExercise]
-            notificationCenter.postNotificationName("QuantityOfStars", object: self, userInfo: dictionary)
+                persistence.newScore("Animals", level: level, quantityOfStars: lifes)
+            }
             self.dismissViewControllerAnimated(true, completion: nil)
+            
         } else {
-            if lifesInExercise == 1 {
+            if lifes == 1 {
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
-            lifesInExercise--
+            lifes--
             textField.text = ""
             textField.layer.borderColor = UIColor.redColor().CGColor
             UIView.wrongAnimation(self.view, textFieldAnimate: textField)

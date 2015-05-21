@@ -66,7 +66,7 @@ class PortugueseLevelsViewController: UIViewController {
             stars[index].hidden = false
         }
         
-        if index == scores.count {
+        if index < scores.count {
             self.openNextLevel(index)
         }
     }
