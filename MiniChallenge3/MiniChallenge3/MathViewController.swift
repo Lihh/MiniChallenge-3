@@ -14,19 +14,16 @@ class MathViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func exerciseButtons(sender: KPButton) {
         let exercise = sender.currentTitle!
-        let dictionary = ["Exercise" : exercise]
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("MathLevels") as! UIViewController
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("MathLevels") as! MathLevelsViewController
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-        presentViewController(storyBoardLevels, animated: true) { () -> Void in
-            self.notificationCenter.postNotificationName("Exercise", object: self, userInfo: dictionary)
-        }
+        storyBoardLevels.exercise = exercise
+        presentViewController(storyBoardLevels, animated: true, completion: nil)
     }
 
     @IBAction func backToMainViewController() {

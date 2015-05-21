@@ -67,7 +67,7 @@ class ScienceLevelsViewController: UIViewController {
             stars[index].hidden = false
         }
         
-        if index == scores.count {
+        if index < scores.count {
             self.openNextLevel(index)
         }
     }
@@ -104,7 +104,7 @@ class ScienceLevelsViewController: UIViewController {
         if let viewController = exerciseStoryboard.instantiateInitialViewController() as? UIViewController {
             viewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
             presentViewController(viewController, animated: true, completion: nil)
-            notificationCenter.postNotificationName("CurrentLevel", object: self, userInfo: dictionary)
+            notificationCenter.postNotificationName("CurrentLevelScienceExercise", object: self, userInfo: dictionary)
         }
     }
     

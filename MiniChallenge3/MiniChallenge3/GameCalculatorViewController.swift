@@ -18,6 +18,11 @@ class GameCalculatorViewController: UIViewController {
     
     var level = 0
     
+    var lifes = 3
+    
+    var notificationCenter = NSNotificationCenter.defaultCenter()
+    var persistence = Persistence.sharedInstance
+    
     var levels: [(lvl:Int,
                   firstOp:String,
                   correctAnswer1:String,
@@ -45,13 +50,17 @@ class GameCalculatorViewController: UIViewController {
         answerOp2.layer.borderColor = UIColor .whiteColor().CGColor
         answerOp2.layer.cornerRadius = 10
         
-        getOps(level)
+        notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelMathExercise", object: nil)
         
 
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    func discoverLevel(notification: NSNotification) {
+        var currentLevel = notification.userInfo!["level"] as! String
+        level = currentLevel.toInt()!
+        level = level - 1
+        
+        getOps(level)
     }
     
     func getOps(number: Int) {
@@ -66,9 +75,20 @@ class GameCalculatorViewController: UIViewController {
             answerOp1.layer.borderColor = UIColor.greenColor().CGColor
             answerOp2.layer.borderColor = UIColor.greenColor().CGColor
             UIView.congratulationView(self.view)
-            self.dismissViewControllerAnimated(true, completion: {})
-            println("Acertou!")
+            
+            if persistence.verifyExistenceOfALevel("Calculator", level: level) {
+                persistence.updateNumberOfStars("Calculator", level: level, numberOfStars: lifes)
+            } else {
+                persistence.newScore("Calculator", level: level, quantityOfStars: lifes)
+            }
+            self.dismissViewControllerAnimated(true, completion: nil)
         } else {
+            lifes--
+            
+            if lifes == 0 {
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+            
             if answerOp1.text == levels[level].correctAnswer1
             {
                 answerOp1.layer.borderColor = UIColor.greenColor().CGColor

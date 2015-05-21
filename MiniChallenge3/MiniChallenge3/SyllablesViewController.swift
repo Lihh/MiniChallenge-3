@@ -13,11 +13,15 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Properties and Outlets
     //================================================================================
     
-    // Erros
-    var erros: Int = 0
+    // Lifes
+    var lifes: Int = 3
     
     // Level
-    var level: Int = 3
+    var level: Int = 0
+    
+    let notificationCenter = NSNotificationCenter.defaultCenter()
+    
+    let persistence = Persistence.sharedInstance
     
     // Outlets
     @IBOutlet weak var imgImage1: UIImageView!
@@ -67,8 +71,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     {
         super.viewDidLoad()
         
-        gameElementsConfiguration()
-        levelConfiguration()
+        notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelPortugueseExercise", object: nil)
         
         self.txtSyllable1.delegate = self
         self.txtSyllable2.delegate = self
@@ -99,17 +102,17 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     func levelConfiguration()
     {
         // Images and Syllables
-        var imgAux = NSBundle.mainBundle().pathForResource(levels[level-1].image1, ofType: "png")
+        var imgAux = NSBundle.mainBundle().pathForResource(levels[level].image1, ofType: "png")
         imgImage1.image = UIImage(contentsOfFile: imgAux!)
-        lblDeleteSyllable1.text = levels[level-1].deleteSyllable1
+        lblDeleteSyllable1.text = levels[level].deleteSyllable1
         
-        imgAux = NSBundle.mainBundle().pathForResource(levels[level-1].image2, ofType: "png")
+        imgAux = NSBundle.mainBundle().pathForResource(levels[level].image2, ofType: "png")
         imgImage2.image = UIImage(contentsOfFile: imgAux!)
-        lblDeleteSyllable2.text = levels[level-1].deleteSyllable2
+        lblDeleteSyllable2.text = levels[level].deleteSyllable2
         
-        imgAux = NSBundle.mainBundle().pathForResource(levels[level-1].image3, ofType: "png")
+        imgAux = NSBundle.mainBundle().pathForResource(levels[level].image3, ofType: "png")
         imgImage3.image = UIImage(contentsOfFile: imgAux!)
-        lblDeleteSyllable3.text = levels[level-1].deleteSyllable3
+        lblDeleteSyllable3.text = levels[level].deleteSyllable3
     }
     
     func gameElementsConfiguration()
@@ -145,15 +148,21 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     {
         // Correct Answer
         //-------------------------------------------------
-        if (txtSyllable1.text == levels[level-1].syllable1 &&
-            txtSyllable2.text == levels[level-1].syllable2 &&
-            txtSyllable3.text == levels[level-1].syllable3)
+        if (txtSyllable1.text == levels[level].syllable1 &&
+            txtSyllable2.text == levels[level].syllable2 &&
+            txtSyllable3.text == levels[level].syllable3)
         {
             txtSyllable1.layer.borderColor = UIColor .greenColor().CGColor
             txtSyllable2.layer.borderColor = UIColor .greenColor().CGColor
             txtSyllable3.layer.borderColor = UIColor .greenColor().CGColor
-            self.addBlurEffect()
-            println("Acertou! erros: \(erros)")
+            
+            if self.persistence.verifyExistenceOfALevel("gameSyllables", level: self.level) {
+                self.persistence.updateNumberOfStars("gameSyllables", level: self.level, numberOfStars: self.lifes)
+            } else {
+                self.persistence.newScore("gameSyllables", level: self.level, quantityOfStars: self.lifes)
+            }
+            self.dismissViewControllerAnimated(true, completion: nil)
+//            self.addBlurEffect()
         }
         //-------------------------------------------------
         else
@@ -162,7 +171,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         //-------------------------------------------------
         {
             // Confirm Syllable 1
-            if txtSyllable1.text == levels[level-1].syllable1
+            if txtSyllable1.text == levels[level].syllable1
             {
                 txtSyllable1.layer.borderColor = UIColor.greenColor().CGColor
             }
@@ -173,7 +182,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
             }
             
             // Confirm Syllable 2
-            if txtSyllable2.text == levels[level-1].syllable2
+            if txtSyllable2.text == levels[level].syllable2
             {
                 txtSyllable2.layer.borderColor = UIColor.greenColor().CGColor
             }
@@ -184,7 +193,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
             }
             
             // Confirm Syllable 3
-            if txtSyllable3.text == levels[level-1].syllable3
+            if txtSyllable3.text == levels[level].syllable3
             {
                 txtSyllable3.layer.borderColor = UIColor.greenColor().CGColor
             }
@@ -195,8 +204,12 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
             }
             
             // Somar erro
-            erros++
-            println("Errou \(erros)x")
+            lifes--
+            
+            if lifes == 0 {
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+            println("Errou \(lifes)x")
         }
         //-------------------------------------------------
     }
@@ -215,6 +228,14 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     }
     //================================================================================
     
+    func discoverLevel(notification: NSNotification) {
+        var currentLevel = notification.userInfo!["level"] as! String
+        level = currentLevel.toInt()!
+        level = level - 1
+        
+        gameElementsConfiguration()
+        levelConfiguration()
+    }
     
     
     // MARK: - Wrong Answer Animation
