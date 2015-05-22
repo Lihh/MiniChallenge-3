@@ -62,5 +62,21 @@ extension UIView {
 
     }
     
+    static func correctAnimation(view: UIView, buttonAnimate: UIButton, xx: CGFloat, yy: CGFloat, displacementX: CGFloat) {
+        
+        
+        UIView.animateWithDuration(0.4, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            buttonAnimate.transform = CGAffineTransformMakeTranslation(xx,yy);
+            buttonAnimate.enabled = false
+            buttonAnimate.borderWidth = 0
+            }) { (finished) -> Void in
+                UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                    }, completion: { (finished) -> Void in
+
+                })
+        }
+        
+    }
+    
    
 }

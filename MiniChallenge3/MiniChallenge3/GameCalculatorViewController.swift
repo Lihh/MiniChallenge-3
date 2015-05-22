@@ -130,7 +130,7 @@ class GameCalculatorViewController: UIViewController {
         case 1:
             if levels[level].button1Correct == true
             {
-                correctAnimation(btn1, op: 1, displacementX:  0)
+                rightAnswer(btn1, op: 1)
             }
             else
             {
@@ -142,7 +142,7 @@ class GameCalculatorViewController: UIViewController {
         case 2:
             if levels[level].button2Correct == true
             {
-                correctAnimation(btn2, op: 1, displacementX:  0)
+                rightAnswer(btn2, op: 1)
             }
             else
             {
@@ -153,7 +153,7 @@ class GameCalculatorViewController: UIViewController {
         case 3:
             if levels[level].button3Correct == true
             {
-                correctAnimation(btn3, op: 1, displacementX: 0)
+                rightAnswer(btn3, op: 1)
             }
             else
             {
@@ -164,7 +164,7 @@ class GameCalculatorViewController: UIViewController {
         case 4:
             if levels[level].button4Correct == true
             {
-                correctAnimation(btn4, op: 2, displacementX:  0)
+                rightAnswer(btn4, op: 2)
             }
             else
             {
@@ -175,7 +175,7 @@ class GameCalculatorViewController: UIViewController {
         case 5:
             if levels[level].button5Correct == true
             {
-                correctAnimation(btn5, op: 2, displacementX: 0)
+                rightAnswer(btn5, op: 2)
             }
             else
             {
@@ -186,7 +186,7 @@ class GameCalculatorViewController: UIViewController {
         case 6:
             if levels[level].button6Correct == true
             {
-                correctAnimation(btn6, op: 2, displacementX: 0)
+                rightAnswer(btn6, op: 2)
             }
             else
             {
@@ -208,55 +208,48 @@ class GameCalculatorViewController: UIViewController {
         
         if lifes == 0 {
             
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismis"), userInfo: nil, repeats: false)
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
         
     }
     
-    func dismis() {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
     
-    
-    //ANIMAÇÕES
-    
-    func correctAnimation(buttonAnimate: UIButton, op: Int, displacementX: CGFloat) {
+    func rightAnswer(buttonRight: UIButton, op: Int) {
         
         gameOver++
         
-        var xx = CGFloat()
-        var yy = CGFloat()
+        var x = CGFloat()
+        var y = CGFloat()
         
         if op == 1 {
-            xx = self.answerOp1.frame.origin.x - buttonAnimate.frame.origin.x
-            xx = xx + 60
-            yy = self.answerOp1.frame.origin.y - buttonAnimate.frame.origin.y
+            x = self.answerOp1.frame.origin.x - buttonRight.frame.origin.x
+            x = x + 60
+            y = self.answerOp1.frame.origin.y - buttonRight.frame.origin.y
             println("Op 1")
         } else if op == 2 {
-            xx = self.answerOp2.frame.origin.x - buttonAnimate.frame.origin.x
-            xx = xx + 60
-            yy = self.answerOp2.frame.origin.y - buttonAnimate.frame.origin.y
+            x = self.answerOp2.frame.origin.x - buttonRight.frame.origin.x
+            x = x + 60
+            y = self.answerOp2.frame.origin.y - buttonRight.frame.origin.y
             println("Op 2")
         }
         
-        UIView.animateWithDuration(0.4, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            buttonAnimate.transform = CGAffineTransformMakeTranslation(xx,yy);
-            buttonAnimate.enabled = false
-            buttonAnimate.borderWidth = 0
-            }) { (finished) -> Void in
-                UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    }, completion: { (finished) -> Void in
-                        if self.gameOver == 2 {
-                            if self.persistence.verifyExistenceOfALevel("Calculator", level: self.level) {
-                                self.persistence.updateNumberOfStars("Calculator", level: self.level, numberOfStars: self.lifes)
-                            } else {
-                                self.persistence.newScore("Calculator", level: self.level, quantityOfStars: self.lifes)
-                            }
-                            self.dismissViewControllerAnimated(true, completion: nil)
-                        }
-                })
-            }
+        UIView.correctAnimation(self.view, buttonAnimate: buttonRight, xx: x, yy: y, displacementX: 0)
         
+        if gameOver == 2 {
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
+            
+            if self.persistence.verifyExistenceOfALevel("Calculator", level: self.level) {
+                self.persistence.updateNumberOfStars("Calculator", level: self.level, numberOfStars: self.lifes)
+            } else {
+                self.persistence.newScore("Calculator", level: self.level, quantityOfStars: self.lifes)
+            }
+
+        }
+        
+    }
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func btnBack(sender: KPButton) {
