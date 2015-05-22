@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yQt-SG-w1o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yQt-SG-w1o">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Blogger Sans-Medium.otf">
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
@@ -26,162 +38,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra a Palavra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4F4-en-Qmo">
-                                <rect key="frame" x="59" y="23" width="482" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="482" id="3RV-wS-52e"/>
-                                    <constraint firstAttribute="height" constant="65" id="Knq-Tg-yCS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="60"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5nX-u9-2nr">
-                                <rect key="frame" x="59" y="118" width="150" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Hzb-H0-uf1"/>
-                                    <constraint firstAttribute="width" constant="150" id="fEb-5L-iwM"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pi-aL-ge9">
-                                <rect key="frame" x="242" y="156" width="31" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="Ckv-vH-YiC"/>
-                                    <constraint firstAttribute="width" constant="31" id="hZf-YD-EtB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEY-Gi-DzY">
-                                <rect key="frame" x="413" y="142" width="31" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="kGn-jG-SWd"/>
-                                    <constraint firstAttribute="width" constant="31" id="lon-ku-ckC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-JO-8Hl">
-                                <rect key="frame" x="308" y="141" width="68" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="fYM-pe-YP5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="43"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qKs-D5-BnE">
-                                <rect key="frame" x="479" y="152" width="80" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="9vc-5W-GK1"/>
-                                    <constraint firstAttribute="height" constant="30" id="T92-XI-KJ2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BJv-Fo-Pbv">
-                                <rect key="frame" x="74" y="238" width="121" height="117"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="121" id="H2L-hj-lWB"/>
-                                    <constraint firstAttribute="height" constant="117" id="vdl-wo-uL1"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJ9-k2-kbO">
-                                <rect key="frame" x="242" y="283" width="31" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="eQB-he-Azd"/>
-                                    <constraint firstAttribute="width" constant="31" id="gRD-7o-Nid"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cI-uz-VVD">
-                                <rect key="frame" x="413" y="269" width="31" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="8Li-Mm-sfP"/>
-                                    <constraint firstAttribute="width" constant="31" id="raA-Zv-XjG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWL-EY-4e5">
-                                <rect key="frame" x="308" y="273" width="68" height="43"/>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="43"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xhc-51-NqF">
-                                <rect key="frame" x="479" y="279" width="80" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Shn-BL-fbr"/>
-                                    <constraint firstAttribute="height" constant="30" id="c80-Zl-NIC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gL2-c0-i9B">
-                                <rect key="frame" x="89" y="387" width="120" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="1Ek-MX-2C3"/>
-                                    <constraint firstAttribute="height" constant="100" id="kYT-rG-WST"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqC-WR-GvI">
-                                <rect key="frame" x="242" y="423" width="31" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="1NU-Nw-YVR"/>
-                                    <constraint firstAttribute="width" constant="31" id="8ie-sb-tr5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D1-tO-Yaf">
-                                <rect key="frame" x="413" y="409" width="31" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="CMO-No-Cp8"/>
-                                    <constraint firstAttribute="width" constant="31" id="e0D-3C-LWL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAb-Z7-xjZ">
-                                <rect key="frame" x="308" y="416" width="68" height="37"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="2n7-SA-7kw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="43"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLR-h6-cAE">
-                                <rect key="frame" x="479" y="419" width="80" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="l4M-Tc-luJ"/>
-                                    <constraint firstAttribute="width" constant="80" id="lp8-Fq-eJx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6g-oY-EqE">
-                                <rect key="frame" x="162" y="517" width="276" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="276" id="CpH-Sb-cNw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="34"/>
-                                <state key="normal" title="Confirmar">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="confirm:" destination="yQt-SG-w1o" eventType="touchUpInside" id="CwU-PN-QiR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSj-Ip-0me" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
                                 <constraints>
@@ -195,58 +51,332 @@
                                     <action selector="btnBack:" destination="yQt-SG-w1o" eventType="touchUpInside" id="bbb-tI-mkP"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3yS-H7-iWt">
+                                <rect key="frame" x="78" y="50" width="115" height="115"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sfs-0D-o2w">
+                                <rect key="frame" x="78" y="190" width="115" height="115"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QTq-iG-28c">
+                                <rect key="frame" x="78" y="330" width="115" height="115"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqa-UX-mdK">
+                                <rect key="frame" x="60" y="470" width="90" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="XXX">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="yQt-SG-w1o" eventType="touchUpInside" id="Pxu-cf-OAd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqj-Oj-gyj">
+                                <rect key="frame" x="190" y="470" width="90" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="XXX">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="yQt-SG-w1o" eventType="touchUpInside" id="N2P-k3-YoD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUv-E4-DUE">
+                                <rect key="frame" x="320" y="470" width="90" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="XXX">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="yQt-SG-w1o" eventType="touchUpInside" id="rFy-lF-PSQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhh-A6-w0K">
+                                <rect key="frame" x="450" y="470" width="90" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="XXX">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="yQt-SG-w1o" eventType="touchUpInside" id="V6i-TG-bPi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViL-7r-JgK">
+                                <rect key="frame" x="60" y="531" width="90" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="XXX">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="yQt-SG-w1o" eventType="touchUpInside" id="nMa-db-4lN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wy4-ul-FvT">
+                                <rect key="frame" x="190" y="531" width="90" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="XXX">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="yQt-SG-w1o" eventType="touchUpInside" id="Mzr-oM-JVD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR0-C7-dXo">
+                                <rect key="frame" x="320" y="531" width="90" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="XXX">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="yQt-SG-w1o" eventType="touchUpInside" id="iAX-hQ-elY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a5-AT-AnM">
+                                <rect key="frame" x="450" y="531" width="90" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="XXX">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="yQt-SG-w1o" eventType="touchUpInside" id="1xs-he-4rl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="308-wg-h0Y">
+                                <rect key="frame" x="242" y="248" width="20" height="10"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIK-qo-3BG">
+                                <rect key="frame" x="297" y="228" width="90" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqo-ZJ-aQA">
+                                <rect key="frame" x="419" y="218" width="25" height="40"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgh-3i-nVr">
+                                <rect key="frame" x="242" y="388" width="20" height="10"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhO-ox-The">
+                                <rect key="frame" x="297" y="368" width="90" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5GG-qS-9IH">
+                                <rect key="frame" x="419" y="358" width="25" height="40"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pi-aL-ge9">
+                                <rect key="frame" x="242" y="108" width="20" height="10"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-JO-8Hl">
+                                <rect key="frame" x="297" y="88" width="80" height="50"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEY-Gi-DzY">
+                                <rect key="frame" x="419" y="78" width="25" height="40"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="__" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTL-NC-uWs">
+                                <rect key="frame" x="472" y="80" width="100" height="60"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="__" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg4-8T-wLr">
+                                <rect key="frame" x="472" y="218" width="100" height="60"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="__" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POD-Id-zRe">
+                                <rect key="frame" x="472" y="358" width="100" height="60"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.58431372549019611" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="RAb-Z7-xjZ" secondAttribute="centerY" constant="-134.5" id="1Bc-WF-y0z"/>
-                            <constraint firstAttribute="centerY" secondItem="yEY-Gi-DzY" secondAttribute="centerY" constant="138.5" id="27q-Vq-WEv"/>
-                            <constraint firstAttribute="centerY" secondItem="5nX-u9-2nr" secondAttribute="centerY" constant="142" id="37n-CS-7PK"/>
-                            <constraint firstAttribute="centerY" secondItem="mIV-JO-8Hl" secondAttribute="centerY" constant="135" id="39z-HT-ngj"/>
-                            <constraint firstAttribute="centerX" secondItem="gL2-c0-i9B" secondAttribute="centerX" constant="151" id="3EB-sd-vLi"/>
-                            <constraint firstAttribute="centerX" secondItem="BJv-Fo-Pbv" secondAttribute="centerX" constant="165.5" id="72Z-5e-hsT"/>
-                            <constraint firstAttribute="centerX" secondItem="RAb-Z7-xjZ" secondAttribute="centerX" constant="-42" id="BDo-t4-8Qb"/>
-                            <constraint firstAttribute="centerY" secondItem="4F4-en-Qmo" secondAttribute="centerY" constant="244.5" id="Bft-Uo-t7E"/>
-                            <constraint firstAttribute="centerX" secondItem="yEY-Gi-DzY" secondAttribute="centerX" constant="-128.5" id="DPy-qa-sOA"/>
-                            <constraint firstAttribute="centerX" secondItem="5nX-u9-2nr" secondAttribute="centerX" constant="166" id="G4E-qX-VNY"/>
-                            <constraint firstAttribute="centerY" secondItem="7cI-uz-VVD" secondAttribute="centerY" constant="11.5" id="Ldp-BA-gYE"/>
-                            <constraint firstAttribute="centerX" secondItem="TWL-EY-4e5" secondAttribute="centerX" constant="-42" id="ObY-hH-uDh"/>
-                            <constraint firstAttribute="centerY" secondItem="gL2-c0-i9B" secondAttribute="centerY" constant="-137" id="PKW-U2-GEd"/>
-                            <constraint firstAttribute="centerX" secondItem="4F4-en-Qmo" secondAttribute="centerX" id="WWS-2x-Ql4"/>
-                            <constraint firstAttribute="centerY" secondItem="BJv-Fo-Pbv" secondAttribute="centerY" constant="3.5" id="Web-s9-AWw"/>
-                            <constraint firstAttribute="centerY" secondItem="Xhc-51-NqF" secondAttribute="centerY" constant="6" id="Xqu-SJ-hi7"/>
-                            <constraint firstAttribute="centerY" secondItem="nLR-h6-cAE" secondAttribute="centerY" constant="-134" id="XyO-hl-cFa"/>
-                            <constraint firstAttribute="centerX" secondItem="MJ9-k2-kbO" secondAttribute="centerX" constant="42.5" id="ZF8-mz-G6T"/>
-                            <constraint firstAttribute="centerY" secondItem="TWL-EY-4e5" secondAttribute="centerY" constant="6" id="acd-nl-VKZ"/>
-                            <constraint firstAttribute="centerX" secondItem="bqC-WR-GvI" secondAttribute="centerX" constant="42.5" id="atC-0I-rsD"/>
                             <constraint firstItem="KSj-Ip-0me" firstAttribute="top" secondItem="dNJ-0A-UXr" secondAttribute="bottom" constant="8" id="bTU-RR-5FT"/>
-                            <constraint firstAttribute="centerX" secondItem="T6g-oY-EqE" secondAttribute="centerX" id="dIf-uj-rZk"/>
-                            <constraint firstAttribute="centerX" secondItem="9Pi-aL-ge9" secondAttribute="centerX" constant="42.5" id="eGq-t0-ar7"/>
-                            <constraint firstAttribute="centerY" secondItem="T6g-oY-EqE" secondAttribute="centerY" constant="-240" id="eue-v3-pAw"/>
                             <constraint firstItem="KSj-Ip-0me" firstAttribute="leading" secondItem="J6A-sv-3wp" secondAttribute="leadingMargin" id="jRT-64-aoh"/>
-                            <constraint firstAttribute="centerX" secondItem="qKs-D5-BnE" secondAttribute="centerX" constant="-219" id="jeE-HX-mnf"/>
-                            <constraint firstAttribute="centerX" secondItem="nLR-h6-cAE" secondAttribute="centerX" constant="-219" id="mpi-8X-YN2"/>
-                            <constraint firstAttribute="centerY" secondItem="bqC-WR-GvI" secondAttribute="centerY" constant="-132" id="pyg-Q6-wzj"/>
-                            <constraint firstAttribute="centerY" secondItem="7D1-tO-Yaf" secondAttribute="centerY" constant="-128.5" id="qGf-2q-CCM"/>
-                            <constraint firstAttribute="centerY" secondItem="qKs-D5-BnE" secondAttribute="centerY" constant="133" id="qkS-nt-fpB"/>
-                            <constraint firstAttribute="centerX" secondItem="Xhc-51-NqF" secondAttribute="centerX" constant="-219" id="sr0-pD-QBt"/>
-                            <constraint firstAttribute="centerX" secondItem="7D1-tO-Yaf" secondAttribute="centerX" constant="-128.5" id="swN-Ae-dU9"/>
-                            <constraint firstAttribute="centerX" secondItem="7cI-uz-VVD" secondAttribute="centerX" constant="-128.5" id="tso-rm-bOr"/>
-                            <constraint firstAttribute="centerX" secondItem="mIV-JO-8Hl" secondAttribute="centerX" constant="-42" id="wgF-m7-4f2"/>
-                            <constraint firstAttribute="centerY" secondItem="9Pi-aL-ge9" secondAttribute="centerY" constant="135" id="xE7-ph-0UX"/>
-                            <constraint firstAttribute="centerY" secondItem="MJ9-k2-kbO" secondAttribute="centerY" constant="8" id="y7r-oq-mkx"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnConfirm" destination="T6g-oY-EqE" id="BDk-R5-j71"/>
-                        <outlet property="imgImage1" destination="5nX-u9-2nr" id="8vJ-hR-g6O"/>
-                        <outlet property="imgImage2" destination="BJv-Fo-Pbv" id="ScX-3u-fgH"/>
-                        <outlet property="imgImage3" destination="gL2-c0-i9B" id="0ZP-ya-IxF"/>
+                        <outlet property="btnOption1" destination="Hqa-UX-mdK" id="CG4-8i-aB5"/>
+                        <outlet property="btnOption2" destination="Bqj-Oj-gyj" id="C8m-AW-nLk"/>
+                        <outlet property="btnOption3" destination="rUv-E4-DUE" id="a6F-gs-f6p"/>
+                        <outlet property="btnOption4" destination="yhh-A6-w0K" id="rFy-LV-CmY"/>
+                        <outlet property="btnOption5" destination="ViL-7r-JgK" id="wHa-f4-BFf"/>
+                        <outlet property="btnOption6" destination="wy4-ul-FvT" id="XWq-3c-EVg"/>
+                        <outlet property="btnOption7" destination="wR0-C7-dXo" id="Cb1-U9-kVC"/>
+                        <outlet property="btnOption8" destination="0a5-AT-AnM" id="0UT-PI-Lzo"/>
+                        <outlet property="imgImage1" destination="3yS-H7-iWt" id="DPW-Dd-1Eg"/>
+                        <outlet property="imgImage2" destination="sfs-0D-o2w" id="dhC-aK-IPc"/>
+                        <outlet property="imgImage3" destination="QTq-iG-28c" id="Zkp-vN-1uw"/>
                         <outlet property="lblDeleteSyllable1" destination="mIV-JO-8Hl" id="i3G-vQ-wEU"/>
-                        <outlet property="lblDeleteSyllable2" destination="TWL-EY-4e5" id="oOH-2x-i7M"/>
-                        <outlet property="lblDeleteSyllable3" destination="RAb-Z7-xjZ" id="vU2-kq-mWR"/>
-                        <outlet property="txtSyllable1" destination="qKs-D5-BnE" id="w7v-y4-3TD"/>
-                        <outlet property="txtSyllable2" destination="Xhc-51-NqF" id="rFg-EW-38W"/>
-                        <outlet property="txtSyllable3" destination="nLR-h6-cAE" id="6be-jm-w8c"/>
+                        <outlet property="lblDeleteSyllable2" destination="NIK-qo-3BG" id="Wwb-6q-7ti"/>
+                        <outlet property="lblDeleteSyllable3" destination="UhO-ox-The" id="tR4-Sn-KS7"/>
+                        <outlet property="lblPositionSyllable1" destination="WTL-NC-uWs" id="7jQ-c2-IBw"/>
+                        <outlet property="lblPositionSyllable2" destination="Gg4-8T-wLr" id="FUD-zy-879"/>
+                        <outlet property="lblPositionSyllable3" destination="POD-Id-zRe" id="AG5-Rp-ZjD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yg-S6-Kex" userLabel="First Responder" sceneMemberID="firstResponder"/>

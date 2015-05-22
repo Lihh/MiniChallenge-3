@@ -16,8 +16,11 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     // Lifes
     var lifes: Int = 3
     
+    // Acertos
+    var acertos: Int = 0
+    
     // Level
-    var level: Int = 0
+    var level: Int!
     
     let notificationCenter = NSNotificationCenter.defaultCenter()
     
@@ -26,41 +29,164 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     // Outlets
     @IBOutlet weak var imgImage1: UIImageView!
     @IBOutlet weak var lblDeleteSyllable1: UILabel!
-    @IBOutlet weak var txtSyllable1: UITextField!
+    @IBOutlet weak var lblPositionSyllable1: UILabel!
     
     @IBOutlet weak var imgImage2: UIImageView!
     @IBOutlet weak var lblDeleteSyllable2: UILabel!
-    @IBOutlet weak var txtSyllable2: UITextField!
+    @IBOutlet weak var lblPositionSyllable2: UILabel!
     
     @IBOutlet weak var imgImage3: UIImageView!
     @IBOutlet weak var lblDeleteSyllable3: UILabel!
-    @IBOutlet weak var txtSyllable3: UITextField!
+    @IBOutlet weak var lblPositionSyllable3: UILabel!
     
-    @IBOutlet weak var btnConfirm:   UIButton!
+    @IBOutlet weak var btnOption1: UIButton!
+    @IBOutlet weak var btnOption2: UIButton!
+    @IBOutlet weak var btnOption3: UIButton!
+    @IBOutlet weak var btnOption4: UIButton!
+    @IBOutlet weak var btnOption5: UIButton!
+    @IBOutlet weak var btnOption6: UIButton!
+    @IBOutlet weak var btnOption7: UIButton!
+    @IBOutlet weak var btnOption8: UIButton!
     
     // Levels Array for images and syllables
     var levels: [( level:Int,    correctWord:String, correctImage:String,
-                  image1:String, syllable1:String,   deleteSyllable1:String,
-                  image2:String, syllable2:String,   deleteSyllable2:String,
-                  image3:String, syllable3:String,   deleteSyllable3:String)]
+                  image1:String, deleteSyllable1:String,
+                  image2:String, deleteSyllable2:String,
+                  image3:String, deleteSyllable3:String,
+                  button1Text:String, button1Correct:Bool, Button1Position:Int,
+                  button2Text:String, button2Correct:Bool, Button2Position:Int,
+                  button3Text:String, button3Correct:Bool, Button3Position:Int,
+                  button4Text:String, button4Correct:Bool, Button4Position:Int,
+                  button5Text:String, button5Correct:Bool, Button5Position:Int,
+                  button6Text:String, button6Correct:Bool, Button6Position:Int,
+                  button7Text:String, button7Correct:Bool, Button7Position:Int,
+                  button8Text:String, button8Correct:Bool, Button8Position:Int)]
     
-    // Level 1
-    = [(1, "JANELA", "CACHORRO",
-        "CACHORRO", "JA", "CARÉ",
-        "CACHORRO",   "NE", "VE",
-        "CACHORRO",  "LA", "PIS"),
-        
-    // Level 2
-        (2, "PACOCA", "CACHORRO",
-        "CACHORRO", "PA", "R",
-        "CACHORRO", "CO", "CA",
-        "CACHORRO", "CA", "O"),
-        
-    // Level 3
-        (2, "MOCHILA", "CACHORRO",
-        "CACHORRO", "MO",  "VEL",
-        "CACHORRO", "CHI", "CA",
-        "CACHORRO", "LA",  "TA")]
+        // Level 1
+    = [(/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+        /* Image 1  */ "CACHORRO", /* Delete */ "RTELO",
+        /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+        /* Image 3  */ "CACHORRO", /* Delete */ "RACAO",
+        /* Button 1 */ "MA",      /* Delete */ true,  /* Position */ 1,
+        /* Button 2 */ "CA",      /* Delete */ true,  /* Position */ 2,
+        /* Button 3 */ "CO",      /* Delete */ true,  /* Position */ 3,
+        /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+        /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+        /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+        /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+        /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+    
+        // Level 2
+        (/* Level */ 2, /* Word */ "MACACO", /* Image */ "MACACO",
+         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
+         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
+         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+    
+        // Level 3
+        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
+         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
+         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+    
+        // Level 4
+        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
+         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
+         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+    
+        // Level 5
+        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
+         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
+         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+    
+        // Level 6
+        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
+         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
+         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+    
+        // Level 7
+        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
+         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
+         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+    
+        // Level 8
+        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
+         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
+         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+    
+        // Level 9
+        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
+         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
+         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),]
     //================================================================================
     
     
@@ -72,10 +198,6 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelPortugueseExercise", object: nil)
-        
-        self.txtSyllable1.delegate = self
-        self.txtSyllable2.delegate = self
-        self.txtSyllable3.delegate = self
     }
     
     override func viewWillAppear(animated: Bool)
@@ -99,7 +221,16 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Game Configuration
     //================================================================================
-    func levelConfiguration()
+    func discoverLevel(notification: NSNotification)
+    {
+        var currentLevel = notification.userInfo!["level"] as! String
+        level = currentLevel.toInt()!
+        level = level - 1
+        
+        gameConfiguration()
+    }
+    
+    func gameConfiguration()
     {
         // Images and Syllables
         var imgAux = NSBundle.mainBundle().pathForResource(levels[level].image1, ofType: "png")
@@ -113,165 +244,176 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         imgAux = NSBundle.mainBundle().pathForResource(levels[level].image3, ofType: "png")
         imgImage3.image = UIImage(contentsOfFile: imgAux!)
         lblDeleteSyllable3.text = levels[level].deleteSyllable3
-    }
-    
-    func gameElementsConfiguration()
-    {
-        // Border
-        txtSyllable1.layer.borderWidth = 2
-        txtSyllable2.layer.borderWidth = 2
-        txtSyllable3.layer.borderWidth = 2
-        btnConfirm.layer.borderWidth = 2
         
-        // Border Color
-        txtSyllable1.layer.borderColor = UIColor .grayColor().CGColor
-        txtSyllable2.layer.borderColor = UIColor .grayColor().CGColor
-        txtSyllable3.layer.borderColor = UIColor .grayColor().CGColor
-        btnConfirm.layer.borderColor = UIColor .whiteColor().CGColor
-        
-        // Corner Radius
-        txtSyllable1.layer.cornerRadius = 10
-        txtSyllable2.layer.cornerRadius = 10
-        txtSyllable3.layer.cornerRadius = 10
-        btnConfirm.layer.cornerRadius = 20
-        
-        // Button Color
-        btnConfirm.layer.backgroundColor = UIColor .greenColor().CGColor
+        // Buttons
+        btnOption1.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
+        btnOption2.setTitle(levels[level].button2Text, forState: UIControlState.Normal)
+        btnOption3.setTitle(levels[level].button3Text, forState: UIControlState.Normal)
+        btnOption4.setTitle(levels[level].button4Text, forState: UIControlState.Normal)
+        btnOption5.setTitle(levels[level].button5Text, forState: UIControlState.Normal)
+        btnOption6.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
+        btnOption7.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
+        btnOption8.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
     }
     //================================================================================
     
     
     
-    // MARK: - Confirm Answers
+    // MARK: - Button Click
     //================================================================================
-    @IBAction func confirm(sender: AnyObject)
+    @IBAction func buttonClick(sender: AnyObject)
     {
-        // Correct Answer
-        //-------------------------------------------------
-        if (txtSyllable1.text == levels[level].syllable1 &&
-            txtSyllable2.text == levels[level].syllable2 &&
-            txtSyllable3.text == levels[level].syllable3)
+        switch sender.tag
         {
-            txtSyllable1.layer.borderColor = UIColor .greenColor().CGColor
-            txtSyllable2.layer.borderColor = UIColor .greenColor().CGColor
-            txtSyllable3.layer.borderColor = UIColor .greenColor().CGColor
+        case 1:
+            if levels[level].button1Correct == true
+            {
+                displacementPosition(btnOption1, buttonPosition: levels[level].Button1Position)
+            }
+            else
+            {
+                UIView.wrongAnimation(self.view, buttonAnimate: btnOption1)
+                countError()
+            }
             
-            if self.persistence.verifyExistenceOfALevel("gameSyllables", level: self.level) {
+        case 2:
+            if levels[level].button2Correct == true
+            {
+                displacementPosition(btnOption2, buttonPosition: levels[level].Button2Position)
+            }
+            else
+            {
+                UIView.wrongAnimation(self.view, buttonAnimate: btnOption2)
+                countError()
+            }
+            
+        case 3:
+            if levels[level].button1Correct == true
+            {
+                displacementPosition(btnOption3, buttonPosition: levels[level].Button3Position)
+            }
+            else
+            {
+                UIView.wrongAnimation(self.view, buttonAnimate: btnOption3)
+                countError()
+            }
+            
+        case 4:
+            if levels[level].button4Correct == true
+            {
+                displacementPosition(btnOption4, buttonPosition: levels[level].Button4Position)
+            }
+            else
+            {
+                UIView.wrongAnimation(self.view, buttonAnimate: btnOption4)
+                countError()
+            }
+            
+        case 5:
+            if levels[level].button5Correct == true
+            {
+                displacementPosition(btnOption5, buttonPosition: levels[level].Button5Position)
+            }
+            else
+            {
+                UIView.wrongAnimation(self.view, buttonAnimate: btnOption5)
+                countError()
+            }
+            
+        case 6:
+            if levels[level].button6Correct == true
+            {
+                displacementPosition(btnOption6, buttonPosition: levels[level].Button6Position)
+            }
+            else
+            {
+                UIView.wrongAnimation(self.view, buttonAnimate: btnOption6)
+                countError()
+            }
+            
+        case 7:
+            if levels[level].button7Correct == true
+            {
+                displacementPosition(btnOption7, buttonPosition: levels[level].Button7Position)
+            }
+            else
+            {
+                UIView.wrongAnimation(self.view, buttonAnimate: btnOption7)
+                countError()
+            }
+            
+        case 8:
+            if levels[level].button8Correct == true
+            {
+                displacementPosition(btnOption8, buttonPosition: levels[level].Button8Position)
+            }
+            else
+            {
+                UIView.wrongAnimation(self.view, buttonAnimate: btnOption8)
+                countError()
+            }
+            
+        default:
+            println("outro")
+        }
+    }
+    //================================================================================
+    
+    func displacementPosition(buttonDisplace: UIButton, buttonPosition: Int)
+    {
+        acertos++
+        
+        var x = CGFloat()
+        var y = CGFloat()
+        
+        switch buttonPosition
+        {
+        case 1:
+            x = lblPositionSyllable1.frame.origin.x - buttonDisplace.frame.origin.x
+            y = lblPositionSyllable1.frame.origin.y - buttonDisplace.frame.origin.y
+            
+        case 2:
+            x = lblPositionSyllable2.frame.origin.x - buttonDisplace.frame.origin.x
+            y = lblPositionSyllable2.frame.origin.y - buttonDisplace.frame.origin.y
+            
+        case 3:
+            x = lblPositionSyllable3.frame.origin.x - buttonDisplace.frame.origin.x
+            y = lblPositionSyllable3.frame.origin.y - buttonDisplace.frame.origin.y
+            
+        default:
+            println("outro")
+        }
+        
+        UIView.correctAnimation(self.view, buttonAnimate: buttonDisplace, xx: x, yy: y, displacementX: 0)
+        
+        if acertos == 3
+        {
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
+            if self.persistence.verifyExistenceOfALevel("gameSyllables", level: self.level)
+            {
                 self.persistence.updateNumberOfStars("gameSyllables", level: self.level, numberOfStars: self.lifes)
-            } else {
+            }
+            else
+            {
                 self.persistence.newScore("gameSyllables", level: self.level, quantityOfStars: self.lifes)
             }
-            self.dismissViewControllerAnimated(true, completion: nil)
-//            self.addBlurEffect()
         }
-        //-------------------------------------------------
-        else
-            
-        // Wrong Answer
-        //-------------------------------------------------
-        {
-            // Confirm Syllable 1
-            if txtSyllable1.text == levels[level].syllable1
-            {
-                txtSyllable1.layer.borderColor = UIColor.greenColor().CGColor
-            }
-            else
-            {
-                txtSyllable1.layer.borderColor = UIColor.redColor().CGColor
-                wrongAnimation(txtSyllable1)
-            }
-            
-            // Confirm Syllable 2
-            if txtSyllable2.text == levels[level].syllable2
-            {
-                txtSyllable2.layer.borderColor = UIColor.greenColor().CGColor
-            }
-            else
-            {
-                txtSyllable2.layer.borderColor = UIColor.redColor().CGColor
-                wrongAnimation(txtSyllable2)
-            }
-            
-            // Confirm Syllable 3
-            if txtSyllable3.text == levels[level].syllable3
-            {
-                txtSyllable3.layer.borderColor = UIColor.greenColor().CGColor
-            }
-            else
-            {
-                txtSyllable3.layer.borderColor = UIColor.redColor().CGColor
-                wrongAnimation(txtSyllable3)
-            }
-            
-            // Somar erro
-            lifes--
-            
-            if lifes == 0 {
-                self.dismissViewControllerAnimated(true, completion: nil)
-            }
-            println("Errou \(lifes)x")
-        }
-        //-------------------------------------------------
     }
+
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool
+    func countError()
     {
-        self.view.endEditing(true)
-        return false
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
-    {
-        txtSyllable1.resignFirstResponder()
-        txtSyllable2.resignFirstResponder()
-        txtSyllable3.resignFirstResponder()
-    }
-    //================================================================================
-    
-    func discoverLevel(notification: NSNotification) {
-        var currentLevel = notification.userInfo!["level"] as! String
-        level = currentLevel.toInt()!
-        level = level - 1
+        lifes--
         
-        gameElementsConfiguration()
-        levelConfiguration()
-    }
-    
-    
-    // MARK: - Wrong Answer Animation
-    //================================================================================
-    func wrongAnimation(textFieldAnimate: UITextField)
-    {
-        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            textFieldAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+20, 0);
-            }) { (finished) -> Void in
-                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    textFieldAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x-20, 0);
-                }, completion: { (finished) -> Void in
-                    UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                        textFieldAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+20, 0);
-                    }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            textFieldAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
-                        }, completion: { (finished) -> Void in
-                        })
-                    })
-                })
+        if lifes == 0
+        {
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
     }
-    //================================================================================
     
-    
-    
-    // MARK: - Correct Answer
-    //================================================================================
-    func addBlurEffect()
+    func dismiss()
     {
-        var effect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        var effectView = UIVisualEffectView(effect: effect)
-        effectView.frame = CGRectMake(0, 0, view.bounds.width, view.bounds.height)
-        view.addSubview(effectView)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
-    //================================================================================
-    
+        
 }
