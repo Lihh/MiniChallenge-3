@@ -65,16 +65,16 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         // Level 1
     = [(/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
         /* Image 1  */ "CACHORRO", /* Delete */ "RTELO",
-        /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+        /* Image 2  */ "CAVALO",   /* Delete */ "VALO",
         /* Image 3  */ "CACHORRO", /* Delete */ "RACAO",
-        /* Button 1 */ "MA",      /* Delete */ true,  /* Position */ 1,
-        /* Button 2 */ "CA",      /* Delete */ true,  /* Position */ 2,
-        /* Button 3 */ "CO",      /* Delete */ true,  /* Position */ 3,
-        /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-        /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-        /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-        /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-        /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+        /* Button 1 */ "MA",       /* Delete */ true,  /* Position */ 1,
+        /* Button 2 */ "CA",       /* Delete */ true,  /* Position */ 2,
+        /* Button 3 */ "CO",       /* Delete */ true,  /* Position */ 3,
+        /* Button 4 */ "LO",       /* Delete */ false, /* Position */ 0,
+        /* Button 5 */ "VA",       /* Delete */ false, /* Position */ 0,
+        /* Button 6 */ "MAR",      /* Delete */ false, /* Position */ 0,
+        /* Button 7 */ "TE",       /* Delete */ false, /* Position */ 0,
+        /* Button 8 */ "RA",       /* Delete */ false, /* Position */ 0),
     
         // Level 2
         (/* Level */ 2, /* Word */ "MACACO", /* Image */ "MACACO",
@@ -251,9 +251,9 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         btnOption3.setTitle(levels[level].button3Text, forState: UIControlState.Normal)
         btnOption4.setTitle(levels[level].button4Text, forState: UIControlState.Normal)
         btnOption5.setTitle(levels[level].button5Text, forState: UIControlState.Normal)
-        btnOption6.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
-        btnOption7.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
-        btnOption8.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
+        btnOption6.setTitle(levels[level].button6Text, forState: UIControlState.Normal)
+        btnOption7.setTitle(levels[level].button7Text, forState: UIControlState.Normal)
+        btnOption8.setTitle(levels[level].button8Text, forState: UIControlState.Normal)
     }
     //================================================================================
     
