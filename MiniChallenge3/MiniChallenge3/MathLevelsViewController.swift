@@ -66,7 +66,7 @@ class MathLevelsViewController: UIViewController {
             stars[index].hidden = false
         }
         
-        if index < scores.count {
+        if index != 9 {
             self.openNextLevel(index)
         }
     }
