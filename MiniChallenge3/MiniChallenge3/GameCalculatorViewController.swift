@@ -208,53 +208,15 @@ class GameCalculatorViewController: UIViewController {
         
         if lifes == 0 {
             
-            UIView.animateWithDuration(5, delay: 5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    self.dismissViewControllerAnimated(true, completion: nil)
-
-                }) { (finished) -> Void in
-                    println("teste delay")
-                
-                }
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismis"), userInfo: nil, repeats: false)
         }
         
     }
     
-    
-    
-    
-    @IBAction func btnDone(sender: UIButton) {
-        
-        if answerOp1.text == levels[level].correctAnswer1 &&
-           answerOp2.text == levels[level].correctAnswer2 {
-            answerOp1.layer.borderColor = UIColor.greenColor().CGColor
-            answerOp2.layer.borderColor = UIColor.greenColor().CGColor
-            UIView.congratulationView(self.view)
-            
-            
-            
-        } else {
-            lifes--
-            
-            if lifes == 0 {
-                self.dismissViewControllerAnimated(true, completion: nil)
-            }
-            
-            if answerOp1.text == levels[level].correctAnswer1
-            {
-                answerOp1.layer.borderColor = UIColor.greenColor().CGColor
-            } else {
-                answerOp1.layer.borderColor = UIColor.redColor().CGColor
-                //UIView.wrongAnimation(self.view, textFieldAnimate:answerOp1)
-            }
-        
-            if answerOp2.text == levels[level].correctAnswer2
-            {
-                answerOp2.layer.borderColor = UIColor.greenColor().CGColor
-            } else {
-                answerOp2.layer.borderColor = UIColor.redColor().CGColor
-            }
-        }
+    func dismis() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
     
     //ANIMAÇÕES
     
