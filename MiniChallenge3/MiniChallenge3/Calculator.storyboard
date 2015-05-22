@@ -83,7 +83,6 @@
                                 <rect key="frame" x="415" y="168" width="75" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="Xnv-jZ-Y8o"/>
-                                    <constraint firstAttribute="width" constant="75" id="n6b-H5-iZN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -92,7 +91,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elo-LB-Dn4">
                                 <rect key="frame" x="415" y="252" width="75" height="81"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="KUy-cj-184"/>
                                     <constraint firstAttribute="height" constant="81" id="pdp-zy-wkL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
@@ -263,7 +261,9 @@
                             <constraint firstAttribute="centerX" secondItem="0wh-Ls-BVg" secondAttribute="centerX" id="Rw2-fF-IUk"/>
                             <constraint firstItem="SoA-1I-qZH" firstAttribute="leading" secondItem="TdG-fK-QVH" secondAttribute="trailing" constant="50" id="TwG-Aw-YT0"/>
                             <constraint firstItem="VRN-i9-bPF" firstAttribute="top" secondItem="FhZ-jx-1ju" secondAttribute="bottom" constant="-65" id="Vxd-NF-7om"/>
+                            <constraint firstAttribute="centerX" secondItem="akG-4W-7nr" secondAttribute="centerX" id="WHe-yx-zBg"/>
                             <constraint firstItem="FhZ-jx-1ju" firstAttribute="leading" secondItem="VRN-i9-bPF" secondAttribute="trailing" constant="148" id="Xth-Ol-TYm"/>
+                            <constraint firstAttribute="centerX" secondItem="SoA-1I-qZH" secondAttribute="centerX" id="Ytd-cf-Tn8"/>
                             <constraint firstAttribute="centerX" secondItem="Uvq-QD-9L7" secondAttribute="centerX" id="bPF-iw-IXW"/>
                             <constraint firstAttribute="centerY" secondItem="VRN-i9-bPF" secondAttribute="centerY" constant="200" id="gxd-cH-qbg"/>
                             <constraint firstItem="VRN-i9-bPF" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="lp0-Hy-C1T"/>

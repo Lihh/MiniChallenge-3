@@ -72,9 +72,9 @@ class GameCalculatorViewController: UIViewController {
         "7", false, "9", true, "3", false,
         "8", false, "0", false, "6", true),
         //8
-       (8, "5  x  2", "10",   "2  ÷  1", "2",
-        "10", true, "7", false, "0", false,
-        "2", true, "4", false, "8", false),
+       (8, "4  x  2", "8",   "2  ÷  1", "2",
+        "8", true, "7", false, "0", false,
+        "2", true, "4", false, "1", false),
         //9
        (9, "10  ÷  2", "5",   "8  ÷  4", "2",
         "0", false, "9", false, "5", true,
@@ -229,10 +229,12 @@ class GameCalculatorViewController: UIViewController {
         
         if op == 1 {
             xx = self.answerOp1.frame.origin.x - buttonAnimate.frame.origin.x
+            xx = xx + 60
             yy = self.answerOp1.frame.origin.y - buttonAnimate.frame.origin.y
             println("Op 1")
         } else if op == 2 {
             xx = self.answerOp2.frame.origin.x - buttonAnimate.frame.origin.x
+            xx = xx + 60
             yy = self.answerOp2.frame.origin.y - buttonAnimate.frame.origin.y
             println("Op 2")
         }
