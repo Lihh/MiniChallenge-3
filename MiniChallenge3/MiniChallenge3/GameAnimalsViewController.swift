@@ -78,7 +78,7 @@ class GameAnimalsViewController: UIViewController, UITextFieldDelegate {
             lifes--
             textField.text = ""
             textField.layer.borderColor = UIColor.redColor().CGColor
-            UIView.wrongAnimation(self.view, textFieldAnimate: textField)
+            //UIView.wrongAnimation(self.view, textFieldAnimate: textField)
         }
         
     }

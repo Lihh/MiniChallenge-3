@@ -37,24 +37,30 @@ extension UIView {
 //        view.addSubview(starsImage)
     }
     
-    static func wrongAnimation(view: UIView, textFieldAnimate: UITextField) {
+    static func wrongAnimation(view: UIView, buttonAnimate: UIButton) {
         
         UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            textFieldAnimate.transform = CGAffineTransformMakeTranslation(view.frame.origin.x+20, 0);
+            buttonAnimate.transform = CGAffineTransformMakeTranslation(view.frame.origin.x+20, 0);
             }) { (finished) -> Void in
                 UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    textFieldAnimate.transform = CGAffineTransformMakeTranslation(view.frame.origin.x-20, 0);
+                    buttonAnimate.transform = CGAffineTransformMakeTranslation(view.frame.origin.x-20, 0);
                     }, completion: { (finished) -> Void in
                         UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            textFieldAnimate.transform = CGAffineTransformMakeTranslation(view.frame.origin.x+20, 0);
+                            buttonAnimate.transform = CGAffineTransformMakeTranslation(view.frame.origin.x+20, 0);
                             }, completion: { (finished) -> Void in
                                 UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                                    textFieldAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
-                                    }, completion: nil
-                                )
+                                    buttonAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
+                                    }, completion: { (finished) -> Void in
+                                        buttonAnimate.backgroundColor = UIColor .whiteColor()
+                                        buttonAnimate.enabled = false
+                                        buttonAnimate.setTitle("X", forState: UIControlState.Normal)
+                                        buttonAnimate.setTitleColor(UIColor .redColor(), forState: UIControlState.Normal)
+                                })
                         })
                 })
         }
 
     }
+    
+   
 }

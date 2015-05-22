@@ -15,6 +15,9 @@
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -61,6 +64,12 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3  +  4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdG-fK-QVH">
+                                <rect key="frame" x="87" y="267" width="180" height="65"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akG-4W-7nr">
                                 <rect key="frame" x="317" y="168" width="48" height="59"/>
                                 <constraints>
@@ -101,16 +110,17 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1M-XS-Gke" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1M-XS-Gke" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="87" y="390" width="75" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="IZW-cF-5Qx"/>
                                     <constraint firstAttribute="width" constant="75" id="WOm-ko-6rZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -120,34 +130,18 @@
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="hto-YU-b2e" eventType="touchUpInside" id="9ka-sZ-gIS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H55-3e-gis" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="263" y="390" width="75" height="81"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="81" id="fFb-D5-vFl"/>
-                                    <constraint firstAttribute="width" constant="75" id="vYJ-dt-Vur"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
-                                <state key="normal" title="0">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1c3-2C-aRL" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1c3-2C-aRL" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="415" y="390" width="75" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="9gv-Cg-Za3"/>
                                     <constraint firstAttribute="width" constant="75" id="E5E-NQ-Alu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -160,49 +154,114 @@
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="hto-YU-b2e" eventType="touchUpInside" id="y3c-Sd-Iph"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNF-Ji-h45">
-                                <rect key="frame" x="87" y="492" width="46" height="30"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNF-Ji-h45" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="87" y="472" width="75" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="jEb-Oy-BLf"/>
                                     <constraint firstAttribute="height" constant="81" id="s5d-O8-GFs"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="hto-YU-b2e" eventType="touchUpInside" id="SYJ-Gu-0cZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvq-QD-9L7">
-                                <rect key="frame" x="277" y="492" width="46" height="30"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvq-QD-9L7" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="263" y="472" width="75" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="Wgy-2O-Ydk"/>
                                     <constraint firstAttribute="height" constant="81" id="frE-QI-j2M"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="hto-YU-b2e" eventType="touchUpInside" id="1ol-V2-kwz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gv5-2R-xu8">
-                                <rect key="frame" x="444" y="492" width="46" height="30"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gv5-2R-xu8" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="415" y="472" width="75" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="BpX-RR-1HQ"/>
                                     <constraint firstAttribute="width" constant="75" id="xTg-tg-GSs"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="hto-YU-b2e" eventType="touchUpInside" id="sIA-Ap-9ZP"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3  +  4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdG-fK-QVH">
-                                <rect key="frame" x="87" y="267" width="157" height="65"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H55-3e-gis" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="263" y="390" width="75" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="fFb-D5-vFl"/>
+                                    <constraint firstAttribute="width" constant="75" id="vYJ-dt-Vur"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="hto-YU-b2e" eventType="touchUpInside" id="80a-Ub-3SW"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.91764705882352937" green="0.40000000000000002" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="TdG-fK-QVH" firstAttribute="top" secondItem="elo-LB-Dn4" secondAttribute="bottom" constant="-65" id="2Tm-bl-r8g"/>
                             <constraint firstItem="H55-3e-gis" firstAttribute="top" secondItem="TdG-fK-QVH" secondAttribute="bottom" constant="57" id="4M7-ql-MwE"/>
                             <constraint firstItem="TdG-fK-QVH" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="8cE-yk-Nx3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gv5-2R-xu8" secondAttribute="trailing" constant="94" id="9yn-gA-3vb"/>
+                            <constraint firstItem="JNF-Ji-h45" firstAttribute="top" secondItem="Q1M-XS-Gke" secondAttribute="bottom" constant="40" id="AQC-Fi-VAs"/>
                             <constraint firstAttribute="centerY" secondItem="TdG-fK-QVH" secondAttribute="centerY" id="Czt-kj-dkR"/>
                             <constraint firstItem="3cB-He-fQp" firstAttribute="top" secondItem="qKk-o9-sSH" secondAttribute="bottom" constant="76" id="FeX-Iy-SfQ"/>
                             <constraint firstItem="FhZ-jx-1ju" firstAttribute="top" secondItem="akG-4W-7nr" secondAttribute="bottom" constant="-59" id="Gmb-So-L1o"/>
@@ -210,11 +269,14 @@
                             <constraint firstAttribute="trailingMargin" secondItem="FhZ-jx-1ju" secondAttribute="trailing" constant="94" id="LSR-87-DL9"/>
                             <constraint firstItem="1c3-2C-aRL" firstAttribute="top" secondItem="elo-LB-Dn4" secondAttribute="bottom" constant="57" id="Lb6-dQ-7GW"/>
                             <constraint firstItem="akG-4W-7nr" firstAttribute="leading" secondItem="VRN-i9-bPF" secondAttribute="trailing" constant="50" id="Mhg-4l-j8p"/>
+                            <constraint firstItem="JNF-Ji-h45" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="P0k-fl-X2f"/>
+                            <constraint firstItem="Gv5-2R-xu8" firstAttribute="top" secondItem="1c3-2C-aRL" secondAttribute="bottom" constant="40" id="QK3-cI-RRJ"/>
                             <constraint firstItem="Q1M-XS-Gke" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="R0p-RF-BQJ"/>
                             <constraint firstAttribute="centerX" secondItem="0wh-Ls-BVg" secondAttribute="centerX" id="Rw2-fF-IUk"/>
                             <constraint firstItem="SoA-1I-qZH" firstAttribute="leading" secondItem="TdG-fK-QVH" secondAttribute="trailing" constant="50" id="TwG-Aw-YT0"/>
                             <constraint firstItem="VRN-i9-bPF" firstAttribute="top" secondItem="FhZ-jx-1ju" secondAttribute="bottom" constant="-65" id="Vxd-NF-7om"/>
                             <constraint firstItem="FhZ-jx-1ju" firstAttribute="leading" secondItem="VRN-i9-bPF" secondAttribute="trailing" constant="148" id="Xth-Ol-TYm"/>
+                            <constraint firstAttribute="centerX" secondItem="Uvq-QD-9L7" secondAttribute="centerX" id="bPF-iw-IXW"/>
                             <constraint firstAttribute="centerY" secondItem="VRN-i9-bPF" secondAttribute="centerY" constant="200" id="gxd-cH-qbg"/>
                             <constraint firstAttribute="centerX" secondItem="qKk-o9-sSH" secondAttribute="centerX" id="hds-Rm-D3f"/>
                             <constraint firstItem="Q1M-XS-Gke" firstAttribute="top" secondItem="TdG-fK-QVH" secondAttribute="bottom" constant="57" id="ll6-Gm-gaT"/>
@@ -223,12 +285,19 @@
                             <constraint firstAttribute="trailingMargin" secondItem="1c3-2C-aRL" secondAttribute="trailing" constant="94" id="oAT-7s-ejK"/>
                             <constraint firstItem="elo-LB-Dn4" firstAttribute="leading" secondItem="TdG-fK-QVH" secondAttribute="trailing" constant="148" id="rDE-AG-J2K"/>
                             <constraint firstAttribute="trailingMargin" secondItem="elo-LB-Dn4" secondAttribute="trailing" constant="94" id="uV2-Kr-Zi1"/>
+                            <constraint firstItem="Uvq-QD-9L7" firstAttribute="top" secondItem="H55-3e-gis" secondAttribute="bottom" constant="40" id="z4v-Ox-Asc"/>
                             <constraint firstAttribute="centerX" secondItem="H55-3e-gis" secondAttribute="centerX" id="zaJ-a4-iaV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerOp1" destination="FhZ-jx-1ju" id="IeX-xl-dzi"/>
                         <outlet property="answerOp2" destination="elo-LB-Dn4" id="K79-Rt-PJo"/>
+                        <outlet property="btn1" destination="Q1M-XS-Gke" id="agt-7a-W1p"/>
+                        <outlet property="btn2" destination="H55-3e-gis" id="bjD-0h-KvF"/>
+                        <outlet property="btn3" destination="1c3-2C-aRL" id="xCH-Zf-aZs"/>
+                        <outlet property="btn4" destination="JNF-Ji-h45" id="6mc-Zf-jqq"/>
+                        <outlet property="btn5" destination="Uvq-QD-9L7" id="xy5-wH-Fsa"/>
+                        <outlet property="btn6" destination="Gv5-2R-xu8" id="cDR-F1-emC"/>
                         <outlet property="op1" destination="VRN-i9-bPF" id="kme-E2-xF2"/>
                         <outlet property="op2" destination="TdG-fK-QVH" id="Gax-FN-pGQ"/>
                     </connections>
