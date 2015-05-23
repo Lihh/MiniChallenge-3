@@ -16,14 +16,17 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     // Lifes
     var lifes: Int = 3
     
-    // Acertos
-    var acertos: Int = 0
+    // Score
+    var score: Int = 0
     
     // Level
     var level: Int!
     
+    // Notification Center
     let notificationCenter = NSNotificationCenter.defaultCenter()
     
+    // Singletons
+    let syllable = ModelSyllables.sharedInstance
     let persistence = Persistence.sharedInstance
     
     // Outlets
@@ -64,25 +67,25 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     
         // Level 1
     = [(/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
-        /* Image 1  */ "CACHORRO", /* Delete */ "RTELO",
-        /* Image 2  */ "CAVALO",   /* Delete */ "VALO",
+        /* Image 1  */ "PASSARO", /* Delete */ "RTELO",
+        /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
         /* Image 3  */ "CACHORRO", /* Delete */ "RACAO",
-        /* Button 1 */ "MA",       /* Delete */ true,  /* Position */ 1,
-        /* Button 2 */ "CA",       /* Delete */ true,  /* Position */ 2,
-        /* Button 3 */ "CO",       /* Delete */ true,  /* Position */ 3,
-        /* Button 4 */ "LO",       /* Delete */ false, /* Position */ 0,
-        /* Button 5 */ "VA",       /* Delete */ false, /* Position */ 0,
-        /* Button 6 */ "MAR",      /* Delete */ false, /* Position */ 0,
-        /* Button 7 */ "TE",       /* Delete */ false, /* Position */ 0,
-        /* Button 8 */ "RA",       /* Delete */ false, /* Position */ 0),
+        /* Button 1 */ "MA",      /* Delete */ true,  /* Position */ 1,
+        /* Button 2 */ "TO",      /* Delete */ false, /* Position */ 0,
+        /* Button 3 */ "CO",      /* Delete */ true,  /* Position */ 3,
+        /* Button 4 */ "LO",      /* Delete */ false, /* Position */ 0,
+        /* Button 5 */ "VA",      /* Delete */ false, /* Position */ 0,
+        /* Button 6 */ "CA",      /* Delete */ true,  /* Position */ 2,
+        /* Button 7 */ "TE",      /* Delete */ false, /* Position */ 0,
+        /* Button 8 */ "RA",      /* Delete */ false, /* Position */ 0),
     
         // Level 2
-        (/* Level */ 2, /* Word */ "MACACO", /* Image */ "MACACO",
-         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
-         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
+        (/* Level */ 2, /* Word */ "TIJOLO", /* Image */ "TIJOLO",
+         /* Image 1  */ "TIGRE",   /* Delete */ "GRE",
+         /* Image 2  */ "QUEIJO",  /* Delete */ "QUEI",
+         /* Image 3  */ "ESQUILO", /* Delete */ "ESQUI",
          /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CORACAO", /* Delete */ true,  /* Position */ 0,
          /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
          /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
          /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
@@ -199,22 +202,6 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         
         notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelPortugueseExercise", object: nil)
     }
-    
-    override func viewWillAppear(animated: Bool)
-    {
-        // code
-    }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-    }
-    
-    @IBAction func btnBack(sender: KPButton)
-    {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
     //================================================================================
     
     
@@ -223,6 +210,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     //================================================================================
     func discoverLevel(notification: NSNotification)
     {
+        // Get Level
         var currentLevel = notification.userInfo!["level"] as! String
         level = currentLevel.toInt()!
         level = level - 1
@@ -232,28 +220,25 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     
     func gameConfiguration()
     {
-        // Images and Syllables
-        var imgAux = NSBundle.mainBundle().pathForResource(levels[level].image1, ofType: "png")
-        imgImage1.image = UIImage(contentsOfFile: imgAux!)
-        lblDeleteSyllable1.text = levels[level].deleteSyllable1
+        // Images
+        syllable.setImageInImageView(imgImage1, imageName: levels[level].image1)
+        syllable.setImageInImageView(imgImage2, imageName: levels[level].image2)
+        syllable.setImageInImageView(imgImage3, imageName: levels[level].image3)
         
-        imgAux = NSBundle.mainBundle().pathForResource(levels[level].image2, ofType: "png")
-        imgImage2.image = UIImage(contentsOfFile: imgAux!)
-        lblDeleteSyllable2.text = levels[level].deleteSyllable2
-        
-        imgAux = NSBundle.mainBundle().pathForResource(levels[level].image3, ofType: "png")
-        imgImage3.image = UIImage(contentsOfFile: imgAux!)
-        lblDeleteSyllable3.text = levels[level].deleteSyllable3
+        // Labels
+        syllable.setTextInLabel(lblDeleteSyllable1, labelText: levels[level].deleteSyllable2)
+        syllable.setTextInLabel(lblDeleteSyllable2, labelText: levels[level].deleteSyllable2)
+        syllable.setTextInLabel(lblDeleteSyllable3, labelText: levels[level].deleteSyllable3)
         
         // Buttons
-        btnOption1.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
-        btnOption2.setTitle(levels[level].button2Text, forState: UIControlState.Normal)
-        btnOption3.setTitle(levels[level].button3Text, forState: UIControlState.Normal)
-        btnOption4.setTitle(levels[level].button4Text, forState: UIControlState.Normal)
-        btnOption5.setTitle(levels[level].button5Text, forState: UIControlState.Normal)
-        btnOption6.setTitle(levels[level].button6Text, forState: UIControlState.Normal)
-        btnOption7.setTitle(levels[level].button7Text, forState: UIControlState.Normal)
-        btnOption8.setTitle(levels[level].button8Text, forState: UIControlState.Normal)
+        syllable.setTextInButton(btnOption1, buttonText: levels[level].button1Text)
+        syllable.setTextInButton(btnOption2, buttonText: levels[level].button2Text)
+        syllable.setTextInButton(btnOption3, buttonText: levels[level].button3Text)
+        syllable.setTextInButton(btnOption4, buttonText: levels[level].button4Text)
+        syllable.setTextInButton(btnOption5, buttonText: levels[level].button5Text)
+        syllable.setTextInButton(btnOption6, buttonText: levels[level].button6Text)
+        syllable.setTextInButton(btnOption7, buttonText: levels[level].button7Text)
+        syllable.setTextInButton(btnOption8, buttonText: levels[level].button8Text)
     }
     //================================================================================
     
@@ -267,91 +252,52 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         {
         case 1:
             if levels[level].button1Correct == true
-            {
-                displacementPosition(btnOption1, buttonPosition: levels[level].Button1Position)
-            }
+            { rightButton(btnOption1, buttonPosition: levels[level].Button1Position) }
             else
-            {
-                UIView.wrongAnimation(self.view, buttonAnimate: btnOption1)
-                countError()
-            }
+            { wrongButton(btnOption1) }
             
         case 2:
             if levels[level].button2Correct == true
-            {
-                displacementPosition(btnOption2, buttonPosition: levels[level].Button2Position)
-            }
+            { rightButton(btnOption2, buttonPosition: levels[level].Button2Position) }
             else
-            {
-                UIView.wrongAnimation(self.view, buttonAnimate: btnOption2)
-                countError()
-            }
+            { wrongButton(btnOption2) }
             
         case 3:
             if levels[level].button1Correct == true
-            {
-                displacementPosition(btnOption3, buttonPosition: levels[level].Button3Position)
-            }
+            { rightButton(btnOption3, buttonPosition: levels[level].Button3Position) }
             else
-            {
-                UIView.wrongAnimation(self.view, buttonAnimate: btnOption3)
-                countError()
-            }
+            { wrongButton(btnOption3) }
             
         case 4:
             if levels[level].button4Correct == true
-            {
-                displacementPosition(btnOption4, buttonPosition: levels[level].Button4Position)
-            }
+            { rightButton(btnOption4, buttonPosition: levels[level].Button4Position) }
             else
-            {
-                UIView.wrongAnimation(self.view, buttonAnimate: btnOption4)
-                countError()
-            }
+            { wrongButton(btnOption4) }
             
         case 5:
             if levels[level].button5Correct == true
-            {
-                displacementPosition(btnOption5, buttonPosition: levels[level].Button5Position)
-            }
+            { rightButton(btnOption5, buttonPosition: levels[level].Button5Position) }
             else
-            {
-                UIView.wrongAnimation(self.view, buttonAnimate: btnOption5)
-                countError()
-            }
+            { wrongButton(btnOption5) }
             
         case 6:
             if levels[level].button6Correct == true
-            {
-                displacementPosition(btnOption6, buttonPosition: levels[level].Button6Position)
-            }
+            { rightButton(btnOption6, buttonPosition: levels[level].Button6Position) }
             else
-            {
-                UIView.wrongAnimation(self.view, buttonAnimate: btnOption6)
-                countError()
-            }
+            { wrongButton(btnOption6) }
             
         case 7:
             if levels[level].button7Correct == true
-            {
-                displacementPosition(btnOption7, buttonPosition: levels[level].Button7Position)
+            { rightButton(btnOption7, buttonPosition: levels[level].Button7Position)
             }
-            else
-            {
-                UIView.wrongAnimation(self.view, buttonAnimate: btnOption7)
-                countError()
-            }
+            else { wrongButton(btnOption7) }
             
         case 8:
             if levels[level].button8Correct == true
-            {
-                displacementPosition(btnOption8, buttonPosition: levels[level].Button8Position)
+            { rightButton(btnOption8, buttonPosition: levels[level].Button8Position)
             }
             else
-            {
-                UIView.wrongAnimation(self.view, buttonAnimate: btnOption8)
-                countError()
-            }
+            { wrongButton(btnOption8) }
             
         default:
             println("outro")
@@ -359,61 +305,58 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     }
     //================================================================================
     
-    func displacementPosition(buttonDisplace: UIButton, buttonPosition: Int)
+    
+    
+    // MARK: - Right Button
+    //================================================================================
+    func rightButton(button: UIButton, buttonPosition: Int)
     {
-        acertos++
+        // Score ++
+        score++
         
-        var x = CGFloat()
-        var y = CGFloat()
+        // Displace the Syllable
+        syllable.displaceButton(self.view ,button: button, buttonPosition: buttonPosition, labelPosition1: lblPositionSyllable1, labelPosition2: lblPositionSyllable2, labelPosition3: lblPositionSyllable3)
         
-        switch buttonPosition
+        // Game Won - Persistence
+        if score == 3
         {
-        case 1:
-            x = lblPositionSyllable1.frame.origin.x - buttonDisplace.frame.origin.x
-            y = lblPositionSyllable1.frame.origin.y - buttonDisplace.frame.origin.y
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("dismissView"), userInfo: nil, repeats: false)
             
-        case 2:
-            x = lblPositionSyllable2.frame.origin.x - buttonDisplace.frame.origin.x
-            y = lblPositionSyllable2.frame.origin.y - buttonDisplace.frame.origin.y
-            
-        case 3:
-            x = lblPositionSyllable3.frame.origin.x - buttonDisplace.frame.origin.x
-            y = lblPositionSyllable3.frame.origin.y - buttonDisplace.frame.origin.y
-            
-        default:
-            println("outro")
-        }
-        
-        UIView.correctAnimation(self.view, buttonAnimate: buttonDisplace, xx: x, yy: y, displacementX: 0)
-        
-        if acertos == 3
-        {
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
             if self.persistence.verifyExistenceOfALevel("gameSyllables", level: self.level)
-            {
-                self.persistence.updateNumberOfStars("gameSyllables", level: self.level, numberOfStars: self.lifes)
-            }
+            { self.persistence.updateNumberOfStars("gameSyllables", level: self.level, numberOfStars: self.lifes) }
             else
-            {
-                self.persistence.newScore("gameSyllables", level: self.level, quantityOfStars: self.lifes)
-            }
+            { self.persistence.newScore("gameSyllables", level: self.level, quantityOfStars: self.lifes) }
         }
     }
-
+    //================================================================================
     
-    func countError()
+    
+    
+    // MARK: - Wrong Button
+    //================================================================================
+    func wrongButton(button: UIButton)
     {
+        // Animate wrong Syllable
+        UIView.wrongAnimation(self.view, buttonAnimate: button)
+        
+        // Lifes --
         lifes--
         
+        // Game Over
         if lifes == 0
-        {
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
-        }
+        { var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismissView"), userInfo: nil, repeats: false) }
     }
+    //================================================================================
     
-    func dismiss()
-    {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-        
+    
+    
+    // MARK: - Exit Game
+    //================================================================================
+    @IBAction func btnBack(sender: KPButton)
+    { self.dismissViewControllerAnimated(true, completion: nil) }
+    
+    func dismissView()
+    { self.dismissViewControllerAnimated(true, completion: nil) }
+    //================================================================================
+    
 }

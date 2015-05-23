@@ -26,6 +26,7 @@
 		0B7259191B06234300117B4F /* CompleteTheWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */; };
 		0BC905031B057B8700E15B67 /* gameSyllables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */; };
 		0BC905071B057B8700E15B67 /* SyllablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC905021B057B8700E15B67 /* SyllablesViewController.swift */; };
+		0BCEFEA61B0FE673008FD906 /* ModelSyllables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCEFEA51B0FE673008FD906 /* ModelSyllables.swift */; };
 		0BD3B8391B0A09AC007295AC /* counting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD3B8381B0A09AC007295AC /* counting.storyboard */; };
 		0BD3B83B1B0A09C8007295AC /* CountingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3B83A1B0A09C8007295AC /* CountingViewController.swift */; };
 		EC055C1F1B083B6200BFB3D0 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC055C1E1B083B6200BFB3D0 /* Calculator.storyboard */; };
@@ -85,6 +86,7 @@
 		0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTheWordViewController.swift; sourceTree = "<group>"; };
 		0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = gameSyllables.storyboard; sourceTree = "<group>"; };
 		0BC905021B057B8700E15B67 /* SyllablesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyllablesViewController.swift; sourceTree = "<group>"; };
+		0BCEFEA51B0FE673008FD906 /* ModelSyllables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelSyllables.swift; sourceTree = "<group>"; };
 		0BD3B8381B0A09AC007295AC /* counting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = counting.storyboard; sourceTree = "<group>"; };
 		0BD3B83A1B0A09C8007295AC /* CountingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
 		EC055C1E1B083B6200BFB3D0 /* Calculator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				0BC904FE1B057B8700E15B67 /* gameSyllables.storyboard */,
+				0BCEFEA51B0FE673008FD906 /* ModelSyllables.swift */,
 				0BC905021B057B8700E15B67 /* SyllablesViewController.swift */,
 				0BC905081B057B9200E15B67 /* imagens */,
 			);
@@ -503,6 +506,7 @@
 				02D0EEA21B0B5DC700CA9750 /* CongratulationsViewController.swift in Sources */,
 				02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */,
 				EC8647271B068DC100EB45DB /* ScienceLevelsViewController.swift in Sources */,
+				0BCEFEA61B0FE673008FD906 /* ModelSyllables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
