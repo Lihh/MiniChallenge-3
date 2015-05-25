@@ -17,6 +17,7 @@
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -33,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calcule" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wh-Ls-BVg">
-                                <rect key="frame" x="213" y="40" width="175" height="60"/>
+                                <rect key="frame" x="213" y="90" width="175" height="60"/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -116,6 +117,9 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnClicked:" destination="hto-YU-b2e" eventType="touchUpInside" id="9ka-sZ-gIS"/>
@@ -139,6 +143,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -164,6 +171,9 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnClicked:" destination="hto-YU-b2e" eventType="touchUpInside" id="SYJ-Gu-0cZ"/>
@@ -187,6 +197,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -212,6 +225,9 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnClicked:" destination="hto-YU-b2e" eventType="touchUpInside" id="80a-Ub-3SW"/>
@@ -236,22 +252,31 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnClicked:" destination="hto-YU-b2e" eventType="touchUpInside" id="1ol-V2-kwz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="__________________________________________________________" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAK-7D-5XC">
+                                <rect key="frame" x="16" y="340" width="568" height="30"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="3cB-He-fQp" firstAttribute="top" secondItem="Gv5-2R-xu8" secondAttribute="bottom" constant="130" id="1ec-Co-0Tn"/>
+                            <constraint firstItem="3cB-He-fQp" firstAttribute="top" secondItem="Gv5-2R-xu8" secondAttribute="bottom" constant="70" id="1ec-Co-0Tn"/>
                             <constraint firstItem="TdG-fK-QVH" firstAttribute="top" secondItem="elo-LB-Dn4" secondAttribute="bottom" constant="-65" id="2Tm-bl-r8g"/>
                             <constraint firstItem="TdG-fK-QVH" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="8cE-yk-Nx3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Gv5-2R-xu8" secondAttribute="trailing" constant="94" id="9yn-gA-3vb"/>
                             <constraint firstItem="JNF-Ji-h45" firstAttribute="top" secondItem="Q1M-XS-Gke" secondAttribute="bottom" constant="70" id="AQC-Fi-VAs"/>
                             <constraint firstAttribute="centerY" secondItem="TdG-fK-QVH" secondAttribute="centerY" id="Czt-kj-dkR"/>
                             <constraint firstItem="FhZ-jx-1ju" firstAttribute="top" secondItem="akG-4W-7nr" secondAttribute="bottom" constant="-59" id="Gmb-So-L1o"/>
-                            <constraint firstItem="3cB-He-fQp" firstAttribute="top" secondItem="Uvq-QD-9L7" secondAttribute="bottom" constant="130" id="H19-tr-kad"/>
+                            <constraint firstItem="3cB-He-fQp" firstAttribute="top" secondItem="Uvq-QD-9L7" secondAttribute="bottom" constant="70" id="H19-tr-kad"/>
                             <constraint firstItem="elo-LB-Dn4" firstAttribute="top" secondItem="SoA-1I-qZH" secondAttribute="bottom" constant="-51" id="JLW-Rh-vvA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FhZ-jx-1ju" secondAttribute="trailing" constant="94" id="LSR-87-DL9"/>
                             <constraint firstItem="akG-4W-7nr" firstAttribute="leading" secondItem="VRN-i9-bPF" secondAttribute="trailing" constant="50" id="Mhg-4l-j8p"/>
@@ -262,16 +287,19 @@
                             <constraint firstItem="SoA-1I-qZH" firstAttribute="leading" secondItem="TdG-fK-QVH" secondAttribute="trailing" constant="50" id="TwG-Aw-YT0"/>
                             <constraint firstItem="VRN-i9-bPF" firstAttribute="top" secondItem="FhZ-jx-1ju" secondAttribute="bottom" constant="-65" id="Vxd-NF-7om"/>
                             <constraint firstAttribute="centerX" secondItem="akG-4W-7nr" secondAttribute="centerX" id="WHe-yx-zBg"/>
+                            <constraint firstItem="LAK-7D-5XC" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" id="XR4-wQ-AH0"/>
                             <constraint firstItem="FhZ-jx-1ju" firstAttribute="leading" secondItem="VRN-i9-bPF" secondAttribute="trailing" constant="148" id="Xth-Ol-TYm"/>
                             <constraint firstAttribute="centerX" secondItem="SoA-1I-qZH" secondAttribute="centerX" id="Ytd-cf-Tn8"/>
                             <constraint firstAttribute="centerX" secondItem="Uvq-QD-9L7" secondAttribute="centerX" id="bPF-iw-IXW"/>
+                            <constraint firstItem="H55-3e-gis" firstAttribute="top" secondItem="LAK-7D-5XC" secondAttribute="bottom" constant="70" id="eip-5f-8BA"/>
                             <constraint firstAttribute="centerY" secondItem="VRN-i9-bPF" secondAttribute="centerY" constant="200" id="gxd-cH-qbg"/>
                             <constraint firstItem="VRN-i9-bPF" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="lp0-Hy-C1T"/>
-                            <constraint firstItem="0wh-Ls-BVg" firstAttribute="top" secondItem="0i5-kk-Siu" secondAttribute="bottom" constant="20" id="nw5-xm-UyS"/>
+                            <constraint firstItem="0wh-Ls-BVg" firstAttribute="top" secondItem="0i5-kk-Siu" secondAttribute="bottom" constant="70" id="nw5-xm-UyS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1c3-2C-aRL" secondAttribute="trailing" constant="94" id="oAT-7s-ejK"/>
                             <constraint firstItem="elo-LB-Dn4" firstAttribute="leading" secondItem="TdG-fK-QVH" secondAttribute="trailing" constant="148" id="rDE-AG-J2K"/>
-                            <constraint firstItem="3cB-He-fQp" firstAttribute="top" secondItem="JNF-Ji-h45" secondAttribute="bottom" constant="130" id="tLl-dz-oNG"/>
+                            <constraint firstItem="3cB-He-fQp" firstAttribute="top" secondItem="JNF-Ji-h45" secondAttribute="bottom" constant="70" id="tLl-dz-oNG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="elo-LB-Dn4" secondAttribute="trailing" constant="94" id="uV2-Kr-Zi1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LAK-7D-5XC" secondAttribute="trailing" id="xxG-8Z-hB1"/>
                             <constraint firstItem="Uvq-QD-9L7" firstAttribute="top" secondItem="H55-3e-gis" secondAttribute="bottom" constant="70" id="z4v-Ox-Asc"/>
                             <constraint firstAttribute="centerX" secondItem="H55-3e-gis" secondAttribute="centerX" id="zaJ-a4-iaV"/>
                         </constraints>

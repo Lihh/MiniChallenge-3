@@ -91,13 +91,6 @@ class GameCalculatorViewController: UIViewController {
         answerOp2.layer.borderColor = UIColor .whiteColor().CGColor
         answerOp2.layer.cornerRadius = 6
         
-        btn1.layer.cornerRadius = 6
-        btn2.layer.cornerRadius = 6
-        btn3.layer.cornerRadius = 6
-        btn4.layer.cornerRadius = 6
-        btn5.layer.cornerRadius = 6
-        btn6.layer.cornerRadius = 6
-        
         notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelMathExercise", object: nil)
         
 
