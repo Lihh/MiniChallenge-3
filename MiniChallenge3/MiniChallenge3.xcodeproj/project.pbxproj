@@ -68,6 +68,8 @@
 		EC5B553D1B0A7C5800EBCB49 /* OneStarFilled.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5B55391B0A7C5800EBCB49 /* OneStarFilled.png */; };
 		EC5B553E1B0A7C5800EBCB49 /* ThreeStarsFilled.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5B553A1B0A7C5800EBCB49 /* ThreeStarsFilled.png */; };
 		EC5B553F1B0A7C5800EBCB49 /* HollowStars.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5B553B1B0A7C5800EBCB49 /* HollowStars.png */; };
+		EC8471481B1361B400BA8DD2 /* gameMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC8471471B1361B400BA8DD2 /* gameMusic.mp3 */; };
+		EC84714A1B1364D000BA8DD2 /* Blop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC8471491B1364D000BA8DD2 /* Blop.mp3 */; };
 		EC8647231B068B9D00EB45DB /* MathLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8647221B068B9D00EB45DB /* MathLevelsViewController.swift */; };
 		EC8647251B068D5500EB45DB /* PortugueseLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8647241B068D5500EB45DB /* PortugueseLevelsViewController.swift */; };
 		EC8647271B068DC100EB45DB /* ScienceLevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8647261B068DC100EB45DB /* ScienceLevelsViewController.swift */; };
@@ -152,6 +154,8 @@
 		EC5B55391B0A7C5800EBCB49 /* OneStarFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OneStarFilled.png; sourceTree = "<group>"; };
 		EC5B553A1B0A7C5800EBCB49 /* ThreeStarsFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThreeStarsFilled.png; sourceTree = "<group>"; };
 		EC5B553B1B0A7C5800EBCB49 /* HollowStars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HollowStars.png; sourceTree = "<group>"; };
+		EC8471471B1361B400BA8DD2 /* gameMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameMusic.mp3; sourceTree = "<group>"; };
+		EC8471491B1364D000BA8DD2 /* Blop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Blop.mp3; sourceTree = "<group>"; };
 		EC8647221B068B9D00EB45DB /* MathLevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathLevelsViewController.swift; sourceTree = "<group>"; };
 		EC8647241B068D5500EB45DB /* PortugueseLevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortugueseLevelsViewController.swift; sourceTree = "<group>"; };
 		EC8647261B068DC100EB45DB /* ScienceLevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScienceLevelsViewController.swift; sourceTree = "<group>"; };
@@ -373,6 +377,8 @@
 				EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */,
 				EC2E555E1B04FB4600D2D953 /* MainViewController.swift */,
 				EC2E55661B04FB5C00D2D953 /* Main.storyboard */,
+				EC8471471B1361B400BA8DD2 /* gameMusic.mp3 */,
+				EC8471491B1364D000BA8DD2 /* Blop.mp3 */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -464,7 +470,7 @@
 				TargetAttributes = {
 					024299831B04BBAA003BD890 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 9WJKK289EM;
+						DevelopmentTeam = 66BPT5DT27;
 					};
 					0242999B1B04BBAA003BD890 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -503,6 +509,7 @@
 				02D875FD1B12DC30002D61B8 /* LAMPADA.png in Resources */,
 				02D876071B12DC47002D61B8 /* MEIA.png in Resources */,
 				0BD3B8391B0A09AC007295AC /* counting.storyboard in Resources */,
+				EC8471481B1361B400BA8DD2 /* gameMusic.mp3 in Resources */,
 				02D875E51B12DBDD002D61B8 /* BOLACHA.png in Resources */,
 				024299971B04BBAA003BD890 /* LaunchScreen.xib in Resources */,
 				EC055C1F1B083B6200BFB3D0 /* Calculator.storyboard in Resources */,
@@ -523,6 +530,7 @@
 				02D876171B12DC6C002D61B8 /* TIJOLO.png in Resources */,
 				02D875F71B12DC1E002D61B8 /* ESQUILO.png in Resources */,
 				02D875E31B12DBD8002D61B8 /* BOLA.png in Resources */,
+				EC84714A1B1364D000BA8DD2 /* Blop.mp3 in Resources */,
 				02D876111B12DC5D002D61B8 /* QUEIJO.png in Resources */,
 				02D876011B12DC37002D61B8 /* LEAO.png in Resources */,
 				EC2FBB661B066FD9008A6C67 /* Blogger Sans-Light.otf in Resources */,

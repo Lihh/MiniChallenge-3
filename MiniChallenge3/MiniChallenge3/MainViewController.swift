@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MainViewController: UIViewController {
     
@@ -16,10 +17,20 @@ class MainViewController: UIViewController {
     @IBOutlet weak var mathButton: KPButton!
     @IBOutlet weak var portugueseButton: KPButton!
     @IBOutlet weak var scienceButton: KPButton!
+    
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
+    var gameSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gameMusic", ofType: "mp3")!)
+    var audioPlayerMusic = AVAudioPlayer()
+    var audioPlayerSound = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBarHidden = true
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        audioPlayerMusic = AVAudioPlayer(contentsOfURL: gameSound, error: nil)
+        audioPlayerMusic.prepareToPlay()
+        audioPlayerMusic.play()
+        audioPlayerMusic.numberOfLoops = -1
+        audioPlayerMusic.volume = 0.07
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +39,10 @@ class MainViewController: UIViewController {
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
         let customSegue: String = segue.identifier!
         
         switch customSegue {

@@ -599,12 +599,12 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ma-Hx-cjJ" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="365" y="364" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.17858598689999999" green="0.81815280560000003" blue="0.52179843479999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="3Ka-TB-h9X"/>
                                     <constraint firstAttribute="height" constant="100" id="pfu-wW-Ap2"/>
                                 </constraints>
-                                <state key="normal" image="scienceIcon">
+                                <state key="normal" image="flame">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -617,35 +617,14 @@
                                     <segue destination="3Sd-3y-i2g" kind="presentation" identifier="segueThree" id="KID-Db-x0T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cp-Sk-Ek7" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="250" y="171" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Tz0-mz-PLv"/>
-                                    <constraint firstAttribute="width" constant="100" id="dUJ-ys-qIr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" image="mathIcon">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="QBu-Aw-KsU" kind="presentation" identifier="segueOne" id="SSx-Eb-HM0"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22y-1l-w92" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="138" y="364" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="fcr-YF-662"/>
                                     <constraint firstAttribute="height" constant="100" id="khf-J2-FMu"/>
                                 </constraints>
-                                <state key="normal" image="portugueseIcon">
+                                <state key="normal" image="water">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -658,8 +637,29 @@
                                     <segue destination="0E7-rl-yE5" kind="presentation" identifier="segueTwo" id="qmO-Uy-bta"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cp-Sk-Ek7" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="250" y="171" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Tz0-mz-PLv"/>
+                                    <constraint firstAttribute="width" constant="100" id="dUJ-ys-qIr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" image="compose">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="QBu-Aw-KsU" kind="presentation" identifier="segueOne" id="SSx-Eb-HM0"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.16862745100000001" green="0.24313725489999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.25747500489126601" green="0.37244581954155043" blue="0.4854777090525253" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5ma-Hx-cjJ" firstAttribute="top" secondItem="8Cp-Sk-Ek7" secondAttribute="bottom" constant="93" id="KtO-gZ-g8k"/>
                             <constraint firstItem="22y-1l-w92" firstAttribute="top" secondItem="8Cp-Sk-Ek7" secondAttribute="bottom" constant="93" id="Lv2-BL-CaZ"/>
@@ -1947,8 +1947,8 @@
     <resources>
         <image name="HollowStars" width="350" height="100"/>
         <image name="backArrow" width="30" height="30"/>
-        <image name="mathIcon" width="60" height="60"/>
-        <image name="portugueseIcon" width="32" height="32"/>
-        <image name="scienceIcon" width="32" height="32"/>
+        <image name="compose" width="128" height="128"/>
+        <image name="flame" width="128" height="128"/>
+        <image name="water" width="128" height="128"/>
     </resources>
 </document>
