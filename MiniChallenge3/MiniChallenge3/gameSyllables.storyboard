@@ -441,6 +441,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovM-eo-SSY">
+                                <rect key="frame" x="6" y="99" width="50" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="kok-cO-wfn"/>
+                                    <constraint firstAttribute="height" constant="50" id="pmA-yI-xTY"/>
+                                </constraints>
+                                <state key="normal" image="tutorialHand.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.58431372549019611" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -458,6 +471,7 @@
                             <constraint firstAttribute="centerY" secondItem="UhO-ox-The" secondAttribute="centerY" constant="-93" id="HFf-D2-ZlA"/>
                             <constraint firstAttribute="centerY" secondItem="308-wg-h0Y" secondAttribute="centerY" constant="47" id="IYY-Rv-ZfX"/>
                             <constraint firstAttribute="centerX" secondItem="NIK-qo-3BG" secondAttribute="centerX" constant="-42" id="Jio-OQ-iIw"/>
+                            <constraint firstAttribute="centerX" secondItem="ovM-eo-SSY" secondAttribute="centerX" constant="269" id="KIj-Gf-F4O"/>
                             <constraint firstAttribute="centerX" secondItem="wR0-C7-dXo" secondAttribute="centerX" constant="-65" id="M4J-4J-2gf"/>
                             <constraint firstAttribute="centerX" secondItem="rUv-E4-DUE" secondAttribute="centerX" constant="-65" id="N1B-0B-Ygc"/>
                             <constraint firstAttribute="centerY" secondItem="ViL-7r-JgK" secondAttribute="centerY" constant="-256" id="Pzc-Fg-vv2"/>
@@ -468,6 +482,7 @@
                             <constraint firstAttribute="centerX" secondItem="sfs-0D-o2w" secondAttribute="centerX" constant="164.5" id="SOL-wT-mx3"/>
                             <constraint firstAttribute="centerX" secondItem="3yS-H7-iWt" secondAttribute="centerX" constant="164.5" id="TDv-ZF-xw9"/>
                             <constraint firstAttribute="centerX" secondItem="Bqj-Oj-gyj" secondAttribute="centerX" constant="65" id="XEA-Bw-G6A"/>
+                            <constraint firstAttribute="centerY" secondItem="ovM-eo-SSY" secondAttribute="centerY" constant="176" id="Xcb-F7-7JM"/>
                             <constraint firstAttribute="centerX" secondItem="Hqa-UX-mdK" secondAttribute="centerX" constant="195" id="b5k-TB-3z7"/>
                             <constraint firstAttribute="centerY" secondItem="0a5-AT-AnM" secondAttribute="centerY" constant="-256" id="bD4-bc-wTy"/>
                             <constraint firstItem="KSj-Ip-0me" firstAttribute="top" secondItem="dNJ-0A-UXr" secondAttribute="bottom" constant="8" id="bTU-RR-5FT"/>
@@ -512,6 +527,7 @@
                         <outlet property="lblPositionSyllable1" destination="WTL-NC-uWs" id="7jQ-c2-IBw"/>
                         <outlet property="lblPositionSyllable2" destination="Gg4-8T-wLr" id="FUD-zy-879"/>
                         <outlet property="lblPositionSyllable3" destination="POD-Id-zRe" id="AG5-Rp-ZjD"/>
+                        <outlet property="tutorialHand" destination="ovM-eo-SSY" id="Cpy-TQ-fa4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yg-S6-Kex" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -521,5 +537,6 @@
     </scenes>
     <resources>
         <image name="backArrow" width="30" height="30"/>
+        <image name="tutorialHand.png" width="64" height="64"/>
     </resources>
 </document>

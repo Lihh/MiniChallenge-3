@@ -9,6 +9,12 @@
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -30,21 +36,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nad-Jk-b9N" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="256" y="566" width="88" height="36"/>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="20"/>
-                                <state key="normal" title="Confirmar">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="ConfirmButton" destination="cpM-Jk-ArL" eventType="touchUpInside" id="iFi-Qv-RWd"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CACHORRO.png" translatesAutoresizingMaskIntoConstraints="NO" id="C32-pP-D0x" customClass="KPImageView" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="125" y="125" width="350" height="350"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CACHORRO.png" translatesAutoresizingMaskIntoConstraints="NO" id="C32-pP-D0x" customClass="KPImageView" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="125" y="28" width="350" height="350"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="Ein-Xh-x5e"/>
-                                    <constraint firstAttribute="height" constant="350" id="P2w-1d-HSZ"/>
+                                    <constraint firstAttribute="height" constant="400" id="b50-Tl-WKU"/>
+                                    <constraint firstAttribute="width" constant="400" id="iVk-Dv-Wcg"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WId-RN-dCu" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
@@ -59,70 +55,236 @@
                                     <action selector="buttonBack:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="Q98-uU-bM7"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wi2-YB-dSf" customClass="KPTextField" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="125" y="486" width="350" height="50"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVF-m7-m9m" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="235" y="455" width="130" height="51"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="96V-1i-7ye"/>
-                                    <constraint firstAttribute="width" constant="350" id="nmQ-XV-FaX"/>
+                                    <constraint firstAttribute="width" constant="185" id="Cah-2Z-f9K"/>
+                                    <constraint firstAttribute="height" constant="55" id="OTV-iC-tXM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
+                                <state key="normal" title="OPCAO 2">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="2gW-v2-8JP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDb-V3-jzZ" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="428" y="455" width="122" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="7mq-r3-xfT"/>
+                                    <constraint firstAttribute="height" constant="55" id="YDa-DW-6eL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
+                                <state key="normal" title="OPCAO 3">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="7Mu-Ds-7K9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL4-ow-wVw" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="50" y="523" width="126" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="15E-Xo-9hM"/>
+                                    <constraint firstAttribute="height" constant="55" id="syc-BO-leS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
+                                <state key="normal" title="OPCAO 4">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="QJV-KS-EOD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoZ-h6-LZc" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="235" y="523" width="130" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="3zp-oQ-Hby"/>
+                                    <constraint firstAttribute="height" constant="55" id="Wsi-gt-UQs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
+                                <state key="normal" title="OPCAO 5">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="FfZ-TP-TRz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogi-hX-Hbq" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="50" y="455" width="126" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="9EB-Yb-dny"/>
+                                    <constraint firstAttribute="height" constant="55" id="U6Q-In-ZHQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
+                                <state key="normal" title="OPCAO 1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="textFieldAction:" destination="cpM-Jk-ArL" eventType="editingChanged" id="JMd-gO-kl6"/>
+                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="V3V-d2-eFi"/>
                                 </connections>
-                            </textField>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="________" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgX-MX-FJK">
+                                <rect key="frame" x="226" y="377" width="149" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="O3M-Mf-6IE"/>
+                                    <constraint firstAttribute="width" constant="200" id="Ssr-An-eqC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWP-0H-UbC" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="428" y="523" width="122" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="raF-kt-ya3"/>
+                                    <constraint firstAttribute="width" constant="185" id="vjQ-R8-CwX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
+                                <state key="normal" title="OPCAO 6">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="ekf-Mm-FaV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="__________________________________________________________" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlG-Lk-iol">
+                                <rect key="frame" x="16" y="426" width="720" height="21"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.32941176470588235" green="0.84313725490196079" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="C32-pP-D0x" firstAttribute="top" secondItem="wdS-fN-8Me" secondAttribute="bottom" constant="8" id="3Tk-jH-2Ca"/>
                             <constraint firstAttribute="centerX" secondItem="C32-pP-D0x" secondAttribute="centerX" id="3vs-ig-Jtc"/>
-                            <constraint firstItem="Nad-Jk-b9N" firstAttribute="top" secondItem="wi2-YB-dSf" secondAttribute="bottom" constant="30" id="5tS-mN-ZpA"/>
                             <constraint firstAttribute="centerX" secondItem="wdS-fN-8Me" secondAttribute="centerX" id="8Ne-oE-hY1"/>
-                            <constraint firstAttribute="centerY" secondItem="wi2-YB-dSf" secondAttribute="centerY" constant="172" id="DLo-UR-FrV"/>
+                            <constraint firstAttribute="centerX" secondItem="C32-pP-D0x" secondAttribute="centerX" id="8og-ij-Hwz"/>
+                            <constraint firstAttribute="centerY" secondItem="hDb-V3-jzZ" secondAttribute="centerY" constant="-250" id="BSS-qZ-C1A"/>
+                            <constraint firstItem="IVF-m7-m9m" firstAttribute="top" secondItem="nlG-Lk-iol" secondAttribute="bottom" constant="70" id="Baf-6K-n9c"/>
+                            <constraint firstAttribute="centerY" secondItem="hL4-ow-wVw" secondAttribute="centerY" constant="-400" id="CWg-nJ-GgO"/>
                             <constraint firstItem="wdS-fN-8Me" firstAttribute="top" secondItem="QGR-L6-YqV" secondAttribute="bottom" constant="8" id="Es1-QF-q6R"/>
-                            <constraint firstItem="wi2-YB-dSf" firstAttribute="top" secondItem="C32-pP-D0x" secondAttribute="bottom" constant="11" id="J7K-wT-AMx"/>
                             <constraint firstAttribute="centerY" secondItem="C32-pP-D0x" secondAttribute="centerY" constant="-54" id="JUZ-p5-kdM"/>
-                            <constraint firstAttribute="centerX" secondItem="Nad-Jk-b9N" secondAttribute="centerX" id="Ne3-Iz-Fs4"/>
-                            <constraint firstItem="wi2-YB-dSf" firstAttribute="top" secondItem="C32-pP-D0x" secondAttribute="bottom" constant="28" id="POz-Uj-sS8"/>
-                            <constraint firstItem="C32-pP-D0x" firstAttribute="top" secondItem="wi2-YB-dSf" secondAttribute="bottom" constant="26" id="R5H-M6-Kqp"/>
-                            <constraint firstItem="C32-pP-D0x" firstAttribute="centerX" secondItem="wi2-YB-dSf" secondAttribute="centerX" id="SJo-Rl-wvi"/>
-                            <constraint firstAttribute="centerY" secondItem="C32-pP-D0x" secondAttribute="centerY" id="Sta-Oc-mTm"/>
-                            <constraint firstItem="wi2-YB-dSf" firstAttribute="top" secondItem="wdS-fN-8Me" secondAttribute="bottom" constant="15" id="UVX-e5-6zE"/>
+                            <constraint firstItem="ogi-hX-Hbq" firstAttribute="leading" secondItem="Ndm-al-DB1" secondAttribute="leadingMargin" constant="50" id="LFx-rJ-Kkr"/>
+                            <constraint firstAttribute="centerY" secondItem="ogi-hX-Hbq" secondAttribute="centerY" constant="-250" id="Pk4-C7-ry8"/>
+                            <constraint firstAttribute="centerX" secondItem="GoZ-h6-LZc" secondAttribute="centerX" id="WBC-js-rEh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nlG-Lk-iol" secondAttribute="trailing" id="aBR-Sm-Wju"/>
                             <constraint firstItem="WId-RN-dCu" firstAttribute="top" secondItem="QGR-L6-YqV" secondAttribute="bottom" constant="8" id="bt0-Xm-cuV"/>
-                            <constraint firstAttribute="centerX" secondItem="C32-pP-D0x" secondAttribute="centerX" id="glP-b9-I3r"/>
-                            <constraint firstAttribute="centerX" secondItem="wi2-YB-dSf" secondAttribute="centerX" id="h9J-D9-prS"/>
+                            <constraint firstItem="hL4-ow-wVw" firstAttribute="leading" secondItem="Ndm-al-DB1" secondAttribute="leadingMargin" constant="50" id="cbR-QU-szr"/>
                             <constraint firstItem="WId-RN-dCu" firstAttribute="leading" secondItem="Ndm-al-DB1" secondAttribute="leadingMargin" id="hXM-FU-Sif"/>
-                            <constraint firstItem="9nL-HS-OfF" firstAttribute="top" secondItem="Nad-Jk-b9N" secondAttribute="bottom" constant="20" id="miD-ry-V6e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hDb-V3-jzZ" secondAttribute="trailing" constant="50" id="i8h-cb-oYW"/>
+                            <constraint firstAttribute="centerY" secondItem="C32-pP-D0x" secondAttribute="centerY" constant="200" id="iJa-ep-LTb"/>
+                            <constraint firstItem="nlG-Lk-iol" firstAttribute="leading" secondItem="Ndm-al-DB1" secondAttribute="leadingMargin" id="jOQ-GX-6CH"/>
+                            <constraint firstAttribute="centerX" secondItem="pgX-MX-FJK" secondAttribute="centerX" id="nTQ-z0-E9Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oWP-0H-UbC" secondAttribute="trailing" constant="50" id="qLs-Rz-f4X"/>
+                            <constraint firstAttribute="centerY" secondItem="oWP-0H-UbC" secondAttribute="centerY" constant="-400" id="tzU-VG-8rO"/>
+                            <constraint firstAttribute="centerY" secondItem="IVF-m7-m9m" secondAttribute="centerY" constant="-250" id="vaF-Cq-chK"/>
+                            <constraint firstAttribute="centerY" secondItem="pgX-MX-FJK" secondAttribute="centerY" constant="-50" id="vwU-JD-YYF"/>
+                            <constraint firstAttribute="centerX" secondItem="IVF-m7-m9m" secondAttribute="centerX" id="yJs-Mf-TVA"/>
+                            <constraint firstAttribute="centerY" secondItem="GoZ-h6-LZc" secondAttribute="centerY" constant="-400" id="zG7-rJ-q9K"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="3Tk-jH-2Ca"/>
                                 <exclude reference="3vs-ig-Jtc"/>
                                 <exclude reference="JUZ-p5-kdM"/>
-                                <exclude reference="R5H-M6-Kqp"/>
-                                <exclude reference="DLo-UR-FrV"/>
-                                <exclude reference="POz-Uj-sS8"/>
-                                <exclude reference="UVX-e5-6zE"/>
-                                <exclude reference="h9J-D9-prS"/>
-                                <exclude reference="miD-ry-V6e"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="confirmButton" destination="Nad-Jk-b9N" id="cEt-bI-Gff"/>
+                        <outlet property="answerLabel" destination="pgX-MX-FJK" id="lTd-Tc-hfi"/>
+                        <outlet property="btn1" destination="ogi-hX-Hbq" id="Zea-SV-nUX"/>
+                        <outlet property="btn2" destination="IVF-m7-m9m" id="a4M-bP-l4f"/>
+                        <outlet property="btn3" destination="hDb-V3-jzZ" id="2yj-et-hQZ"/>
+                        <outlet property="btn4" destination="hL4-ow-wVw" id="9wJ-vM-fxT"/>
+                        <outlet property="btn5" destination="GoZ-h6-LZc" id="9aV-HW-pGI"/>
+                        <outlet property="btn6" destination="oWP-0H-UbC" id="M9F-AB-40Z"/>
                         <outlet property="imageView" destination="C32-pP-D0x" id="Mpy-Ua-s39"/>
-                        <outlet property="textField" destination="wi2-YB-dSf" id="vc2-Xh-qtU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YSv-mE-OBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
