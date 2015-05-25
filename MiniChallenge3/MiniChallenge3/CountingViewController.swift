@@ -517,4 +517,7 @@ class CountingViewController: UIViewController {
     }
     //============================================================
     
+    @IBAction func btnBack(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
