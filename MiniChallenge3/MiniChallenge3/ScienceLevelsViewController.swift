@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ScienceLevelsViewController: UIViewController {
     
@@ -37,6 +38,8 @@ class ScienceLevelsViewController: UIViewController {
     var completedLevels = 0
     var buttons = [UIButton]()
     var stars = [UIImageView]()
+    var audioPlayerSound = AVAudioPlayer()
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,6 +100,11 @@ class ScienceLevelsViewController: UIViewController {
     }
     
     @IBAction func transitionToLevel(sender: KPButton) {
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
+        
         let buttonTitle = sender.currentTitle!
         var dictionary = ["level" : buttonTitle]
         let exerciseStoryboard = UIStoryboard(name: exercise, bundle: nil)

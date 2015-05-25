@@ -7,16 +7,24 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PortugueseViewController: UIViewController {
     
     var notificationCenter = NSNotificationCenter.defaultCenter()
+    var audioPlayerSound = AVAudioPlayer()
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func exerciseButtons(sender: KPButton) {
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
+        
         let exercise = sender.currentTitle!
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
