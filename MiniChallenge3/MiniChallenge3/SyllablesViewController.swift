@@ -42,6 +42,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var lblDeleteSyllable3: UILabel!
     @IBOutlet weak var lblPositionSyllable3: UILabel!
     
+    @IBOutlet weak var tutorialHand: UIButton!
     @IBOutlet weak var btnOption1: UIButton!
     @IBOutlet weak var btnOption2: UIButton!
     @IBOutlet weak var btnOption3: UIButton!
@@ -67,15 +68,15 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     
         // Level 1
     = [(/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
-        /* Image 1  */ "PASSARO", /* Delete */ "RTELO",
+        /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-        /* Image 3  */ "CACHORRO", /* Delete */ "RACAO",
+        /* Image 3  */ "CORACAO", /* Delete */ "RAÇÃO",
         /* Button 1 */ "MA",      /* Delete */ true,  /* Position */ 1,
-        /* Button 2 */ "TO",      /* Delete */ false, /* Position */ 0,
+        /* Button 2 */ "CA",      /* Delete */ true,  /* Position */ 2,
         /* Button 3 */ "CO",      /* Delete */ true,  /* Position */ 3,
         /* Button 4 */ "LO",      /* Delete */ false, /* Position */ 0,
         /* Button 5 */ "VA",      /* Delete */ false, /* Position */ 0,
-        /* Button 6 */ "CA",      /* Delete */ true,  /* Position */ 2,
+        /* Button 6 */ "BLA",      /* Delete */ false, /* Position */ 0,
         /* Button 7 */ "TE",      /* Delete */ false, /* Position */ 0,
         /* Button 8 */ "RA",      /* Delete */ false, /* Position */ 0),
     
@@ -84,112 +85,112 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
          /* Image 1  */ "TIGRE",   /* Delete */ "GRE",
          /* Image 2  */ "QUEIJO",  /* Delete */ "QUEI",
          /* Image 3  */ "ESQUILO", /* Delete */ "ESQUI",
-         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "CORACAO", /* Delete */ true,  /* Position */ 0,
-         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+         /* Button 1 */ "TI", /* Delete */ true,  /* Position */ 1,
+         /* Button 2 */ "JO", /* Delete */ true,  /* Position */ 2,
+         /* Button 3 */ "LO", /* Delete */ true,  /* Position */ 3,
+         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 3
-        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
-         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
-         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
-         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+        (/* Level */ 1, /* Word */ "CAMELO", /* Image */ "CAMELO",
+         /* Image 1  */ "CACHORRO", /* Delete */ "CHORRO",
+         /* Image 2  */ "MEIA",  /* Delete */ "IA",
+         /* Image 3  */ "ESQUILO", /* Delete */ "ESQUI",
+         /* Button 1 */ "CA", /* Delete */ true, /* Position */ 1,
+         /* Button 2 */ "ME", /* Delete */ true, /* Position */ 2,
+         /* Button 3 */ "LO", /* Delete */ true, /* Position */ 3,
+         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 4
-        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
-         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
-         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
-         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+        (/* Level */ 1, /* Word */ "PANELA", /* Image */ "PANELA",
+         /* Image 1  */ "PASSARO", /* Delete */ "SSARO",
+         /* Image 2  */ "NEVE",  /* Delete */ "VE",
+         /* Image 3  */ "LAPIS", /* Delete */ "PIS",
+         /* Button 1 */ "PA", /* Delete */ true, /* Position */ 1,
+         /* Button 2 */ "NE", /* Delete */ true, /* Position */ 2,
+         /* Button 3 */ "LA", /* Delete */ true, /* Position */ 3,
+         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 5
-        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
-         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
-         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
-         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+        (/* Level */ 1, /* Word */ "BOLACHA", /* Image */ "BOLACHA",
+         /* Image 1  */ "BOLA", /* Delete */ "LA",
+         /* Image 2  */ "LAPIS",  /* Delete */ "PIS",
+         /* Image 3  */ "CHAPEU", /* Delete */ "PÉU",
+         /* Button 1 */ "BO", /* Delete */ true, /* Position */ 1,
+         /* Button 2 */ "LA", /* Delete */ true, /* Position */ 2,
+         /* Button 3 */ "CHA", /* Delete */ true, /* Position */ 3,
+         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 6
-        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
-         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
-         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
-         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+        (/* Level */ 1, /* Word */ "PEGADA", /* Image */ "PEGADA",
+         /* Image 1  */ "PEIXE", /* Delete */ "IXE",
+         /* Image 2  */ "GATO",  /* Delete */ "TO",
+         /* Image 3  */ "LAMPADA", /* Delete */ "LAMPA",
+         /* Button 1 */ "PE", /* Delete */ true, /* Position */ 1,
+         /* Button 2 */ "GA", /* Delete */ true, /* Position */ 2,
+         /* Button 3 */ "DA", /* Delete */ true, /* Position */ 3,
+         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 7
         (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
          /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
          /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
-         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+         /* Image 3  */ "XXX", /* Delete */ "RACAO",
+         /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 8
         (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
          /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
          /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
-         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),
+         /* Image 3  */ "XXX", /* Delete */ "RACAO",
+         /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 9
         (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
          /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
          /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
-         /* Button 1 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 3 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "CORACAO", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "CORACAO", /* Delete */ false, /* Position */ 0),]
+         /* Image 3  */ "XXX", /* Delete */ "RACAO",
+         /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),]
     //================================================================================
     
     
@@ -201,6 +202,15 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelPortugueseExercise", object: nil)
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        if level == 0
+        {
+//            tutorialHand.hidden = false
+//            syllable.showTutorial(self.view, hand: tutorialHand, destiny: lblPositionSyllable1)
+        }
     }
     //================================================================================
     
@@ -220,13 +230,16 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     
     func gameConfiguration()
     {
+        // Tutorial
+        tutorialHand.hidden = true
+        
         // Images
         syllable.setImageInImageView(imgImage1, imageName: levels[level].image1)
         syllable.setImageInImageView(imgImage2, imageName: levels[level].image2)
         syllable.setImageInImageView(imgImage3, imageName: levels[level].image3)
         
         // Labels
-        syllable.setTextInLabel(lblDeleteSyllable1, labelText: levels[level].deleteSyllable2)
+        syllable.setTextInLabel(lblDeleteSyllable1, labelText: levels[level].deleteSyllable1)
         syllable.setTextInLabel(lblDeleteSyllable2, labelText: levels[level].deleteSyllable2)
         syllable.setTextInLabel(lblDeleteSyllable3, labelText: levels[level].deleteSyllable3)
         
