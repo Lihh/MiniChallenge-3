@@ -42,16 +42,40 @@ class CompleteTheWordViewController: UIViewController {
                   button4Text: String, button4Correct:Bool, button4Displacement: CGFloat,
                   button5Text: String, button5Correct:Bool, button5Displacement: CGFloat)]
     // Level 1
-    = [(1, "CACHORRO", "C _ S A", 1,
-       "A", true, 1, "B", false, 0, "C", false, 0, "D", false, 0, "E", false, 0),
+    = [ (1, "GATO", "G _ T O", 1,
+        "A", true, 1, "B", false, 0, "C", false, 0, "R", false, 0, "E", false, 0),
     
     // Level 2
-       (2, "CACHORRO", "S _ _ A T _", 3,
-       "A", true, 1, "F", false, 0, "P", true, 2, "E", false, 0, "O", true, 5),
+        (2, "PEIXE", "P E _ X _", 2,
+        "A", false, 0, "F", false, 0, "I", true, 2, "T", false, 0, "E", true, 4),
         
     // Level 3
-       (3, "CACHORRO", "P _ P _ C _", 3,
-       "A", true, 5, "E", false, 0, "I", true, 1, "O", true, 3, "U", false, 0)]
+        (3, "COELHO", "C _ E _ H O", 2,
+        "O", true, 1, "E", false, 0, "I", false, 0, "L", true, 3, "U", false, 0),
+        
+    // Level 4
+        (4, "CAVALO", "C _ V A _ _", 3,
+        "C", false, 0, "A", true, 1, "L", true, 4, "F", false, 0, "O", true, 5),
+        
+    // Level 5
+        (5, "TIGRE", "T _ G _ _", 3,
+        "I", true, 1, "T", false, 0, "H", false, 0, "R", true, 3, "E", true, 4),
+        
+    // Level 6
+        (6, "ESQUILO", "E S _ U _ L _", 3,
+        "F", false, 0, "Q", true, 2, "I", true, 4, "L", false, 0, "O", true, 6),
+        
+    // Level 7
+        (7, "PASSARO", "P _ S _ A _ O", 3,
+        "A", true, 1, "S", true, 3, "I", false, 0, "R", true, 5, "U", false, 0),
+        
+    // Level 8
+        (8, "ELEFANTE", "E L E _ A _ T _", 3,
+        "O", false, 0, "F", true, 3, "N", true, 5, "M", false, 0, "E", true, 7),
+        
+    // Level 9
+        (9, "HIPOPOTAMO", "H _ _ O P O _ A _ O", 4,
+        "I", true, 1, "P", true, 2, "Q", false, 0, "T", true, 6.55, "M", true, 8.6)]
     //============================================================
     
     
@@ -108,24 +132,10 @@ class CompleteTheWordViewController: UIViewController {
     func buttonsConfiguration()
     {
         button1.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
-        button1.layer.cornerRadius = 6
-        button1.layer.backgroundColor = UIColor.lightGrayColor().CGColor
-        
         button2.setTitle(levels[level].button2Text, forState: UIControlState.Normal)
-        button2.layer.cornerRadius = 6
-        button2.layer.backgroundColor = UIColor.lightGrayColor().CGColor
-        
         button3.setTitle(levels[level].button3Text, forState: UIControlState.Normal)
-        button3.layer.cornerRadius = 6
-        button3.layer.backgroundColor = UIColor.lightGrayColor().CGColor
-        
         button4.setTitle(levels[level].button4Text, forState: UIControlState.Normal)
-        button4.layer.cornerRadius = 6
-        button4.layer.backgroundColor = UIColor.lightGrayColor().CGColor
-        
         button5.setTitle(levels[level].button5Text, forState: UIControlState.Normal)
-        button5.layer.cornerRadius = 6
-        button5.layer.backgroundColor = UIColor.lightGrayColor().CGColor
     }
     //============================================================
     
@@ -140,33 +150,33 @@ class CompleteTheWordViewController: UIViewController {
         {
         case 1:
             if levels[level].button1Correct == true
-            { correctAnimation(button1, displacementX: levels[level].button1Displacement) }
+            { correctButton(button1, displacementX: levels[level].button1Displacement) }
             else
-            { wrongAnimation(button1) }
+            { lostLife(button1) }
             
         case 2:
             if levels[level].button2Correct == true
-            { correctAnimation(button2, displacementX: levels[level].button2Displacement) }
+            { correctButton(button2, displacementX: levels[level].button2Displacement) }
             else
-            { wrongAnimation(button2) }
+            { lostLife(button2) }
             
         case 3:
             if levels[level].button3Correct == true
-            { correctAnimation(button3, displacementX: levels[level].button3Displacement) }
+            { correctButton(button3, displacementX: levels[level].button3Displacement) }
             else
-            { wrongAnimation(button3) }
+            { lostLife(button3) }
             
         case 4:
             if levels[level].button4Correct == true
-            { correctAnimation(button4, displacementX: levels[level].button4Displacement) }
+            { correctButton(button4, displacementX: levels[level].button4Displacement) }
             else
-            { wrongAnimation(button4) }
+            { lostLife(button4) }
             
         case 5:
             if levels[level].button5Correct == true
-            { correctAnimation(button5, displacementX: levels[level].button5Displacement) }
+            { correctButton(button5, displacementX: levels[level].button5Displacement) }
             else
-            { wrongAnimation(button5) }
+            { lostLife(button5) }
             
         default:
             println("outro")
@@ -178,32 +188,13 @@ class CompleteTheWordViewController: UIViewController {
     
     // MARK: - Animation for Wrong Button
     //============================================================
-    func wrongAnimation(buttonAnimate: UIButton)
-    {
-        buttonAnimate.backgroundColor = UIColor.redColor()
-        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
-            }) { (finished) -> Void in
-                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x-15, 0);
-                    }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
-                            }, completion: { (finished) -> Void in
-                                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                                    buttonAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
-                                    }, completion: { (finished) -> Void in
-                                        self.addButtonBlurEfect(buttonAnimate)
-                                })
-                        })
-                })
-        }
+    
+    func lostLife(buttonAnimate: UIButton){
         lifes--
-        
+        UIView.wrongAnimation(self.view, buttonAnimate: buttonAnimate)
         if lifes == 0 {
-            self.dismissViewControllerAnimated(true, completion: nil)
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.3, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
-        println("Errou \(lifes)x")
     }
     
     func addButtonBlurEfect(buttonBlur: AnyObject)
@@ -219,7 +210,7 @@ class CompleteTheWordViewController: UIViewController {
     
     // MARK: - Animation for Correct Button
     //============================================================
-    func correctAnimation(buttonAnimate: UIButton, displacementX: CGFloat)
+    func correctButton(buttonAnimate: UIButton, displacementX: CGFloat)
     {
         finish++
         println("Acertou!")
@@ -229,28 +220,21 @@ class CompleteTheWordViewController: UIViewController {
         xx = xx + (48 * displacementX)
         var yy = self.lblWord.frame.origin.y - buttonAnimate.frame.origin.y
         
-        // Animation
-        UIView.animateWithDuration(0.4, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            buttonAnimate.transform = CGAffineTransformMakeTranslation(xx,yy);
-            buttonAnimate.enabled = false
-            buttonAnimate.backgroundColor = UIColor.whiteColor()
-            buttonAnimate.borderWidth = 0
-            }) { (finished) -> Void in
-                UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    if self.finish == self.levels[self.level].finish
-                    {
-                        if self.persistence.verifyExistenceOfALevel("completeTheWord", level: self.level) {
-                            self.persistence.updateNumberOfStars("completeTheWord", level: self.level, numberOfStars: self.lifes)
-                        } else {
-                            self.persistence.newScore("completeTheWord", level: self.level, quantityOfStars: self.lifes)
-                        }
-                        self.dismissViewControllerAnimated(true, completion: nil)
-                    }
-                    }, completion: { (finished) -> Void in
-                })
+        UIView.correctAnimation(self.view, buttonAnimate: buttonAnimate, xx: xx, yy: yy, displacementX: displacementX)
+        
+        if self.finish == self.levels[self.level].finish {
+            if self.persistence.verifyExistenceOfALevel("completeTheWord", level: self.level) {
+                self.persistence.updateNumberOfStars("completeTheWord", level: self.level, numberOfStars: self.lifes)
+            } else {
+                self.persistence.newScore("completeTheWord", level: self.level, quantityOfStars: self.lifes)
+            }
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
     }
-    
     //============================================================
 
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }

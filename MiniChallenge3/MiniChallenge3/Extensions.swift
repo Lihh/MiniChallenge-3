@@ -51,6 +51,7 @@ extension UIView {
                                 UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
                                     buttonAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
                                     }, completion: { (finished) -> Void in
+                                        buttonAnimate.setImage(nil, forState: UIControlState.Normal)
                                         buttonAnimate.backgroundColor = UIColor .whiteColor()
                                         buttonAnimate.enabled = false
                                         buttonAnimate.setTitle("X", forState: UIControlState.Normal)

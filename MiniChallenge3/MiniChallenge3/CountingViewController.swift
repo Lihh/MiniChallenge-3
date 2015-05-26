@@ -330,145 +330,169 @@ class CountingViewController: UIViewController {
             if levels[level].button1Correct == true
             { correctAnimation(button1) }
             else
-            { wrongAnimation(button1) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button1)
+              lostLife() }
             
         case 2:
             if levels[level].button2Correct == true
             { correctAnimation(button2) }
             else
-            { wrongAnimation(button2) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button2)
+              lostLife() }
             
         case 3:
             if levels[level].button3Correct == true
             { correctAnimation(button3) }
             else
-            { wrongAnimation(button3) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button3)
+              lostLife() }
             
         case 4:
             if levels[level].button4Correct == true
             { correctAnimation(button4) }
             else
-            { wrongAnimation(button4) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button4)
+              lostLife() }
             
         case 5:
             if levels[level].button5Correct == true
             { correctAnimation(button5) }
             else
-            { wrongAnimation(button5) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button5)
+              lostLife() }
             
         case 6:
             if levels[level].button6Correct == true
             { correctAnimation(button6) }
             else
-            { wrongAnimation(button6) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button6)
+              lostLife() }
             
         case 7:
             if levels[level].button7Correct == true
             { correctAnimation(button7) }
             else
-            { wrongAnimation(button7) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button7)
+              lostLife() }
             
         case 8:
             if levels[level].button8Correct == true
             { correctAnimation(button8) }
             else
-            { wrongAnimation(button8) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button8)
+              lostLife() }
             
         case 9:
             if levels[level].button9Correct == true
             { correctAnimation(button9) }
             else
-            { wrongAnimation(button9) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button9)
+              lostLife() }
             
         case 10:
             if levels[level].button10Correct == true
             { correctAnimation(button10) }
             else
-            { wrongAnimation(button10) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button10)
+              lostLife() }
             
         case 11:
             if levels[level].button11Correct == true
             { correctAnimation(button11) }
             else
-            { wrongAnimation(button11) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button11)
+              lostLife() }
             
         case 12:
             if levels[level].button12Correct == true
             { correctAnimation(button12) }
             else
-            { wrongAnimation(button12) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button12)
+              lostLife() }
             
         case 13:
             if levels[level].button13Correct == true
             { correctAnimation(button13) }
             else
-            { wrongAnimation(button13) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button13)
+              lostLife() }
             
         case 14:
             if levels[level].button14Correct == true
             { correctAnimation(button14) }
             else
-            { wrongAnimation(button14) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button14)
+              lostLife() }
             
         case 15:
             if levels[level].button15Correct == true
             { correctAnimation(button15) }
             else
-            { wrongAnimation(button15) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button15)
+              lostLife() }
             
         case 16:
             if levels[level].button16Correct == true
             { correctAnimation(button16) }
             else
-            { wrongAnimation(button16) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button16)
+              lostLife() }
             
         case 17:
             if levels[level].button17Correct == true
             { correctAnimation(button17) }
             else
-            { wrongAnimation(button17) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button17)
+              lostLife() }
             
         case 18:
             if levels[level].button18Correct == true
             { correctAnimation(button18) }
             else
-            { wrongAnimation(button18) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button18)
+              lostLife() }
             
         case 19:
             if levels[level].button19Correct == true
             { correctAnimation(button19) }
             else
-            { wrongAnimation(button19) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button19)
+              lostLife() }
             
         case 20:
             if levels[level].button20Correct == true
             { correctAnimation(button20) }
             else
-            { wrongAnimation(button20) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button20)
+              lostLife() }
             
         case 21:
             if levels[level].option1Correct == true
             { correctAnimation(btnOption1) }
             else
-            { wrongAnimation(btnOption1) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption1)
+              lostLife() }
             
         case 22:
             if levels[level].option2Correct == true
             { correctAnimation(btnOption2) }
             else
-            { wrongAnimation(btnOption2) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption2)
+              lostLife() }
             
         case 23:
             if levels[level].option3Correct == true
             { correctAnimation(btnOption3) }
             else
-            { wrongAnimation(btnOption3) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption3)
+              lostLife() }
             
         case 24:
             if levels[level].option4Correct == true
             { correctAnimation(btnOption4) }
             else
-            { wrongAnimation(btnOption4) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption4)
+              lostLife() }
             
         default:
             println("outro")
@@ -480,31 +504,45 @@ class CountingViewController: UIViewController {
     
     // MARK: - Animation for Wrong Button
     //============================================================
-    func wrongAnimation(buttonAnimate: UIButton)
-    {
-        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
-            }) { (finished) -> Void in
-                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x-15, 0);
-                    }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
-                            }, completion: { (finished) -> Void in
-                                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                                    buttonAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
-                                    }, completion: { (finished) -> Void in
-                                        buttonAnimate.backgroundColor = UIColor.redColor()
-                                        buttonAnimate.enabled = false
-                                })
-                        })
-                })
-        }
+    
+    func lostLife () {
         lifes--
-        if lifes == 0 {
-            self.dismissViewControllerAnimated(true, completion: nil)
+        if lifes == 0 {            
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
     }
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+//    func wrongAnimation(buttonAnimate: UIButton)
+//    {
+//        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
+//            }) { (finished) -> Void in
+//                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//                    buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x-15, 0);
+//                    }, completion: { (finished) -> Void in
+//                        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//                            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
+//                            }, completion: { (finished) -> Void in
+//                                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//                                    buttonAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
+//                                    }, completion: { (finished) -> Void in
+//                                        buttonAnimate.backgroundColor = UIColor.redColor()
+//                                        buttonAnimate.enabled = false
+//                                })
+//                        })
+//                })
+//        }
+//        lifes--
+//        if lifes == 0 {
+//            self.dismissViewControllerAnimated(true, completion: nil)
+//        }
+//    }
+    
     //============================================================
     
     
