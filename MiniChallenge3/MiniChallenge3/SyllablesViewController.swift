@@ -208,8 +208,8 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     {
         if level == 0
         {
-//            tutorialHand.hidden = false
-//            syllable.showTutorial(self.view, hand: tutorialHand, destiny: lblPositionSyllable1)
+            tutorialHand.hidden = false
+            syllable.showTutorial(self.view, hand: tutorialHand, destiny1: lblPositionSyllable1, destiny2: btnOption1)
         }
     }
     //================================================================================
