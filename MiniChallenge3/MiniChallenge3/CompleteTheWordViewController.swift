@@ -43,35 +43,35 @@ class CompleteTheWordViewController: UIViewController {
                   button5Text: String, button5Correct:Bool, button5Displacement: CGFloat)]
     // Level 1
     = [ (1, "GATO", "G _ T O", 1,
-        "A", true, 1, "B", false, 0, "C", false, 0, "R", false, 0, "E", false, 0),
+        "A", true, 1.1, "E", false, 0, "I", false, 0, "O", false, 0, "U", false, 0),
     
     // Level 2
-        (2, "PEIXE", "P E _ X _", 2,
-        "A", false, 0, "F", false, 0, "I", true, 2, "T", false, 0, "E", true, 4),
+        (2, "PEIXE", "P _ _ X E", 2,
+        "A", false, 0, "F", false, 0, "E", true, 1.25, "T", false, 0, "I", true, 2.25),
         
     // Level 3
-        (3, "COELHO", "C _ E _ H O", 2,
-        "O", true, 1, "E", false, 0, "I", false, 0, "L", true, 3, "U", false, 0),
+        (3, "COELHO", "C _ _ L H O", 2,
+        "O", true, 1.05, "E", false, 0, "I", false, 0, "L", true, 3.45, "U", false, 0),
         
     // Level 4
-        (4, "CAVALO", "C _ V A _ _", 3,
-        "C", false, 0, "A", true, 1, "L", true, 4.1, "F", false, 0, "O", true, 5.08),
+        (4, "CAVALO", "C _ V A _ O", 2,
+        "C", false, 0, "A", true, 1.05, "L", true, 4.77, "F", false, 0, "O", false, 0),
         
     // Level 5
-        (5, "TIGRE", "T _ G _ _", 3,
-        "I", true, 0.8, "T", false, 0, "H", false, 0, "R", true, 3, "E", true, 3.95),
+        (5, "TIGRE", "T _ _ _ E", 3,
+        "I", true, 1.07, "T", false, 0, "G", true, 2.35, "R", true, 3.65, "P", false, 0),
         
     // Level 6
-        (6, "ESQUILO", "E S _ U _ L _", 3,
-        "F", false, 0, "Q", true, 2, "I", true, 4.15, "L", false, 0, "O", true, 6.1),
+        (6, "ESQUILO", "E S _ U _ _ O", 3,
+        "F", false, 0, "Q", true, 2, "I", true, 4.15, "H", false, 0, "L", true, 5),
         
     // Level 7
         (7, "PASSARO", "P _ S _ A _ O", 3,
         "A", true, 0.9, "S", true, 3, "I", false, 0, "R", true, 5, "U", false, 0),
         
     // Level 8
-        (8, "ELEFANTE", "E L E _ A _ T _", 3,
-        "O", false, 0, "F", true, 3, "N", true, 5, "M", false, 0, "E", true, 7),
+        (8, "ELEFANTE", "E L E _ A _ T E", 3,
+        "O", false, 0, "F", true, 3, "N", true, 5, "M", false, 0, "T", true, 6),
         
     // Level 9
         (9, "HIPOPOTAMO", "H _ _ O P O _ A _ O", 4,
@@ -87,6 +87,8 @@ class CompleteTheWordViewController: UIViewController {
         super.viewDidLoad()
         
         notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelPortugueseExercise", object: nil)
+        
+        //lblWord.conten
         
     }
     
@@ -196,14 +198,6 @@ class CompleteTheWordViewController: UIViewController {
             var timer = NSTimer.scheduledTimerWithTimeInterval(1.3, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
     }
-    
-    func addButtonBlurEfect(buttonBlur: AnyObject)
-    {
-        var darkBlur = UIBlurEffect(style: UIBlurEffectStyle.Dark)
-        var blurView = UIVisualEffectView(effect: darkBlur)
-        blurView.frame = buttonBlur.bounds
-        buttonBlur.addSubview(blurView)
-    }
     //============================================================
     
     
@@ -218,7 +212,7 @@ class CompleteTheWordViewController: UIViewController {
         // Set the Displacement of Button
         var xx = self.lblWord.frame.origin.x - buttonAnimate.frame.origin.x
         xx = xx + (48 * displacementX)
-        var yy = self.lblWord.frame.origin.y - buttonAnimate.frame.origin.y
+        var yy = self.lblWord.frame.origin.y - buttonAnimate.frame.origin.y - 6
         
         UIView.correctAnimation(self.view, buttonAnimate: buttonAnimate, xx: xx, yy: yy, displacementX: displacementX)
         
