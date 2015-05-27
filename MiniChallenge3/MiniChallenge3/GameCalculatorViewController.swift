@@ -198,9 +198,7 @@ class GameCalculatorViewController: UIViewController {
         
         lifes--
         
-        
         if lifes == 0 {
-            
             var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
         
@@ -236,9 +234,7 @@ class GameCalculatorViewController: UIViewController {
             } else {
                 self.persistence.newScore("Calculator", level: self.level, quantityOfStars: self.lifes)
             }
-
         }
-        
     }
     
     func dismiss() {

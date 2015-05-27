@@ -55,19 +55,19 @@ class CompleteTheWordViewController: UIViewController {
         
     // Level 4
         (4, "CAVALO", "C _ V A _ _", 3,
-        "C", false, 0, "A", true, 1, "L", true, 4, "F", false, 0, "O", true, 5),
+        "C", false, 0, "A", true, 1, "L", true, 4.1, "F", false, 0, "O", true, 5.08),
         
     // Level 5
         (5, "TIGRE", "T _ G _ _", 3,
-        "I", true, 1, "T", false, 0, "H", false, 0, "R", true, 3, "E", true, 4),
+        "I", true, 0.8, "T", false, 0, "H", false, 0, "R", true, 3, "E", true, 3.95),
         
     // Level 6
         (6, "ESQUILO", "E S _ U _ L _", 3,
-        "F", false, 0, "Q", true, 2, "I", true, 4, "L", false, 0, "O", true, 6),
+        "F", false, 0, "Q", true, 2, "I", true, 4.15, "L", false, 0, "O", true, 6.1),
         
     // Level 7
         (7, "PASSARO", "P _ S _ A _ O", 3,
-        "A", true, 1, "S", true, 3, "I", false, 0, "R", true, 5, "U", false, 0),
+        "A", true, 0.9, "S", true, 3, "I", false, 0, "R", true, 5, "U", false, 0),
         
     // Level 8
         (8, "ELEFANTE", "E L E _ A _ T _", 3,

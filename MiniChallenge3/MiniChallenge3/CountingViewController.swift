@@ -504,45 +504,12 @@ class CountingViewController: UIViewController {
     
     // MARK: - Animation for Wrong Button
     //============================================================
-    
     func lostLife () {
         lifes--
         if lifes == 0 {            
             var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
     }
-    
-    func dismiss() {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    
-//    func wrongAnimation(buttonAnimate: UIButton)
-//    {
-//        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-//            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
-//            }) { (finished) -> Void in
-//                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-//                    buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x-15, 0);
-//                    }, completion: { (finished) -> Void in
-//                        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-//                            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
-//                            }, completion: { (finished) -> Void in
-//                                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-//                                    buttonAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
-//                                    }, completion: { (finished) -> Void in
-//                                        buttonAnimate.backgroundColor = UIColor.redColor()
-//                                        buttonAnimate.enabled = false
-//                                })
-//                        })
-//                })
-//        }
-//        lifes--
-//        if lifes == 0 {
-//            self.dismissViewControllerAnimated(true, completion: nil)
-//        }
-//    }
-    
     //============================================================
     
     
@@ -579,8 +546,7 @@ class CountingViewController: UIViewController {
             } else {
                 persistence.newScore("Counting", level: level, quantityOfStars: lifes)
             }
-            self.dismissViewControllerAnimated(true, completion: nil)
-//            addViewBlurEffect()
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
     }
     
@@ -615,15 +581,11 @@ class CountingViewController: UIViewController {
         btnOption3.hidden = false
         btnOption4.hidden = false
     }
-    
-    func addViewBlurEffect()
-    {
-        var effect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        var effectView = UIVisualEffectView(effect: effect)
-        effectView.frame = CGRectMake(0, 0, view.bounds.width, view.bounds.height)
-        view.addSubview(effectView)
-    }
     //============================================================
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     @IBAction func btnBack(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
