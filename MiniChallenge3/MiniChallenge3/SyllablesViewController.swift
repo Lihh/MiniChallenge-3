@@ -209,7 +209,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         if level == 0
         {
             tutorialHand.hidden = false
-            syllable.showTutorial(self.view, hand: tutorialHand, destiny1: lblPositionSyllable1, destiny2: btnOption1)
+            syllable.showTutorial(self.view, hand: tutorialHand, destiny1: lblPositionSyllable1, x1:-50, y1:20, destiny2: btnOption1, x2:370, y2:15)
         }
     }
     //================================================================================
@@ -265,7 +265,15 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         {
         case 1:
             if levels[level].button1Correct == true
-            { rightButton(btnOption1, buttonPosition: levels[level].Button1Position) }
+            { rightButton(btnOption1, buttonPosition: levels[level].Button1Position)
+                if level == 0
+                {
+                    lblPositionSyllable1.borderColor = UIColor.greenColor()
+                    tutorialHand.frame.origin.x = 110 // 162
+                    tutorialHand.frame.origin.y = 450 // 402
+                    syllable.showTutorial(self.view, hand: tutorialHand, destiny1: lblPositionSyllable2, x1: -45, y1: 400, destiny2: btnOption2, x2: 350 /*400*/, y2: 390/*380*/)
+                    //tutorialHand.hidden = true
+                }}
             else
             { wrongButton(btnOption1) }
             
@@ -330,6 +338,9 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         // Displace the Syllable
         syllable.displaceButton(self.view ,button: button, buttonPosition: buttonPosition, labelPosition1: lblPositionSyllable1, labelPosition2: lblPositionSyllable2, labelPosition3: lblPositionSyllable3)
         
+        // Tutorial
+        
+        
         // Game Won - Persistence
         if score == 3
         {
@@ -371,5 +382,6 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     func dismissView()
     { self.dismissViewControllerAnimated(true, completion: nil) }
     //================================================================================
+    
     
 }
