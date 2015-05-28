@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hto-YU-b2e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hto-YU-b2e">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Calcule" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wh-Ls-BVg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calcule" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wh-Ls-BVg">
                                 <rect key="frame" x="213" y="90" width="175" height="60"/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -48,7 +48,7 @@
                                     <action selector="btnBack:" destination="hto-YU-b2e" eventType="touchUpInside" id="WbP-fQ-WvY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1  +  2 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-i9-bPF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1  +  2 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-i9-bPF">
                                 <rect key="frame" x="87" y="184" width="180" height="65"/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,7 +60,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akG-4W-7nr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="=" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akG-4W-7nr">
                                 <rect key="frame" x="317" y="168" width="48" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="hz0-ud-k32"/>
@@ -80,7 +80,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhZ-jx-1ju">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhZ-jx-1ju">
                                 <rect key="frame" x="415" y="168" width="75" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="Xnv-jZ-Y8o"/>
@@ -266,6 +266,19 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiX-Zd-5On">
+                                <rect key="frame" x="16" y="192" width="50" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="C24-YD-dtB"/>
+                                    <constraint firstAttribute="width" constant="50" id="dTB-ko-3PD"/>
+                                </constraints>
+                                <state key="normal" image="tutorialHand.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -285,14 +298,15 @@
                             <constraint firstItem="Q1M-XS-Gke" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="R0p-RF-BQJ"/>
                             <constraint firstAttribute="centerX" secondItem="0wh-Ls-BVg" secondAttribute="centerX" id="Rw2-fF-IUk"/>
                             <constraint firstItem="SoA-1I-qZH" firstAttribute="leading" secondItem="TdG-fK-QVH" secondAttribute="trailing" constant="50" id="TwG-Aw-YT0"/>
+                            <constraint firstItem="eiX-Zd-5On" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" id="VZG-mT-v8E"/>
                             <constraint firstItem="VRN-i9-bPF" firstAttribute="top" secondItem="FhZ-jx-1ju" secondAttribute="bottom" constant="-65" id="Vxd-NF-7om"/>
                             <constraint firstAttribute="centerX" secondItem="akG-4W-7nr" secondAttribute="centerX" id="WHe-yx-zBg"/>
                             <constraint firstItem="LAK-7D-5XC" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" id="XR4-wQ-AH0"/>
                             <constraint firstItem="FhZ-jx-1ju" firstAttribute="leading" secondItem="VRN-i9-bPF" secondAttribute="trailing" constant="148" id="Xth-Ol-TYm"/>
                             <constraint firstAttribute="centerX" secondItem="SoA-1I-qZH" secondAttribute="centerX" id="Ytd-cf-Tn8"/>
                             <constraint firstAttribute="centerX" secondItem="Uvq-QD-9L7" secondAttribute="centerX" id="bPF-iw-IXW"/>
+                            <constraint firstItem="eiX-Zd-5On" firstAttribute="centerY" secondItem="VRN-i9-bPF" secondAttribute="centerY" constant="0.5" id="dEv-NG-keg"/>
                             <constraint firstItem="H55-3e-gis" firstAttribute="top" secondItem="LAK-7D-5XC" secondAttribute="bottom" constant="70" id="eip-5f-8BA"/>
-                            <constraint firstAttribute="centerY" secondItem="VRN-i9-bPF" secondAttribute="centerY" constant="200" id="gxd-cH-qbg"/>
                             <constraint firstItem="VRN-i9-bPF" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="lp0-Hy-C1T"/>
                             <constraint firstItem="0wh-Ls-BVg" firstAttribute="top" secondItem="0i5-kk-Siu" secondAttribute="bottom" constant="70" id="nw5-xm-UyS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1c3-2C-aRL" secondAttribute="trailing" constant="94" id="oAT-7s-ejK"/>
@@ -315,6 +329,7 @@
                         <outlet property="btn6" destination="Gv5-2R-xu8" id="cDR-F1-emC"/>
                         <outlet property="op1" destination="VRN-i9-bPF" id="kme-E2-xF2"/>
                         <outlet property="op2" destination="TdG-fK-QVH" id="Gax-FN-pGQ"/>
+                        <outlet property="tutorialHand" destination="eiX-Zd-5On" id="5mf-UL-QGs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksI-KE-3h4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -324,5 +339,6 @@
     </scenes>
     <resources>
         <image name="backArrow" width="30" height="30"/>
+        <image name="tutorialHand.png" width="64" height="64"/>
     </resources>
 </document>

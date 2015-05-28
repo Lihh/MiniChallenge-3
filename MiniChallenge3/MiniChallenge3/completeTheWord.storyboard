@@ -204,6 +204,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFi-zf-0xP">
+                                <rect key="frame" x="16" y="306" width="50" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MvL-Kl-o0C"/>
+                                    <constraint firstAttribute="width" constant="50" id="uDO-od-5N4"/>
+                                </constraints>
+                                <state key="normal" image="tutorialHand.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.58431372549019611" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
