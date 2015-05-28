@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yQt-SG-w1o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yQt-SG-w1o">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -409,7 +409,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovM-eo-SSY">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovM-eo-SSY">
                                 <rect key="frame" x="6" y="99" width="50" height="50"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
@@ -466,7 +466,7 @@
                             <constraint firstItem="WTL-NC-uWs" firstAttribute="leading" secondItem="yEY-Gi-DzY" secondAttribute="trailing" constant="45" id="Wwy-qT-FCS"/>
                             <constraint firstItem="CiA-Aa-I7q" firstAttribute="top" secondItem="wR0-C7-dXo" secondAttribute="bottom" constant="70" id="XY9-pH-Smc"/>
                             <constraint firstItem="mIV-JO-8Hl" firstAttribute="centerY" secondItem="9Pi-aL-ge9" secondAttribute="centerY" id="Xay-Av-pwO"/>
-                            <constraint firstAttribute="centerY" secondItem="ovM-eo-SSY" secondAttribute="centerY" constant="176" id="Xcb-F7-7JM"/>
+                            <constraint firstItem="3yS-H7-iWt" firstAttribute="centerY" secondItem="ovM-eo-SSY" secondAttribute="centerY" constant="-14.5" id="Xum-yY-Tvb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3Yp-VM-2zU" secondAttribute="trailing" id="abl-g9-IXw"/>
                             <constraint firstItem="KSj-Ip-0me" firstAttribute="top" secondItem="dNJ-0A-UXr" secondAttribute="bottom" constant="8" id="bTU-RR-5FT"/>
                             <constraint firstItem="308-wg-h0Y" firstAttribute="centerX" secondItem="9Pi-aL-ge9" secondAttribute="centerX" id="bYv-Hx-Bm5"/>
