@@ -206,10 +206,13 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(animated: Bool)
     {
+        // Show Tutorial
         if level == 0
         {
             tutorialHand.hidden = false
-            syllable.showTutorial(self.view, hand: tutorialHand, destiny1: lblPositionSyllable1, x1:-50, y1:20, destiny2: btnOption1, x2:370, y2:15)
+            disableButtons()
+            UIView.showTutorial(self.view, hand: tutorialHand, destiny1: lblPositionSyllable1, x1: -10, y1: +20, destiny2: btnOption1, x2: 405, y2: +15)
+            enableButton(btnOption1)
         }
     }
     //================================================================================
@@ -267,25 +270,32 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
             if levels[level].button1Correct == true
             { rightButton(btnOption1, buttonPosition: levels[level].Button1Position)
                 if level == 0
-                {
-                    lblPositionSyllable1.borderColor = UIColor.greenColor()
-                    tutorialHand.frame.origin.x = 110 // 162
-                    tutorialHand.frame.origin.y = 450 // 402
-                    syllable.showTutorial(self.view, hand: tutorialHand, destiny1: lblPositionSyllable2, x1: -45, y1: 400, destiny2: btnOption2, x2: 350 /*400*/, y2: 390/*380*/)
-                    //tutorialHand.hidden = true
-                }}
+                // Tutorial
+                { showTutorial(lblPositionSyllable1, handX: 40, handY: 400, destiny1: lblPositionSyllable2, d1x: -115, d1y: 640, destiny2: btnOption2, d2x: 390, d2y: 630) }
+            }
             else
             { wrongButton(btnOption1) }
             
         case 2:
             if levels[level].button2Correct == true
-            { rightButton(btnOption2, buttonPosition: levels[level].Button2Position) }
+            { rightButton(btnOption2, buttonPosition: levels[level].Button2Position)
+                // Tutorial
+                if level == 0
+                { showTutorial(lblPositionSyllable2, handX: 30, handY: 580, destiny1: lblPositionSyllable3, d1x: 55, d1y: 1050, destiny2: btnOption3, d2x: 570, d2y: 1050) }
+            }
             else
             { wrongButton(btnOption2) }
             
         case 3:
             if levels[level].button1Correct == true
-            { rightButton(btnOption3, buttonPosition: levels[level].Button3Position) }
+            { rightButton(btnOption3, buttonPosition: levels[level].Button3Position)
+                // Tutorial
+                if level == 0
+                {
+                    lblPositionSyllable3.borderColor = UIColor.greenColor()
+                    tutorialHand.hidden = true
+                }
+            }
             else
             { wrongButton(btnOption3) }
             
@@ -338,9 +348,6 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         // Displace the Syllable
         syllable.displaceButton(self.view ,button: button, buttonPosition: buttonPosition, labelPosition1: lblPositionSyllable1, labelPosition2: lblPositionSyllable2, labelPosition3: lblPositionSyllable3)
         
-        // Tutorial
-        
-        
         // Game Won - Persistence
         if score == 3
         {
@@ -370,6 +377,36 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         if lifes == 0
         { var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismissView"), userInfo: nil, repeats: false) }
     }
+    //================================================================================
+    
+    
+    
+    // MARK: - Tutorial
+    //================================================================================
+    func showTutorial(greenLabel:UILabel, handX:CGFloat, handY:CGFloat, destiny1:UILabel, d1x:CGFloat, d1y:CGFloat, destiny2:UIButton, d2x:CGFloat, d2y:CGFloat)
+    {
+        disableButtons()
+        greenLabel.borderColor = UIColor.greenColor()
+        tutorialHand.frame.origin.x = handX
+        tutorialHand.frame.origin.y = handY
+        UIView.showTutorial(self.view, hand: tutorialHand, destiny1: destiny1, x1: d1x, y1: d2y, destiny2: destiny2, x2: d2x, y2: d2y)
+        enableButton(destiny2)
+    }
+    
+    func disableButtons()
+    {
+        btnOption1.enabled = false
+        btnOption2.enabled = false
+        btnOption3.enabled = false
+        btnOption4.enabled = false
+        btnOption5.enabled = false
+        btnOption6.enabled = false
+        btnOption7.enabled = false
+        btnOption8.enabled = false
+    }
+    
+    func enableButton(button:UIButton)
+    { button.enabled = true }
     //================================================================================
     
     
