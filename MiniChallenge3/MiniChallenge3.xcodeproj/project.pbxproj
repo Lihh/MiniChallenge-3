@@ -366,6 +366,7 @@
 		EC2E55591B04FB0600D2D953 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				ECD69F481B149CC700D36546 /* Sounds */,
 				02D875E11B12DB8F002D61B8 /* Images */,
 				EC8A114B1B0A0CD400C8BE36 /* Persistencia */,
 				EC8647211B068B5800EB45DB /* LevelsViews */,
@@ -377,8 +378,6 @@
 				EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */,
 				EC2E555E1B04FB4600D2D953 /* MainViewController.swift */,
 				EC2E55661B04FB5C00D2D953 /* Main.storyboard */,
-				EC8471471B1361B400BA8DD2 /* gameMusic.mp3 */,
-				EC8471491B1364D000BA8DD2 /* Blop.mp3 */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -419,6 +418,15 @@
 				EC8A114E1B0A0E4A00C8BE36 /* Score.swift */,
 			);
 			name = Persistencia;
+			sourceTree = "<group>";
+		};
+		ECD69F481B149CC700D36546 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EC8471471B1361B400BA8DD2 /* gameMusic.mp3 */,
+				EC8471491B1364D000BA8DD2 /* Blop.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

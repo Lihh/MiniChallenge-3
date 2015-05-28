@@ -17,25 +17,48 @@ class MainViewController: UIViewController {
     @IBOutlet weak var mathButton: KPButton!
     @IBOutlet weak var portugueseButton: KPButton!
     @IBOutlet weak var scienceButton: KPButton!
+    @IBOutlet var mainView: UIView!
     
     var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
     var gameSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gameMusic", ofType: "mp3")!)
     var audioPlayerMusic = AVAudioPlayer()
     var audioPlayerSound = AVAudioPlayer()
+    
+    var snap: UISnapBehavior!
+    var animator: UIDynamicAnimator!
+    var splitVerify = true
+    var buttons = [UIButton]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBarHidden = true
         
-        audioPlayerMusic = AVAudioPlayer(contentsOfURL: gameSound, error: nil)
-        audioPlayerMusic.prepareToPlay()
-        audioPlayerMusic.play()
-        audioPlayerMusic.numberOfLoops = -1
-        audioPlayerMusic.volume = 0.07
+        animator = UIDynamicAnimator(referenceView: mainView)
+        buttons = [scienceButton, portugueseButton, mathButton]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(animated: Bool) {
+        if splitVerify {
+            UIView.animateWithDuration(1.2, animations: { () -> Void in
+                self.buttons[0].alpha = 1
+            }, completion: { (success) -> Void in
+                UIView.animateWithDuration(1.2, animations: { () -> Void in
+                    self.buttons[1].alpha = 1
+                }, completion: { (success) -> Void in
+                    UIView.animateWithDuration(1.2, animations: { () -> Void in
+                        self.buttons[2].alpha = 1
+                    }, completion: { (success) -> Void in
+                        self.snap = UISnapBehavior(item: self.mathButton, snapToPoint: CGPointMake(self.view.center.x, self.view.center.y-50))
+                        self.animator.addBehavior(self.snap)
+                        self.snap = UISnapBehavior(item: self.portugueseButton, snapToPoint: CGPointMake(self.view.center.x-120, self.view.center.y+120))
+                        self.animator.addBehavior(self.snap)
+                        self.snap = UISnapBehavior(item: self.scienceButton, snapToPoint: CGPointMake(self.view.center.x+120, self.view.center.y+120))
+                        self.animator.addBehavior(self.snap)
+                    })
+                })
+            })
+            splitVerify = false
+        }
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -48,15 +71,15 @@ class MainViewController: UIViewController {
         switch customSegue {
         case "segueOne":
             self.transition.animationChild = mathButton
-            self.transition.animationColor = UIColor(red: 236/255, green: 86/255, blue: 82/255, alpha: 1.0)
+            self.transition.animationColor = UIColor(red: 201/255, green: 91/255, blue: 90/255, alpha: 1.0)
             toViewController = segue.destinationViewController as! MathViewController
         case "segueTwo":
             self.transition.animationChild = portugueseButton
-            self.transition.animationColor = UIColor(red: 18/255, green: 143/255, blue: 250/255, alpha: 1)
+            self.transition.animationColor = UIColor(red: 117/255, green: 179/255, blue: 214/255, alpha: 1)
             toViewController = segue.destinationViewController as! PortugueseViewController
         case "segueThree":
             self.transition.animationChild = scienceButton
-            self.transition.animationColor = UIColor(red: 46/255, green: 209/255, blue: 133/255, alpha: 1.0)
+            self.transition.animationColor = UIColor(red: 115/255, green: 195/255, blue: 175/255, alpha: 1.0)
             toViewController = segue.destinationViewController as! ScienceViewController
         default:
             return;

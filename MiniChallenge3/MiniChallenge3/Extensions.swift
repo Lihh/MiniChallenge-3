@@ -10,32 +10,46 @@ import UIKit
 import AVFoundation
 
 extension UIView {
-    static func congratulationView(view: UIView) {
+    static func congratulationView(view: UIView, viewController: UIViewController) {
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         let blurView = UIVisualEffectView(effect: blurEffect)
         blurView.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.width, view.frame.height)
         view.addSubview(blurView)
         
-        let exerciseStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let congratulationsView = UIView(frame: CGRectMake(blurView.frame.midX-225, blurView.frame.midY-150, 450.0, 300.0))
+        congratulationsView.backgroundColor = UIColor.redColor()
+        congratulationsView.clipsToBounds = true
+        congratulationsView.cornerRadius = 10
+        blurView.addSubview(congratulationsView)
         
-        if let viewController = exerciseStoryboard.instantiateViewControllerWithIdentifier("CongratulationsView") as? UIViewController {
-            viewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
-            viewController.view.center = view.center
-            view.addSubview(viewController.view)
-        }
+        let congratulationsLabel = UILabel(frame: CGRectMake(view.frame.midX-75, view.frame.midY-130, 150.0, 40.0))
+        congratulationsLabel.font = UIFont(name: "BloggerSans-Light", size: 40.0)
+        congratulationsLabel.text = "Parabéns"
+        view.addSubview(congratulationsLabel)
         
-//        let congratulationsView = UIView(frame: CGRectMake(blurView.frame.midX-200, blurView.frame.midY-100, 400.0, 200.0))
-//        congratulationsView.backgroundColor = UIColor.redColor()
-//        blurView.addSubview(congratulationsView)
-//        
-//        let congratulationsLabel = UILabel(frame: CGRectMake(view.frame.midX-75, view.frame.midY-80, 150.0, 40.0))
-//        congratulationsLabel.font = UIFont(name: "BloggerSans-Light", size: 40.0)
-//        congratulationsLabel.text = "Parabéns"
-//        view.addSubview(congratulationsLabel)
-//        
-//        let starsImage = UIImageView(frame: CGRectMake(view.frame.midX-50, view.frame.midY-35, 100.0, 30.0))
-//        starsImage.image = UIImage(named: "ThreeStarsFilled")
-//        view.addSubview(starsImage)
+        let starsImage = UIImageView(frame: CGRectMake(view.frame.midX-65, view.frame.midY-75, 130.0, 40.0))
+        starsImage.image = UIImage(named: "ThreeStarsFilled")
+        view.addSubview(starsImage)
+        
+        let buttonHome = UIButton(frame: CGRectMake(view.frame.midX-50, view.frame.midY+30, 100, 100))
+        buttonHome.clipsToBounds = true
+        buttonHome.cornerRadius = 50
+        buttonHome.backgroundColor = UIColor.yellowColor()
+        view.addSubview(buttonHome)
+        
+        let buttonBack = UIButton(frame: CGRectMake(view.frame.midX-200, view.frame.midY+30, 100, 100))
+        buttonBack.clipsToBounds = true
+        buttonBack.cornerRadius = 50
+        buttonBack.backgroundColor = UIColor.yellowColor()
+        view.addSubview(buttonBack)
+        
+        let buttonNext = UIButton(frame: CGRectMake(view.frame.midX+100, view.frame.midY+30, 100, 100))
+        buttonNext.clipsToBounds = true
+        buttonNext.cornerRadius = 50
+        buttonNext.backgroundColor = UIColor.yellowColor()
+        view.addSubview(buttonNext)
+        
+        
     }
     
     static func wrongAnimation(view: UIView, buttonAnimate: UIButton) {
