@@ -10,6 +10,7 @@ import UIKit
 
 class GameAnimalsViewController: UIViewController {
 
+    @IBOutlet weak var tutorialHand: UIButton!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
@@ -91,7 +92,18 @@ class GameAnimalsViewController: UIViewController {
         super.viewDidLoad()
         
         notificationCenter.addObserver(self, selector: Selector("getLvl:"), name: "CurrentLevelScienceExercise", object: nil)
-        
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        // Show Tutorial
+        if level == 0
+        {
+            tutorialHand.hidden = false
+            disableButtons()
+            UIView.showTutorial(self.view, hand: tutorialHand, destiny1: answerLabel, x1: -70, y1: 50, destiny2: btn3, x2: 60, y2: 240)
+            btn3.enabled = true
+        }
     }
     
     func getLvl(notification: NSNotification) {
@@ -106,12 +118,23 @@ class GameAnimalsViewController: UIViewController {
         
         answerLabel.text = levels[level].labelText
         
+        tutorialHand.hidden = true
         btn1.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
         btn2.setTitle(levels[level].button2Text, forState: UIControlState.Normal)
         btn3.setTitle(levels[level].button3Text, forState: UIControlState.Normal)
         btn4.setTitle(levels[level].button4Text, forState: UIControlState.Normal)
         btn5.setTitle(levels[level].button5Text, forState: UIControlState.Normal)
         btn6.setTitle(levels[level].button6Text, forState: UIControlState.Normal)
+    }
+    
+    func disableButtons()
+    {
+        btn1.enabled = false
+        btn2.enabled = false
+        btn3.enabled = false
+        btn4.enabled = false
+        btn5.enabled = false
+        btn6.enabled = false
     }
     
     @IBAction func btnClicked(sender: AnyObject) {
@@ -144,6 +167,12 @@ class GameAnimalsViewController: UIViewController {
             if levels[level].button3Correct == true
             {
                 rightAnswer(btn3)
+                // Tutorial
+                if level == 0
+                {
+                    tutorialHand.hidden = true
+                    answerLabel.borderColor = UIColor.greenColor()
+                }
             }
             else
             {

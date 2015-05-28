@@ -204,14 +204,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFi-zf-0xP">
-                                <rect key="frame" x="16" y="306" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTW-6z-Y7r">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="MvL-Kl-o0C"/>
-                                    <constraint firstAttribute="width" constant="50" id="uDO-od-5N4"/>
+                                    <constraint firstAttribute="width" constant="50" id="RE9-ZT-20y"/>
+                                    <constraint firstAttribute="height" constant="50" id="o1h-js-z7M"/>
                                 </constraints>
                                 <state key="normal" image="tutorialHand.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
