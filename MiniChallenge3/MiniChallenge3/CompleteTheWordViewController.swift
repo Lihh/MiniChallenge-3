@@ -47,35 +47,35 @@ class CompleteTheWordViewController: UIViewController {
     
     // Level 2
         (2, "PEIXE", "P _ _ X E", 2,
-        "A", false, 0, "F", false, 0, "E", true, 1.25, "T", false, 0, "I", true, 2.25),
+        "A", false, 0, "E", true, 1.15, "I", true, 2.44, "O", false, 0, "U", false, 0),
         
     // Level 3
         (3, "COELHO", "C _ _ L H O", 2,
-        "O", true, 1.05, "E", false, 0, "I", false, 0, "L", true, 3.45, "U", false, 0),
+        "A", false, 0, "E", true, 2.35, "I", false, 0, "O", true, 1.05, "U", false, 0),
         
     // Level 4
-        (4, "CAVALO", "C _ V A _ O", 2,
-        "C", false, 0, "A", true, 1.05, "L", true, 4.77, "F", false, 0, "O", false, 0),
+        (4, "CACHORRO", "C _ C H _ R R O", 2,
+        "A", true, 1.05, "E", false, 0,  "I", false, 0, "O", true, 4.77, "U", false, 0),
         
     // Level 5
-        (5, "TIGRE", "T _ _ _ E", 3,
-        "I", true, 1.07, "T", false, 0, "G", true, 2.35, "R", true, 3.65, "P", false, 0),
+        (5, "TIGRE", "T _ G R _ ", 2,
+        "A", false, 0, "E", true, 5, "I", true, 1.25, "O", false, 0, "U", false, 0),
         
     // Level 6
-        (6, "ESQUILO", "E S _ U _ _ O", 3,
-        "F", false, 0, "Q", true, 2, "I", true, 4.15, "H", false, 0, "L", true, 5),
+        (6, "LEAO", "L _ _ O ", 2,
+        "A", true, 2.55, "E", true, 1.2, "I", false, 0, "O", false, 0, "U", false, 0),
         
     // Level 7
-        (7, "PASSARO", "P _ S _ A _ O", 3,
-        "A", true, 0.9, "S", true, 3, "I", false, 0, "R", true, 5, "U", false, 0),
+        (7, "ESQUILO", " _ S Q _ _ L O", 3,
+        "A", false, -0.3, "E", true, 0.35, "I", true, 5.34, "O", false, 0, "U", true, 4),
         
     // Level 8
-        (8, "ELEFANTE", "E L E _ A _ T E", 3,
-        "O", false, 0, "F", true, 3, "N", true, 5, "M", false, 0, "T", true, 6),
+        (8, "CAMELO", "C _ M _ L _ ", 3,
+        "A", true, 1.25, "E", true, 4, "I", false, 0, "O", true, 6.43, "U", false, 0),
         
     // Level 9
-        (9, "HIPOPOTAMO", "H _ _ O P O _ A _ O", 4,
-        "I", true, 1, "P", true, 2, "Q", false, 0, "T", true, 6.55, "M", true, 8.6)]
+        (9, "HIPOPOTAMO", "H _ P _ P O T _ M O", 3,
+        "A", true, 8.6, "E", false, 0, "I", true, 1.2, "O", true, 3.7, "U", false, 0)]
     //============================================================
     
     
