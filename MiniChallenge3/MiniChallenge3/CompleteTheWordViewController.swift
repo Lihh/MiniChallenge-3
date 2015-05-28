@@ -22,10 +22,14 @@ class CompleteTheWordViewController: UIViewController {
     // Finish - Number of correct buttons
     var finish: Int = 0
     
+    // Notification Center
     var notificationCenter = NSNotificationCenter.defaultCenter()
+    
+    // Persistence
     var persistence = Persistence.sharedInstance
     
     // Outlets
+    @IBOutlet weak var tutorialHand: UIButton!
     @IBOutlet weak var imgImage: UIImageView!
     @IBOutlet weak var lblWord: UILabel!
     @IBOutlet weak var button1: UIButton!
@@ -87,24 +91,23 @@ class CompleteTheWordViewController: UIViewController {
         super.viewDidLoad()
         
         notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelPortugueseExercise", object: nil)
-        
-        //lblWord.conten
-        
     }
     
     override func viewWillAppear(animated: Bool)
     {
-        // code
+        // Show Tutorial
+        if level == 0
+        {
+            tutorialHand.hidden = false
+            disableButtons()
+            UIView.showTutorial(self.view, hand: tutorialHand, destiny1: lblWord, x1: 35, y1: 20, destiny2: button1, x2: 160, y2: 35)
+            button1.enabled = true
+        }
     }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-    }
-    
-    @IBAction func btnBack(sender: KPButton)
-    {
-        self.dismissViewControllerAnimated(true, completion: nil)
     }
     //============================================================
     
@@ -133,11 +136,21 @@ class CompleteTheWordViewController: UIViewController {
     
     func buttonsConfiguration()
     {
+        tutorialHand.hidden = true
         button1.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
         button2.setTitle(levels[level].button2Text, forState: UIControlState.Normal)
         button3.setTitle(levels[level].button3Text, forState: UIControlState.Normal)
         button4.setTitle(levels[level].button4Text, forState: UIControlState.Normal)
         button5.setTitle(levels[level].button5Text, forState: UIControlState.Normal)
+    }
+    
+    func disableButtons()
+    {
+        button1.enabled = false
+        button2.enabled = false
+        button3.enabled = false
+        button4.enabled = false
+        button5.enabled = false
     }
     //============================================================
     
@@ -152,7 +165,10 @@ class CompleteTheWordViewController: UIViewController {
         {
         case 1:
             if levels[level].button1Correct == true
-            { correctButton(button1, displacementX: levels[level].button1Displacement) }
+            { correctButton(button1, displacementX: levels[level].button1Displacement)
+              if level == 0
+              { tutorialHand.hidden = true }
+            }
             else
             { lostLife(button1) }
             
@@ -227,8 +243,14 @@ class CompleteTheWordViewController: UIViewController {
     }
     //============================================================
 
-    func dismiss() {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
     
+    
+    // MARK: - Exit Game
+    //================================================================================
+    func dismiss()
+    { self.dismissViewControllerAnimated(true, completion: nil) }
+    
+    @IBAction func btnBack(sender: KPButton)
+    { self.dismissViewControllerAnimated(true, completion: nil) }
+    //================================================================================
 }

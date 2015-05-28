@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WUd-yW-iPo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WUd-yW-iPo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -191,9 +191,23 @@
                                     <action selector="buttonClick:" destination="WUd-yW-iPo" eventType="touchUpInside" id="lSy-S9-IgQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjO-UM-ANE">
+                                <rect key="frame" x="6" y="296" width="50" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5mp-iS-xpd"/>
+                                    <constraint firstAttribute="width" constant="50" id="Edq-fb-uoy"/>
+                                </constraints>
+                                <state key="normal" image="tutorialHand.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.58431372549019611" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="gG0-mU-tIH" firstAttribute="centerY" secondItem="bjO-UM-ANE" secondAttribute="centerY" id="1R7-FE-Ijb"/>
                             <constraint firstAttribute="centerX" secondItem="gG0-mU-tIH" secondAttribute="centerX" constant="-5" id="6u2-nY-pPf"/>
                             <constraint firstAttribute="centerX" secondItem="gJW-fz-9Ir" secondAttribute="centerX" constant="-5" id="BEa-Ia-V3R"/>
                             <constraint firstAttribute="centerY" secondItem="GHk-2u-vGx" secondAttribute="centerY" constant="-168" id="Dgr-Qx-Zlh"/>
@@ -207,6 +221,7 @@
                             <constraint firstItem="Dvk-vs-HzH" firstAttribute="leading" secondItem="jZN-Of-8dB" secondAttribute="leadingMargin" id="a9k-Tc-e3e"/>
                             <constraint firstItem="Dvk-vs-HzH" firstAttribute="top" secondItem="Azy-Ub-Y1i" secondAttribute="bottom" id="bnF-pi-AmM"/>
                             <constraint firstAttribute="centerY" secondItem="vwn-dG-5MG" secondAttribute="centerY" constant="152" id="iaa-Hn-Bkp"/>
+                            <constraint firstAttribute="centerX" secondItem="bjO-UM-ANE" secondAttribute="centerX" constant="269" id="lab-Yj-7dc"/>
                             <constraint firstAttribute="centerX" secondItem="vwn-dG-5MG" secondAttribute="centerX" constant="-5" id="r9m-5u-6wH"/>
                             <constraint firstAttribute="centerY" secondItem="nS6-46-BYg" secondAttribute="centerY" constant="-168" id="vgp-OX-KDd"/>
                             <constraint firstAttribute="centerX" secondItem="GHk-2u-vGx" secondAttribute="centerX" constant="84" id="wOI-qb-HEO"/>
@@ -220,6 +235,7 @@
                         <outlet property="button5" destination="37L-hn-7Zk" id="bKa-68-MQj"/>
                         <outlet property="imgImage" destination="vwn-dG-5MG" id="sLt-l0-mAz"/>
                         <outlet property="lblWord" destination="gG0-mU-tIH" id="UCR-gW-NsH"/>
+                        <outlet property="tutorialHand" destination="bjO-UM-ANE" id="bqm-T8-AiL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3IB-yz-bSj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -229,5 +245,6 @@
     </scenes>
     <resources>
         <image name="backArrow" width="30" height="30"/>
+        <image name="tutorialHand.png" width="64" height="64"/>
     </resources>
 </document>
