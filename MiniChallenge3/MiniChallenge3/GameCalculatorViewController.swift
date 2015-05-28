@@ -10,6 +10,9 @@ import UIKit
 
 class GameCalculatorViewController: UIViewController {
 
+    
+    @IBOutlet weak var tutorialHand: UIButton!
+    
     @IBOutlet weak var op1: UILabel!
     @IBOutlet weak var op2: UILabel!
     
@@ -91,16 +94,19 @@ class GameCalculatorViewController: UIViewController {
         answerOp2.layer.borderColor = UIColor .whiteColor().CGColor
         answerOp2.layer.cornerRadius = 6
         
-        btn1.layer.cornerRadius = 6
-        btn2.layer.cornerRadius = 6
-        btn3.layer.cornerRadius = 6
-        btn4.layer.cornerRadius = 6
-        btn5.layer.cornerRadius = 6
-        btn6.layer.cornerRadius = 6
-        
         notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelMathExercise", object: nil)
-        
-
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        // Show Tutorial
+        if level == 0
+        {
+            tutorialHand.hidden = false
+            disableButtons()
+            UIView.showTutorial(self.view, hand: tutorialHand, destiny1: answerOp1, x1: -15, y1: 25, destiny2: btn3, x2: 330, y2: 30)
+            enableButton(btn3)
+        }
     }
     
     func discoverLevel(notification: NSNotification) {
@@ -115,6 +121,7 @@ class GameCalculatorViewController: UIViewController {
         op1.text = levels[number].firstOp
         op2.text = levels[number].secondOp
         
+        tutorialHand.hidden = true
         btn1.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
         btn2.setTitle(levels[level].button2Text, forState: UIControlState.Normal)
         btn3.setTitle(levels[level].button3Text, forState: UIControlState.Normal)
@@ -154,6 +161,9 @@ class GameCalculatorViewController: UIViewController {
             if levels[level].button3Correct == true
             {
                 rightAnswer(btn3, op: 1)
+                // Tutorial
+                if level == 0
+                { showTutorial(answerOp1, handX: 60, handY: 490, destiny1: answerOp2, d1x: 450, d1y: 585, destiny2: btn4, d2x: 795, d2y: 585) }
             }
             else
             {
@@ -165,6 +175,12 @@ class GameCalculatorViewController: UIViewController {
             if levels[level].button4Correct == true
             {
                 rightAnswer(btn4, op: 2)
+                // Tutorial
+                if level == 0
+                {
+                    answerOp2.borderColor = UIColor.greenColor()
+                    tutorialHand.hidden = true
+                }
             }
             else
             {
@@ -205,9 +221,7 @@ class GameCalculatorViewController: UIViewController {
         
         lifes--
         
-        
         if lifes == 0 {
-            
             var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
         
@@ -243,10 +257,35 @@ class GameCalculatorViewController: UIViewController {
             } else {
                 self.persistence.newScore("Calculator", level: self.level, quantityOfStars: self.lifes)
             }
-
         }
-        
     }
+    
+    
+    // MARK: - Tutorial
+    //================================================================================
+    func showTutorial(greenLabel:UILabel, handX:CGFloat, handY:CGFloat, destiny1:UILabel, d1x:CGFloat, d1y:CGFloat, destiny2:UIButton, d2x:CGFloat, d2y:CGFloat)
+    {
+        disableButtons()
+        greenLabel.borderColor = UIColor.greenColor()
+        tutorialHand.frame.origin.x = handX
+        tutorialHand.frame.origin.y = handY
+        UIView.showTutorial(self.view, hand: tutorialHand, destiny1: destiny1, x1: d1x, y1: d1y, destiny2: destiny2, x2: d2x, y2: d2y)
+        enableButton(destiny2)
+    }
+    
+    func disableButtons()
+    {
+        btn1.enabled = false
+        btn2.enabled = false
+        btn3.enabled = false
+        btn4.enabled = false
+        btn5.enabled = false
+        btn6.enabled = false
+    }
+    
+    func enableButton(button:UIButton)
+    { button.enabled = true }
+    //================================================================================
     
     func dismiss() {
         self.dismissViewControllerAnimated(true, completion: nil)

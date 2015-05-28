@@ -22,10 +22,14 @@ class CompleteTheWordViewController: UIViewController {
     // Finish - Number of correct buttons
     var finish: Int = 0
     
+    // Notification Center
     var notificationCenter = NSNotificationCenter.defaultCenter()
+    
+    // Persistence
     var persistence = Persistence.sharedInstance
     
     // Outlets
+    @IBOutlet weak var tutorialHand: UIButton!
     @IBOutlet weak var imgImage: UIImageView!
     @IBOutlet weak var lblWord: UILabel!
     @IBOutlet weak var button1: UIButton!
@@ -42,16 +46,40 @@ class CompleteTheWordViewController: UIViewController {
                   button4Text: String, button4Correct:Bool, button4Displacement: CGFloat,
                   button5Text: String, button5Correct:Bool, button5Displacement: CGFloat)]
     // Level 1
-    = [(1, "CACHORRO", "C _ S A", 1,
-       "A", true, 1, "B", false, 0, "C", false, 0, "D", false, 0, "E", false, 0),
+    = [ (1, "GATO", "G _ T O", 1,
+        "A", true, 1.1, "E", false, 0, "I", false, 0, "O", false, 0, "U", false, 0),
     
     // Level 2
-       (2, "CACHORRO", "S _ _ A T _", 3,
-       "A", true, 1, "F", false, 0, "P", true, 2, "E", false, 0, "O", true, 5),
+        (2, "PEIXE", "P _ _ X E", 2,
+        "A", false, 0, "E", true, 1.15, "I", true, 2.44, "O", false, 0, "U", false, 0),
         
     // Level 3
-       (3, "CACHORRO", "P _ P _ C _", 3,
-       "A", true, 5, "E", false, 0, "I", true, 1, "O", true, 3, "U", false, 0)]
+        (3, "COELHO", "C _ _ L H O", 2,
+        "A", false, 0, "E", true, 2.35, "I", false, 0, "O", true, 1.05, "U", false, 0),
+        
+    // Level 4
+        (4, "CACHORRO", "C _ C H _ R R O", 2,
+        "A", true, 1.05, "E", false, 0,  "I", false, 0, "O", true, 4.77, "U", false, 0),
+        
+    // Level 5
+        (5, "TIGRE", "T _ G R _ ", 2,
+        "A", false, 0, "E", true, 5, "I", true, 1.25, "O", false, 0, "U", false, 0),
+        
+    // Level 6
+        (6, "LEAO", "L _ _ O ", 2,
+        "A", true, 2.55, "E", true, 1.2, "I", false, 0, "O", false, 0, "U", false, 0),
+        
+    // Level 7
+        (7, "ESQUILO", " _ S Q _ _ L O", 3,
+        "A", false, -0.3, "E", true, 0.35, "I", true, 5.34, "O", false, 0, "U", true, 4),
+        
+    // Level 8
+        (8, "CAMELO", "C _ M _ L _ ", 3,
+        "A", true, 1.25, "E", true, 4, "I", false, 0, "O", true, 6.43, "U", false, 0),
+        
+    // Level 9
+        (9, "HIPOPOTAMO", "H _ P _ P O T _ M O", 3,
+        "A", true, 8.6, "E", false, 0, "I", true, 1.2, "O", true, 3.7, "U", false, 0)]
     //============================================================
     
     
@@ -63,22 +91,23 @@ class CompleteTheWordViewController: UIViewController {
         super.viewDidLoad()
         
         notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelPortugueseExercise", object: nil)
-        
     }
     
     override func viewWillAppear(animated: Bool)
     {
-        // code
+        // Show Tutorial
+        if level == 0
+        {
+            tutorialHand.hidden = false
+            disableButtons()
+            UIView.showTutorial(self.view, hand: tutorialHand, destiny1: lblWord, x1: 35, y1: 20, destiny2: button1, x2: 160, y2: 35)
+            button1.enabled = true
+        }
     }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-    }
-    
-    @IBAction func btnBack(sender: KPButton)
-    {
-        self.dismissViewControllerAnimated(true, completion: nil)
     }
     //============================================================
     
@@ -107,25 +136,21 @@ class CompleteTheWordViewController: UIViewController {
     
     func buttonsConfiguration()
     {
+        tutorialHand.hidden = true
         button1.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
-        button1.layer.cornerRadius = 6
-        button1.layer.backgroundColor = UIColor.lightGrayColor().CGColor
-        
         button2.setTitle(levels[level].button2Text, forState: UIControlState.Normal)
-        button2.layer.cornerRadius = 6
-        button2.layer.backgroundColor = UIColor.lightGrayColor().CGColor
-        
         button3.setTitle(levels[level].button3Text, forState: UIControlState.Normal)
-        button3.layer.cornerRadius = 6
-        button3.layer.backgroundColor = UIColor.lightGrayColor().CGColor
-        
         button4.setTitle(levels[level].button4Text, forState: UIControlState.Normal)
-        button4.layer.cornerRadius = 6
-        button4.layer.backgroundColor = UIColor.lightGrayColor().CGColor
-        
         button5.setTitle(levels[level].button5Text, forState: UIControlState.Normal)
-        button5.layer.cornerRadius = 6
-        button5.layer.backgroundColor = UIColor.lightGrayColor().CGColor
+    }
+    
+    func disableButtons()
+    {
+        button1.enabled = false
+        button2.enabled = false
+        button3.enabled = false
+        button4.enabled = false
+        button5.enabled = false
     }
     //============================================================
     
@@ -140,33 +165,36 @@ class CompleteTheWordViewController: UIViewController {
         {
         case 1:
             if levels[level].button1Correct == true
-            { correctAnimation(button1, displacementX: levels[level].button1Displacement) }
+            { correctButton(button1, displacementX: levels[level].button1Displacement)
+              if level == 0
+              { tutorialHand.hidden = true }
+            }
             else
-            { wrongAnimation(button1) }
+            { lostLife(button1) }
             
         case 2:
             if levels[level].button2Correct == true
-            { correctAnimation(button2, displacementX: levels[level].button2Displacement) }
+            { correctButton(button2, displacementX: levels[level].button2Displacement) }
             else
-            { wrongAnimation(button2) }
+            { lostLife(button2) }
             
         case 3:
             if levels[level].button3Correct == true
-            { correctAnimation(button3, displacementX: levels[level].button3Displacement) }
+            { correctButton(button3, displacementX: levels[level].button3Displacement) }
             else
-            { wrongAnimation(button3) }
+            { lostLife(button3) }
             
         case 4:
             if levels[level].button4Correct == true
-            { correctAnimation(button4, displacementX: levels[level].button4Displacement) }
+            { correctButton(button4, displacementX: levels[level].button4Displacement) }
             else
-            { wrongAnimation(button4) }
+            { lostLife(button4) }
             
         case 5:
             if levels[level].button5Correct == true
-            { correctAnimation(button5, displacementX: levels[level].button5Displacement) }
+            { correctButton(button5, displacementX: levels[level].button5Displacement) }
             else
-            { wrongAnimation(button5) }
+            { lostLife(button5) }
             
         default:
             println("outro")
@@ -178,40 +206,13 @@ class CompleteTheWordViewController: UIViewController {
     
     // MARK: - Animation for Wrong Button
     //============================================================
-    func wrongAnimation(buttonAnimate: UIButton)
-    {
-        buttonAnimate.backgroundColor = UIColor.redColor()
-        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
-            }) { (finished) -> Void in
-                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x-15, 0);
-                    }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
-                            }, completion: { (finished) -> Void in
-                                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                                    buttonAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
-                                    }, completion: { (finished) -> Void in
-                                        self.addButtonBlurEfect(buttonAnimate)
-                                })
-                        })
-                })
-        }
-        lifes--
-        
-        if lifes == 0 {
-            self.dismissViewControllerAnimated(true, completion: nil)
-        }
-        println("Errou \(lifes)x")
-    }
     
-    func addButtonBlurEfect(buttonBlur: AnyObject)
-    {
-        var darkBlur = UIBlurEffect(style: UIBlurEffectStyle.Dark)
-        var blurView = UIVisualEffectView(effect: darkBlur)
-        blurView.frame = buttonBlur.bounds
-        buttonBlur.addSubview(blurView)
+    func lostLife(buttonAnimate: UIButton){
+        lifes--
+        UIView.wrongAnimation(self.view, buttonAnimate: buttonAnimate)
+        if lifes == 0 {
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.3, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
+        }
     }
     //============================================================
     
@@ -219,7 +220,7 @@ class CompleteTheWordViewController: UIViewController {
     
     // MARK: - Animation for Correct Button
     //============================================================
-    func correctAnimation(buttonAnimate: UIButton, displacementX: CGFloat)
+    func correctButton(buttonAnimate: UIButton, displacementX: CGFloat)
     {
         finish++
         println("Acertou!")
@@ -227,30 +228,29 @@ class CompleteTheWordViewController: UIViewController {
         // Set the Displacement of Button
         var xx = self.lblWord.frame.origin.x - buttonAnimate.frame.origin.x
         xx = xx + (48 * displacementX)
-        var yy = self.lblWord.frame.origin.y - buttonAnimate.frame.origin.y
+        var yy = self.lblWord.frame.origin.y - buttonAnimate.frame.origin.y - 6
         
-        // Animation
-        UIView.animateWithDuration(0.4, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            buttonAnimate.transform = CGAffineTransformMakeTranslation(xx,yy);
-            buttonAnimate.enabled = false
-            buttonAnimate.backgroundColor = UIColor.whiteColor()
-            buttonAnimate.borderWidth = 0
-            }) { (finished) -> Void in
-                UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    if self.finish == self.levels[self.level].finish
-                    {
-                        if self.persistence.verifyExistenceOfALevel("completeTheWord", level: self.level) {
-                            self.persistence.updateNumberOfStars("completeTheWord", level: self.level, numberOfStars: self.lifes)
-                        } else {
-                            self.persistence.newScore("completeTheWord", level: self.level, quantityOfStars: self.lifes)
-                        }
-                        self.dismissViewControllerAnimated(true, completion: nil)
-                    }
-                    }, completion: { (finished) -> Void in
-                })
+        UIView.correctAnimation(self.view, buttonAnimate: buttonAnimate, xx: xx, yy: yy, displacementX: displacementX)
+        
+        if self.finish == self.levels[self.level].finish {
+            if self.persistence.verifyExistenceOfALevel("completeTheWord", level: self.level) {
+                self.persistence.updateNumberOfStars("completeTheWord", level: self.level, numberOfStars: self.lifes)
+            } else {
+                self.persistence.newScore("completeTheWord", level: self.level, quantityOfStars: self.lifes)
+            }
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
     }
-    
     //============================================================
 
+    
+    
+    // MARK: - Exit Game
+    //================================================================================
+    func dismiss()
+    { self.dismissViewControllerAnimated(true, completion: nil) }
+    
+    @IBAction func btnBack(sender: KPButton)
+    { self.dismissViewControllerAnimated(true, completion: nil) }
+    //================================================================================
 }

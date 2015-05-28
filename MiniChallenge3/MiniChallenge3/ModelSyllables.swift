@@ -39,18 +39,6 @@ class ModelSyllables: NSObject
     
     // Animation
     //================================================================================
-    func setDisplacementX(button: UIButton,
-        destinyPosition: AnyObject) -> CGFloat
-    {
-        return destinyPosition.frame.origin.x - button.frame.origin.x
-    }
-    
-    func setDisplacementY(button: UIButton,
-        destinyPosition: AnyObject) -> CGFloat
-    {
-        return destinyPosition.frame.origin.y - button.frame.origin.y
-    }
-    
     func displaceButton(view: UIView ,button: UIButton, buttonPosition: Int, labelPosition1: UILabel,
         labelPosition2: UILabel, labelPosition3: UILabel)
     {
@@ -78,43 +66,9 @@ class ModelSyllables: NSObject
         UIView.correctAnimation(view, buttonAnimate: button, xx: x, yy: y, displacementX: 0)
     }
     //================================================================================
+ 
     
     
     
-    // Tutorial Animation
-    //================================================================================
-    func tutorialAnimation(hand:UIButton, destiny:AnyObject)
-    {
-        var x = self.setDisplacementX(hand, destinyPosition: destiny) - 50
-        var y = self.setDisplacementY(hand, destinyPosition: destiny) + 20
-        hand.transform = CGAffineTransformMakeTranslation(x,y);
-    }
     
-    
-    //================================================================================
-    
-    
-    
-    // Tutorial
-    //================================================================================
-//    func showTutorial(view:UIView, hand:UIButton, destiny1:UILabel, destiny2:UIButton)
-//    {
-//        UIView.animateWithDuration(4, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-//            self.tutorialAnimation(hand, destiny: destiny1)
-//            }) { (finished) -> Void in
-//                UIView.animateWithDuration(1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-//                    destiny1.borderColor = UIColor.yellowColor()
-//                    }, completion: { (finished) -> Void in
-//                        UIView.animateWithDuration(4, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-//                            }, completion: { (finished) -> Void in
-//                                self.tutorialAnimation(hand, destiny: destiny2)
-//                                }, completion: { (finished) -> Void in
-//                                
-//                        })
-//                })
-//        }
-//        
-//    }
-    //================================================================================
-   
 }

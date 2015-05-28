@@ -86,75 +86,75 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
          /* Image 2  */ "QUEIJO",  /* Delete */ "QUEI",
          /* Image 3  */ "ESQUILO", /* Delete */ "ESQUI",
          /* Button 1 */ "TI", /* Delete */ true,  /* Position */ 1,
-         /* Button 2 */ "JO", /* Delete */ true,  /* Position */ 2,
-         /* Button 3 */ "LO", /* Delete */ true,  /* Position */ 3,
-         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
+         /* Button 2 */ "JU", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "LA", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "TE", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "JO", /* Delete */ true,  /* Position */ 2,
+         /* Button 6 */ "LU", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "LO", /* Delete */ true,  /* Position */ 3,
+         /* Button 8 */ "TO", /* Delete */ false, /* Position */ 0),
     
         // Level 3
-        (/* Level */ 1, /* Word */ "CAMELO", /* Image */ "CAMELO",
+        (/* Level */ 3, /* Word */ "CAMELO", /* Image */ "CAMELO",
          /* Image 1  */ "CACHORRO", /* Delete */ "CHORRO",
          /* Image 2  */ "MEIA",  /* Delete */ "IA",
          /* Image 3  */ "ESQUILO", /* Delete */ "ESQUI",
-         /* Button 1 */ "CA", /* Delete */ true, /* Position */ 1,
-         /* Button 2 */ "ME", /* Delete */ true, /* Position */ 2,
-         /* Button 3 */ "LO", /* Delete */ true, /* Position */ 3,
-         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
+         /* Button 1 */ "LA", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CA", /* Delete */ true,  /* Position */ 1,
+         /* Button 3 */ "CE", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "KA", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "MI", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "ME", /* Delete */ true,  /* Position */ 2,
+         /* Button 7 */ "LU", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "LO", /* Delete */ true,  /* Position */ 3),
     
         // Level 4
-        (/* Level */ 1, /* Word */ "PANELA", /* Image */ "PANELA",
+        (/* Level */ 4, /* Word */ "PANELA", /* Image */ "PANELA",
          /* Image 1  */ "PASSARO", /* Delete */ "SSARO",
-         /* Image 2  */ "NEVE",  /* Delete */ "VE",
+         /* Image 2  */ "BONECONEVE",  /* Delete */ "VE",
          /* Image 3  */ "LAPIS", /* Delete */ "PIS",
-         /* Button 1 */ "PA", /* Delete */ true, /* Position */ 1,
-         /* Button 2 */ "NE", /* Delete */ true, /* Position */ 2,
-         /* Button 3 */ "LA", /* Delete */ true, /* Position */ 3,
-         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
+         /* Button 1 */ "ME", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "PO", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "PA", /* Delete */ true,  /* Position */ 1,
+         /* Button 4 */ "NI", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "NE", /* Delete */ true,  /* Position */ 2,
+         /* Button 6 */ "LA", /* Delete */ true,  /* Position */ 3,
+         /* Button 7 */ "PE", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "LO", /* Delete */ false, /* Position */ 0),
     
         // Level 5
-        (/* Level */ 1, /* Word */ "BOLACHA", /* Image */ "BOLACHA",
+        (/* Level */ 5, /* Word */ "BOLACHA", /* Image */ "BOLACHA",
          /* Image 1  */ "BOLA", /* Delete */ "LA",
          /* Image 2  */ "LAPIS",  /* Delete */ "PIS",
          /* Image 3  */ "CHAPEU", /* Delete */ "PÉU",
          /* Button 1 */ "BO", /* Delete */ true, /* Position */ 1,
-         /* Button 2 */ "LA", /* Delete */ true, /* Position */ 2,
-         /* Button 3 */ "CHA", /* Delete */ true, /* Position */ 3,
-         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
+         /* Button 2 */ "PO", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "BA", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "LA", /* Delete */ true, /* Position */ 2,
+         /* Button 5 */ "MA", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "LE", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "CHA", /* Delete */ true, /* Position */ 3,
+         /* Button 8 */ "XA", /* Delete */ false, /* Position */ 0),
     
         // Level 6
-        (/* Level */ 1, /* Word */ "PEGADA", /* Image */ "PEGADA",
+        (/* Level */ 6, /* Word */ "PEGADA", /* Image */ "PEGADA",
          /* Image 1  */ "PEIXE", /* Delete */ "IXE",
          /* Image 2  */ "GATO",  /* Delete */ "TO",
          /* Image 3  */ "LAMPADA", /* Delete */ "LAMPA",
-         /* Button 1 */ "PE", /* Delete */ true, /* Position */ 1,
-         /* Button 2 */ "GA", /* Delete */ true, /* Position */ 2,
-         /* Button 3 */ "DA", /* Delete */ true, /* Position */ 3,
-         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
+         /* Button 1 */ "PI", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "PE", /* Delete */ true,  /* Position */ 1,
+         /* Button 3 */ "BE", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "GA", /* Delete */ true,  /* Position */ 2,
+         /* Button 5 */ "LA", /* Delete */ false, /* Position */ 0,
+         /* Button 6 */ "DA", /* Delete */ true,  /* Position */ 3,
+         /* Button 7 */ "BA", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "PA", /* Delete */ false, /* Position */ 0),
     
         // Level 7
-        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+        (/* Level */ 7, /* Word */ "MACACO", /* Image */ "MACACO",
          /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
          /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "XXX", /* Delete */ "RACAO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
          /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
@@ -165,10 +165,10 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
          /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 8
-        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+        (/* Level */ 8, /* Word */ "MACACO", /* Image */ "MACACO",
          /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
          /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "XXX", /* Delete */ "RACAO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
          /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
@@ -179,10 +179,10 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
          /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 9
-        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+        (/* Level */ 9, /* Word */ "MACACO", /* Image */ "MACACO",
          /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
          /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "XXX", /* Delete */ "RACAO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
          /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
@@ -206,10 +206,13 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(animated: Bool)
     {
+        // Show Tutorial
         if level == 0
         {
-//            tutorialHand.hidden = false
-//            syllable.showTutorial(self.view, hand: tutorialHand, destiny: lblPositionSyllable1)
+            tutorialHand.hidden = false
+            disableButtons()
+            UIView.showTutorial(self.view, hand: tutorialHand, destiny1: lblPositionSyllable1, x1: -10, y1: +20, destiny2: btnOption1, x2: 405, y2: +15)
+            enableButton(btnOption1)
         }
     }
     //================================================================================
@@ -265,19 +268,35 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         {
         case 1:
             if levels[level].button1Correct == true
-            { rightButton(btnOption1, buttonPosition: levels[level].Button1Position) }
+            { rightButton(btnOption1, buttonPosition: levels[level].Button1Position)
+                if level == 0
+                // Tutorial
+                { showTutorial(lblPositionSyllable1, handX: 40, handY: 400, destiny1: lblPositionSyllable2, d1x: -115, d1y: 640, destiny2: btnOption2, d2x: 390, d2y: 630) }
+            }
             else
             { wrongButton(btnOption1) }
             
         case 2:
             if levels[level].button2Correct == true
-            { rightButton(btnOption2, buttonPosition: levels[level].Button2Position) }
+            { rightButton(btnOption2, buttonPosition: levels[level].Button2Position)
+                // Tutorial
+                if level == 0
+                { showTutorial(lblPositionSyllable2, handX: 30, handY: 580, destiny1: lblPositionSyllable3, d1x: 55, d1y: 1050, destiny2: btnOption3, d2x: 570, d2y: 1050) }
+            }
             else
             { wrongButton(btnOption2) }
             
         case 3:
+
             if levels[level].button1Correct == true
-            { rightButton(btnOption3, buttonPosition: levels[level].Button3Position) }
+            { rightButton(btnOption3, buttonPosition: levels[level].Button3Position)
+                // Tutorial
+                if level == 0
+                {
+                    lblPositionSyllable3.borderColor = UIColor.greenColor()
+                    tutorialHand.hidden = true
+                }
+            }
             else
             { wrongButton(btnOption3) }
             
@@ -363,6 +382,36 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     
     
     
+    // MARK: - Tutorial
+    //================================================================================
+    func showTutorial(greenLabel:UILabel, handX:CGFloat, handY:CGFloat, destiny1:UILabel, d1x:CGFloat, d1y:CGFloat, destiny2:UIButton, d2x:CGFloat, d2y:CGFloat)
+    {
+        disableButtons()
+        greenLabel.borderColor = UIColor.greenColor()
+        tutorialHand.frame.origin.x = handX
+        tutorialHand.frame.origin.y = handY
+        UIView.showTutorial(self.view, hand: tutorialHand, destiny1: destiny1, x1: d1x, y1: d2y, destiny2: destiny2, x2: d2x, y2: d2y)
+        enableButton(destiny2)
+    }
+    
+    func disableButtons()
+    {
+        btnOption1.enabled = false
+        btnOption2.enabled = false
+        btnOption3.enabled = false
+        btnOption4.enabled = false
+        btnOption5.enabled = false
+        btnOption6.enabled = false
+        btnOption7.enabled = false
+        btnOption8.enabled = false
+    }
+    
+    func enableButton(button:UIButton)
+    { button.enabled = true }
+    //================================================================================
+    
+    
+    
     // MARK: - Exit Game
     //================================================================================
     @IBAction func btnBack(sender: KPButton)
@@ -371,5 +420,6 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     func dismissView()
     { self.dismissViewControllerAnimated(true, completion: nil) }
     //================================================================================
+    
     
 }

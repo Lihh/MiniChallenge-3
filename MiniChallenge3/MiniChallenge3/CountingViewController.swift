@@ -74,14 +74,84 @@ class CountingViewController: UIViewController {
         /*option  3*/ false, /*  text   */   "4", /*option  4*/  true, /*text     */   "5"),
     
     // Level 2
-        (2, "CLIQUE NOS PASSAROS", 5, "QUANTOS PASSAROS ?", "PASSARO", "CACHORRO",
-        /*button  1*/  true, /*button  2*/ false, /*button  3*/ false, /*button  4*/ false,
-        /*button  5*/ false, /*button  6*/  true, /*button  7*/ false, /*button  8*/ false,
-        /*button  9*/ false, /*button 10*/ false, /*button 11*/  true, /*button 12*/ false,
-        /*button 13*/ false, /*button 14*/ false, /*button 15*/ false, /*button 16*/  true,
-        /*button 17*/ false, /*button 18*/ false, /*button 19*/ false, /*button 20*/  true,
+    (2, "CLIQUE NOS CACHORROS", 4, "QUANTOS CACHORROS ?", "CACHORRO", "PASSARO",
+        /*button  1*/ false, /*button  2*/ false, /*button  3*/  true, /*button  4*/ false,
+        /*button  5*/ false, /*button  6*/ false, /*button  7*/ false, /*button  8*/  true,
+        /*button  9*/  true, /*button 10*/ false, /*button 11*/ false, /*button 12*/ false,
+        /*button 13*/ false, /*button 14*/ false, /*button 15*/ false, /*button 16*/ false,
+        /*button 17*/ false, /*button 18*/ false, /*button 19*/  true, /*button 20*/ false,
         /*option  1*/ false, /*  text   */   "2", /*option  2*/ false, /*  text   */   "3",
-        /*option  3*/ false, /*  text   */   "4", /*option  4*/  true, /*text     */   "5")]
+        /*option  3*/  true, /*  text   */   "4", /*option  4*/ false, /*text     */   "5"),
+    
+    // Level 3
+    (3, "CLIQUE NOS TIGRES", 5, "QUANTOS TIGRES ?", "TIGRE", "PEIXE",
+        /*button  1*/ false, /*button  2*/  true, /*button  3*/ false, /*button  4*/ false,
+        /*button  5*/ false, /*button  6*/ false, /*button  7*/  true, /*button  8*/ false,
+        /*button  9*/ false, /*button 10*/ false, /*button 11*/ false, /*button 12*/  true,
+        /*button 13*/  true, /*button 14*/ false, /*button 15*/ false, /*button 16*/ false,
+        /*button 17*/ false, /*button 18*/ false, /*button 19*/ false, /*button 20*/  true,
+        /*option  1*/ false, /*  text   */   "3", /*option  2*/ false, /*  text   */   "4",
+        /*option  3*/  true, /*  text   */   "5", /*option  4*/ false, /*text     */   "6"),
+    
+    // Level 4
+    (4, "CLIQUE NOS URSOS", 7, "QUANTOS URSOS ?", "URSO", "COELHO",
+        /*button  1*/  true, /*button  2*/ false, /*button  3*/  true, /*button  4*/ false,
+        /*button  5*/ false, /*button  6*/ false, /*button  7*/ false, /*button  8*/  true,
+        /*button  9*/ false, /*button 10*/  true, /*button 11*/ false, /*button 12*/  true,
+        /*button 13*/ false, /*button 14*/ false, /*button 15*/ false, /*button 16*/ false,
+        /*button 17*/  true, /*button 18*/ false, /*button 19*/ false, /*button 20*/  true,
+        /*option  1*/ false, /*  text   */   "6", /*option  2*/  true, /*  text   */   "7",
+        /*option  3*/ false, /*  text   */   "8", /*option  4*/ false, /*text     */   "9"),
+    
+    // Level 5
+    (5, "CLIQUE NOS PEIXES", 8, "QUANTOS PEIXES ?", "PEIXE", "RATO",
+        /*button  1*/ false, /*button  2*/  true, /*button  3*/ false, /*button  4*/  true,
+        /*button  5*/  true, /*button  6*/ false, /*button  7*/  true, /*button  8*/ false,
+        /*button  9*/ false, /*button 10*/  true, /*button 11*/ false, /*button 12*/ false,
+        /*button 13*/ false, /*button 14*/ false, /*button 15*/ false, /*button 16*/ false,
+        /*button 17*/  true, /*button 18*/ false, /*button 19*/  true, /*button 20*/  true,
+        /*option  1*/ false, /*  text   */   "5", /*option  2*/ false, /*  text   */   "6",
+        /*option  3*/ false, /*  text   */   "7", /*option  4*/  true, /*text     */   "8"),
+    
+    // Level 6
+    (6, "CLIQUE NOS MACACOS", 6, "QUANTOS MACACOS ?", "MACACO", "LEAO",
+        /*button  1*/ false, /*button  2*/  true, /*button  3*/  true, /*button  4*/ false,
+        /*button  5*/ false, /*button  6*/ false, /*button  7*/ false, /*button  8*/ false,
+        /*button  9*/ false, /*button 10*/ false, /*button 11*/ false, /*button 12*/ false,
+        /*button 13*/ false, /*button 14*/  true, /*button 15*/  true, /*button 16*/ false,
+        /*button 17*/  true, /*button 18*/ false, /*button 19*/ false, /*button 20*/  true,
+        /*option  1*/ false, /*  text   */   "5", /*option  2*/  true, /*  text   */   "6",
+        /*option  3*/ false, /*  text   */   "7", /*option  4*/ false, /*text     */   "8"),
+    
+    // Level 7
+    (7, "CLIQUE NOS GATOS", 9, "QUANTOS GATOS ?", "GATO", "TIGRE",
+        /*button  1*/ false, /*button  2*/ false, /*button  3*/  true, /*button  4*/ false,
+        /*button  5*/ false, /*button  6*/  true, /*button  7*/ false, /*button  8*/  true,
+        /*button  9*/  true, /*button 10*/ false, /*button 11*/  true, /*button 12*/ false,
+        /*button 13*/ false, /*button 14*/  true, /*button 15*/ false, /*button 16*/  true,
+        /*button 17*/  true, /*button 18*/ false, /*button 19*/  true, /*button 20*/ false,
+        /*option  1*/ false, /*  text   */   "6", /*option  2*/ false, /*  text   */   "7",
+        /*option  3*/ false, /*  text   */   "8", /*option  4*/  true, /*text     */   "9"),
+    
+    // Level 8
+    (8, "CLIQUE NOS CAVALOS", 4, "QUANTOS CAVALOS ?", "CAVALO", "CAMELO",
+        /*button  1*/ false, /*button  2*/  true, /*button  3*/ false, /*button  4*/ false,
+        /*button  5*/ false, /*button  6*/ false, /*button  7*/ false, /*button  8*/ false,
+        /*button  9*/ false, /*button 10*/ false, /*button 11*/  true, /*button 12*/ false,
+        /*button 13*/  true, /*button 14*/ false, /*button 15*/ false, /*button 16*/ false,
+        /*button 17*/ false, /*button 18*/ false, /*button 19*/ false, /*button 20*/  true,
+        /*option  1*/  true, /*  text   */   "4", /*option  2*/ false, /*  text   */   "5",
+        /*option  3*/ false, /*  text   */   "6", /*option  4*/ false, /*text     */   "7"),
+    
+    // Level 9
+    (9, "CLIQUE NOS ELEFANTES", 6, "QUANTOS ELEFANTES ?", "ELEFANTE", "HIPOPOTAMO",
+        /*button  1*/ false, /*button  2*/ false, /*button  3*/ false, /*button  4*/ false,
+        /*button  5*/  true, /*button  6*/  true, /*button  7*/ false, /*button  8*/ false,
+        /*button  9*/ false, /*button 10*/ false, /*button 11*/  true, /*button 12*/ false,
+        /*button 13*/ false, /*button 14*/  true, /*button 15*/ false, /*button 16*/  true,
+        /*button 17*/ false, /*button 18*/ false, /*button 19*/  true, /*button 20*/ false,
+        /*option  1*/ false, /*  text   */   "5", /*option  2*/  true, /*  text   */   "6",
+        /*option  3*/ false, /*  text   */   "7", /*option  4*/ false, /*text     */   "8")]
     //================================================================================
     
     
@@ -260,145 +330,169 @@ class CountingViewController: UIViewController {
             if levels[level].button1Correct == true
             { correctAnimation(button1) }
             else
-            { wrongAnimation(button1) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button1)
+              lostLife() }
             
         case 2:
             if levels[level].button2Correct == true
             { correctAnimation(button2) }
             else
-            { wrongAnimation(button2) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button2)
+              lostLife() }
             
         case 3:
             if levels[level].button3Correct == true
             { correctAnimation(button3) }
             else
-            { wrongAnimation(button3) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button3)
+              lostLife() }
             
         case 4:
             if levels[level].button4Correct == true
             { correctAnimation(button4) }
             else
-            { wrongAnimation(button4) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button4)
+              lostLife() }
             
         case 5:
             if levels[level].button5Correct == true
             { correctAnimation(button5) }
             else
-            { wrongAnimation(button5) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button5)
+              lostLife() }
             
         case 6:
             if levels[level].button6Correct == true
             { correctAnimation(button6) }
             else
-            { wrongAnimation(button6) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button6)
+              lostLife() }
             
         case 7:
             if levels[level].button7Correct == true
             { correctAnimation(button7) }
             else
-            { wrongAnimation(button7) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button7)
+              lostLife() }
             
         case 8:
             if levels[level].button8Correct == true
             { correctAnimation(button8) }
             else
-            { wrongAnimation(button8) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button8)
+              lostLife() }
             
         case 9:
             if levels[level].button9Correct == true
             { correctAnimation(button9) }
             else
-            { wrongAnimation(button9) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button9)
+              lostLife() }
             
         case 10:
             if levels[level].button10Correct == true
             { correctAnimation(button10) }
             else
-            { wrongAnimation(button10) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button10)
+              lostLife() }
             
         case 11:
             if levels[level].button11Correct == true
             { correctAnimation(button11) }
             else
-            { wrongAnimation(button11) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button11)
+              lostLife() }
             
         case 12:
             if levels[level].button12Correct == true
             { correctAnimation(button12) }
             else
-            { wrongAnimation(button12) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button12)
+              lostLife() }
             
         case 13:
             if levels[level].button13Correct == true
             { correctAnimation(button13) }
             else
-            { wrongAnimation(button13) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button13)
+              lostLife() }
             
         case 14:
             if levels[level].button14Correct == true
             { correctAnimation(button14) }
             else
-            { wrongAnimation(button14) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button14)
+              lostLife() }
             
         case 15:
             if levels[level].button15Correct == true
             { correctAnimation(button15) }
             else
-            { wrongAnimation(button15) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button15)
+              lostLife() }
             
         case 16:
             if levels[level].button16Correct == true
             { correctAnimation(button16) }
             else
-            { wrongAnimation(button16) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button16)
+              lostLife() }
             
         case 17:
             if levels[level].button17Correct == true
             { correctAnimation(button17) }
             else
-            { wrongAnimation(button17) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button17)
+              lostLife() }
             
         case 18:
             if levels[level].button18Correct == true
             { correctAnimation(button18) }
             else
-            { wrongAnimation(button18) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button18)
+              lostLife() }
             
         case 19:
             if levels[level].button19Correct == true
             { correctAnimation(button19) }
             else
-            { wrongAnimation(button19) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button19)
+              lostLife() }
             
         case 20:
             if levels[level].button20Correct == true
             { correctAnimation(button20) }
             else
-            { wrongAnimation(button20) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: button20)
+              lostLife() }
             
         case 21:
             if levels[level].option1Correct == true
             { correctAnimation(btnOption1) }
             else
-            { wrongAnimation(btnOption1) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption1)
+              lostLife() }
             
         case 22:
             if levels[level].option2Correct == true
             { correctAnimation(btnOption2) }
             else
-            { wrongAnimation(btnOption2) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption2)
+              lostLife() }
             
         case 23:
             if levels[level].option3Correct == true
             { correctAnimation(btnOption3) }
             else
-            { wrongAnimation(btnOption3) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption3)
+              lostLife() }
             
         case 24:
             if levels[level].option4Correct == true
             { correctAnimation(btnOption4) }
             else
-            { wrongAnimation(btnOption4) }
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption4)
+              lostLife() }
             
         default:
             println("outro")
@@ -410,29 +504,10 @@ class CountingViewController: UIViewController {
     
     // MARK: - Animation for Wrong Button
     //============================================================
-    func wrongAnimation(buttonAnimate: UIButton)
-    {
-        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
-            }) { (finished) -> Void in
-                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                    buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x-15, 0);
-                    }, completion: { (finished) -> Void in
-                        UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                            buttonAnimate.transform = CGAffineTransformMakeTranslation(self.view.frame.origin.x+15, 0);
-                            }, completion: { (finished) -> Void in
-                                UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                                    buttonAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
-                                    }, completion: { (finished) -> Void in
-                                        buttonAnimate.backgroundColor = UIColor.redColor()
-                                        buttonAnimate.enabled = false
-                                })
-                        })
-                })
-        }
+    func lostLife () {
         lifes--
-        if lifes == 0 {
-            self.dismissViewControllerAnimated(true, completion: nil)
+        if lifes == 0 {            
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
     }
     //============================================================
@@ -459,7 +534,7 @@ class CountingViewController: UIViewController {
                                     }, completion: { (finished) -> Void in
                                         buttonAnimate.backgroundColor = UIColor.greenColor()
                                         buttonAnimate.enabled = false
-                                        if self.finish == 5 { self.showQuestion() }
+                                        if self.finish == self.levels[self.level].finish { self.showQuestion() }
                                 })
                         })
                 })
@@ -471,8 +546,7 @@ class CountingViewController: UIViewController {
             } else {
                 persistence.newScore("Counting", level: level, quantityOfStars: lifes)
             }
-            self.dismissViewControllerAnimated(true, completion: nil)
-//            addViewBlurEffect()
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
     }
     
@@ -507,15 +581,11 @@ class CountingViewController: UIViewController {
         btnOption3.hidden = false
         btnOption4.hidden = false
     }
-    
-    func addViewBlurEffect()
-    {
-        var effect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        var effectView = UIVisualEffectView(effect: effect)
-        effectView.frame = CGRectMake(0, 0, view.bounds.width, view.bounds.height)
-        view.addSubview(effectView)
-    }
     //============================================================
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     @IBAction func btnBack(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
