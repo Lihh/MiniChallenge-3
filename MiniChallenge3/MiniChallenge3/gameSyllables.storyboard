@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yQt-SG-w1o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yQt-SG-w1o">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -290,61 +290,55 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="308-wg-h0Y">
-                                <rect key="frame" x="242" y="248" width="20" height="10"/>
+                                <rect key="frame" x="207" y="248" width="20" height="10"/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIK-qo-3BG">
-                                <rect key="frame" x="297" y="228" width="90" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIK-qo-3BG">
+                                <rect key="frame" x="244" y="230" width="185" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B5u-Ya-9gy"/>
+                                    <constraint firstAttribute="width" constant="185" id="XyT-CM-qs7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqo-ZJ-aQA">
-                                <rect key="frame" x="419" y="218" width="25" height="40"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgh-3i-nVr">
-                                <rect key="frame" x="242" y="388" width="20" height="10"/>
+                                <rect key="frame" x="207" y="388" width="20" height="10"/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhO-ox-The">
-                                <rect key="frame" x="297" y="368" width="90" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhO-ox-The">
+                                <rect key="frame" x="244" y="370" width="185" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1BU-hY-FEl"/>
+                                    <constraint firstAttribute="width" constant="185" id="P21-0x-AcF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5GG-qS-9IH">
-                                <rect key="frame" x="419" y="358" width="25" height="40"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pi-aL-ge9">
-                                <rect key="frame" x="242" y="108" width="20" height="10"/>
+                                <rect key="frame" x="207" y="108" width="20" height="10"/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-JO-8Hl">
-                                <rect key="frame" x="297" y="88" width="80" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-JO-8Hl">
+                                <rect key="frame" x="244" y="90" width="185" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="pj8-b4-TWg"/>
+                                    <constraint firstAttribute="height" constant="50" id="z36-D3-uqA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEY-Gi-DzY">
-                                <rect key="frame" x="419" y="78" width="25" height="40"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="__" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTL-NC-uWs">
                                 <rect key="frame" x="472" y="80" width="100" height="60"/>
@@ -428,6 +422,24 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqo-ZJ-aQA">
+                                <rect key="frame" x="445" y="218" width="25" height="40"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5GG-qS-9IH">
+                                <rect key="frame" x="445" y="358" width="25" height="40"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEY-Gi-DzY">
+                                <rect key="frame" x="445" y="78" width="25" height="40"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.25098039215686274" green="0.58431372549019611" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -454,7 +466,7 @@
                             <constraint firstItem="sfs-0D-o2w" firstAttribute="centerY" secondItem="308-wg-h0Y" secondAttribute="centerY" constant="-5.5" id="PMg-de-Ve0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="POD-Id-zRe" secondAttribute="trailing" constant="55" id="PWZ-hJ-NhZ"/>
                             <constraint firstItem="ViL-7r-JgK" firstAttribute="leading" secondItem="J6A-sv-3wp" secondAttribute="leadingMargin" constant="55" id="QLc-6E-r77"/>
-                            <constraint firstItem="yEY-Gi-DzY" firstAttribute="leading" secondItem="mIV-JO-8Hl" secondAttribute="trailing" constant="45" id="R4N-D1-lJU"/>
+                            <constraint firstItem="yEY-Gi-DzY" firstAttribute="leading" secondItem="mIV-JO-8Hl" secondAttribute="trailing" constant="25" id="R4N-D1-lJU"/>
                             <constraint firstItem="CiA-Aa-I7q" firstAttribute="top" secondItem="ViL-7r-JgK" secondAttribute="bottom" constant="70" id="Ra4-BW-QuO"/>
                             <constraint firstItem="0a5-AT-AnM" firstAttribute="leading" secondItem="wR0-C7-dXo" secondAttribute="trailing" constant="85" id="SEs-sH-cmL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yhh-A6-w0K" secondAttribute="trailing" constant="55" id="Tyr-8b-elG"/>
@@ -472,7 +484,7 @@
                             <constraint firstItem="308-wg-h0Y" firstAttribute="centerX" secondItem="9Pi-aL-ge9" secondAttribute="centerX" id="bYv-Hx-Bm5"/>
                             <constraint firstItem="3Yp-VM-2zU" firstAttribute="leading" secondItem="J6A-sv-3wp" secondAttribute="leadingMargin" id="g0V-dC-aNR"/>
                             <constraint firstItem="Hqa-UX-mdK" firstAttribute="leading" secondItem="J6A-sv-3wp" secondAttribute="leadingMargin" constant="55" id="hNb-0Z-e12"/>
-                            <constraint firstItem="mIV-JO-8Hl" firstAttribute="leading" secondItem="9Pi-aL-ge9" secondAttribute="trailing" constant="45" id="j5J-Cd-D66"/>
+                            <constraint firstItem="mIV-JO-8Hl" firstAttribute="leading" secondItem="9Pi-aL-ge9" secondAttribute="trailing" constant="25" id="j5J-Cd-D66"/>
                             <constraint firstItem="KSj-Ip-0me" firstAttribute="leading" secondItem="J6A-sv-3wp" secondAttribute="leadingMargin" id="jRT-64-aoh"/>
                             <constraint firstItem="UhO-ox-The" firstAttribute="centerX" secondItem="NIK-qo-3BG" secondAttribute="centerX" id="kfX-h7-41n"/>
                             <constraint firstItem="3yS-H7-iWt" firstAttribute="top" secondItem="dNJ-0A-UXr" secondAttribute="bottom" constant="100" id="l4s-nM-Wkb"/>

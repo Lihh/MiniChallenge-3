@@ -151,10 +151,10 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
          /* Button 8 */ "PA", /* Delete */ false, /* Position */ 0),
     
         // Level 7
-        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+        (/* Level */ 7, /* Word */ "MACACO", /* Image */ "MACACO",
          /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
          /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "XXX", /* Delete */ "RACAO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
          /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
@@ -165,10 +165,10 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
          /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 8
-        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+        (/* Level */ 8, /* Word */ "MACACO", /* Image */ "MACACO",
          /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
          /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "XXX", /* Delete */ "RACAO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
          /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
@@ -179,10 +179,10 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
          /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
     
         // Level 9
-        (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+        (/* Level */ 9, /* Word */ "MACACO", /* Image */ "MACACO",
          /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
          /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "XXX", /* Delete */ "RACAO",
+         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
          /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
          /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
