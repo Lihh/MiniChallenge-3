@@ -17,6 +17,8 @@
 		026C93DE1B063473004E8CA8 /* GameCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C93DD1B063473004E8CA8 /* GameCalculatorViewController.swift */; };
 		02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CCF6661B04C442001AA118 /* Animals.storyboard */; };
 		02D0EEA21B0B5DC700CA9750 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0EEA11B0B5DC700CA9750 /* CongratulationsViewController.swift */; };
+		02D4CAAD1B188BB4003225E7 /* ClassifyAnimals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D4CAAC1B188BB4003225E7 /* ClassifyAnimals.storyboard */; };
+		02D4CAAF1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4CAAE1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift */; };
 		02D875E31B12DBD8002D61B8 /* BOLA.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D875E21B12DBD8002D61B8 /* BOLA.png */; };
 		02D875E51B12DBDD002D61B8 /* BOLACHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D875E41B12DBDD002D61B8 /* BOLACHA.png */; };
 		02D875E71B12DBEB002D61B8 /* BONECONEVE.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D875E61B12DBEB002D61B8 /* BONECONEVE.png */; };
@@ -102,6 +104,8 @@
 		026C93DD1B063473004E8CA8 /* GameCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCalculatorViewController.swift; sourceTree = "<group>"; };
 		02CCF6661B04C442001AA118 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Animals.storyboard; path = ../Animals.storyboard; sourceTree = "<group>"; };
 		02D0EEA11B0B5DC700CA9750 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
+		02D4CAAC1B188BB4003225E7 /* ClassifyAnimals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassifyAnimals.storyboard; sourceTree = "<group>"; };
+		02D4CAAE1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameClassifyAnimalsViewController.swift; sourceTree = "<group>"; };
 		02D875E21B12DBD8002D61B8 /* BOLA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOLA.png; sourceTree = "<group>"; };
 		02D875E41B12DBDD002D61B8 /* BOLACHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOLACHA.png; sourceTree = "<group>"; };
 		02D875E61B12DBEB002D61B8 /* BONECONEVE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BONECONEVE.png; sourceTree = "<group>"; };
@@ -289,10 +293,20 @@
 		02CCF66A1B04C4AE001AA118 /* Science */ = {
 			isa = PBXGroup;
 			children = (
+				02D4CAAB1B188862003225E7 /* Game Classify Animals */,
 				026C93D41B061D74004E8CA8 /* Game Human Body */,
 				026C93CE1B06145B004E8CA8 /* Game Animals */,
 			);
 			name = Science;
+			sourceTree = "<group>";
+		};
+		02D4CAAB1B188862003225E7 /* Game Classify Animals */ = {
+			isa = PBXGroup;
+			children = (
+				02D4CAAC1B188BB4003225E7 /* ClassifyAnimals.storyboard */,
+				02D4CAAE1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift */,
+			);
+			name = "Game Classify Animals";
 			sourceTree = "<group>";
 		};
 		02D875E11B12DB8F002D61B8 /* Images */ = {
@@ -541,6 +555,7 @@
 				EC84714A1B1364D000BA8DD2 /* Blop.mp3 in Resources */,
 				02D876111B12DC5D002D61B8 /* QUEIJO.png in Resources */,
 				02D876011B12DC37002D61B8 /* LEAO.png in Resources */,
+				02D4CAAD1B188BB4003225E7 /* ClassifyAnimals.storyboard in Resources */,
 				EC2FBB661B066FD9008A6C67 /* Blogger Sans-Light.otf in Resources */,
 				02D8760B1B12DC4E002D61B8 /* PASSARO.png in Resources */,
 				02D875FF1B12DC34002D61B8 /* LAPIS.png in Resources */,
@@ -587,6 +602,7 @@
 				EC2E555B1B04FB3900D2D953 /* CircleSegue.swift in Sources */,
 				EC2E55611B04FB4B00D2D953 /* MathViewController.swift in Sources */,
 				026C93DE1B063473004E8CA8 /* GameCalculatorViewController.swift in Sources */,
+				02D4CAAF1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift in Sources */,
 				EC8A114F1B0A0E4A00C8BE36 /* Score.swift in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,
 				EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */,

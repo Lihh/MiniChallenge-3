@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cpM-Jk-ArL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XvN-T1-gXi">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -18,48 +18,56 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Game Animals View Controller-->
-        <scene sceneID="r3u-4h-SkB">
+        <!--Game Classify Animals View Controller-->
+        <scene sceneID="g6o-Id-LWd">
             <objects>
-                <viewController storyboardIdentifier="GameAnimals" id="cpM-Jk-ArL" customClass="GameAnimalsViewController" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClassifyAnimals" id="XvN-T1-gXi" customClass="GameClassifyAnimalsViewController" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="QGR-L6-YqV"/>
-                        <viewControllerLayoutGuide type="bottom" id="9nL-HS-OfF"/>
+                        <viewControllerLayoutGuide type="top" id="BB7-tu-7Xx"/>
+                        <viewControllerLayoutGuide type="bottom" id="BZ1-ct-UMD"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ndm-al-DB1">
+                    <view key="view" contentMode="scaleToFill" id="2LH-D5-qqc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adivinhe o Animal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-fN-8Me">
-                                <rect key="frame" x="73" y="28" width="455" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classifique o Animal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quX-PY-sjE">
+                                <rect key="frame" x="46" y="28" width="509" height="60"/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CACHORRO.png" translatesAutoresizingMaskIntoConstraints="NO" id="C32-pP-D0x" customClass="KPImageView" customModule="MiniChallenge3" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CACHORRO.png" translatesAutoresizingMaskIntoConstraints="NO" id="chz-OW-XZO" customClass="KPImageView" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="125" y="28" width="350" height="350"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="b50-Tl-WKU"/>
-                                    <constraint firstAttribute="width" constant="400" id="iVk-Dv-Wcg"/>
+                                    <constraint firstAttribute="height" constant="400" id="7Q4-EP-2Sg"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="gOh-El-Nhu"/>
+                                    <constraint firstAttribute="width" constant="400" id="hU3-nO-66e"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="uct-am-Xpq"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gOh-El-Nhu"/>
+                                        <exclude reference="uct-am-Xpq"/>
+                                    </mask>
+                                </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WId-RN-dCu" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFQ-6i-Z51" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="ZlD-Ew-WW9"/>
+                                    <constraint firstAttribute="width" constant="30" id="1uC-FF-dGr"/>
                                 </constraints>
                                 <state key="normal" image="backArrow">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonBack:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="Q98-uU-bM7"/>
+                                    <action selector="buttonBack:" destination="XvN-T1-gXi" eventType="touchUpInside" id="aB5-31-V9d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVF-m7-m9m" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnF-Ut-4BY" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="235" y="455" width="130" height="51"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="185" id="Cah-2Z-f9K"/>
-                                    <constraint firstAttribute="height" constant="55" id="OTV-iC-tXM"/>
+                                    <constraint firstAttribute="width" constant="185" id="16F-Xo-9mM"/>
+                                    <constraint firstAttribute="height" constant="55" id="B2o-a2-IWj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
                                 <state key="normal" title="OPCAO 2">
@@ -78,14 +86,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="2gW-v2-8JP"/>
+                                    <action selector="btnClicked:" destination="XvN-T1-gXi" eventType="touchUpInside" id="Jqk-I4-jih"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDb-V3-jzZ" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgq-Yu-3au" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="428" y="455" width="122" height="51"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="185" id="7mq-r3-xfT"/>
-                                    <constraint firstAttribute="height" constant="55" id="YDa-DW-6eL"/>
+                                    <constraint firstAttribute="height" constant="55" id="6Ie-7r-FRc"/>
+                                    <constraint firstAttribute="width" constant="185" id="w8H-hb-6QR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
                                 <state key="normal" title="OPCAO 3">
@@ -104,14 +112,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="7Mu-Ds-7K9"/>
+                                    <action selector="btnClicked:" destination="XvN-T1-gXi" eventType="touchUpInside" id="oYE-YS-f5O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL4-ow-wVw" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rV-c8-bIu" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="50" y="523" width="126" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="185" id="15E-Xo-9hM"/>
-                                    <constraint firstAttribute="height" constant="55" id="syc-BO-leS"/>
+                                    <constraint firstAttribute="width" constant="185" id="80Q-Sb-xcM"/>
+                                    <constraint firstAttribute="height" constant="55" id="pYx-wj-7wH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
                                 <state key="normal" title="OPCAO 4">
@@ -130,14 +138,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="QJV-KS-EOD"/>
+                                    <action selector="btnClicked:" destination="XvN-T1-gXi" eventType="touchUpInside" id="C4j-IQ-FWS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoZ-h6-LZc" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcv-th-6uU" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="235" y="523" width="130" height="47"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="185" id="3zp-oQ-Hby"/>
-                                    <constraint firstAttribute="height" constant="55" id="Wsi-gt-UQs"/>
+                                    <constraint firstAttribute="height" constant="55" id="MtH-Y0-X7e"/>
+                                    <constraint firstAttribute="width" constant="185" id="m2a-8k-6xJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
                                 <state key="normal" title="OPCAO 5">
@@ -156,14 +164,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="FfZ-TP-TRz"/>
+                                    <action selector="btnClicked:" destination="XvN-T1-gXi" eventType="touchUpInside" id="rCM-u8-gJ5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogi-hX-Hbq" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIS-Y3-Bld" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="50" y="455" width="126" height="51"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="185" id="9EB-Yb-dny"/>
-                                    <constraint firstAttribute="height" constant="55" id="U6Q-In-ZHQ"/>
+                                    <constraint firstAttribute="width" constant="185" id="AIa-eg-bVt"/>
+                                    <constraint firstAttribute="height" constant="55" id="QfZ-5i-Jgw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
                                 <state key="normal" title="OPCAO 1">
@@ -182,14 +190,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="V3V-d2-eFi"/>
+                                    <action selector="btnClicked:" destination="XvN-T1-gXi" eventType="touchUpInside" id="TOO-WI-IF1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="________" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgX-MX-FJK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="________" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnE-8f-2k2">
                                 <rect key="frame" x="226" y="377" width="149" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="O3M-Mf-6IE"/>
-                                    <constraint firstAttribute="width" constant="200" id="Ssr-An-eqC"/>
+                                    <constraint firstAttribute="height" constant="55" id="656-7w-VgV"/>
+                                    <constraint firstAttribute="width" constant="200" id="Kv0-uJ-cjj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -206,11 +214,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWP-0H-UbC" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcQ-9O-DpF" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="428" y="523" width="122" height="47"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="raF-kt-ya3"/>
-                                    <constraint firstAttribute="width" constant="185" id="vjQ-R8-CwX"/>
+                                    <constraint firstAttribute="width" constant="185" id="3XO-KX-QQr"/>
+                                    <constraint firstAttribute="height" constant="55" id="Jn7-Mq-qic"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="30"/>
                                 <state key="normal" title="OPCAO 6">
@@ -229,83 +237,74 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnClicked:" destination="cpM-Jk-ArL" eventType="touchUpInside" id="ekf-Mm-FaV"/>
+                                    <action selector="btnClicked:" destination="XvN-T1-gXi" eventType="touchUpInside" id="0b2-Mj-1yV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="__________________________________________________________" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlG-Lk-iol">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="__________________________________________________________" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNw-XA-QQH">
                                 <rect key="frame" x="16" y="426" width="720" height="21"/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXS-f5-5s8">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hP1-Fa-gNw">
                                 <rect key="frame" x="50" y="204" width="50" height="50"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="LlK-nG-Goq"/>
-                                    <constraint firstAttribute="width" constant="50" id="xZ0-Ir-iB3"/>
+                                    <constraint firstAttribute="height" constant="50" id="az7-Ds-97j"/>
+                                    <constraint firstAttribute="width" constant="50" id="ebT-mN-OzH"/>
                                 </constraints>
                                 <state key="normal" image="tutorialHand.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.32941176470588235" green="0.84313725490196079" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.28627450980392155" green="0.82352941176470584" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="C32-pP-D0x" firstAttribute="top" secondItem="wdS-fN-8Me" secondAttribute="bottom" constant="8" id="3Tk-jH-2Ca"/>
-                            <constraint firstAttribute="centerX" secondItem="C32-pP-D0x" secondAttribute="centerX" id="3vs-ig-Jtc"/>
-                            <constraint firstItem="MXS-f5-5s8" firstAttribute="centerY" secondItem="C32-pP-D0x" secondAttribute="centerY" constant="39" id="5p9-bv-dt6"/>
-                            <constraint firstAttribute="centerX" secondItem="wdS-fN-8Me" secondAttribute="centerX" id="8Ne-oE-hY1"/>
-                            <constraint firstAttribute="centerX" secondItem="C32-pP-D0x" secondAttribute="centerX" id="8og-ij-Hwz"/>
-                            <constraint firstAttribute="centerY" secondItem="hDb-V3-jzZ" secondAttribute="centerY" constant="-250" id="BSS-qZ-C1A"/>
-                            <constraint firstItem="IVF-m7-m9m" firstAttribute="top" secondItem="nlG-Lk-iol" secondAttribute="bottom" constant="70" id="Baf-6K-n9c"/>
-                            <constraint firstAttribute="centerY" secondItem="hL4-ow-wVw" secondAttribute="centerY" constant="-400" id="CWg-nJ-GgO"/>
-                            <constraint firstItem="wdS-fN-8Me" firstAttribute="top" secondItem="QGR-L6-YqV" secondAttribute="bottom" constant="8" id="Es1-QF-q6R"/>
-                            <constraint firstAttribute="centerY" secondItem="C32-pP-D0x" secondAttribute="centerY" constant="-54" id="JUZ-p5-kdM"/>
-                            <constraint firstItem="ogi-hX-Hbq" firstAttribute="leading" secondItem="Ndm-al-DB1" secondAttribute="leadingMargin" constant="50" id="LFx-rJ-Kkr"/>
-                            <constraint firstAttribute="centerY" secondItem="ogi-hX-Hbq" secondAttribute="centerY" constant="-250" id="Pk4-C7-ry8"/>
-                            <constraint firstAttribute="centerX" secondItem="GoZ-h6-LZc" secondAttribute="centerX" id="WBC-js-rEh"/>
-                            <constraint firstItem="C32-pP-D0x" firstAttribute="leading" secondItem="MXS-f5-5s8" secondAttribute="trailing" constant="10" id="YvN-lP-Kgv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nlG-Lk-iol" secondAttribute="trailing" id="aBR-Sm-Wju"/>
-                            <constraint firstItem="WId-RN-dCu" firstAttribute="top" secondItem="QGR-L6-YqV" secondAttribute="bottom" constant="8" id="bt0-Xm-cuV"/>
-                            <constraint firstItem="hL4-ow-wVw" firstAttribute="leading" secondItem="Ndm-al-DB1" secondAttribute="leadingMargin" constant="50" id="cbR-QU-szr"/>
-                            <constraint firstItem="WId-RN-dCu" firstAttribute="leading" secondItem="Ndm-al-DB1" secondAttribute="leadingMargin" id="hXM-FU-Sif"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hDb-V3-jzZ" secondAttribute="trailing" constant="50" id="i8h-cb-oYW"/>
-                            <constraint firstAttribute="centerY" secondItem="C32-pP-D0x" secondAttribute="centerY" constant="200" id="iJa-ep-LTb"/>
-                            <constraint firstItem="nlG-Lk-iol" firstAttribute="leading" secondItem="Ndm-al-DB1" secondAttribute="leadingMargin" id="jOQ-GX-6CH"/>
-                            <constraint firstAttribute="centerX" secondItem="pgX-MX-FJK" secondAttribute="centerX" id="nTQ-z0-E9Q"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oWP-0H-UbC" secondAttribute="trailing" constant="50" id="qLs-Rz-f4X"/>
-                            <constraint firstAttribute="centerY" secondItem="oWP-0H-UbC" secondAttribute="centerY" constant="-400" id="tzU-VG-8rO"/>
-                            <constraint firstAttribute="centerY" secondItem="IVF-m7-m9m" secondAttribute="centerY" constant="-250" id="vaF-Cq-chK"/>
-                            <constraint firstAttribute="centerY" secondItem="pgX-MX-FJK" secondAttribute="centerY" constant="-50" id="vwU-JD-YYF"/>
-                            <constraint firstAttribute="centerX" secondItem="IVF-m7-m9m" secondAttribute="centerX" id="yJs-Mf-TVA"/>
-                            <constraint firstAttribute="centerY" secondItem="GoZ-h6-LZc" secondAttribute="centerY" constant="-400" id="zG7-rJ-q9K"/>
+                            <constraint firstAttribute="centerX" secondItem="Fcv-th-6uU" secondAttribute="centerX" id="36n-ZV-FJL"/>
+                            <constraint firstAttribute="centerY" secondItem="ZcQ-9O-DpF" secondAttribute="centerY" constant="-400" id="62s-Pw-xvG"/>
+                            <constraint firstItem="KIS-Y3-Bld" firstAttribute="leading" secondItem="2LH-D5-qqc" secondAttribute="leadingMargin" constant="50" id="6om-eJ-MSw"/>
+                            <constraint firstAttribute="centerY" secondItem="KIS-Y3-Bld" secondAttribute="centerY" constant="-250" id="9me-ek-G7o"/>
+                            <constraint firstAttribute="centerX" secondItem="chz-OW-XZO" secondAttribute="centerX" id="HRw-yv-2po"/>
+                            <constraint firstAttribute="centerY" secondItem="jnE-8f-2k2" secondAttribute="centerY" constant="-50" id="IgB-AI-zVU"/>
+                            <constraint firstAttribute="centerY" secondItem="Fcv-th-6uU" secondAttribute="centerY" constant="-400" id="KrV-kT-SJg"/>
+                            <constraint firstItem="fnF-Ut-4BY" firstAttribute="top" secondItem="DNw-XA-QQH" secondAttribute="bottom" constant="70" id="M3e-iP-vlY"/>
+                            <constraint firstItem="hP1-Fa-gNw" firstAttribute="centerY" secondItem="chz-OW-XZO" secondAttribute="centerY" constant="39" id="Ook-AS-AMe"/>
+                            <constraint firstItem="EFQ-6i-Z51" firstAttribute="top" secondItem="BB7-tu-7Xx" secondAttribute="bottom" constant="8" id="RKJ-dt-UTK"/>
+                            <constraint firstItem="quX-PY-sjE" firstAttribute="top" secondItem="BB7-tu-7Xx" secondAttribute="bottom" constant="8" id="Xl7-34-UoV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wgq-Yu-3au" secondAttribute="trailing" constant="50" id="Yqy-at-FPN"/>
+                            <constraint firstAttribute="centerX" secondItem="fnF-Ut-4BY" secondAttribute="centerX" id="Z3J-1W-ox9"/>
+                            <constraint firstItem="chz-OW-XZO" firstAttribute="leading" secondItem="hP1-Fa-gNw" secondAttribute="trailing" constant="10" id="ZbZ-Ag-aCn"/>
+                            <constraint firstAttribute="centerX" secondItem="quX-PY-sjE" secondAttribute="centerX" id="ZsU-3F-UjW"/>
+                            <constraint firstItem="EFQ-6i-Z51" firstAttribute="leading" secondItem="2LH-D5-qqc" secondAttribute="leadingMargin" id="akg-ae-FbZ"/>
+                            <constraint firstAttribute="centerY" secondItem="fnF-Ut-4BY" secondAttribute="centerY" constant="-250" id="bFN-bh-dZ2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DNw-XA-QQH" secondAttribute="trailing" id="bLC-7p-ckb"/>
+                            <constraint firstAttribute="centerY" secondItem="chz-OW-XZO" secondAttribute="centerY" constant="200" id="bSY-Qt-goI"/>
+                            <constraint firstItem="DNw-XA-QQH" firstAttribute="leading" secondItem="2LH-D5-qqc" secondAttribute="leadingMargin" id="dqy-FB-sVN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZcQ-9O-DpF" secondAttribute="trailing" constant="50" id="hg9-CB-vkR"/>
+                            <constraint firstAttribute="centerY" secondItem="3rV-c8-bIu" secondAttribute="centerY" constant="-400" id="l0B-iw-inH"/>
+                            <constraint firstAttribute="centerX" secondItem="jnE-8f-2k2" secondAttribute="centerX" id="lVb-Bd-Fh2"/>
+                            <constraint firstItem="3rV-c8-bIu" firstAttribute="leading" secondItem="2LH-D5-qqc" secondAttribute="leadingMargin" constant="50" id="t8u-u6-2wX"/>
+                            <constraint firstAttribute="centerY" secondItem="Wgq-Yu-3au" secondAttribute="centerY" constant="-250" id="wSn-UF-q2m"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="3Tk-jH-2Ca"/>
-                                <exclude reference="3vs-ig-Jtc"/>
-                                <exclude reference="JUZ-p5-kdM"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
-                        <outlet property="answerLabel" destination="pgX-MX-FJK" id="lTd-Tc-hfi"/>
-                        <outlet property="btn1" destination="ogi-hX-Hbq" id="Zea-SV-nUX"/>
-                        <outlet property="btn2" destination="IVF-m7-m9m" id="a4M-bP-l4f"/>
-                        <outlet property="btn3" destination="hDb-V3-jzZ" id="2yj-et-hQZ"/>
-                        <outlet property="btn4" destination="hL4-ow-wVw" id="9wJ-vM-fxT"/>
-                        <outlet property="btn5" destination="GoZ-h6-LZc" id="9aV-HW-pGI"/>
-                        <outlet property="btn6" destination="oWP-0H-UbC" id="M9F-AB-40Z"/>
-                        <outlet property="imageView" destination="C32-pP-D0x" id="Mpy-Ua-s39"/>
-                        <outlet property="tutorialHand" destination="MXS-f5-5s8" id="RFa-A4-ETb"/>
+                        <outlet property="btn1" destination="KIS-Y3-Bld" id="zgX-tx-TFw"/>
+                        <outlet property="btn2" destination="fnF-Ut-4BY" id="eO1-1G-dfU"/>
+                        <outlet property="btn3" destination="Wgq-Yu-3au" id="Q94-Fv-EMC"/>
+                        <outlet property="btn4" destination="3rV-c8-bIu" id="dlb-ea-ZBK"/>
+                        <outlet property="btn5" destination="Fcv-th-6uU" id="hkK-bf-Kvo"/>
+                        <outlet property="btn6" destination="ZcQ-9O-DpF" id="40K-Ey-fk8"/>
+                        <outlet property="imageView" destination="chz-OW-XZO" id="681-2f-1Bc"/>
+                        <outlet property="lblAnswer" destination="jnE-8f-2k2" id="3ZT-0U-pwE"/>
+                        <outlet property="lblTitle" destination="quX-PY-sjE" id="uO9-gm-6fJ"/>
+                        <outlet property="tutorialHand" destination="hP1-Fa-gNw" id="j70-L0-sJ9"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YSv-mE-OBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pd-ld-Xut" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013" y="510"/>
+            <point key="canvasLocation" x="1316" y="624"/>
         </scene>
     </scenes>
     <resources>

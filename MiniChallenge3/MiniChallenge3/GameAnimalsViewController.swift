@@ -11,8 +11,6 @@ import UIKit
 class GameAnimalsViewController: UIViewController {
 
     @IBOutlet weak var tutorialHand: UIButton!
-    @IBOutlet weak var confirmButton: UIButton!
-    @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var btn1: KPButton!
@@ -23,9 +21,6 @@ class GameAnimalsViewController: UIViewController {
     @IBOutlet weak var btn6: KPButton!
     
     @IBOutlet weak var answerLabel: UILabel!
-    
-    let arrayAnimals = ["CACHORRO", "GATO", "PASSARO", "PEIXE", "CAVALO", "COELHO", "TIGRE", "HIPOPOTAMO", "CAMELO"]
-    
     
     var levels: [(lvl:Int,
     nameAnimal:String,
@@ -79,7 +74,7 @@ class GameAnimalsViewController: UIViewController {
         //9
         (9, "CAMELO",
             "______",
-            "GOELHO", false, "CAVALO", false, "DROMEDARIO", false,
+            "COELHO", false, "CAVALO", false, "DROMEDARIO", false,
             "CAMELO", true, "MARIPOSA", false, "MACACO", false)]
     
     var level = 0
