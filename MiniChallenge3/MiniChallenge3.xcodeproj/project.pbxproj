@@ -19,6 +19,7 @@
 		02D0EEA21B0B5DC700CA9750 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D0EEA11B0B5DC700CA9750 /* CongratulationsViewController.swift */; };
 		02D4CAAD1B188BB4003225E7 /* ClassifyAnimals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D4CAAC1B188BB4003225E7 /* ClassifyAnimals.storyboard */; };
 		02D4CAAF1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4CAAE1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift */; };
+		02D4CAB11B18A237003225E7 /* AnimalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4CAB01B18A237003225E7 /* AnimalsModel.swift */; };
 		02D875E31B12DBD8002D61B8 /* BOLA.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D875E21B12DBD8002D61B8 /* BOLA.png */; };
 		02D875E51B12DBDD002D61B8 /* BOLACHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D875E41B12DBDD002D61B8 /* BOLACHA.png */; };
 		02D875E71B12DBEB002D61B8 /* BONECONEVE.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D875E61B12DBEB002D61B8 /* BONECONEVE.png */; };
@@ -107,6 +108,7 @@
 		02D0EEA11B0B5DC700CA9750 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
 		02D4CAAC1B188BB4003225E7 /* ClassifyAnimals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassifyAnimals.storyboard; sourceTree = "<group>"; };
 		02D4CAAE1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameClassifyAnimalsViewController.swift; sourceTree = "<group>"; };
+		02D4CAB01B18A237003225E7 /* AnimalsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsModel.swift; sourceTree = "<group>"; };
 		02D875E21B12DBD8002D61B8 /* BOLA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOLA.png; sourceTree = "<group>"; };
 		02D875E41B12DBDD002D61B8 /* BOLACHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOLACHA.png; sourceTree = "<group>"; };
 		02D875E61B12DBEB002D61B8 /* BONECONEVE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BONECONEVE.png; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			children = (
 				02CCF6661B04C442001AA118 /* Animals.storyboard */,
 				02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */,
+				02D4CAB01B18A237003225E7 /* AnimalsModel.swift */,
 			);
 			name = "Game Animals";
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				EC8A114F1B0A0E4A00C8BE36 /* Score.swift in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,
 				0BFA1CBB1B18966300289AB0 /* ClassifyAnimalsModel.swift in Sources */,
+				02D4CAB11B18A237003225E7 /* AnimalsModel.swift in Sources */,
 				EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */,
 				ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */,
 				02D0EEA21B0B5DC700CA9750 /* CongratulationsViewController.swift in Sources */,
