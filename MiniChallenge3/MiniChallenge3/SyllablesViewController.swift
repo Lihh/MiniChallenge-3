@@ -151,46 +151,46 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
          /* Button 8 */ "PA", /* Delete */ false, /* Position */ 0),
     
         // Level 7
-        (/* Level */ 7, /* Word */ "MACACO", /* Image */ "MACACO",
-         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
-         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
-         /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
+        (/* Level */ 7, /* Word */ "PETECA", /* Image */ "PETECA",
+         /* Image 1  */ "PEIXE", /* Delete */ "IXE",
+         /* Image 2  */ "ELEFANTE",  /* Delete */ "ELEFAN",
+         /* Image 3  */ "CACHORRO", /* Delete */ "CHORRO",
+         /* Button 1 */ "PE", /* Delete */ true,  /* Position */ 1,
+         /* Button 2 */ "PI", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "BE", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "TI", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "TE", /* Delete */ true,  /* Position */ 2,
+         /* Button 6 */ "CA", /* Delete */ true,  /* Position */ 3,
+         /* Button 7 */ "KA", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "TA", /* Delete */ false, /* Position */ 0),
     
         // Level 8
-        (/* Level */ 8, /* Word */ "MACACO", /* Image */ "MACACO",
-         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
-         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
-         /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),
+        (/* Level */ 8, /* Word */ "CANELA", /* Image */ "CANELA",
+         /* Image 1  */ "CAMELO", /* Delete */ "MELO",
+         /* Image 2  */ "BONECONEVE",  /* Delete */ "VE",
+         /* Image 3  */ "LAPIS", /* Delete */ "PIS",
+         /* Button 1 */ "TA", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "CA", /* Delete */ true,  /* Position */ 1,
+         /* Button 3 */ "BA", /* Delete */ false, /* Position */ 0,
+         /* Button 4 */ "ME", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "NE", /* Delete */ true,  /* Position */ 2,
+         /* Button 6 */ "TE", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "LA", /* Delete */ true,  /* Position */ 3,
+         /* Button 8 */ "NI", /* Delete */ false, /* Position */ 0),
     
         // Level 9
-        (/* Level */ 9, /* Word */ "MACACO", /* Image */ "MACACO",
-         /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
-         /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-         /* Image 3  */ "CORACAO", /* Delete */ "RACAO",
-         /* Button 1 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 2 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 3 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 4 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 5 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 6 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 7 */ "XXX", /* Delete */ false, /* Position */ 0,
-         /* Button 8 */ "XXX", /* Delete */ false, /* Position */ 0),]
+        (/* Level */ 9, /* Word */ "JANELA", /* Image */ "JANELA",
+         /* Image 1  */ "JACARE", /* Delete */ "CARE",
+         /* Image 2  */ "BONECONEVE",  /* Delete */ "VE",
+         /* Image 3  */ "BOLA", /* Delete */ "BO",
+         /* Button 1 */ "XA", /* Delete */ false, /* Position */ 0,
+         /* Button 2 */ "PA", /* Delete */ false, /* Position */ 0,
+         /* Button 3 */ "JA", /* Delete */ true,  /* Position */ 1,
+         /* Button 4 */ "ME", /* Delete */ false, /* Position */ 0,
+         /* Button 5 */ "NE", /* Delete */ true,  /* Position */ 2,
+         /* Button 6 */ "NI", /* Delete */ false, /* Position */ 0,
+         /* Button 7 */ "RA", /* Delete */ false, /* Position */ 0,
+         /* Button 8 */ "LA", /* Delete */ true,  /* Position */ 3),]
     //================================================================================
     
     
@@ -288,7 +288,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
             
         case 3:
 
-            if levels[level].button1Correct == true
+            if levels[level].button3Correct == true
             { rightButton(btnOption3, buttonPosition: levels[level].Button3Position)
                 // Tutorial
                 if level == 0
