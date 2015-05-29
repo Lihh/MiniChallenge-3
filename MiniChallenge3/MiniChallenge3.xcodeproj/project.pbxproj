@@ -56,6 +56,7 @@
 		0BCEFEA61B0FE673008FD906 /* ModelSyllables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCEFEA51B0FE673008FD906 /* ModelSyllables.swift */; };
 		0BD3B8391B0A09AC007295AC /* counting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD3B8381B0A09AC007295AC /* counting.storyboard */; };
 		0BD3B83B1B0A09C8007295AC /* CountingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3B83A1B0A09C8007295AC /* CountingViewController.swift */; };
+		0BFA1CBB1B18966300289AB0 /* ClassifyAnimalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA1CBA1B18966300289AB0 /* ClassifyAnimalsModel.swift */; };
 		EC055C1F1B083B6200BFB3D0 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC055C1E1B083B6200BFB3D0 /* Calculator.storyboard */; };
 		EC2E555B1B04FB3900D2D953 /* CircleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */; };
 		EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */; };
@@ -144,6 +145,7 @@
 		0BCEFEA51B0FE673008FD906 /* ModelSyllables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelSyllables.swift; sourceTree = "<group>"; };
 		0BD3B8381B0A09AC007295AC /* counting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = counting.storyboard; sourceTree = "<group>"; };
 		0BD3B83A1B0A09C8007295AC /* CountingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingViewController.swift; sourceTree = "<group>"; };
+		0BFA1CBA1B18966300289AB0 /* ClassifyAnimalsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyAnimalsModel.swift; sourceTree = "<group>"; };
 		EC055C1E1B083B6200BFB3D0 /* Calculator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		EC2E555A1B04FB3900D2D953 /* CircleSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleSegue.swift; sourceTree = "<group>"; };
 		EC2E555C1B04FB3F00D2D953 /* KPInspectableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPInspectableView.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			children = (
 				02D4CAAC1B188BB4003225E7 /* ClassifyAnimals.storyboard */,
 				02D4CAAE1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift */,
+				0BFA1CBA1B18966300289AB0 /* ClassifyAnimalsModel.swift */,
 			);
 			name = "Game Classify Animals";
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				02D4CAAF1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift in Sources */,
 				EC8A114F1B0A0E4A00C8BE36 /* Score.swift in Sources */,
 				0242998A1B04BBAA003BD890 /* AppDelegate.swift in Sources */,
+				0BFA1CBB1B18966300289AB0 /* ClassifyAnimalsModel.swift in Sources */,
 				EC2E555D1B04FB3F00D2D953 /* KPInspectableView.swift in Sources */,
 				ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */,
 				02D0EEA21B0B5DC700CA9750 /* CongratulationsViewController.swift in Sources */,

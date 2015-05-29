@@ -146,5 +146,25 @@ extension UIView {
             }
     
         }
+    
+    // Game Configuration
+    //================================================================================
+    static func setImageInImageView(imgView: UIImageView, imageName: String)
+    {
+        var imgAux = NSBundle.mainBundle().pathForResource(imageName, ofType: "png")
+        
+        imgView.image = UIImage(contentsOfFile: imgAux!)
+    }
+    
+    static func setTextInLabel(label: UILabel, labelText: String)
+    {
+        label.text = labelText
+    }
+    
+    static func setTextInButton(button: UIButton, buttonText: String)
+    {
+        button.setTitle(buttonText, forState: UIControlState.Normal)
+    }
+    //================================================================================
 
 }
