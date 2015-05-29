@@ -22,14 +22,14 @@ class CongratulationsViewController: UIViewController {
     }
 
     @IBAction func btnBack(sender: KPButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func btnHome(sender: KPButton) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("MainView") as! UIViewController
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         presentViewController(storyBoardLevels, animated: true, completion: nil)
-    }
-    
-    @IBAction func btnReplay(sender: KPButton) {
-        
     }
     
     @IBAction func btnNext(sender: KPButton) {

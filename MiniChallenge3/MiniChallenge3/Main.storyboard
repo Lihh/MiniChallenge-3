@@ -36,6 +36,8 @@
         </mutableArray>
         <mutableArray key="Blogger Sans-Medium.otf">
             <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -616,7 +618,7 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.25490196078431371" green="0.36862745098039218" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.40392156862745099" green="0.50196078431372548" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -642,7 +644,7 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.25490196078431371" green="0.36862745098039218" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.40392156862745099" green="0.50196078431372548" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -669,7 +671,7 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.25490196078431371" green="0.36862745098039218" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.40392156862745099" green="0.50196078431372548" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -679,21 +681,53 @@
                                     <segue destination="QBu-Aw-KsU" kind="presentation" identifier="segueOne" id="SSx-Eb-HM0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="educa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh3-I8-Cxw">
+                                <rect key="frame" x="24" y="207" width="449" height="185"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
+                                <color key="textColor" red="0.38823529410000002" green="0.72156862749999995" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9U-D5-zsB">
+                                <rect key="frame" x="481" y="227" width="97" height="185"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.25747500489126601" green="0.37244581954155043" blue="0.4854777090525253" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.40392156862745099" green="0.50196078431372548" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="v9U-D5-zsB" secondAttribute="trailing" constant="6" id="0Hb-7j-4ro"/>
+                            <constraint firstAttribute="centerY" secondItem="kh3-I8-Cxw" secondAttribute="centerY" constant="145" id="6u9-DF-AX6"/>
+                            <constraint firstAttribute="centerX" secondItem="kh3-I8-Cxw" secondAttribute="centerX" constant="51.5" id="FTg-rg-qUT"/>
                             <constraint firstItem="5ma-Hx-cjJ" firstAttribute="top" secondItem="8Cp-Sk-Ek7" secondAttribute="bottom" constant="-100" id="KtO-gZ-g8k"/>
                             <constraint firstItem="22y-1l-w92" firstAttribute="top" secondItem="8Cp-Sk-Ek7" secondAttribute="bottom" constant="-100" id="Lv2-BL-CaZ"/>
+                            <constraint firstAttribute="centerY" secondItem="v9U-D5-zsB" secondAttribute="centerY" constant="-19.5" id="RqU-ft-Xb9"/>
+                            <constraint firstItem="kh3-I8-Cxw" firstAttribute="top" secondItem="msA-ig-hxP" secondAttribute="bottom" constant="30" id="TJv-dq-une"/>
                             <constraint firstAttribute="centerX" secondItem="5ma-Hx-cjJ" secondAttribute="centerX" id="Tci-VD-Y2B"/>
+                            <constraint firstAttribute="centerY" secondItem="v9U-D5-zsB" secondAttribute="centerY" constant="128.5" id="YWH-8P-9dY"/>
+                            <constraint firstAttribute="centerX" secondItem="v9U-D5-zsB" secondAttribute="centerX" constant="-229.5" id="fYA-8l-Pp9"/>
                             <constraint firstAttribute="centerY" secondItem="8Cp-Sk-Ek7" secondAttribute="centerY" id="jWy-sF-zwG"/>
                             <constraint firstAttribute="centerX" secondItem="8Cp-Sk-Ek7" secondAttribute="centerX" id="k73-PS-hpG"/>
+                            <constraint firstAttribute="centerY" secondItem="kh3-I8-Cxw" secondAttribute="centerY" constant="0.5" id="ofX-Gx-cms"/>
+                            <constraint firstItem="v9U-D5-zsB" firstAttribute="top" secondItem="msA-ig-hxP" secondAttribute="bottom" constant="50" id="vtE-gp-CDn"/>
                             <constraint firstAttribute="centerX" secondItem="22y-1l-w92" secondAttribute="centerX" id="yKN-h7-MPd"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6u9-DF-AX6"/>
+                                <exclude reference="TJv-dq-une"/>
+                                <exclude reference="0Hb-7j-4ro"/>
+                                <exclude reference="YWH-8P-9dY"/>
+                                <exclude reference="vtE-gp-CDn"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="f6P-5w-aEB"/>
                     <connections>
+                        <outlet property="educaLabel" destination="kh3-I8-Cxw" id="UzU-cp-J7L"/>
                         <outlet property="mainView" destination="u3a-vP-fi4" id="PHl-ir-UhE"/>
                         <outlet property="mathButton" destination="8Cp-Sk-Ek7" id="qK9-gO-Hps"/>
+                        <outlet property="plusLabel" destination="v9U-D5-zsB" id="xT7-Bu-dvm"/>
                         <outlet property="portugueseButton" destination="22y-1l-w92" id="ozL-tc-qfg"/>
                         <outlet property="scienceButton" destination="5ma-Hx-cjJ" id="sJn-fs-Yep"/>
                     </connections>
@@ -1940,31 +1974,6 @@
                                     <action selector="btnBack:" destination="0lE-yQ-D1B" eventType="touchUpInside" id="yX8-ZX-QP8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="997-g5-7pS" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="200" y="155" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="R1w-0a-Baz"/>
-                                    <constraint firstAttribute="width" constant="100" id="T4m-dX-smk"/>
-                                </constraints>
-                                <state key="normal" title="Replay">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnReplay:" destination="0lE-yQ-D1B" eventType="touchUpInside" id="qMI-qg-hV2"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2X-Md-Kmd" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="344" y="155" width="100" height="100"/>
                                 <constraints>
@@ -2003,6 +2012,31 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="997-g5-7pS" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="200" y="155" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="R1w-0a-Baz"/>
+                                    <constraint firstAttribute="width" constant="100" id="T4m-dX-smk"/>
+                                </constraints>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnHome:" destination="0lE-yQ-D1B" eventType="touchUpInside" id="qgi-iL-Ei6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.48016172189083761" green="0.88853608789156546" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

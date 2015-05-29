@@ -18,6 +18,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var portugueseButton: KPButton!
     @IBOutlet weak var scienceButton: KPButton!
     @IBOutlet var mainView: UIView!
+    @IBOutlet weak var educaLabel: UILabel!
+    @IBOutlet weak var plusLabel: UILabel!
     
     var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
     var gameSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gameMusic", ofType: "mp3")!)
@@ -35,26 +37,35 @@ class MainViewController: UIViewController {
         
         animator = UIDynamicAnimator(referenceView: mainView)
         buttons = [scienceButton, portugueseButton, mathButton]
+        
+        UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.buttons[0].alpha = 0
+        }, completion: nil)
     }
     
     override func viewDidAppear(animated: Bool) {
         if splitVerify {
-            UIView.animateWithDuration(1.2, animations: { () -> Void in
-                self.buttons[0].alpha = 1
+            UIView.animateWithDuration(2, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                self.educaLabel.frame = CGRectMake(self.educaLabel.frame.minX, self.view.frame.minY+25, 449, 185)
+                self.plusLabel.frame = CGRectMake(self.plusLabel.frame.minX, self.view.frame.minY+42, 97, 185)
             }, completion: { (success) -> Void in
-                UIView.animateWithDuration(1.2, animations: { () -> Void in
-                    self.buttons[1].alpha = 1
-                }, completion: { (success) -> Void in
-                    UIView.animateWithDuration(1.2, animations: { () -> Void in
-                        self.buttons[2].alpha = 1
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    self.buttons[0].alpha = 1
                     }, completion: { (success) -> Void in
-                        self.snap = UISnapBehavior(item: self.mathButton, snapToPoint: CGPointMake(self.view.center.x, self.view.center.y-50))
-                        self.animator.addBehavior(self.snap)
-                        self.snap = UISnapBehavior(item: self.portugueseButton, snapToPoint: CGPointMake(self.view.center.x-120, self.view.center.y+120))
-                        self.animator.addBehavior(self.snap)
-                        self.snap = UISnapBehavior(item: self.scienceButton, snapToPoint: CGPointMake(self.view.center.x+120, self.view.center.y+120))
-                        self.animator.addBehavior(self.snap)
-                    })
+                        UIView.animateWithDuration(0.5, animations: { () -> Void in
+                            self.buttons[1].alpha = 1
+                            }, completion: { (success) -> Void in
+                                UIView.animateWithDuration(0.6, animations: { () -> Void in
+                                    self.buttons[2].alpha = 1
+                                    }, completion: { (success) -> Void in
+                                        self.snap = UISnapBehavior(item: self.mathButton, snapToPoint: CGPointMake(self.view.center.x, self.view.center.y-50))
+                                        self.animator.addBehavior(self.snap)
+                                        self.snap = UISnapBehavior(item: self.portugueseButton, snapToPoint: CGPointMake(self.view.center.x-120, self.view.center.y+120))
+                                        self.animator.addBehavior(self.snap)
+                                        self.snap = UISnapBehavior(item: self.scienceButton, snapToPoint: CGPointMake(self.view.center.x+120, self.view.center.y+120))
+                                        self.animator.addBehavior(self.snap)
+                                })
+                        })
                 })
             })
             splitVerify = false
