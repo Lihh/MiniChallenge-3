@@ -369,7 +369,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     func wrongButton(button: UIButton)
     {
         // Animate wrong Syllable
-        UIView.wrongAnimation(self.view, buttonAnimate: button)
+        UIView.wrongAnimation(self.view, buttonAnimate: button, disableButton: true)
         
         // Lifes --
         lifes--

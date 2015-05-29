@@ -141,7 +141,7 @@ class GameCalculatorViewController: UIViewController {
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn1)
+                UIView.wrongAnimation(self.view, buttonAnimate: btn1, disableButton: true)
                 lostLife()
                 
             }
@@ -153,7 +153,7 @@ class GameCalculatorViewController: UIViewController {
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn2)
+                UIView.wrongAnimation(self.view, buttonAnimate: btn2, disableButton: true)
                 lostLife()
             }
             
@@ -167,7 +167,7 @@ class GameCalculatorViewController: UIViewController {
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn3)
+                UIView.wrongAnimation(self.view, buttonAnimate: btn3, disableButton: true)
                 lostLife()
             }
             
@@ -184,7 +184,7 @@ class GameCalculatorViewController: UIViewController {
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn4)
+                UIView.wrongAnimation(self.view, buttonAnimate: btn4, disableButton: true)
                 lostLife()
             }
             
@@ -195,7 +195,7 @@ class GameCalculatorViewController: UIViewController {
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn5)
+                UIView.wrongAnimation(self.view, buttonAnimate: btn5, disableButton: true)
                 lostLife()
             }
             
@@ -206,7 +206,7 @@ class GameCalculatorViewController: UIViewController {
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn6)
+                UIView.wrongAnimation(self.view, buttonAnimate: btn6, disableButton: true)
                 lostLife()
             }
             

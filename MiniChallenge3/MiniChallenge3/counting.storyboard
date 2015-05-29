@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wVC-2a-pJc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wVC-2a-pJc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -27,7 +27,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-JQ-L0k">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-JQ-L0k">
                                 <rect key="frame" x="208" y="-118" width="176" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="iSP-eo-npW"/>
@@ -495,7 +495,7 @@
                                     <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="ZVT-uD-ueQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-9w-olC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-9w-olC">
                                 <rect key="frame" x="222" y="628" width="156" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="yo5-RW-0p4"/>
@@ -533,6 +533,19 @@
                                 <connections>
                                     <action selector="btnBack:" destination="wVC-2a-pJc" eventType="touchUpInside" id="aXh-AK-8VV"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4b-ln-htc">
+                                <rect key="frame" x="6" y="55" width="50" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="7Kp-Mo-tq8"/>
+                                    <constraint firstAttribute="height" constant="50" id="qo4-tG-ujT"/>
+                                </constraints>
+                                <state key="normal" image="tutorialHand.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.88627450980392153" green="0.30588235294117649" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
@@ -624,6 +637,7 @@
                         <outlet property="button9" destination="ee5-gz-FGa" id="9aF-b4-XRS"/>
                         <outlet property="lblQuestion" destination="9IY-9w-olC" id="JZB-hl-uYJ"/>
                         <outlet property="lblTitle" destination="Chr-JQ-L0k" id="gjp-c9-wWd"/>
+                        <outlet property="tutorialHand" destination="E4b-ln-htc" id="c0b-3D-irP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZ0-zc-iEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -633,5 +647,6 @@
     </scenes>
     <resources>
         <image name="backArrow" width="30" height="30"/>
+        <image name="tutorialHand.png" width="64" height="64"/>
     </resources>
 </document>

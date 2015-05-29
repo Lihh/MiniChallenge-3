@@ -209,7 +209,7 @@ class CompleteTheWordViewController: UIViewController {
     
     func lostLife(buttonAnimate: UIButton){
         lifes--
-        UIView.wrongAnimation(self.view, buttonAnimate: buttonAnimate)
+        UIView.wrongAnimation(self.view, buttonAnimate: buttonAnimate, disableButton: true)
         if lifes == 0 {
             var timer = NSTimer.scheduledTimerWithTimeInterval(1.3, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
