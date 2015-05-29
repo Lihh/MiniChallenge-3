@@ -26,6 +26,7 @@ class CountingViewController: UIViewController {
     var persistence = Persistence.sharedInstance
     
     // Outlets
+    @IBOutlet weak var tutorialHand: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -330,168 +331,168 @@ class CountingViewController: UIViewController {
             if levels[level].button1Correct == true
             { correctAnimation(button1) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button1)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button1, disableButton: true)
               lostLife() }
             
         case 2:
             if levels[level].button2Correct == true
             { correctAnimation(button2) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button2)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button2, disableButton: true)
               lostLife() }
             
         case 3:
             if levels[level].button3Correct == true
             { correctAnimation(button3) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button3)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button3, disableButton: true)
               lostLife() }
             
         case 4:
             if levels[level].button4Correct == true
             { correctAnimation(button4) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button4)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button4, disableButton: true)
               lostLife() }
             
         case 5:
             if levels[level].button5Correct == true
             { correctAnimation(button5) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button5)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button5, disableButton: true)
               lostLife() }
             
         case 6:
             if levels[level].button6Correct == true
             { correctAnimation(button6) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button6)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button6, disableButton: true)
               lostLife() }
             
         case 7:
             if levels[level].button7Correct == true
             { correctAnimation(button7) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button7)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button7, disableButton: true)
               lostLife() }
             
         case 8:
             if levels[level].button8Correct == true
             { correctAnimation(button8) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button8)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button8, disableButton: true)
               lostLife() }
             
         case 9:
             if levels[level].button9Correct == true
             { correctAnimation(button9) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button9)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button9, disableButton: true)
               lostLife() }
             
         case 10:
             if levels[level].button10Correct == true
             { correctAnimation(button10) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button10)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button10, disableButton: true)
               lostLife() }
             
         case 11:
             if levels[level].button11Correct == true
             { correctAnimation(button11) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button11)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button11, disableButton: true)
               lostLife() }
             
         case 12:
             if levels[level].button12Correct == true
             { correctAnimation(button12) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button12)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button12, disableButton: true)
               lostLife() }
             
         case 13:
             if levels[level].button13Correct == true
             { correctAnimation(button13) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button13)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button13, disableButton: true)
               lostLife() }
             
         case 14:
             if levels[level].button14Correct == true
             { correctAnimation(button14) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button14)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button14, disableButton: true)
               lostLife() }
             
         case 15:
             if levels[level].button15Correct == true
             { correctAnimation(button15) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button15)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button15, disableButton: true)
               lostLife() }
             
         case 16:
             if levels[level].button16Correct == true
             { correctAnimation(button16) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button16)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button16, disableButton: true)
               lostLife() }
             
         case 17:
             if levels[level].button17Correct == true
             { correctAnimation(button17) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button17)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button17, disableButton: true)
               lostLife() }
             
         case 18:
             if levels[level].button18Correct == true
             { correctAnimation(button18) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button18)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button18, disableButton: true)
               lostLife() }
             
         case 19:
             if levels[level].button19Correct == true
             { correctAnimation(button19) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button19)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button19, disableButton: true)
               lostLife() }
             
         case 20:
             if levels[level].button20Correct == true
             { correctAnimation(button20) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: button20)
+            { UIView.wrongAnimation(self.view, buttonAnimate: button20, disableButton: true)
               lostLife() }
             
         case 21:
             if levels[level].option1Correct == true
             { correctAnimation(btnOption1) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption1)
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption1, disableButton: true)
               lostLife() }
             
         case 22:
             if levels[level].option2Correct == true
             { correctAnimation(btnOption2) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption2)
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption2, disableButton: true)
               lostLife() }
             
         case 23:
             if levels[level].option3Correct == true
             { correctAnimation(btnOption3) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption3)
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption3, disableButton: true)
               lostLife() }
             
         case 24:
             if levels[level].option4Correct == true
             { correctAnimation(btnOption4) }
             else
-            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption4)
+            { UIView.wrongAnimation(self.view, buttonAnimate: btnOption4, disableButton: true)
               lostLife() }
             
         default:
