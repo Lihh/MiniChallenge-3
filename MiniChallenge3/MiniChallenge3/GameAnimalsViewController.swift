@@ -23,8 +23,6 @@ class GameAnimalsViewController: UIViewController {
     @IBOutlet weak var btn6: KPButton!
     
     @IBOutlet weak var answerLabel: UILabel!
-    
-    var nameAnimal: String!
 
     // Game Level and Lifes
     var level = 0
@@ -90,7 +88,6 @@ class GameAnimalsViewController: UIViewController {
         UIView.setTextInButton(btn4, buttonText: animals.levels[level].button4Text)
         UIView.setTextInButton(btn5, buttonText: animals.levels[level].button5Text)
         UIView.setTextInButton(btn6, buttonText: animals.levels[level].button6Text)
-
     }
     //================================================================================
 
@@ -171,7 +168,6 @@ class GameAnimalsViewController: UIViewController {
             println("outro")
             
         }
-        
     }
     //================================================================================
 

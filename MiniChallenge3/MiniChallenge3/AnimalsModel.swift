@@ -24,9 +24,9 @@ class AnimalsModel: NSObject {
     button6Text: String, button6Correct:Bool)]
     //1
     = [(1, "CACHORRO",
-        "________",
-        "GATO", false, "CAVALO", false, "CACHORRO", true,
-        "URSO", false, "RAPOSA", false, "BORBOLETA", false),
+            "________",
+            "GATO", false, "CAVALO", false, "CACHORRO", true,
+            "URSO", false, "RAPOSA", false, "BORBOLETA", false),
         //2
         (2, "GATO",
             "____",

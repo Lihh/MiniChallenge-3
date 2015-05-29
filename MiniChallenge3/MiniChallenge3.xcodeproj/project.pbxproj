@@ -20,6 +20,7 @@
 		02D4CAAD1B188BB4003225E7 /* ClassifyAnimals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D4CAAC1B188BB4003225E7 /* ClassifyAnimals.storyboard */; };
 		02D4CAAF1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4CAAE1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift */; };
 		02D4CAB11B18A237003225E7 /* AnimalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4CAB01B18A237003225E7 /* AnimalsModel.swift */; };
+		02D4CAB31B18A762003225E7 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D4CAB21B18A762003225E7 /* CalculatorModel.swift */; };
 		02D875E31B12DBD8002D61B8 /* BOLA.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D875E21B12DBD8002D61B8 /* BOLA.png */; };
 		02D875E51B12DBDD002D61B8 /* BOLACHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D875E41B12DBDD002D61B8 /* BOLACHA.png */; };
 		02D875E71B12DBEB002D61B8 /* BONECONEVE.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D875E61B12DBEB002D61B8 /* BONECONEVE.png */; };
@@ -110,6 +111,7 @@
 		02D4CAAC1B188BB4003225E7 /* ClassifyAnimals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassifyAnimals.storyboard; sourceTree = "<group>"; };
 		02D4CAAE1B188BE2003225E7 /* GameClassifyAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameClassifyAnimalsViewController.swift; sourceTree = "<group>"; };
 		02D4CAB01B18A237003225E7 /* AnimalsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsModel.swift; sourceTree = "<group>"; };
+		02D4CAB21B18A762003225E7 /* CalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 		02D875E21B12DBD8002D61B8 /* BOLA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOLA.png; sourceTree = "<group>"; };
 		02D875E41B12DBDD002D61B8 /* BOLACHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOLACHA.png; sourceTree = "<group>"; };
 		02D875E61B12DBEB002D61B8 /* BONECONEVE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BONECONEVE.png; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			children = (
 				EC055C1E1B083B6200BFB3D0 /* Calculator.storyboard */,
 				026C93DD1B063473004E8CA8 /* GameCalculatorViewController.swift */,
+				02D4CAB21B18A762003225E7 /* CalculatorModel.swift */,
 			);
 			name = "Game Calculator";
 			sourceTree = "<group>";
@@ -621,6 +624,7 @@
 				02D0EEA21B0B5DC700CA9750 /* CongratulationsViewController.swift in Sources */,
 				0B5C34601B18A2EC00877237 /* CompleteTheWordModel.swift in Sources */,
 				02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */,
+				02D4CAB31B18A762003225E7 /* CalculatorModel.swift in Sources */,
 				EC8647271B068DC100EB45DB /* ScienceLevelsViewController.swift in Sources */,
 				0BCEFEA61B0FE673008FD906 /* ModelSyllables.swift in Sources */,
 			);
