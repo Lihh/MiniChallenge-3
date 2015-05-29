@@ -1440,7 +1440,7 @@
                                     <constraint firstAttribute="height" constant="100" id="XeM-Hg-hul"/>
                                     <constraint firstAttribute="width" constant="100" id="bdR-qQ-gaa"/>
                                 </constraints>
-                                <state key="normal" title="HumanBody">
+                                <state key="normal" title="ClassifyAnimals">
                                     <color key="titleColor" red="0.17858598689999999" green="0.81815280560000003" blue="0.52179843479999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>

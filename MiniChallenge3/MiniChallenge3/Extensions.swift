@@ -52,7 +52,7 @@ extension UIView {
         
     }
     
-    static func wrongAnimation(view: UIView, buttonAnimate: UIButton) {
+    static func wrongAnimation(view: UIView, buttonAnimate: UIButton, disableButton:Bool) {
         
         UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             buttonAnimate.transform = CGAffineTransformMakeTranslation(view.frame.origin.x+20, 0);
@@ -66,16 +66,21 @@ extension UIView {
                                 UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
                                     buttonAnimate.transform = CGAffineTransformMakeTranslation(0, 0);
                                     }, completion: { (finished) -> Void in
-                                        buttonAnimate.setImage(nil, forState: UIControlState.Normal)
-                                        buttonAnimate.backgroundColor = UIColor .whiteColor()
-                                        buttonAnimate.enabled = false
-                                        buttonAnimate.setTitle("X", forState: UIControlState.Normal)
-                                        buttonAnimate.setTitleColor(UIColor .redColor(), forState: UIControlState.Normal)
+                                        if disableButton == true
+                                        { self.disableWrongButton(view, button: buttonAnimate) }
                                 })
                         })
                 })
         }
-
+    }
+    
+    static func disableWrongButton(view:UIView, button:UIButton)
+    {
+        button.setImage(nil, forState: UIControlState.Normal)
+        button.backgroundColor = UIColor .whiteColor()
+        button.enabled = false
+        button.setTitle("X", forState: UIControlState.Normal)
+        button.setTitleColor(UIColor .redColor(), forState: UIControlState.Normal)
     }
     
     static func correctAnimation(view: UIView, buttonAnimate: UIButton, xx: CGFloat, yy: CGFloat, displacementX: CGFloat) {
@@ -141,5 +146,25 @@ extension UIView {
             }
     
         }
+    
+    // Game Configuration
+    //================================================================================
+    static func setImageInImageView(imgView: UIImageView, imageName: String)
+    {
+        var imgAux = NSBundle.mainBundle().pathForResource(imageName, ofType: "png")
+        
+        imgView.image = UIImage(contentsOfFile: imgAux!)
+    }
+    
+    static func setTextInLabel(label: UILabel, labelText: String)
+    {
+        label.text = labelText
+    }
+    
+    static func setTextInButton(button: UIButton, buttonText: String)
+    {
+        button.setTitle(buttonText, forState: UIControlState.Normal)
+    }
+    //================================================================================
 
 }

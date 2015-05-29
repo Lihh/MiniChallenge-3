@@ -10,7 +10,8 @@ import UIKit
 
 class GameCalculatorViewController: UIViewController {
 
-    
+    // MARK: - Properties and Outlets
+    //================================================================================
     @IBOutlet weak var tutorialHand: UIButton!
     
     @IBOutlet weak var op1: UILabel!
@@ -26,66 +27,29 @@ class GameCalculatorViewController: UIViewController {
     @IBOutlet weak var btn5: KPButton!
     @IBOutlet weak var btn6: KPButton!
     
+    // Game Level and Lifes
     var level = 0
-    
     var lifes = 3
     
+    //Checking if user clicked all correct buttons
     var gameOver = 0
     
+    //Notification Center
     var notificationCenter = NSNotificationCenter.defaultCenter()
-    var persistence = Persistence.sharedInstance
     
-    var levels: [(lvl:Int,
-                  firstOp:String,
-                  correctAnswer1:String,
-                  secondOp:String,
-                  correctAnswer2:String,
-                  button1Text: String, button1Correct:Bool,
-                  button2Text: String, button2Correct:Bool,
-                  button3Text: String, button3Correct:Bool,
-                  button4Text: String, button4Correct:Bool,
-                  button5Text: String, button5Correct:Bool,
-                  button6Text: String, button6Correct:Bool)]
-        //1
-    = [(1, "1  +  2", "3",    "3  +  4", "7",
-        "2", false, "4", false, "3", true,
-        "7", true, "5", false, "6", false),
-        //2
-       (2, "2  +  2", "4",    "5  +  4", "9",
-        "7", false, "4", true, "8", false,
-        "0", false, "9", true, "2", false),
-        //3
-       (3, "4  +  2", "6",    "5  -  4", "1",
-        "5", false, "2", false, "6", true,
-        "1", true, "0", false, "9", false),
-        //4
-       (4, "5  -  2", "3",    "9  -  3", "6",
-        "0", false, "3", true, "7", false,
-        "3", false, "6", true, "9", false),
-        //5
-       (5, "10  -  5", "5",   "2  -  2", "0",
-        "5", true, "9", false, "6", false,
-        "0", true, "8", false, "1", false),
-        //6
-       (6, "6  -  4", "2",    "1  x  5", "5",
-        "4", false, "3", false, "2", true,
-        "1", false, "5", true, "0", false),
-        //7
-       (7, "3  x  3", "9",    "2  x  3", "6",
-        "7", false, "9", true, "3", false,
-        "8", false, "0", false, "6", true),
-        //8
-       (8, "4  x  2", "8",   "2  ÷  1", "2",
-        "8", true, "7", false, "0", false,
-        "2", true, "4", false, "1", false),
-        //9
-       (9, "10  ÷  2", "5",   "8  ÷  4", "2",
-        "0", false, "9", false, "5", true,
-        "7", false, "2", true, "4", false)]
+    //Singletons
+    let persistence = Persistence.sharedInstance
+    let calculator = CalculatorModel.sharedInstance
+    //================================================================================
+
     
+    
+    // MARK: - VC Life Cycle
+    //================================================================================
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Setting Labels config
         answerOp1.layer.borderWidth = 2
         answerOp1.layer.borderColor = UIColor .whiteColor().CGColor
         answerOp1.layer.cornerRadius = 6
@@ -94,7 +58,8 @@ class GameCalculatorViewController: UIViewController {
         answerOp2.layer.borderColor = UIColor .whiteColor().CGColor
         answerOp2.layer.cornerRadius = 6
         
-        notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelMathExercise", object: nil)
+        //Notification Center
+        notificationCenter.addObserver(self, selector: Selector("getLvl:"), name: "CurrentLevelMathExercise", object: nil)
     }
     
     override func viewWillAppear(animated: Bool)
@@ -108,57 +73,67 @@ class GameCalculatorViewController: UIViewController {
             enableButton(btn3)
         }
     }
+    //================================================================================
+
     
-    func discoverLevel(notification: NSNotification) {
+    
+    // MARK: - Game Configuration
+    //================================================================================
+    func getLvl(notification: NSNotification) {
         var currentLevel = notification.userInfo!["level"] as! String
         level = currentLevel.toInt()!
         level = level - 1
         
-        getLvl(level)
+        gameConfiguration()
+        buttonsConfiguration()
     }
     
-    func getLvl(number: Int) {
-        op1.text = levels[number].firstOp
-        op2.text = levels[number].secondOp
-        
+    func gameConfiguration() {
+        //Labels
+        UIView.setTextInLabel(op1, labelText: calculator.levels[level].firstOp)
+        UIView.setTextInLabel(op2, labelText: calculator.levels[level].secondOp)
+    }
+    
+    func buttonsConfiguration() {
         tutorialHand.hidden = true
-        btn1.setTitle(levels[level].button1Text, forState: UIControlState.Normal)
-        btn2.setTitle(levels[level].button2Text, forState: UIControlState.Normal)
-        btn3.setTitle(levels[level].button3Text, forState: UIControlState.Normal)
-        btn4.setTitle(levels[level].button4Text, forState: UIControlState.Normal)
-        btn5.setTitle(levels[level].button5Text, forState: UIControlState.Normal)
-        btn6.setTitle(levels[level].button6Text, forState: UIControlState.Normal)
-
+        UIView.setTextInButton(btn1, buttonText: calculator.levels[level].button1Text)
+        UIView.setTextInButton(btn2, buttonText: calculator.levels[level].button2Text)
+        UIView.setTextInButton(btn3, buttonText: calculator.levels[level].button3Text)
+        UIView.setTextInButton(btn4, buttonText: calculator.levels[level].button4Text)
+        UIView.setTextInButton(btn5, buttonText: calculator.levels[level].button5Text)
+        UIView.setTextInButton(btn6, buttonText: calculator.levels[level].button6Text)
     }
+    //================================================================================
+
     
+    
+    // MARK: - Button Click
+    //================================================================================
     @IBAction func btnClicked(sender: AnyObject) {
         
         switch sender.tag {
         case 1:
-            if levels[level].button1Correct == true
+            if calculator.levels[level].button1Correct == true
             {
                 rightAnswer(btn1, op: 1)
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn1)
-                lostLife()
-                
+                wrongAnswer(btn1)
             }
             
         case 2:
-            if levels[level].button2Correct == true
+            if calculator.levels[level].button2Correct == true
             {
                 rightAnswer(btn2, op: 1)
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn2)
-                lostLife()
+                wrongAnswer(btn2)
             }
             
         case 3:
-            if levels[level].button3Correct == true
+            if calculator.levels[level].button3Correct == true
             {
                 rightAnswer(btn3, op: 1)
                 // Tutorial
@@ -167,12 +142,11 @@ class GameCalculatorViewController: UIViewController {
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn3)
-                lostLife()
+                wrongAnswer(btn3)
             }
             
         case 4:
-            if levels[level].button4Correct == true
+            if calculator.levels[level].button4Correct == true
             {
                 rightAnswer(btn4, op: 2)
                 // Tutorial
@@ -184,50 +158,40 @@ class GameCalculatorViewController: UIViewController {
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn4)
-                lostLife()
+                wrongAnswer(btn4)
             }
             
         case 5:
-            if levels[level].button5Correct == true
+            if calculator.levels[level].button5Correct == true
             {
                 rightAnswer(btn5, op: 2)
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn5)
-                lostLife()
+                wrongAnswer(btn5)
             }
             
         case 6:
-            if levels[level].button6Correct == true
+            if calculator.levels[level].button6Correct == true
             {
                 rightAnswer(btn6, op: 2)
             }
             else
             {
-                UIView.wrongAnimation(self.view, buttonAnimate: btn6)
-                lostLife()
+                wrongAnswer(btn6)
             }
             
         default:
             println("outro")
         
         }
-        
     }
-    
-    func lostLife() {
-        
-        lifes--
-        
-        if lifes == 0 {
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
-        }
-        
-    }
+    //================================================================================
+
     
     
+    // MARK: - Right Answer
+    //================================================================================
     func rightAnswer(buttonRight: UIButton, op: Int) {
         
         gameOver++
@@ -259,6 +223,32 @@ class GameCalculatorViewController: UIViewController {
             }
         }
     }
+    //================================================================================
+
+
+    
+    // MARK: - Wrong Answer
+    //================================================================================
+    func wrongAnswer(buttonWrong: UIButton) {
+        
+        // Animation
+        UIView.wrongAnimation(self.view, buttonAnimate: buttonWrong, disableButton: true)
+        
+        // Life --
+        lostLife()
+    }
+    
+    func lostLife() {
+        
+        lifes--
+        
+        if lifes == 0 {
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
+        }
+        
+    }
+    //================================================================================
+
     
     
     // MARK: - Tutorial
@@ -287,6 +277,10 @@ class GameCalculatorViewController: UIViewController {
     { button.enabled = true }
     //================================================================================
     
+    
+    
+    // MARK: - Exit game
+    //================================================================================
     func dismiss() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -294,5 +288,7 @@ class GameCalculatorViewController: UIViewController {
     @IBAction func btnBack(sender: KPButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    //================================================================================
+
 
 }
