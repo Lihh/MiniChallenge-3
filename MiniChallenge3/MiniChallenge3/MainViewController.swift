@@ -46,7 +46,7 @@ class MainViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         if splitVerify {
             UIView.animateWithDuration(2, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                self.educaLabel.frame = CGRectMake(self.educaLabel.frame.minX, self.view.frame.minY+25, 449, 185)
+                self.educaLabel.frame = CGRectMake(self.educaLabel.frame.minX, self.view.frame.minY+90, 449, 185)
                 self.plusLabel.frame = CGRectMake(self.plusLabel.frame.minX, self.view.frame.minY+42, 97, 185)
             }, completion: { (success) -> Void in
                 UIView.animateWithDuration(0.5, animations: { () -> Void in

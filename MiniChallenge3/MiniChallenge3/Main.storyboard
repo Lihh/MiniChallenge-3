@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pOe-E7-n0e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pOe-E7-n0e">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -48,6 +48,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g8y-nd-3oJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="yny-uh-OTi" kind="relationship" relationship="rootViewController" id="uqz-lx-4y4"/>
@@ -71,6 +72,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDm-4G-E1g" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="82" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="IU4-cu-fSq"/>
@@ -99,6 +101,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dh-pa-KSV" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="82" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="7ze-2D-JT6"/>
@@ -124,6 +127,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCh-hX-l5m" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="82" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="16d-ra-k54"/>
@@ -152,6 +156,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqV-sx-ryg" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="fwR-u4-zcg"/>
@@ -180,6 +185,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-dq-usV" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Zvo-A4-JfG"/>
@@ -208,6 +214,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-Sy-vbz" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="418" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="CTd-0h-jNh"/>
@@ -236,6 +243,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfX-nk-fJ6" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="418" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="fhI-x1-JtQ"/>
@@ -264,6 +272,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3i-mo-sEM" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="418" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Bmc-Cx-x4W"/>
@@ -292,6 +301,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDh-aa-qKS">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="iiy-Ml-CqV"/>
                                     <constraint firstAttribute="height" constant="30" id="n1i-lX-EHm"/>
@@ -305,6 +315,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bI-LX-JPO" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="BQ6-ZO-Xur"/>
@@ -333,6 +344,7 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="1Hq-Ed-wFG">
                                 <rect key="frame" x="250" y="190" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="1CX-GR-JwT"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="JCG-3g-1q3"/>
@@ -352,6 +364,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="hzw-dg-lyU">
                                 <rect key="frame" x="448" y="190" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="0GE-Jp-Lj6"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="53c-tR-Soe"/>
@@ -371,6 +384,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="aYD-l2-bvR">
                                 <rect key="frame" x="52" y="358" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="CR4-ls-eI0"/>
                                     <constraint firstAttribute="width" constant="100" id="Dsb-vb-005"/>
@@ -390,6 +404,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="eMk-S2-W2W">
                                 <rect key="frame" x="250" y="358" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="EIS-fb-K60"/>
                                     <constraint firstAttribute="width" constant="100" id="OaO-pZ-o5R"/>
@@ -409,6 +424,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="N7e-6o-m1H">
                                 <rect key="frame" x="448" y="358" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7bf-yD-1df"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Dz9-AR-fMT"/>
@@ -428,6 +444,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="dyX-xy-gMt">
                                 <rect key="frame" x="52" y="526" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Ak6-Xh-4uz"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="XmW-Ke-s99"/>
@@ -447,6 +464,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="aCQ-Yx-tv9">
                                 <rect key="frame" x="250" y="526" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="OnY-tl-nbw"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="de6-dn-ADH"/>
@@ -466,6 +484,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="lHo-Ng-aLF">
                                 <rect key="frame" x="448" y="526" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="C0b-6x-Dtm"/>
                                     <constraint firstAttribute="height" constant="30" id="EX3-Ha-Ljx"/>
@@ -485,6 +504,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="Szz-Op-887">
                                 <rect key="frame" x="52" y="190" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2p0-Bf-A8U"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="PbG-rn-z6f"/>
@@ -503,7 +523,8 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.78823529410000004" green="0.35686274509999999" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="xfX-nk-fJ6" secondAttribute="centerY" constant="-168" id="028-Sa-1PZ"/>
                             <constraint firstAttribute="centerY" secondItem="dyX-xy-gMt" secondAttribute="centerY" constant="-241" id="0kd-Iy-wXi"/>
@@ -604,6 +625,7 @@
                         <subviews>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ma-Hx-cjJ" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="3Ka-TB-h9X"/>
@@ -630,6 +652,7 @@
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22y-1l-w92" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="fcr-YF-662"/>
@@ -656,6 +679,7 @@
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cp-Sk-Ek7" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Tz0-mz-PLv"/>
@@ -683,17 +707,20 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="educa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh3-I8-Cxw">
                                 <rect key="frame" x="24" y="207" width="449" height="185"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
                                 <color key="textColor" red="0.38823529410000002" green="0.72156862749999995" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9U-D5-zsB">
-                                <rect key="frame" x="481" y="227" width="97" height="185"/>
+                                <rect key="frame" x="448" y="155" width="97" height="185"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.40392156862745099" green="0.50196078431372548" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="v9U-D5-zsB" secondAttribute="trailing" constant="6" id="0Hb-7j-4ro"/>
@@ -701,11 +728,11 @@
                             <constraint firstAttribute="centerX" secondItem="kh3-I8-Cxw" secondAttribute="centerX" constant="51.5" id="FTg-rg-qUT"/>
                             <constraint firstItem="5ma-Hx-cjJ" firstAttribute="top" secondItem="8Cp-Sk-Ek7" secondAttribute="bottom" constant="-100" id="KtO-gZ-g8k"/>
                             <constraint firstItem="22y-1l-w92" firstAttribute="top" secondItem="8Cp-Sk-Ek7" secondAttribute="bottom" constant="-100" id="Lv2-BL-CaZ"/>
-                            <constraint firstAttribute="centerY" secondItem="v9U-D5-zsB" secondAttribute="centerY" constant="-19.5" id="RqU-ft-Xb9"/>
+                            <constraint firstAttribute="centerY" secondItem="v9U-D5-zsB" secondAttribute="centerY" constant="52.5" id="RqU-ft-Xb9"/>
                             <constraint firstItem="kh3-I8-Cxw" firstAttribute="top" secondItem="msA-ig-hxP" secondAttribute="bottom" constant="30" id="TJv-dq-une"/>
                             <constraint firstAttribute="centerX" secondItem="5ma-Hx-cjJ" secondAttribute="centerX" id="Tci-VD-Y2B"/>
                             <constraint firstAttribute="centerY" secondItem="v9U-D5-zsB" secondAttribute="centerY" constant="128.5" id="YWH-8P-9dY"/>
-                            <constraint firstAttribute="centerX" secondItem="v9U-D5-zsB" secondAttribute="centerX" constant="-229.5" id="fYA-8l-Pp9"/>
+                            <constraint firstAttribute="centerX" secondItem="v9U-D5-zsB" secondAttribute="centerX" constant="-196.5" id="fYA-8l-Pp9"/>
                             <constraint firstAttribute="centerY" secondItem="8Cp-Sk-Ek7" secondAttribute="centerY" id="jWy-sF-zwG"/>
                             <constraint firstAttribute="centerX" secondItem="8Cp-Sk-Ek7" secondAttribute="centerX" id="k73-PS-hpG"/>
                             <constraint firstAttribute="centerY" secondItem="kh3-I8-Cxw" secondAttribute="centerY" constant="0.5" id="ofX-Gx-cms"/>
@@ -750,6 +777,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pj-hc-Yir">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Sja-2L-6YM"/>
                                     <constraint firstAttribute="width" constant="30" id="rD8-ko-mUr"/>
@@ -763,6 +791,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYC-FA-EIJ" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="82" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="L0g-CM-SFc"/>
@@ -785,6 +814,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNE-ok-Fy9" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="82" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="8Ge-om-Qhu"/>
@@ -807,6 +837,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vce-1k-9ot" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="UEE-oO-nMB"/>
@@ -829,6 +860,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ekr-K0-kWC" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="fhC-5I-TaH"/>
@@ -851,6 +883,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ES-G8-1yi" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="MEE-Og-NdZ"/>
@@ -873,6 +906,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1o-C8-BUw" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="418" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="uwZ-vS-5CI"/>
@@ -895,6 +929,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XG-ns-gWS" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="418" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="GCq-bS-Xhr"/>
@@ -917,6 +952,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dF-Eu-un0" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="82" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="V6E-qn-yyX"/>
@@ -939,6 +975,7 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="E0I-19-Ukz">
                                 <rect key="frame" x="52" y="190" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="5t4-YC-KUd"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Lcg-33-K4E"/>
@@ -958,6 +995,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="NW0-Bt-8bn">
                                 <rect key="frame" x="250" y="190" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="WH5-Iy-gnH"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ZNQ-Db-PKi"/>
@@ -977,6 +1015,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="Nex-PO-Gq9">
                                 <rect key="frame" x="448" y="190" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="1st-VJ-qxv"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="65E-nZ-jUf"/>
@@ -996,6 +1035,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="qwW-Po-hyT">
                                 <rect key="frame" x="52" y="358" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Hoj-9A-6Pl"/>
                                     <constraint firstAttribute="width" constant="100" id="I2n-GA-Qnn"/>
@@ -1015,6 +1055,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="oZq-9b-dST">
                                 <rect key="frame" x="250" y="358" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="7ab-IP-OUA"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="E1Z-Is-jmE"/>
@@ -1034,6 +1075,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="Q0n-eL-LfI">
                                 <rect key="frame" x="448" y="358" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="0gv-su-mPL"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="7L2-Oi-B1U"/>
@@ -1053,6 +1095,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="Bal-8X-unc">
                                 <rect key="frame" x="52" y="526" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="Nsy-WE-AOB"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="VoJ-qZ-c0g"/>
@@ -1072,6 +1115,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="Mi5-7Y-2uT">
                                 <rect key="frame" x="250" y="526" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="3I6-En-M0E"/>
                                     <constraint firstAttribute="width" constant="100" id="9tu-lt-Efx"/>
@@ -1091,6 +1135,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="PU0-fF-zWH">
                                 <rect key="frame" x="448" y="526" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="3Z8-92-iIm"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="NQP-Cp-jtE"/>
@@ -1110,6 +1155,7 @@
                             </imageView>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAK-iV-xOI" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="418" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="78M-yU-iHN"/>
@@ -1131,7 +1177,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.070588235289999995" green="0.56011523238684213" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.38823529410000002" green="0.63921568630000003" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="YYC-FA-EIJ" firstAttribute="top" secondItem="OCH-TV-1g9" secondAttribute="bottom" constant="62" id="4hv-Pe-GTX"/>
                             <constraint firstAttribute="centerX" secondItem="fAK-iV-xOI" secondAttribute="centerX" constant="-198" id="8fz-ER-kKo"/>
@@ -1226,6 +1273,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-gN-x2M" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="150" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2Xw-1I-mQX"/>
@@ -1246,6 +1294,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQH-jj-MRw">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Arj-fl-RmH"/>
                                     <constraint firstAttribute="width" constant="30" id="Ddu-1w-ROO"/>
@@ -1259,6 +1308,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-vc-d50" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="351" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="97U-hs-CLE"/>
@@ -1278,6 +1328,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.78823529411764703" green="0.35686274509803922" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="LS6-gN-x2M" secondAttribute="centerX" constant="100" id="1hx-PC-aRG"/>
@@ -1315,6 +1366,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZT-aO-h2p">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="X2M-n9-oa5"/>
                                     <constraint firstAttribute="height" constant="30" id="m2N-lF-2XG"/>
@@ -1328,6 +1380,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvo-g0-CXK" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="351" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="GnK-Rc-zge"/>
@@ -1351,6 +1404,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-6Q-ul6" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="150" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="bFg-5t-KLJ"/>
@@ -1373,6 +1427,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.45882352941176469" green="0.70196078431372544" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jZT-aO-h2p" firstAttribute="top" secondItem="1OZ-pF-6n9" secondAttribute="bottom" constant="8" id="5uR-3k-Urs"/>
@@ -1402,6 +1457,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOU-fU-amg" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="150" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Yo6-2J-KBd"/>
@@ -1422,6 +1478,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIL-nw-idM">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4E0-Kh-gp6"/>
                                     <constraint firstAttribute="width" constant="30" id="e4e-nu-E1w"/>
@@ -1435,6 +1492,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDw-xl-2VW" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="351" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="XeM-Hg-hul"/>
@@ -1454,6 +1512,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.45098039215686275" green="0.76470588235294112" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="gOU-fU-amg" secondAttribute="centerY" id="DPZ-u8-xNq"/>
@@ -1483,6 +1542,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6n-CB-vI7">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="Yb4-Ie-boZ"/>
                                     <constraint firstAttribute="height" constant="30" id="r03-jr-RSJ"/>
@@ -1496,6 +1556,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENk-uv-otJ" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="82" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="6FS-gX-g2x"/>
@@ -1518,6 +1579,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHv-9v-Opc" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="82" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="giS-tA-auT"/>
@@ -1540,6 +1602,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nk4-7a-Kst" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="2IP-qg-b0H"/>
@@ -1562,6 +1625,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7S-PP-OzH" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="VPg-OX-P2P"/>
@@ -1584,6 +1648,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dua-Mw-g0t" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="250" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="ebO-Wf-xru"/>
@@ -1606,6 +1671,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMJ-1s-gtm" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="418" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5Hb-hR-1q3"/>
@@ -1628,6 +1694,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4G-Zf-7La" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="250" y="418" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2hf-w8-jLC"/>
@@ -1650,6 +1717,7 @@
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8T-CT-XrQ" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="448" y="418" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="KeM-Jw-tdD"/>
@@ -1672,6 +1740,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJH-7Z-9mS" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="52" y="82" width="100" height="100"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="5sR-Au-yzF"/>
@@ -1694,6 +1763,7 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="NzG-8Q-zr2">
                                 <rect key="frame" x="448" y="190" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="0jX-lI-Ne1"/>
                                     <constraint firstAttribute="width" constant="100" id="3ZA-Da-9SI"/>
@@ -1713,6 +1783,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="0SM-Mv-kwS">
                                 <rect key="frame" x="52" y="358" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4G0-5J-sim"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="LDQ-RN-Zxy"/>
@@ -1732,6 +1803,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="xoO-Ak-x7H">
                                 <rect key="frame" x="250" y="358" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7tC-Fu-pPw"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="7uh-GJ-Plv"/>
@@ -1751,6 +1823,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-L2-fgv">
                                 <rect key="frame" x="448" y="358" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7Ky-sU-jO4"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="GSy-zY-Ufx"/>
@@ -1770,6 +1843,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="1rh-PI-fkp">
                                 <rect key="frame" x="52" y="526" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="HjP-3h-lFb"/>
                                     <constraint firstAttribute="height" constant="30" id="Kxk-0S-cYY"/>
@@ -1789,6 +1863,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="2Df-c6-oC0">
                                 <rect key="frame" x="250" y="526" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="DYe-md-cTE"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="KC3-bE-QLD"/>
@@ -1808,6 +1883,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="HRV-56-3s0">
                                 <rect key="frame" x="448" y="526" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4qK-ZS-veY"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="8G6-jG-RgJ"/>
@@ -1827,6 +1903,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="D53-ya-rcd">
                                 <rect key="frame" x="250" y="190" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4Vg-TR-FXk"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="E9y-CI-8nY"/>
@@ -1846,6 +1923,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="RjC-Zp-AG1">
                                 <rect key="frame" x="52" y="190" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Mp4-ab-1K3"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="QCo-eM-DP0"/>
@@ -1864,7 +1942,8 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.17858598687239796" green="0.81815280561414139" blue="0.52179843481358346" alpha="1" colorSpace="calibratedRGB"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.38823529410000002" green="0.72156862749999995" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="D53-ya-rcd" secondAttribute="centerY" constant="95" id="0fX-4S-FMn"/>
                             <constraint firstItem="x6n-CB-vI7" firstAttribute="top" secondItem="nmW-iN-Y5g" secondAttribute="bottom" constant="8" id="0qI-y8-86M"/>
@@ -1950,7 +2029,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ML7-Mt-Bep" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="40" y="155" width="100" height="100"/>
+                                <rect key="frame" x="56" y="155" width="100" height="100"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FzP-i0-anz"/>
                                     <constraint firstAttribute="width" constant="100" id="OUZ-va-P8W"/>
@@ -1976,6 +2056,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2X-Md-Kmd" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="344" y="155" width="100" height="100"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="7n3-ho-s5g"/>
                                     <constraint firstAttribute="width" constant="100" id="wc8-Nh-xwd"/>
@@ -2001,6 +2082,7 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThreeStarsFilled.png" translatesAutoresizingMaskIntoConstraints="NO" id="y3R-FD-Zaj">
                                 <rect key="frame" x="161" y="70" width="178" height="55"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="74K-Gm-NIy"/>
                                     <constraint firstAttribute="width" constant="178" id="YD6-xt-WcY"/>
@@ -2008,12 +2090,14 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parabéns" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIL-Xf-REU">
                                 <rect key="frame" x="165" y="20" width="170" height="49"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="44"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="997-g5-7pS" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="200" y="155" width="100" height="100"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="R1w-0a-Baz"/>
                                     <constraint firstAttribute="width" constant="100" id="T4m-dX-smk"/>
@@ -2038,9 +2122,10 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.48016172189083761" green="0.88853608789156546" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="ML7-Mt-Bep" secondAttribute="centerX" constant="160.5" id="13E-r8-fs9"/>
+                            <constraint firstAttribute="centerX" secondItem="ML7-Mt-Bep" secondAttribute="centerX" constant="144" id="13E-r8-fs9"/>
                             <constraint firstAttribute="centerY" secondItem="N2X-Md-Kmd" secondAttribute="centerY" constant="-70" id="3UI-oH-9RP"/>
                             <constraint firstAttribute="centerX" secondItem="y3R-FD-Zaj" secondAttribute="centerX" id="6wU-7z-mcZ"/>
                             <constraint firstAttribute="centerY" secondItem="ML7-Mt-Bep" secondAttribute="centerY" constant="-70" id="AxK-gd-mpb"/>
