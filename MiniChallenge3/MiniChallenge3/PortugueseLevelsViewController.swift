@@ -43,6 +43,8 @@ class PortugueseLevelsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        notificationCenter.addObserver(self, selector: Selector("backToLevels"), name: "backToLevels", object: nil)
+        
         buttons = [buttonLevelOne, buttonLevelTwo, buttonLevelThree, buttonLevelFour, buttonLevelFive, buttonLevelSix, buttonLevelSeven, buttonLevelEight, buttonLevelNine]
         stars = [starsLevelOne, starsLevelTwo, starsLevelThree, starsLevelFour, starsLevelFive, starsLevelSix, starsLevelSeven, starsLevelEight, starsLevelNine]
         
@@ -51,6 +53,10 @@ class PortugueseLevelsViewController: UIViewController {
             stars[index].hidden = true
             buttons[index].enabled = false
         }
+    }
+    
+    func backToLevels() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func viewWillAppear(animated: Bool) {

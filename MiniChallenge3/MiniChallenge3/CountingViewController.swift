@@ -440,7 +440,7 @@ class CountingViewController: UIViewController {
             } else {
                 persistence.newScore("Counting", level: level, quantityOfStars: lifes)
             }
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
         }
     }
     
@@ -483,5 +483,12 @@ class CountingViewController: UIViewController {
     
     @IBAction func btnBack(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func congratulations() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! UIViewController
+        storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        presentViewController(storyBoardLevels, animated: true, completion: nil)
     }
 }

@@ -214,7 +214,7 @@ class GameCalculatorViewController: UIViewController {
         UIView.correctAnimation(self.view, buttonAnimate: buttonRight, xx: x, yy: y, displacementX: 0)
         
         if gameOver == 2 {
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
             
             if self.persistence.verifyExistenceOfALevel("Calculator", level: self.level) {
                 self.persistence.updateNumberOfStars("Calculator", level: self.level, numberOfStars: self.lifes)
@@ -287,6 +287,13 @@ class GameCalculatorViewController: UIViewController {
     
     @IBAction func btnBack(sender: KPButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func congratulations() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! UIViewController
+        storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        presentViewController(storyBoardLevels, animated: true, completion: nil)
     }
     //================================================================================
 

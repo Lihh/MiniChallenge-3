@@ -172,7 +172,7 @@ class CompleteTheWordViewController: UIViewController {
             {
                 self.persistence.newScore("completeTheWord", level: self.level, quantityOfStars: self.lifes)
             }
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
         }
     }
     //============================================================
@@ -195,7 +195,12 @@ class CompleteTheWordViewController: UIViewController {
     }
     //============================================================
     
-    
+    func congratulations() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! UIViewController
+        storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        presentViewController(storyBoardLevels, animated: true, completion: nil)
+    }
     
     // MARK: - Exit Game
     //================================================================================

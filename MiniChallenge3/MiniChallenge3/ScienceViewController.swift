@@ -11,7 +11,6 @@ import AVFoundation
 
 class ScienceViewController: UIViewController {
     
-    var notificationCenter = NSNotificationCenter.defaultCenter()
     var audioPlayerSound = AVAudioPlayer()
     var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
     

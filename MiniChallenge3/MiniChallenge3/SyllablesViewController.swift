@@ -217,7 +217,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         // Game Won - Persistence
         if score == 3
         {
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("dismissView"), userInfo: nil, repeats: false)
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
             
             if self.persistence.verifyExistenceOfALevel("gameSyllables", level: self.level)
             { self.persistence.updateNumberOfStars("gameSyllables", level: self.level, numberOfStars: self.lifes) }
@@ -252,8 +252,16 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     @IBAction func btnBack(sender: KPButton)
     { self.dismissViewControllerAnimated(true, completion: nil) }
     
-    func dismissView()
-    { self.dismissViewControllerAnimated(true, completion: nil) }
+    func congratulations() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! UIViewController
+        storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        presentViewController(storyBoardLevels, animated: true, completion: nil)
+    }
+    
+    func dismissView() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     //================================================================================
     
     

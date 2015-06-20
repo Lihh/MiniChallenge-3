@@ -9,31 +9,23 @@
 import UIKit
 
 class CongratulationsViewController: UIViewController {
+    
+    let notificationCenter = NSNotificationCenter.defaultCenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func btnBack(sender: KPButton) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        notificationCenter.postNotificationName("backToLevels", object: self, userInfo: nil)
     }
     
     @IBAction func btnHome(sender: KPButton) {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("MainView") as! UIViewController
-        storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-        presentViewController(storyBoardLevels, animated: true, completion: nil)
+        notificationCenter.postNotificationName("backToHome", object: self, userInfo: nil)
     }
     
     @IBAction func btnNext(sender: KPButton) {
-        
+        notificationCenter.postNotificationName("nextLevel", object: self, userInfo: nil)
     }
     
 }

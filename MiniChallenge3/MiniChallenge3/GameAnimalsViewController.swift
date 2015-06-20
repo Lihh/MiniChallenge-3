@@ -41,7 +41,6 @@ class GameAnimalsViewController: UIViewController {
     //================================================================================
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         notificationCenter.addObserver(self, selector: Selector("getLvl:"), name: "CurrentLevelScienceExercise", object: nil)
     }
     
@@ -253,52 +252,4 @@ class GameAnimalsViewController: UIViewController {
         btn5.enabled = false
         btn6.enabled = false
     }
-    
-    
-    
-//    func congratulationsView() {
-//        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-//        let blurView = UIVisualEffectView(effect: blurEffect)
-//        blurView.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.width, view.frame.height)
-//        view.addSubview(blurView)
-//    
-//        let congratulationsView = UIView(frame: CGRectMake(blurView.frame.midX-225, blurView.frame.midY-150, 450.0, 300.0))
-//        congratulationsView.backgroundColor = UIColor.redColor()
-//        congratulationsView.clipsToBounds = true
-//        congratulationsView.cornerRadius = 10
-//        blurView.addSubview(congratulationsView)
-//    
-//        let congratulationsLabel = UILabel(frame: CGRectMake(view.frame.midX-75, view.frame.midY-130, 150.0, 40.0))
-//        congratulationsLabel.font = UIFont(name: "BloggerSans-Light", size: 40.0)
-//        congratulationsLabel.text = "Parabéns"
-//        view.addSubview(congratulationsLabel)
-//    
-//        let starsImage = UIImageView(frame: CGRectMake(view.frame.midX-65, view.frame.midY-75, 130.0, 40.0))
-//        starsImage.image = UIImage(named: "ThreeStarsFilled")
-//        view.addSubview(starsImage)
-//    
-//        let buttonHome = UIButton(frame: CGRectMake(view.frame.midX-50, view.frame.midY+30, 100, 100))
-//        buttonHome.addTarget(self, action: Selector("home"), forControlEvents: UIControlEvents.TouchUpInside)
-//        buttonHome.clipsToBounds = true
-//        buttonHome.setImage(UIImage(named: "home"), forState: UIControlState.Normal)
-//        buttonHome.cornerRadius = 50
-//        buttonHome.backgroundColor = UIColor(red: 241/255, green: 196/255, blue: 14/255, alpha: 1)
-//        view.addSubview(buttonHome)
-//    
-//        let buttonBack = UIButton(frame: CGRectMake(view.frame.midX-200, view.frame.midY+30, 100, 100))
-//        buttonBack.addTarget(self, action: Selector("dismiss"), forControlEvents: UIControlEvents.TouchUpInside)
-//        buttonBack.clipsToBounds = true
-//        buttonBack.setImage(UIImage(named: "back"), forState: UIControlState.Normal)
-//        buttonBack.cornerRadius = 50
-//        buttonBack.backgroundColor = UIColor(red: 241/255, green: 196/255, blue: 14/255, alpha: 1)
-//        view.addSubview(buttonBack)
-//    
-//        let buttonNext = UIButton(frame: CGRectMake(view.frame.midX+100, view.frame.midY+30, 100, 100))
-//        buttonNext.addTarget(self, action: Selector("next"), forControlEvents: UIControlEvents.TouchUpInside)
-//        buttonNext.clipsToBounds = true
-//        buttonNext.setImage(UIImage(named: "next"), forState: UIControlState.Normal)
-//        buttonNext.cornerRadius = 50
-//        buttonNext.backgroundColor = UIColor(red: 241/255, green: 196/255, blue: 14/255, alpha: 1)
-//        view.addSubview(buttonNext)
-//    }
 }

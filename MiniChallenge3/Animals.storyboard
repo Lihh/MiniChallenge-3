@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cpM-Jk-ArL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cpM-Jk-ArL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -30,14 +30,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Adivinhe o Animal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-fN-8Me">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adivinhe o Animal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-fN-8Me">
                                 <rect key="frame" x="73" y="28" width="455" height="60"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CACHORRO.png" translatesAutoresizingMaskIntoConstraints="NO" id="C32-pP-D0x" customClass="KPImageView" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="125" y="28" width="350" height="350"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="b50-Tl-WKU"/>
                                     <constraint firstAttribute="width" constant="400" id="iVk-Dv-Wcg"/>
@@ -45,6 +47,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WId-RN-dCu" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="ZlD-Ew-WW9"/>
                                 </constraints>
@@ -57,6 +60,7 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVF-m7-m9m" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="235" y="455" width="130" height="51"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="Cah-2Z-f9K"/>
                                     <constraint firstAttribute="height" constant="55" id="OTV-iC-tXM"/>
@@ -83,6 +87,7 @@
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDb-V3-jzZ" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="428" y="455" width="122" height="51"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="7mq-r3-xfT"/>
                                     <constraint firstAttribute="height" constant="55" id="YDa-DW-6eL"/>
@@ -109,6 +114,7 @@
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL4-ow-wVw" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="50" y="523" width="126" height="48"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="15E-Xo-9hM"/>
                                     <constraint firstAttribute="height" constant="55" id="syc-BO-leS"/>
@@ -135,6 +141,7 @@
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoZ-h6-LZc" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="235" y="523" width="130" height="47"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="3zp-oQ-Hby"/>
                                     <constraint firstAttribute="height" constant="55" id="Wsi-gt-UQs"/>
@@ -161,6 +168,7 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogi-hX-Hbq" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="50" y="455" width="126" height="51"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="9EB-Yb-dny"/>
                                     <constraint firstAttribute="height" constant="55" id="U6Q-In-ZHQ"/>
@@ -187,6 +195,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="________" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgX-MX-FJK">
                                 <rect key="frame" x="226" y="377" width="149" height="52"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="O3M-Mf-6IE"/>
                                     <constraint firstAttribute="width" constant="200" id="Ssr-An-eqC"/>
@@ -208,6 +217,7 @@
                             </label>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWP-0H-UbC" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="428" y="523" width="122" height="47"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="raF-kt-ya3"/>
                                     <constraint firstAttribute="width" constant="185" id="vjQ-R8-CwX"/>
@@ -234,12 +244,14 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="__________________________________________________________" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlG-Lk-iol">
                                 <rect key="frame" x="16" y="426" width="720" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXS-f5-5s8">
                                 <rect key="frame" x="50" y="204" width="50" height="50"/>
+                                <animations/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
@@ -252,7 +264,8 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.32941176470588235" green="0.84313725490196079" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.45098039215686275" green="0.76470588235294112" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="C32-pP-D0x" firstAttribute="top" secondItem="wdS-fN-8Me" secondAttribute="bottom" constant="8" id="3Tk-jH-2Ca"/>
                             <constraint firstAttribute="centerX" secondItem="C32-pP-D0x" secondAttribute="centerX" id="3vs-ig-Jtc"/>

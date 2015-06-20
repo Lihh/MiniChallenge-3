@@ -30,9 +30,11 @@ class MainViewController: UIViewController {
     var animator: UIDynamicAnimator!
     var splitVerify = true
     var buttons = [UIButton]()
+    let notificationCenter = NSNotificationCenter.defaultCenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        notificationCenter.addObserver(self, selector: Selector("dismiss"), name: "backToHome", object: nil)
         navigationController?.navigationBarHidden = true
         
         animator = UIDynamicAnimator(referenceView: mainView)
@@ -41,6 +43,10 @@ class MainViewController: UIViewController {
         UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.buttons[0].alpha = 0
         }, completion: nil)
+    }
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func viewDidAppear(animated: Bool) {
