@@ -31,6 +31,7 @@ class CompleteTheWordViewController: UIViewController {
     
     // Outlets
     @IBOutlet weak var tutorialHand: UIButton!
+    @IBOutlet weak var imgScore: UIImageView!
     @IBOutlet weak var imgImage: UIImageView!
     @IBOutlet weak var lblWord: UILabel!
     @IBOutlet weak var button1: UIButton!
@@ -59,7 +60,6 @@ class CompleteTheWordViewController: UIViewController {
             tutorialHand.hidden = false
             disableButtons()
             UIView.showTutorial(self.view, hand: tutorialHand, destiny1: lblWord, x1: 35, y1: 20, destiny2: button1, x2: 160, y2: 35)
-            button1.enabled = true
         }
     }
     //============================================================
@@ -79,6 +79,9 @@ class CompleteTheWordViewController: UIViewController {
     
     func levelConfiguration()
     {
+        // Score
+        UIView.setImageInImageView(imgScore, imageName: "ThreeStarsFilled")
+        
         // Set Image
         UIView.setImageInImageView(imgImage, imageName: completeWord.levels[level].wordImage)
         
@@ -187,6 +190,9 @@ class CompleteTheWordViewController: UIViewController {
         
         // Animation
         UIView.wrongAnimation(self.view, buttonAnimate: buttonAnimate, disableButton: true)
+        
+        // Update Score
+        UIView.updateScore(lifes, imgScore: imgScore)
         
         // Game Over
         if lifes == 0

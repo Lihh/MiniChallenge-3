@@ -49,7 +49,6 @@ extension UIView {
         buttonNext.backgroundColor = UIColor.yellowColor()
         view.addSubview(buttonNext)
         
-        
     }
     
     static func wrongAnimation(view: UIView, buttonAnimate: UIButton, disableButton:Bool) {
@@ -125,20 +124,13 @@ extension UIView {
                 }) { (finished) -> Void in
                     UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
                         destiny1.borderColor = UIColor.yellowColor()
-                        println("hand x: \(hand.frame.origin.x)")
-                        println("hand y: \(hand.frame.origin.y)")
-                        println("lbl x: \(destiny1.frame.origin.x)")
-                        println("lbl y: \(destiny1.frame.origin.y)\n\n")
                         }, completion: { (finished) -> Void in
                             UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
                                 self.tutorialAnimation(hand, destiny: destiny2, x: x2, y: y2)
                                 }, completion: { (finished) -> Void in
                                     UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
                                         destiny2.borderColor = UIColor.yellowColor()
-                                        println("hand x: \(hand.frame.origin.x)")
-                                        println("hand y: \(hand.frame.origin.y)")
-                                        println("btn x: \(destiny2.frame.origin.x)")
-                                        println("btn y: \(destiny2.frame.origin.y)\n\n")
+                                        destiny2.enabled = true
                                         }, completion: { (finished) -> Void in
                                     })
                             })
@@ -146,6 +138,22 @@ extension UIView {
             }
     
         }
+    
+    static func updateScore(lifes: Int, imgScore:UIImageView)
+    {
+        if lifes == 2
+        {
+            self.setImageInImageView(imgScore, imageName: "TwoStarsFilled")
+        }
+        else if lifes == 1
+        {
+            UIView.setImageInImageView(imgScore, imageName: "OneStarFilled")
+        }
+        else if lifes == 0
+        {
+            UIView.setImageInImageView(imgScore, imageName: "HollowStars")
+        }
+    }
     
     // Game Configuration
     //================================================================================

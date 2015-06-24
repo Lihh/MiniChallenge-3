@@ -29,6 +29,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     let persistence = Persistence.sharedInstance
     
     // Outlets
+    @IBOutlet weak var imgScore: UIImageView!
     @IBOutlet weak var imgImage1: UIImageView!
     @IBOutlet weak var lblDeleteSyllable1: UILabel!
     @IBOutlet weak var lblPositionSyllable1: UILabel!
@@ -71,7 +72,6 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
             tutorialHand.hidden = false
             disableButtons()
             UIView.showTutorial(self.view, hand: tutorialHand, destiny1: lblPositionSyllable1, x1: -10, y1: +20, destiny2: btnOption1, x2: 405, y2: +15)
-            syllable.enableButton(btnOption1)
         }
     }
     //================================================================================
@@ -92,6 +92,9 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     
     func gameConfiguration()
     {
+        // Score
+        UIView.setImageInImageView(imgScore, imageName: "ThreeStarsFilled")
+        
         // Tutorial
         tutorialHand.hidden = true
         
@@ -238,6 +241,9 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         
         // Lifes --
         lifes--
+        
+        // Update Score
+        UIView.updateScore(lifes, imgScore: imgScore)
         
         // Game Over
         if lifes == 0

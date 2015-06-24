@@ -13,6 +13,7 @@ class GameCalculatorViewController: UIViewController {
     // MARK: - Properties and Outlets
     //================================================================================
     @IBOutlet weak var tutorialHand: UIButton!
+    @IBOutlet weak var imgScore: UIImageView!
     
     @IBOutlet weak var op1: UILabel!
     @IBOutlet weak var op2: UILabel!
@@ -70,7 +71,6 @@ class GameCalculatorViewController: UIViewController {
             tutorialHand.hidden = false
             disableButtons()
             UIView.showTutorial(self.view, hand: tutorialHand, destiny1: answerOp1, x1: -15, y1: 25, destiny2: btn3, x2: 330, y2: 30)
-            enableButton(btn3)
         }
     }
     //================================================================================
@@ -89,6 +89,9 @@ class GameCalculatorViewController: UIViewController {
     }
     
     func gameConfiguration() {
+        // Score
+        UIView.setImageInImageView(imgScore, imageName: "ThreeStarsFilled")
+        
         //Labels
         UIView.setTextInLabel(op1, labelText: calculator.levels[level].firstOp)
         UIView.setTextInLabel(op2, labelText: calculator.levels[level].secondOp)
@@ -242,6 +245,9 @@ class GameCalculatorViewController: UIViewController {
         
         lifes--
         
+        // Update Score
+        UIView.updateScore(lifes, imgScore: imgScore)
+        
         if lifes == 0 {
             var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
         }
@@ -260,7 +266,6 @@ class GameCalculatorViewController: UIViewController {
         tutorialHand.frame.origin.x = handX
         tutorialHand.frame.origin.y = handY
         UIView.showTutorial(self.view, hand: tutorialHand, destiny1: destiny1, x1: d1x, y1: d1y, destiny2: destiny2, x2: d2x, y2: d2y)
-        enableButton(destiny2)
     }
     
     func disableButtons()
@@ -272,9 +277,6 @@ class GameCalculatorViewController: UIViewController {
         btn5.enabled = false
         btn6.enabled = false
     }
-    
-    func enableButton(button:UIButton)
-    { button.enabled = true }
     //================================================================================
     
     
