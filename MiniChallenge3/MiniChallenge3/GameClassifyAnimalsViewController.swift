@@ -56,7 +56,6 @@ class GameClassifyAnimalsViewController: UIViewController {
             tutorialHand.hidden = false
             disableButtons()
             UIView.showTutorial(self.view, hand: tutorialHand, destiny1: lblAnswer, x1: -70, y1: 50, destiny2: btn3, x2: 60, y2: 240)
-            btn3.enabled = true
         }
     }
     //================================================================================

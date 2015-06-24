@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wVC-2a-pJc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wVC-2a-pJc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -561,20 +561,6 @@
                                     <action selector="btnBack:" destination="wVC-2a-pJc" eventType="touchUpInside" id="aXh-AK-8VV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4b-ln-htc">
-                                <rect key="frame" x="6" y="55" width="50" height="50"/>
-                                <animations/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="7Kp-Mo-tq8"/>
-                                    <constraint firstAttribute="height" constant="50" id="qo4-tG-ujT"/>
-                                </constraints>
-                                <state key="normal" image="tutorialHand.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.78823529411764703" green="0.35686274509803922" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -666,7 +652,6 @@
                         <outlet property="button9" destination="ee5-gz-FGa" id="9aF-b4-XRS"/>
                         <outlet property="lblQuestion" destination="9IY-9w-olC" id="JZB-hl-uYJ"/>
                         <outlet property="lblTitle" destination="Chr-JQ-L0k" id="gjp-c9-wWd"/>
-                        <outlet property="tutorialHand" destination="E4b-ln-htc" id="c0b-3D-irP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZ0-zc-iEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -676,6 +661,5 @@
     </scenes>
     <resources>
         <image name="backArrow" width="30" height="30"/>
-        <image name="tutorialHand.png" width="64" height="64"/>
     </resources>
 </document>

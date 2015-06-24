@@ -164,11 +164,7 @@ class ModelSyllables: NSObject
         hand.frame.origin.x = handX
         hand.frame.origin.y = handY
         UIView.showTutorial(view, hand: hand, destiny1: destiny1, x1: d1x, y1: d2y, destiny2: destiny2, x2: d2x, y2: d2y)
-        enableButton(destiny2)
     }
-    
-    func enableButton(button:UIButton)
-    { button.enabled = true }
     //================================================================================
     
     

@@ -71,7 +71,6 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
             tutorialHand.hidden = false
             disableButtons()
             UIView.showTutorial(self.view, hand: tutorialHand, destiny1: lblPositionSyllable1, x1: -10, y1: +20, destiny2: btnOption1, x2: 405, y2: +15)
-            syllable.enableButton(btnOption1)
         }
     }
     //================================================================================

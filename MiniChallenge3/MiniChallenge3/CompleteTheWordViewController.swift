@@ -59,7 +59,6 @@ class CompleteTheWordViewController: UIViewController {
             tutorialHand.hidden = false
             disableButtons()
             UIView.showTutorial(self.view, hand: tutorialHand, destiny1: lblWord, x1: 35, y1: 20, destiny2: button1, x2: 160, y2: 35)
-            button1.enabled = true
         }
     }
     //============================================================

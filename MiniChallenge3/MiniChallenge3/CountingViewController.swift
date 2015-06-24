@@ -30,7 +30,6 @@ class CountingViewController: UIViewController {
     var persistence = Persistence.sharedInstance
     
     // Outlets
-    @IBOutlet weak var tutorialHand: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
