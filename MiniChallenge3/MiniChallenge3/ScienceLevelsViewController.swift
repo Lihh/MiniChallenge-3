@@ -39,7 +39,7 @@ class ScienceLevelsViewController: UIViewController {
     var buttons = [UIButton]()
     var stars = [UIImageView]()
     var audioPlayerSound = AVAudioPlayer()
-    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
     
     override func viewDidLoad() {
         super.viewDidLoad()

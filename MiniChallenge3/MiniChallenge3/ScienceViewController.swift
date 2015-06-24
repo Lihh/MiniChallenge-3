@@ -12,7 +12,7 @@ import AVFoundation
 class ScienceViewController: UIViewController {
     
     var audioPlayerSound = AVAudioPlayer()
-    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
     
     override func viewDidLoad() {
         super.viewDidLoad()

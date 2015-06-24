@@ -21,9 +21,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var educaLabel: UILabel!
     @IBOutlet weak var plusLabel: UILabel!
     
-    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
-    var gameSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gameMusic", ofType: "mp3")!)
-    var audioPlayerMusic = AVAudioPlayer()
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
     var audioPlayerSound = AVAudioPlayer()
     
     var snap: UISnapBehavior!
