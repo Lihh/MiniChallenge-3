@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -18,7 +18,7 @@
                         <constraint firstAttribute="height" constant="156" id="pm6-Xl-bZY"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="+" translatesAutoresizingMaskIntoConstraints="NO" id="dj0-g6-iEv">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="+transparente" translatesAutoresizingMaskIntoConstraints="NO" id="dj0-g6-iEv">
                     <rect key="frame" x="483" y="157" width="106" height="114"/>
                     <animations/>
                     <constraints>
@@ -41,7 +41,7 @@
         </view>
     </objects>
     <resources>
-        <image name="+" width="106" height="114"/>
+        <image name="+transparente" width="106" height="114"/>
         <image name="educa" width="452" height="156"/>
     </resources>
 </document>
