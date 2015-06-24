@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -10,30 +10,40 @@
             <rect key="frame" x="0.0" y="0.0" width="650" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="educa" translatesAutoresizingMaskIntoConstraints="NO" id="nGV-4d-pPQ">
-                    <rect key="frame" x="65" y="192" width="452" height="156"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="nGV-4d-pPQ">
+                    <rect key="frame" x="58" y="182" width="460" height="155"/>
                     <animations/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="452" id="POe-dQ-sa7"/>
-                        <constraint firstAttribute="height" constant="156" id="pm6-Xl-bZY"/>
+                        <constraint firstAttribute="width" constant="460" id="POe-dQ-sa7"/>
+                        <constraint firstAttribute="height" constant="155" id="pm6-Xl-bZY"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="+transparente" translatesAutoresizingMaskIntoConstraints="NO" id="dj0-g6-iEv">
-                    <rect key="frame" x="483" y="157" width="106" height="114"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mq3-jX-asT">
+                    <rect key="frame" x="502" y="236" width="30" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.10588235294117647" green="0.2196078431372549" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mais" translatesAutoresizingMaskIntoConstraints="NO" id="VPE-0s-gbq">
+                    <rect key="frame" x="501" y="169" width="114" height="157"/>
                     <animations/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="114" id="pcc-aP-wlX"/>
-                        <constraint firstAttribute="width" constant="106" id="zyN-oX-ABf"/>
+                        <constraint firstAttribute="width" constant="114" id="324-1V-6lp"/>
+                        <constraint firstAttribute="height" constant="157" id="R0d-Wl-tZy"/>
                     </constraints>
                 </imageView>
             </subviews>
             <animations/>
-            <color key="backgroundColor" red="0.40392156862745099" green="0.50196078431372548" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.10980392156862745" green="0.2196078431372549" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="dj0-g6-iEv" secondAttribute="centerX" constant="-211" id="JEo-Vu-aId"/>
-                <constraint firstAttribute="centerX" secondItem="nGV-4d-pPQ" secondAttribute="centerX" constant="34" id="a0A-5t-ipQ"/>
-                <constraint firstAttribute="centerY" secondItem="dj0-g6-iEv" secondAttribute="centerY" constant="70" id="hvU-Ja-Lrr"/>
-                <constraint firstAttribute="centerY" secondItem="nGV-4d-pPQ" secondAttribute="centerY" constant="14" id="obs-L6-Fx2"/>
+                <constraint firstAttribute="centerX" secondItem="Mq3-jX-asT" secondAttribute="centerX" constant="-192" id="4SI-EN-WEF"/>
+                <constraint firstAttribute="centerY" secondItem="Mq3-jX-asT" secondAttribute="centerY" constant="33" id="5zh-zG-Zs9"/>
+                <constraint firstAttribute="centerY" secondItem="VPE-0s-gbq" secondAttribute="centerY" constant="36.5" id="7oD-34-naW"/>
+                <constraint firstAttribute="centerX" secondItem="nGV-4d-pPQ" secondAttribute="centerX" constant="37" id="a0A-5t-ipQ"/>
+                <constraint firstAttribute="centerX" secondItem="VPE-0s-gbq" secondAttribute="centerX" constant="-233" id="i2K-uI-2Qt"/>
+                <constraint firstAttribute="centerY" secondItem="nGV-4d-pPQ" secondAttribute="centerY" constant="24.5" id="obs-L6-Fx2"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -41,7 +51,7 @@
         </view>
     </objects>
     <resources>
-        <image name="+transparente" width="106" height="114"/>
-        <image name="educa" width="452" height="156"/>
+        <image name="logo2" width="460" height="155"/>
+        <image name="mais" width="114" height="157"/>
     </resources>
 </document>

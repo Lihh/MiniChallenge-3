@@ -18,8 +18,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var portugueseButton: KPButton!
     @IBOutlet weak var scienceButton: KPButton!
     @IBOutlet var mainView: UIView!
-    @IBOutlet weak var educaLabel: UILabel!
+    @IBOutlet weak var educLabel: UILabel!
     @IBOutlet weak var plusLabel: UILabel!
+    @IBOutlet weak var aLabel: UILabel!
     
     var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
     var audioPlayerSound = AVAudioPlayer()
@@ -48,10 +49,12 @@ class MainViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+//        sleep(10)
         if splitVerify {
             UIView.animateWithDuration(2, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                self.educaLabel.frame = CGRectMake(self.educaLabel.frame.minX, self.view.frame.minY+90, 449, 185)
-                self.plusLabel.frame = CGRectMake(self.plusLabel.frame.minX, self.view.frame.minY+42, 97, 185)
+                self.educLabel.frame = CGRectMake(self.educLabel.frame.minX, self.view.frame.minY+90, 449, 185)
+                self.aLabel.frame = CGRectMake(self.aLabel.frame.minX, self.view.frame.minY+90, 449, 185)
+                self.plusLabel.frame = CGRectMake(self.plusLabel.frame.minX, self.view.frame.minY+70, 97, 185)
             }, completion: { (success) -> Void in
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
                     self.buttons[0].alpha = 1

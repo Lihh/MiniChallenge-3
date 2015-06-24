@@ -83,6 +83,7 @@
 		EC8A114D1B0A0D0900C8BE36 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A114C1B0A0D0900C8BE36 /* Persistence.swift */; };
 		EC8A114F1B0A0E4A00C8BE36 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A114E1B0A0E4A00C8BE36 /* Score.swift */; };
 		ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB21DA51B061C4A00246898 /* Extensions.swift */; };
+		ECC8EC571B3AFF9A00DD9430 /* defeat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = ECC8EC561B3AFF9A00DD9430 /* defeat.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +177,7 @@
 		EC8A114C1B0A0D0900C8BE36 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EC8A114E1B0A0E4A00C8BE36 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		ECB21DA51B061C4A00246898 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ECC8EC561B3AFF9A00DD9430 /* defeat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = defeat.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,6 +456,7 @@
 			children = (
 				EC41BDED1B3ADCDE00EA31EA /* musicGame.mp3 */,
 				EC41BDEF1B3AE50F00EA31EA /* Blop.m4a */,
+				ECC8EC561B3AFF9A00DD9430 /* defeat.m4a */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 				EC5B553F1B0A7C5800EBCB49 /* HollowStars.png in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
 				02D876191B12DC79002D61B8 /* URSO.png in Resources */,
+				ECC8EC571B3AFF9A00DD9430 /* defeat.m4a in Resources */,
 				02D875E91B12DBF5002D61B8 /* CACHORRO.png in Resources */,
 				EC41BDF01B3AE50F00EA31EA /* Blop.m4a in Resources */,
 				02D876131B12DC62002D61B8 /* RATO.png in Resources */,

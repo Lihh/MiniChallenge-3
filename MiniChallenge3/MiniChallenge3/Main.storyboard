@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pOe-E7-n0e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pOe-E7-n0e">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -38,6 +38,13 @@
             <string>BloggerSans-Light</string>
         </mutableArray>
         <mutableArray key="Blogger Sans-Medium.otf">
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
+            <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
@@ -643,7 +650,7 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.40392156862745099" green="0.50196078431372548" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.10980392156862745" green="0.2196078431372549" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -670,7 +677,7 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.40392156862745099" green="0.50196078431372548" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.10980392156862745" green="0.2196078431372549" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -698,7 +705,7 @@
                                         <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.40392156862745099" green="0.50196078431372548" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.10980392156862745" green="0.2196078431372549" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -708,18 +715,18 @@
                                     <segue destination="QBu-Aw-KsU" kind="presentation" identifier="segueOne" id="SSx-Eb-HM0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="educa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh3-I8-Cxw">
-                                <rect key="frame" x="41" y="207" width="449" height="185"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
-                                <color key="textColor" red="0.38823529410000002" green="0.72156862749999995" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9U-D5-zsB">
-                                <rect key="frame" x="462" y="155" width="97" height="185"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="educ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh3-I8-Cxw">
+                                <rect key="frame" x="32" y="207" width="356" height="185"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9U-D5-zsB">
+                                <rect key="frame" x="484" y="188" width="97" height="185"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.38039215686274508" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -727,23 +734,32 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T5-Mh-MPv">
+                                <rect key="frame" x="391" y="207" width="106" height="185"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.38039215686274508" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.40392156862745099" green="0.50196078431372548" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.2196078431372549" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="v9U-D5-zsB" secondAttribute="trailing" constant="6" id="0Hb-7j-4ro"/>
                             <constraint firstAttribute="centerY" secondItem="kh3-I8-Cxw" secondAttribute="centerY" constant="145" id="6u9-DF-AX6"/>
-                            <constraint firstAttribute="centerX" secondItem="kh3-I8-Cxw" secondAttribute="centerX" constant="34.5" id="FTg-rg-qUT"/>
+                            <constraint firstAttribute="centerX" secondItem="kh3-I8-Cxw" secondAttribute="centerX" constant="91" id="FTg-rg-qUT"/>
                             <constraint firstItem="5ma-Hx-cjJ" firstAttribute="top" secondItem="8Cp-Sk-Ek7" secondAttribute="bottom" constant="-100" id="KtO-gZ-g8k"/>
                             <constraint firstItem="22y-1l-w92" firstAttribute="top" secondItem="8Cp-Sk-Ek7" secondAttribute="bottom" constant="-100" id="Lv2-BL-CaZ"/>
-                            <constraint firstAttribute="centerY" secondItem="v9U-D5-zsB" secondAttribute="centerY" constant="52.5" id="RqU-ft-Xb9"/>
+                            <constraint firstAttribute="centerY" secondItem="v9U-D5-zsB" secondAttribute="centerY" constant="19.5" id="RqU-ft-Xb9"/>
                             <constraint firstItem="kh3-I8-Cxw" firstAttribute="top" secondItem="msA-ig-hxP" secondAttribute="bottom" constant="30" id="TJv-dq-une"/>
                             <constraint firstAttribute="centerX" secondItem="5ma-Hx-cjJ" secondAttribute="centerX" id="Tci-VD-Y2B"/>
                             <constraint firstAttribute="centerY" secondItem="v9U-D5-zsB" secondAttribute="centerY" constant="128.5" id="YWH-8P-9dY"/>
-                            <constraint firstAttribute="centerX" secondItem="v9U-D5-zsB" secondAttribute="centerX" constant="-210.5" id="fYA-8l-Pp9"/>
+                            <constraint firstAttribute="centerX" secondItem="v9U-D5-zsB" secondAttribute="centerX" constant="-232.5" id="fYA-8l-Pp9"/>
+                            <constraint firstItem="7T5-Mh-MPv" firstAttribute="leading" secondItem="kh3-I8-Cxw" secondAttribute="trailing" constant="4" id="imS-BW-EtP"/>
                             <constraint firstAttribute="centerY" secondItem="8Cp-Sk-Ek7" secondAttribute="centerY" id="jWy-sF-zwG"/>
                             <constraint firstAttribute="centerX" secondItem="8Cp-Sk-Ek7" secondAttribute="centerX" id="k73-PS-hpG"/>
                             <constraint firstAttribute="centerY" secondItem="kh3-I8-Cxw" secondAttribute="centerY" constant="0.5" id="ofX-Gx-cms"/>
+                            <constraint firstAttribute="centerY" secondItem="7T5-Mh-MPv" secondAttribute="centerY" constant="0.5" id="uUc-S7-6jw"/>
                             <constraint firstItem="v9U-D5-zsB" firstAttribute="top" secondItem="msA-ig-hxP" secondAttribute="bottom" constant="50" id="vtE-gp-CDn"/>
                             <constraint firstAttribute="centerX" secondItem="22y-1l-w92" secondAttribute="centerX" id="yKN-h7-MPd"/>
                         </constraints>
@@ -759,7 +775,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="f6P-5w-aEB"/>
                     <connections>
-                        <outlet property="educaLabel" destination="kh3-I8-Cxw" id="UzU-cp-J7L"/>
+                        <outlet property="aLabel" destination="7T5-Mh-MPv" id="Tly-gI-tRZ"/>
+                        <outlet property="educLabel" destination="kh3-I8-Cxw" id="MXL-iT-txW"/>
                         <outlet property="mainView" destination="u3a-vP-fi4" id="PHl-ir-UhE"/>
                         <outlet property="mathButton" destination="8Cp-Sk-Ek7" id="qK9-gO-Hps"/>
                         <outlet property="plusLabel" destination="v9U-D5-zsB" id="xT7-Bu-dvm"/>
@@ -1279,15 +1296,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-gN-x2M" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="148" y="250" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-gN-x2M" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="150" y="250" width="100" height="100"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="2Xw-1I-mQX"/>
                                     <constraint firstAttribute="height" constant="100" id="bq0-QR-WOr"/>
                                 </constraints>
-                                <state key="normal" title="Calculator">
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Ex.1">
                                     <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1322,7 +1341,9 @@
                                     <constraint firstAttribute="width" constant="100" id="97U-hs-CLE"/>
                                     <constraint firstAttribute="height" constant="100" id="aTl-GJ-jMQ"/>
                                 </constraints>
-                                <state key="normal" title="counting">
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Ex.2">
                                     <color key="titleColor" red="0.92549019610000005" green="0.33725490200000002" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1405,7 +1426,9 @@
                                     <constraint firstAttribute="height" constant="100" id="GnK-Rc-zge"/>
                                     <constraint firstAttribute="width" constant="100" id="g4D-Wy-JtX"/>
                                 </constraints>
-                                <state key="normal" title="completeTheWord">
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Ex.2">
                                     <color key="titleColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1429,7 +1452,9 @@
                                     <constraint firstAttribute="width" constant="100" id="bFg-5t-KLJ"/>
                                     <constraint firstAttribute="height" constant="100" id="hbI-l9-bYI"/>
                                 </constraints>
-                                <state key="normal" title="gameSyllables">
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Ex.1">
                                     <color key="titleColor" red="0.070588235289999995" green="0.56011523240000005" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1497,13 +1522,18 @@
                                     <constraint firstAttribute="height" constant="100" id="Yo6-2J-KBd"/>
                                     <constraint firstAttribute="width" constant="100" id="v8s-rT-N26"/>
                                 </constraints>
-                                <state key="normal" title="Animals">
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Ex.1">
                                     <color key="titleColor" red="0.17858598689999999" green="0.81815280560000003" blue="0.52179843479999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1532,13 +1562,18 @@
                                     <constraint firstAttribute="height" constant="100" id="XeM-Hg-hul"/>
                                     <constraint firstAttribute="width" constant="100" id="bdR-qQ-gaa"/>
                                 </constraints>
-                                <state key="normal" title="ClassifyAnimals">
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Ex.2">
                                     <color key="titleColor" red="0.17858598689999999" green="0.81815280560000003" blue="0.52179843479999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
