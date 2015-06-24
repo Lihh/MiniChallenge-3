@@ -23,50 +23,50 @@ class ClassifyAnimalsModel: NSObject {
     button6Text: String, button6Correct:Bool)]
     
         //1
-    = [ (1, "Classifique: Classe",
-            "CACHORRO", "________",
-            "AVE", false, "INSETO", false, "MAMÍFERO", true,
-            "REPTIL", false, "ANFÍBIO", false, "PEIXE", false),
+    = [(1, "CACHORRO",
+        "CACHORRO", "________",
+        "GATO", false, "CAVALO", false, "CACHORRO", true,
+        "URSO", false, "RAPOSA", false, "BORBOLETA", false),
         //2
-        (2, "Classifique: Classe",
-            "PEIXE", "____",
-            "AVE", false, "INSETO", false, "MAMÍFERO", false,
-            "REPTIL", false, "ANFÍBIO", false, "PEIXE", true),
+        (2, "GATO",
+            "GATO", "____",
+            "CACHORRO", false, "URSO", false, "LEAO", false,
+            "COELHO", false, "GATO", true, "RATO", false),
         //3
-        (3, "Classifique: Classe",
-            "PASSARO", "____",
-            "AVE", true, "INSETO", false, "MAMÍFERO", false,
-            "REPTIL", false, "ANFÍBIO", false, "PEIXE", true),
+        (3, "PASSARO",
+            "CACHORRO", "_______",
+            "BORBOLETA", false, "LOBO", false, "URUBU", false,
+            "PASSARO", true, "FORMIGA", false, "MACACO", false),
         //4
-        (4, "Classifique: Casa",
-            "CAMELO", "_______",
-            "DESERTO", true, "FLORESTA", false, "CIDADE", false,
-            "PÂNTANO", false, "SELVA", false, "PRAIA", false),
+        (4, "PEIXE",
+            "CACHORRO", "_____",
+            "TUBARAO", false, "GOLFINHO", false, "BALEIA", false,
+            "TUCANO", false, "CAVALO", false, "PEIXE", true),
         //5
-        (5, "Classifique: Casa",
-            "LEAO", "_____",
-            "DESERTO", false, "FLORESTA", false, "CIDADE", false,
-            "PÂNTANO", false, "SELVA", true, "PRAIA", false),
+        (5, "CAVALO",
+            "CACHORRO", "______",
+            "CAVALO", true, "CACHORRO", false, "ELEFANTE", false,
+            "ZEBRA", false, "CAMELO", false, "BOI", false),
         //6
-        (6, "Classifique: Alimentação",
-            "URSO", "______",
-            "OVÍPARO", false, "CARNÍVORO", true, "HERBÍVORO", false,
-            "INSECTÍVORO", false, "ONÍVORO", false, "FRUTÍCORO", false),
+        (6, "COELHO",
+            "CACHORRO", "______",
+            "GATO", false, "ABELHA", false, "LEAO", false,
+            "RATO", false, "COELHO", true, "PASSARO", false),
         //7
-        (7, "Classifique: Alimentação",
-            "COELHO", "______",
-            "OVÍPARO", false, "CARNÍVORO", false, "HERBÍVORO", true,
-            "INSECTÍVORO", false, "ONÍVORO", false, "FRUTÍCORO", false),
+        (7, "TIGRE",
+            "CACHORRO", "_____",
+            "LEAO", false, "TIGRE", true, "GATO", false,
+            "CACHORRO", false, "CAVALO", false, "ONCA", false),
         //8
-        (8, "Classifique: Ordem",
-            "ESQUILO", "_____",
-            "CETÁCEA", false, "MARSUPIAL", false, "VOADOR", false,
-            "ROEDOR", true, "INSETO", false, "PRIMATA", false),
+        (8, "HIPOPOTAMO",
+            "CACHORRO", "__________",
+            "CAVALO", false, "CACHORRO", false, "RINOCERONTE", false,
+            "AGUIA", false, "ELEFANTE", false, "HIPOPOTAMO", true),
         //9
-        (9, "Classifique: Ordem",
-            "MACACO", "__________",
-            "CETÁCEA", false, "MARSUPIAL", false, "VOADOR", false,
-            "ROEDOR", false, "INSETO", false, "PRIMATA", true)]
+        (9, "CAMELO",
+            "CACHORRO", "______",
+            "COELHO", false, "CAVALO", false, "DROMEDARIO", false,
+            "CAMELO", true, "MARIPOSA", false, "MACACO", false)]
    
     
     
