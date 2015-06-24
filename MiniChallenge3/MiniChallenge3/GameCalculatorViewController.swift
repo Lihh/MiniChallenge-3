@@ -13,6 +13,7 @@ class GameCalculatorViewController: UIViewController {
     // MARK: - Properties and Outlets
     //================================================================================
     @IBOutlet weak var tutorialHand: UIButton!
+    @IBOutlet weak var imgScore: UIImageView!
     
     @IBOutlet weak var op1: UILabel!
     @IBOutlet weak var op2: UILabel!
@@ -88,6 +89,9 @@ class GameCalculatorViewController: UIViewController {
     }
     
     func gameConfiguration() {
+        // Score
+        UIView.setImageInImageView(imgScore, imageName: "ThreeStarsFilled")
+        
         //Labels
         UIView.setTextInLabel(op1, labelText: calculator.levels[level].firstOp)
         UIView.setTextInLabel(op2, labelText: calculator.levels[level].secondOp)
@@ -240,6 +244,9 @@ class GameCalculatorViewController: UIViewController {
     func lostLife() {
         
         lifes--
+        
+        // Update Score
+        UIView.updateScore(lifes, imgScore: imgScore)
         
         if lifes == 0 {
             var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)

@@ -30,6 +30,7 @@ class CountingViewController: UIViewController {
     var persistence = Persistence.sharedInstance
     
     // Outlets
+    @IBOutlet weak var imgScore: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -85,6 +86,9 @@ class CountingViewController: UIViewController {
     
     func levelConfiguration()
     {
+        // Score
+        UIView.setImageInImageView(imgScore, imageName: "ThreeStarsFilled")
+        
         // Set Label Texts
         UIView.setTextInLabel(lblTitle, labelText: counting.levels[level].gameTitle)
         UIView.setTextInLabel(lblQuestion, labelText: counting.levels[level].question)
@@ -399,6 +403,10 @@ class CountingViewController: UIViewController {
     //============================================================
     func lostLife () {
         lifes--
+        
+        // Update Score
+        UIView.updateScore(lifes, imgScore: imgScore)
+        
         if lifes == 0
         { var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false) }
     }

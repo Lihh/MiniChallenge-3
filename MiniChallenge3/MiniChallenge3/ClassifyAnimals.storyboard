@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XvN-T1-gXi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XvN-T1-gXi">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -271,6 +271,44 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-l1-unm">
+                                <rect key="frame" x="450" y="106" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="7dg-EY-jGT"/>
+                                    <constraint firstAttribute="height" constant="30" id="KLH-lx-mvc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="Qm9-Ko-vlm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="hdz-Nx-7R8"/>
+                                    <constraint firstAttribute="width" constant="100" id="nyM-DH-gpE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="vmm-ps-e3f"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qm9-Ko-vlm"/>
+                                        <exclude reference="7dg-EY-jGT"/>
+                                        <exclude reference="hdz-Nx-7R8"/>
+                                        <exclude reference="vmm-ps-e3f"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="2cS-Ta-pHj">
+                                <rect key="frame" x="460" y="116" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3yZ-8c-zHa"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="6XQ-HP-kNR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="OUQ-gO-aOy"/>
+                                    <constraint firstAttribute="width" constant="100" id="SUu-CD-vwE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="dz7-p2-d1t"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ldI-ex-VOh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6XQ-HP-kNR"/>
+                                        <exclude reference="ldI-ex-VOh"/>
+                                        <exclude reference="dz7-p2-d1t"/>
+                                        <exclude reference="OUQ-gO-aOy"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.45098039215686275" green="0.76470588235294112" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
@@ -310,6 +348,7 @@
                         <outlet property="btn5" destination="Fcv-th-6uU" id="hkK-bf-Kvo"/>
                         <outlet property="btn6" destination="ZcQ-9O-DpF" id="40K-Ey-fk8"/>
                         <outlet property="imageView" destination="chz-OW-XZO" id="681-2f-1Bc"/>
+                        <outlet property="imgScore" destination="VdY-l1-unm" id="7iX-wC-5Go"/>
                         <outlet property="lblAnswer" destination="jnE-8f-2k2" id="3ZT-0U-pwE"/>
                         <outlet property="lblTitle" destination="quX-PY-sjE" id="uO9-gm-6fJ"/>
                         <outlet property="tutorialHand" destination="hP1-Fa-gNw" id="j70-L0-sJ9"/>
@@ -322,6 +361,7 @@
     </scenes>
     <resources>
         <image name="CACHORRO.png" width="700" height="700"/>
+        <image name="HollowStars" width="350" height="100"/>
         <image name="backArrow" width="30" height="30"/>
         <image name="tutorialHand.png" width="64" height="64"/>
     </resources>

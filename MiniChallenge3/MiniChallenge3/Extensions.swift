@@ -139,6 +139,22 @@ extension UIView {
     
         }
     
+    static func updateScore(lifes: Int, imgScore:UIImageView)
+    {
+        if lifes == 2
+        {
+            self.setImageInImageView(imgScore, imageName: "TwoStarsFilled")
+        }
+        else if lifes == 1
+        {
+            UIView.setImageInImageView(imgScore, imageName: "OneStarFilled")
+        }
+        else if lifes == 0
+        {
+            UIView.setImageInImageView(imgScore, imageName: "HollowStars")
+        }
+    }
+    
     // Game Configuration
     //================================================================================
     static func setImageInImageView(imgView: UIImageView, imageName: String)

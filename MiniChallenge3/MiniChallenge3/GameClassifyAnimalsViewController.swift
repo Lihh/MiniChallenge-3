@@ -17,6 +17,7 @@ class GameClassifyAnimalsViewController: UIViewController {
     @IBOutlet weak var imageView: KPImageView!
     @IBOutlet weak var lblAnswer: UILabel!
     @IBOutlet weak var tutorialHand: UIButton!
+    @IBOutlet weak var imgScore: UIImageView!
     
     @IBOutlet weak var btn1: KPButton!
     @IBOutlet weak var btn2: KPButton!
@@ -76,6 +77,9 @@ class GameClassifyAnimalsViewController: UIViewController {
     
     func gameConfiguration()
     {
+        // Score
+        UIView.setImageInImageView(imgScore, imageName: "ThreeStarsFilled")
+        
         // Labels
         UIView.setTextInLabel(lblTitle, labelText: classifyAnimal.levels[level].titleText)
         UIView.setTextInLabel(lblAnswer, labelText: classifyAnimal.levels[level].labelText)
@@ -196,6 +200,9 @@ class GameClassifyAnimalsViewController: UIViewController {
     func lostLife()
     {
         lifes--
+        
+        // Update Score
+        UIView.updateScore(lifes, imgScore: imgScore)
         
         if lifes == 0
         { var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false) }
