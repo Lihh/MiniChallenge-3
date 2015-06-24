@@ -30,13 +30,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classifique o Animal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quX-PY-sjE">
-                                <rect key="frame" x="46" y="28" width="509" height="60"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="60"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CACHORRO.png" translatesAutoresizingMaskIntoConstraints="NO" id="chz-OW-XZO" customClass="KPImageView" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="125" y="28" width="350" height="350"/>
                                 <animations/>
@@ -271,8 +264,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-l1-unm">
-                                <rect key="frame" x="450" y="106" width="100" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-l1-unm">
+                                <rect key="frame" x="482" y="69" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="7dg-EY-jGT"/>
                                     <constraint firstAttribute="height" constant="30" id="KLH-lx-mvc"/>
@@ -283,32 +276,20 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Qm9-Ko-vlm"/>
                                         <exclude reference="7dg-EY-jGT"/>
+                                        <exclude reference="Qm9-Ko-vlm"/>
                                         <exclude reference="hdz-Nx-7R8"/>
                                         <exclude reference="vmm-ps-e3f"/>
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="2cS-Ta-pHj">
-                                <rect key="frame" x="460" y="116" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="3yZ-8c-zHa"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="6XQ-HP-kNR"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="OUQ-gO-aOy"/>
-                                    <constraint firstAttribute="width" constant="100" id="SUu-CD-vwE"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="dz7-p2-d1t"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ldI-ex-VOh"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="6XQ-HP-kNR"/>
-                                        <exclude reference="ldI-ex-VOh"/>
-                                        <exclude reference="dz7-p2-d1t"/>
-                                        <exclude reference="OUQ-gO-aOy"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Classifique o Animal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quX-PY-sjE">
+                                <rect key="frame" x="46" y="20" width="509" height="60"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.45098039215686275" green="0.76470588235294112" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
@@ -323,7 +304,8 @@
                             <constraint firstItem="fnF-Ut-4BY" firstAttribute="top" secondItem="DNw-XA-QQH" secondAttribute="bottom" constant="70" id="M3e-iP-vlY"/>
                             <constraint firstItem="hP1-Fa-gNw" firstAttribute="centerY" secondItem="chz-OW-XZO" secondAttribute="centerY" constant="39" id="Ook-AS-AMe"/>
                             <constraint firstItem="EFQ-6i-Z51" firstAttribute="top" secondItem="BB7-tu-7Xx" secondAttribute="bottom" constant="8" id="RKJ-dt-UTK"/>
-                            <constraint firstItem="quX-PY-sjE" firstAttribute="top" secondItem="BB7-tu-7Xx" secondAttribute="bottom" constant="8" id="Xl7-34-UoV"/>
+                            <constraint firstItem="VdY-l1-unm" firstAttribute="top" secondItem="BB7-tu-7Xx" secondAttribute="bottom" constant="50" id="WDC-Ee-OrX"/>
+                            <constraint firstItem="quX-PY-sjE" firstAttribute="top" secondItem="BB7-tu-7Xx" secondAttribute="bottom" constant="55" id="Xl7-34-UoV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Wgq-Yu-3au" secondAttribute="trailing" constant="50" id="Yqy-at-FPN"/>
                             <constraint firstAttribute="centerX" secondItem="fnF-Ut-4BY" secondAttribute="centerX" id="Z3J-1W-ox9"/>
                             <constraint firstItem="chz-OW-XZO" firstAttribute="leading" secondItem="hP1-Fa-gNw" secondAttribute="trailing" constant="10" id="ZbZ-Ag-aCn"/>
@@ -333,6 +315,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="DNw-XA-QQH" secondAttribute="trailing" id="bLC-7p-ckb"/>
                             <constraint firstAttribute="centerY" secondItem="chz-OW-XZO" secondAttribute="centerY" constant="200" id="bSY-Qt-goI"/>
                             <constraint firstItem="DNw-XA-QQH" firstAttribute="leading" secondItem="2LH-D5-qqc" secondAttribute="leadingMargin" id="dqy-FB-sVN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VdY-l1-unm" secondAttribute="trailing" id="fdW-5X-wuy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZcQ-9O-DpF" secondAttribute="trailing" constant="50" id="hg9-CB-vkR"/>
                             <constraint firstAttribute="centerY" secondItem="3rV-c8-bIu" secondAttribute="centerY" constant="-400" id="l0B-iw-inH"/>
                             <constraint firstAttribute="centerX" secondItem="jnE-8f-2k2" secondAttribute="centerX" id="lVb-Bd-Fh2"/>

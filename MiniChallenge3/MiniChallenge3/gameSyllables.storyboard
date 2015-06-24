@@ -466,7 +466,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="oE5-xz-Mtl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="oE5-xz-Mtl">
                                 <rect key="frame" x="450" y="28" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Aa1-me-w8Z"/>
@@ -478,29 +478,10 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="P4h-Bq-0NY"/>
-                                        <exclude reference="OQs-mG-XJ5"/>
                                         <exclude reference="Aa1-me-w8Z"/>
+                                        <exclude reference="OQs-mG-XJ5"/>
+                                        <exclude reference="P4h-Bq-0NY"/>
                                         <exclude reference="ePR-N3-Keh"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="YFV-MY-40o">
-                                <rect key="frame" x="460" y="38" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2jQ-i4-Ppp"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="FWh-A5-47b"/>
-                                    <constraint firstAttribute="width" constant="100" id="IeN-4C-G8c"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="kCr-TJ-duc"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="l5O-MU-n1M"/>
-                                    <constraint firstAttribute="height" constant="30" id="ouY-My-hI9"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="l5O-MU-n1M"/>
-                                        <exclude reference="kCr-TJ-duc"/>
-                                        <exclude reference="FWh-A5-47b"/>
-                                        <exclude reference="2jQ-i4-Ppp"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -516,11 +497,14 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Gg4-8T-wLr" secondAttribute="trailing" constant="55" id="5Tw-Hk-Niu"/>
                             <constraint firstItem="WTL-NC-uWs" firstAttribute="centerY" secondItem="yEY-Gi-DzY" secondAttribute="centerY" constant="12" id="5bl-2g-Uma"/>
                             <constraint firstItem="3yS-H7-iWt" firstAttribute="leading" secondItem="J6A-sv-3wp" secondAttribute="leadingMargin" constant="55" id="7qQ-QN-Dvd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oE5-xz-Mtl" secondAttribute="trailing" id="7qy-vT-sdA"/>
                             <constraint firstItem="QTq-iG-28c" firstAttribute="centerY" secondItem="Xgh-3i-nVr" secondAttribute="centerY" constant="-5.5" id="9p9-10-ZXx"/>
                             <constraint firstItem="Bqj-Oj-gyj" firstAttribute="leading" secondItem="Hqa-UX-mdK" secondAttribute="trailing" constant="112" id="A0x-HL-CCY"/>
                             <constraint firstItem="mIV-JO-8Hl" firstAttribute="centerX" secondItem="NIK-qo-3BG" secondAttribute="centerX" constant="-5" id="ACy-T0-6Qu"/>
                             <constraint firstItem="yhh-A6-w0K" firstAttribute="leading" secondItem="rUv-E4-DUE" secondAttribute="trailing" constant="85" id="EBN-AH-eKh"/>
+                            <constraint firstAttribute="centerY" secondItem="oE5-xz-Mtl" secondAttribute="centerY" constant="50" id="GMO-s0-CUs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0a5-AT-AnM" secondAttribute="trailing" constant="55" id="IQ1-Ab-wU3"/>
+                            <constraint firstItem="oE5-xz-Mtl" firstAttribute="top" secondItem="dNJ-0A-UXr" secondAttribute="bottom" constant="50" id="JH2-bD-XzF"/>
                             <constraint firstItem="wy4-ul-FvT" firstAttribute="top" secondItem="Bqj-Oj-gyj" secondAttribute="bottom" constant="55" id="Jg2-Qm-gxY"/>
                             <constraint firstAttribute="centerX" secondItem="ovM-eo-SSY" secondAttribute="centerX" constant="269" id="KIj-Gf-F4O"/>
                             <constraint firstItem="308-wg-h0Y" firstAttribute="centerY" secondItem="NIK-qo-3BG" secondAttribute="centerY" id="L6c-v7-xxD"/>
@@ -565,6 +549,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="GMO-s0-CUs"/>
                                 <exclude reference="A0x-HL-CCY"/>
                             </mask>
                         </variation>
