@@ -223,6 +223,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         // Game Won - Persistence
         if score == 3
         {
+            self.disableButtons()
             var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
             
             if self.persistence.verifyExistenceOfALevel("gameSyllables", level: self.level)
@@ -250,7 +251,10 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         
         // Game Over
         if lifes == 0
-        { var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismissView"), userInfo: nil, repeats: false) }
+        {
+            self.disableButtons()
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
+        }
     }
     //================================================================================
     

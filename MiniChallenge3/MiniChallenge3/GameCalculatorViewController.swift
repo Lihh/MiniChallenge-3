@@ -221,6 +221,7 @@ class GameCalculatorViewController: UIViewController {
         UIView.correctAnimation(self.view, buttonAnimate: buttonRight, xx: x, yy: y, displacementX: 0)
         
         if gameOver == 2 {
+            self.disableButtons()
             var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
             
             if self.persistence.verifyExistenceOfALevel("Calculator", level: self.level) {
@@ -252,8 +253,10 @@ class GameCalculatorViewController: UIViewController {
         // Update Score
         UIView.updateScore(lifes, imgScore: imgScore)
         
-        if lifes == 0 {
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
+        if lifes == 0
+        {
+            self.disableButtons()
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
         }
         
     }

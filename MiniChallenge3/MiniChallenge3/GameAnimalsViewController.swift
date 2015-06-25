@@ -191,6 +191,7 @@ class GameAnimalsViewController: UIViewController {
         UIView.correctAnimation(self.view, buttonAnimate: buttonRight, xx: x, yy: y, displacementX: 0)
         
         //Timer
+        self.disableButtons()
         var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
         
         //Persistence
@@ -222,7 +223,9 @@ class GameAnimalsViewController: UIViewController {
         UIView.updateScore(lifes, imgScore: imgScore)
         
         // Game Over
-        if lifes == 0 {
+        if lifes == 0
+        {
+            self.disableButtons()
             var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
         }
     }
