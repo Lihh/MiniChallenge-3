@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hto-YU-b2e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hto-YU-b2e">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calcule" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wh-Ls-BVg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Calcule" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wh-Ls-BVg">
                                 <rect key="frame" x="213" y="90" width="175" height="60"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="60"/>
@@ -312,6 +312,25 @@
                                         <exclude reference="RHH-DW-yPO"/>
                                         <exclude reference="WU6-Qn-0A0"/>
                                         <exclude reference="aG8-bE-VJ1"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="qHo-IX-vdX">
+                                <rect key="frame" x="494" y="49" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4yS-43-EiB"/>
+                                    <constraint firstAttribute="width" constant="100" id="6Az-HA-mTf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Trr-vK-3c7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="gqQ-Ct-uM0"/>
+                                    <constraint firstAttribute="height" constant="30" id="nSw-jb-vm9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ozT-zo-NBA"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4yS-43-EiB"/>
+                                        <exclude reference="ozT-zo-NBA"/>
+                                        <exclude reference="gqQ-Ct-uM0"/>
+                                        <exclude reference="Trr-vK-3c7"/>
                                     </mask>
                                 </variation>
                             </imageView>
