@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         audioPlayerMusic.prepareToPlay()
         audioPlayerMusic.play()
         audioPlayerMusic.numberOfLoops = -1
-        audioPlayerMusic.volume = 0.07
+        audioPlayerMusic.volume = 0.5 //0.07
         return true
     }
 

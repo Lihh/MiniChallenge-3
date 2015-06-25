@@ -177,7 +177,8 @@ class GameClassifyAnimalsViewController: UIViewController {
         UIView.correctAnimation(self.view, buttonAnimate: buttonRight, xx: x, yy: y, displacementX: 0)
         
         // Timer
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
+        self.disableButtons()
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
 
         // Persistence
         if persistence.verifyExistenceOfALevel("ClassifyAnimals", level: level)
@@ -207,11 +208,26 @@ class GameClassifyAnimalsViewController: UIViewController {
         // Update Score
         UIView.updateScore(lifes, imgScore: imgScore)
         
+        // Game Over
         if lifes == 0
-        { var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false) }
+        {
+            self.disableButtons()
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
+        }
     }
     //================================================================================
     
+    
+    // MARK: - Level Won
+    //================================================================================
+    func congratulations() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! CongratulationsViewController
+        storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        storyBoardLevels.numberOfStars = lifes
+        presentViewController(storyBoardLevels, animated: true, completion: nil)
+    }
+    //================================================================================
     
     
     // MARK: - Exit game

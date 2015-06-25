@@ -412,7 +412,7 @@ class CountingViewController: UIViewController {
         UIView.updateScore(lifes, imgScore: imgScore)
         
         if lifes == 0
-        { var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false) }
+        { var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false) }
     }
     //============================================================
     
