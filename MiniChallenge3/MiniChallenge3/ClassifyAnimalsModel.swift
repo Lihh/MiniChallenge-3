@@ -69,5 +69,4 @@ class ClassifyAnimalsModel: NSObject {
             "ROEDOR", false, "INSETO", false, "PRIMATA", true)]
    
     
-    
 }
