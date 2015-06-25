@@ -28,18 +28,18 @@ class ModelSyllables: NSObject
     button8Text:String, button8Correct:Bool, Button8Position:Int)]
     
         // Level 1
-    = [(/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
-        /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
-        /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
-        /* Image 3  */ "CORACAO", /* Delete */ "RAÇÃO",
-        /* Button 1 */ "MA",      /* Delete */ true,  /* Position */ 1,
-        /* Button 2 */ "CA",      /* Delete */ true,  /* Position */ 2,
-        /* Button 3 */ "CO",      /* Delete */ true,  /* Position */ 3,
-        /* Button 4 */ "LO",      /* Delete */ false, /* Position */ 0,
-        /* Button 5 */ "VA",      /* Delete */ false, /* Position */ 0,
-        /* Button 6 */ "BLA",      /* Delete */ false, /* Position */ 0,
-        /* Button 7 */ "TE",      /* Delete */ false, /* Position */ 0,
-        /* Button 8 */ "RA",      /* Delete */ false, /* Position */ 0),
+    = [ (/* Level */ 1, /* Word */ "MACACO", /* Image */ "MACACO",
+            /* Image 1  */ "MARTELO", /* Delete */ "RTELO",
+            /* Image 2  */ "CAVALO",  /* Delete */ "VALO",
+            /* Image 3  */ "CORACAO", /* Delete */ "RAÇÃO",
+            /* Button 1 */ "MA",  /* Delete */ true,  /* Position */ 1,
+            /* Button 2 */ "CA",  /* Delete */ true,  /* Position */ 2,
+            /* Button 3 */ "CO",  /* Delete */ true,  /* Position */ 3,
+            /* Button 4 */ "LO",  /* Delete */ false, /* Position */ 0,
+            /* Button 5 */ "VA",  /* Delete */ false, /* Position */ 0,
+            /* Button 6 */ "BLA", /* Delete */ false, /* Position */ 0,
+            /* Button 7 */ "TE",  /* Delete */ false, /* Position */ 0,
+            /* Button 8 */ "RA",  /* Delete */ false, /* Position */ 0),
         
         // Level 2
         (/* Level */ 2, /* Word */ "TIJOLO", /* Image */ "TIJOLO",
@@ -58,8 +58,8 @@ class ModelSyllables: NSObject
         // Level 3
         (/* Level */ 3, /* Word */ "CAMELO", /* Image */ "CAMELO",
             /* Image 1  */ "CACHORRO", /* Delete */ "CHORRO",
-            /* Image 2  */ "MEIA",  /* Delete */ "IA",
-            /* Image 3  */ "ESQUILO", /* Delete */ "ESQUI",
+            /* Image 2  */ "MEIA",     /* Delete */ "IA",
+            /* Image 3  */ "ESQUILO",  /* Delete */ "ESQUI",
             /* Button 1 */ "LA", /* Delete */ false, /* Position */ 0,
             /* Button 2 */ "CA", /* Delete */ true,  /* Position */ 1,
             /* Button 3 */ "CE", /* Delete */ false, /* Position */ 0,
@@ -71,9 +71,9 @@ class ModelSyllables: NSObject
         
         // Level 4
         (/* Level */ 4, /* Word */ "PANELA", /* Image */ "PANELA",
-            /* Image 1  */ "PASSARO", /* Delete */ "SSARO",
-            /* Image 2  */ "BONECONEVE",  /* Delete */ "VE",
-            /* Image 3  */ "LAPIS", /* Delete */ "PIS",
+            /* Image 1  */ "PASSARO",    /* Delete */ "SSARO",
+            /* Image 2  */ "BONECONEVE", /* Delete */ "VE",
+            /* Image 3  */ "LAPIS",      /* Delete */ "PIS",
             /* Button 1 */ "ME", /* Delete */ false, /* Position */ 0,
             /* Button 2 */ "PO", /* Delete */ false, /* Position */ 0,
             /* Button 3 */ "PA", /* Delete */ true,  /* Position */ 1,
@@ -85,22 +85,22 @@ class ModelSyllables: NSObject
         
         // Level 5
         (/* Level */ 5, /* Word */ "BOLACHA", /* Image */ "BOLACHA",
-            /* Image 1  */ "BOLA", /* Delete */ "LA",
+            /* Image 1  */ "BOLA",   /* Delete */ "LA",
             /* Image 2  */ "LAPIS",  /* Delete */ "PIS",
             /* Image 3  */ "CHAPEU", /* Delete */ "PÉU",
-            /* Button 1 */ "BO", /* Delete */ true, /* Position */ 1,
-            /* Button 2 */ "PO", /* Delete */ false, /* Position */ 0,
-            /* Button 3 */ "BA", /* Delete */ false, /* Position */ 0,
-            /* Button 4 */ "LA", /* Delete */ true, /* Position */ 2,
-            /* Button 5 */ "MA", /* Delete */ false, /* Position */ 0,
-            /* Button 6 */ "LE", /* Delete */ false, /* Position */ 0,
-            /* Button 7 */ "CHA", /* Delete */ true, /* Position */ 3,
-            /* Button 8 */ "XA", /* Delete */ false, /* Position */ 0),
+            /* Button 1 */ "BO",  /* Delete */ true,  /* Position */ 1,
+            /* Button 2 */ "PO",  /* Delete */ false, /* Position */ 0,
+            /* Button 3 */ "BA",  /* Delete */ false, /* Position */ 0,
+            /* Button 4 */ "LA",  /* Delete */ true,  /* Position */ 2,
+            /* Button 5 */ "MA",  /* Delete */ false, /* Position */ 0,
+            /* Button 6 */ "LE",  /* Delete */ false, /* Position */ 0,
+            /* Button 7 */ "CHA", /* Delete */ true,  /* Position */ 3,
+            /* Button 8 */ "XA",  /* Delete */ false, /* Position */ 0),
         
         // Level 6
         (/* Level */ 6, /* Word */ "PEGADA", /* Image */ "PEGADA",
-            /* Image 1  */ "PEIXE", /* Delete */ "IXE",
-            /* Image 2  */ "GATO",  /* Delete */ "TO",
+            /* Image 1  */ "PEIXE",   /* Delete */ "IXE",
+            /* Image 2  */ "GATO",    /* Delete */ "TO",
             /* Image 3  */ "LAMPADA", /* Delete */ "LAMPA",
             /* Button 1 */ "PI", /* Delete */ false, /* Position */ 0,
             /* Button 2 */ "PE", /* Delete */ true,  /* Position */ 1,
@@ -113,8 +113,8 @@ class ModelSyllables: NSObject
         
         // Level 7
         (/* Level */ 7, /* Word */ "PETECA", /* Image */ "PETECA",
-            /* Image 1  */ "PEIXE", /* Delete */ "IXE",
-            /* Image 2  */ "ELEFANTE",  /* Delete */ "ELEFAN",
+            /* Image 1  */ "PEIXE",    /* Delete */ "IXE",
+            /* Image 2  */ "ELEFANTE", /* Delete */ "ELEFAN",
             /* Image 3  */ "CACHORRO", /* Delete */ "CHORRO",
             /* Button 1 */ "PE", /* Delete */ true,  /* Position */ 1,
             /* Button 2 */ "PI", /* Delete */ false, /* Position */ 0,
@@ -127,9 +127,9 @@ class ModelSyllables: NSObject
         
         // Level 8
         (/* Level */ 8, /* Word */ "CANELA", /* Image */ "CANELA",
-            /* Image 1  */ "CAMELO", /* Delete */ "MELO",
-            /* Image 2  */ "BONECONEVE",  /* Delete */ "VE",
-            /* Image 3  */ "LAPIS", /* Delete */ "PIS",
+            /* Image 1  */ "CAMELO",     /* Delete */ "MELO",
+            /* Image 2  */ "BONECONEVE", /* Delete */ "VE",
+            /* Image 3  */ "LAPIS",      /* Delete */ "PIS",
             /* Button 1 */ "TA", /* Delete */ false, /* Position */ 0,
             /* Button 2 */ "CA", /* Delete */ true,  /* Position */ 1,
             /* Button 3 */ "BA", /* Delete */ false, /* Position */ 0,
@@ -140,18 +140,18 @@ class ModelSyllables: NSObject
             /* Button 8 */ "NI", /* Delete */ false, /* Position */ 0),
         
         // Level 9
-        (/* Level */ 9, /* Word */ "JANELA", /* Image */ "JANELA",
-            /* Image 1  */ "JACARE", /* Delete */ "CARE",
-            /* Image 2  */ "BONECONEVE",  /* Delete */ "VE",
-            /* Image 3  */ "BOLA", /* Delete */ "BO",
-            /* Button 1 */ "XA", /* Delete */ false, /* Position */ 0,
-            /* Button 2 */ "PA", /* Delete */ false, /* Position */ 0,
-            /* Button 3 */ "JA", /* Delete */ true,  /* Position */ 1,
-            /* Button 4 */ "ME", /* Delete */ false, /* Position */ 0,
-            /* Button 5 */ "NE", /* Delete */ true,  /* Position */ 2,
-            /* Button 6 */ "NI", /* Delete */ false, /* Position */ 0,
-            /* Button 7 */ "RA", /* Delete */ false, /* Position */ 0,
-            /* Button 8 */ "LA", /* Delete */ true,  /* Position */ 3),]
+        (/* Level */ 9, /* Word */ "BONECA", /* Image */ "BONECA",
+            /* Image 1  */ "BOLA",       /* Delete */ "LA",
+            /* Image 2  */ "BONECONEVE", /* Delete */ "VE",
+            /* Image 3  */ "CACHORRO",   /* Delete */ "CHORRO",
+            /* Button 1 */ "KA", /* Delete */ false, /* Position */ 0,
+            /* Button 2 */ "TA", /* Delete */ false, /* Position */ 0,
+            /* Button 3 */ "CA", /* Delete */ true,  /* Position */ 1,
+            /* Button 4 */ "NE", /* Delete */ false, /* Position */ 0,
+            /* Button 5 */ "ME", /* Delete */ true,  /* Position */ 2,
+            /* Button 6 */ "LE", /* Delete */ false, /* Position */ 0,
+            /* Button 7 */ "CO", /* Delete */ false, /* Position */ 0,
+            /* Button 8 */ "LO", /* Delete */ true,  /* Position */ 3),]
     //================================================================================
     
     

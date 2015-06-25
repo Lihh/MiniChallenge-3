@@ -24,9 +24,9 @@ class ClassifyAnimalsModel: NSObject {
     
         //1
     = [ (1, "Classifique: Classe",
-        "CACHORRO", "________",
-        "AVE", false, "INSETO", false, "MAMÍFERO", true,
-        "REPTIL", false, "ANFÍBIO", false, "PEIXE", false),
+            "CACHORRO", "________",
+            "AVE", false, "INSETO", false, "MAMÍFERO", true,
+            "REPTIL", false, "ANFÍBIO", false, "PEIXE", false),
         //2
         (2, "Classifique: Classe",
             "PEIXE", "_____",
