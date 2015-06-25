@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameAnimalsViewController: UIViewController {
 
@@ -36,6 +37,9 @@ class GameAnimalsViewController: UIViewController {
     let persistence = Persistence.sharedInstance
     let animals = AnimalsModel.sharedInstance
     //================================================================================
+    
+    var audioPlayerSound = AVAudioPlayer()
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
 
     
     // MARK: - VC Life Cycle
@@ -219,7 +223,7 @@ class GameAnimalsViewController: UIViewController {
         
         // Game Over
         if lifes == 0 {
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("dismiss"), userInfo: nil, repeats: false)
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
         }
     }
     //================================================================================
@@ -230,21 +234,18 @@ class GameAnimalsViewController: UIViewController {
     //================================================================================
     func congratulations() {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! UIViewController
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! CongratulationsViewController
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        storyBoardLevels.numberOfStars = lifes
         presentViewController(storyBoardLevels, animated: true, completion: nil)
     }
     //================================================================================
     
-    
-    
-    // MARK: - Exit game
-    //================================================================================
-    func dismiss() {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
     @IBAction func buttonBack(sender: KPButton) {
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     //================================================================================

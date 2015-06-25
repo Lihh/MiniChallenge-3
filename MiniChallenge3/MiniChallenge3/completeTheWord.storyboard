@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WUd-yW-iPo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WUd-yW-iPo">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -215,6 +215,7 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="a5Q-9Q-gyr">
                                 <rect key="frame" x="458" y="63" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="DKn-wE-2Ba"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="KBN-Gy-XvS"/>
@@ -234,6 +235,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="RP7-0B-Mba">
                                 <rect key="frame" x="468" y="73" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="BE3-yb-rBm"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="Dek-hL-cMj"/>
@@ -244,16 +246,16 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Dek-hL-cMj"/>
                                         <exclude reference="BE3-yb-rBm"/>
-                                        <exclude reference="qPg-2v-8nl"/>
+                                        <exclude reference="Dek-hL-cMj"/>
                                         <exclude reference="ke0-Lf-5IM"/>
+                                        <exclude reference="qPg-2v-8nl"/>
                                     </mask>
                                 </variation>
                             </imageView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.45882352941176469" green="0.70196078431372544" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.60784313725490191" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="gG0-mU-tIH" firstAttribute="centerY" secondItem="bjO-UM-ANE" secondAttribute="centerY" id="1R7-FE-Ijb"/>
                             <constraint firstAttribute="centerX" secondItem="gG0-mU-tIH" secondAttribute="centerX" constant="-5" id="6u2-nY-pPf"/>

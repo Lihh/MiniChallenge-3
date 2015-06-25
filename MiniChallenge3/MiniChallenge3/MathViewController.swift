@@ -25,7 +25,14 @@ class MathViewController: UIViewController {
         audioPlayerSound.play()
         audioPlayerSound.volume = 0.3
         
-        let exercise = sender.currentTitle!
+        let buttonTag = sender.tag
+        var exercise = ""
+        
+        if buttonTag == 0 {
+            exercise = "Calculator"
+        } else if buttonTag == 1 {
+            exercise = "counting"
+        }
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("MathLevels") as! MathLevelsViewController
@@ -35,6 +42,10 @@ class MathViewController: UIViewController {
     }
 
     @IBAction func backToMainViewController() {
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

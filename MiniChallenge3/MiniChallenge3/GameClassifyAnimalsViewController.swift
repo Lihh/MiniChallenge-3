@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameClassifyAnimalsViewController: UIViewController {
 
@@ -37,7 +38,9 @@ class GameClassifyAnimalsViewController: UIViewController {
     let persistence = Persistence.sharedInstance
     let classifyAnimal = ClassifyAnimalsModel.sharedInstance
     //================================================================================
-
+    
+    var audioPlayerSound = AVAudioPlayer()
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
     
     
     // MARK: - VC Life Cycle
@@ -216,8 +219,13 @@ class GameClassifyAnimalsViewController: UIViewController {
     func dismiss()
     { self.dismissViewControllerAnimated(true, completion: nil) }
     
-    @IBAction func buttonBack(sender: KPButton)
-    { self.dismissViewControllerAnimated(true, completion: nil) }
+    @IBAction func buttonBack(sender: KPButton){
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     //================================================================================
     
     

@@ -122,6 +122,10 @@ class MathLevelsViewController: UIViewController {
     }
     
     @IBAction func backToMainViewController() {
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

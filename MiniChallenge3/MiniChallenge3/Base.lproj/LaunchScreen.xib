@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="650" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="nGV-4d-pPQ">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nGV-4d-pPQ">
                     <rect key="frame" x="58" y="182" width="460" height="155"/>
                     <animations/>
                     <constraints>
@@ -51,7 +51,7 @@
         </view>
     </objects>
     <resources>
-        <image name="logo2" width="460" height="155"/>
+        <image name="logo" width="460" height="155"/>
         <image name="mais" width="114" height="157"/>
     </resources>
 </document>

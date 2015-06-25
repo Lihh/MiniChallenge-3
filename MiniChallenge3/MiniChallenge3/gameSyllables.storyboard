@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yQt-SG-w1o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yQt-SG-w1o">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -468,6 +468,7 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="oE5-xz-Mtl">
                                 <rect key="frame" x="450" y="28" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Aa1-me-w8Z"/>
                                     <constraint firstAttribute="height" constant="30" id="GU6-C7-jvG"/>
@@ -478,15 +479,16 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="P4h-Bq-0NY"/>
-                                        <exclude reference="OQs-mG-XJ5"/>
                                         <exclude reference="Aa1-me-w8Z"/>
+                                        <exclude reference="OQs-mG-XJ5"/>
+                                        <exclude reference="P4h-Bq-0NY"/>
                                         <exclude reference="ePR-N3-Keh"/>
                                     </mask>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="YFV-MY-40o">
                                 <rect key="frame" x="460" y="38" width="100" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2jQ-i4-Ppp"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="FWh-A5-47b"/>
@@ -497,16 +499,16 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="l5O-MU-n1M"/>
-                                        <exclude reference="kCr-TJ-duc"/>
-                                        <exclude reference="FWh-A5-47b"/>
                                         <exclude reference="2jQ-i4-Ppp"/>
+                                        <exclude reference="FWh-A5-47b"/>
+                                        <exclude reference="kCr-TJ-duc"/>
+                                        <exclude reference="l5O-MU-n1M"/>
                                     </mask>
                                 </variation>
                             </imageView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.45882352941176469" green="0.70196078431372544" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.60784313725490191" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mIV-JO-8Hl" firstAttribute="centerY" secondItem="yEY-Gi-DzY" secondAttribute="centerY" constant="15" id="1kv-Ag-ivi"/>
                             <constraint firstItem="yEY-Gi-DzY" firstAttribute="centerX" secondItem="Dqo-ZJ-aQA" secondAttribute="centerX" id="2Mt-WK-9Fa"/>
