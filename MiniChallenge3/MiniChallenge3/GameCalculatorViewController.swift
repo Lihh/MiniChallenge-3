@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameCalculatorViewController: UIViewController {
 
@@ -42,6 +43,9 @@ class GameCalculatorViewController: UIViewController {
     let persistence = Persistence.sharedInstance
     let calculator = CalculatorModel.sharedInstance
     //================================================================================
+    
+    var audioPlayerSound = AVAudioPlayer()
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
 
     
     
@@ -288,13 +292,18 @@ class GameCalculatorViewController: UIViewController {
     }
     
     @IBAction func btnBack(sender: KPButton) {
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func congratulations() {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! UIViewController
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! CongratulationsViewController
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        storyBoardLevels.numberOfStars = lifes
         presentViewController(storyBoardLevels, animated: true, completion: nil)
     }
     //================================================================================

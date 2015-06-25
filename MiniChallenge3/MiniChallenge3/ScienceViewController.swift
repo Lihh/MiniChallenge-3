@@ -12,7 +12,7 @@ import AVFoundation
 class ScienceViewController: UIViewController {
     
     var audioPlayerSound = AVAudioPlayer()
-    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,14 @@ class ScienceViewController: UIViewController {
         audioPlayerSound.play()
         audioPlayerSound.volume = 0.3
         
-        let exercise = sender.currentTitle!
+        let buttonTag = sender.tag
+        var exercise = ""
+        
+        if buttonTag == 0 {
+            exercise = "Animals"
+        } else if buttonTag == 1 {
+            exercise = "ClassifyAnimals"
+        }
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("ScienceLevels") as! ScienceLevelsViewController
@@ -34,6 +41,10 @@ class ScienceViewController: UIViewController {
     }
     
     @IBAction func backToMainViewController() {
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

@@ -18,12 +18,11 @@ class MainViewController: UIViewController {
     @IBOutlet weak var portugueseButton: KPButton!
     @IBOutlet weak var scienceButton: KPButton!
     @IBOutlet var mainView: UIView!
-    @IBOutlet weak var educaLabel: UILabel!
+    @IBOutlet weak var educLabel: UILabel!
     @IBOutlet weak var plusLabel: UILabel!
+    @IBOutlet weak var aLabel: UILabel!
     
-    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
-    var gameSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gameMusic", ofType: "mp3")!)
-    var audioPlayerMusic = AVAudioPlayer()
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
     var audioPlayerSound = AVAudioPlayer()
     
     var snap: UISnapBehavior!
@@ -50,10 +49,12 @@ class MainViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+//        sleep(10)
         if splitVerify {
             UIView.animateWithDuration(2, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-                self.educaLabel.frame = CGRectMake(self.educaLabel.frame.minX, self.view.frame.minY+90, 449, 185)
-                self.plusLabel.frame = CGRectMake(self.plusLabel.frame.minX, self.view.frame.minY+42, 97, 185)
+                self.educLabel.frame = CGRectMake(self.educLabel.frame.minX, self.view.frame.minY+90, 449, 185)
+                self.aLabel.frame = CGRectMake(self.aLabel.frame.minX, self.view.frame.minY+90, 449, 185)
+                self.plusLabel.frame = CGRectMake(self.plusLabel.frame.minX, self.view.frame.minY+70, 97, 185)
             }, completion: { (success) -> Void in
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
                     self.buttons[0].alpha = 1
@@ -88,15 +89,15 @@ class MainViewController: UIViewController {
         switch customSegue {
         case "segueOne":
             self.transition.animationChild = mathButton
-            self.transition.animationColor = UIColor(red: 201/255, green: 91/255, blue: 90/255, alpha: 1.0)
+            self.transition.animationColor = UIColor(red: 252/255, green: 96/255, blue: 110/255, alpha: 1.0)
             toViewController = segue.destinationViewController as! MathViewController
         case "segueTwo":
             self.transition.animationChild = portugueseButton
-            self.transition.animationColor = UIColor(red: 117/255, green: 179/255, blue: 214/255, alpha: 1)
+            self.transition.animationColor = UIColor(red: 0/255, green: 155/255, blue: 248/255, alpha: 1)
             toViewController = segue.destinationViewController as! PortugueseViewController
         case "segueThree":
             self.transition.animationChild = scienceButton
-            self.transition.animationColor = UIColor(red: 115/255, green: 195/255, blue: 175/255, alpha: 1.0)
+            self.transition.animationColor = UIColor(red: 18/255, green: 201/255, blue: 158/255, alpha: 1.0)
             toViewController = segue.destinationViewController as! ScienceViewController
         default:
             return;

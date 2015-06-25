@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CountingViewController: UIViewController {
 
@@ -58,6 +59,9 @@ class CountingViewController: UIViewController {
     @IBOutlet weak var btnOption3: UIButton!
     @IBOutlet weak var btnOption4: UIButton!
     //================================================================================
+    
+    var audioPlayerSound = AVAudioPlayer()
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
     
     
     
@@ -489,13 +493,18 @@ class CountingViewController: UIViewController {
     }
     
     @IBAction func btnBack(sender: UIButton) {
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func congratulations() {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! UIViewController
+        let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("CongratulationsView") as! CongratulationsViewController
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        storyBoardLevels.numberOfStars = lifes
         presentViewController(storyBoardLevels, animated: true, completion: nil)
     }
 }

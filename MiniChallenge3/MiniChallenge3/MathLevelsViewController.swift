@@ -38,7 +38,7 @@ class MathLevelsViewController: UIViewController {
     var buttons = [UIButton]()
     var stars = [UIImageView]()
     var audioPlayerSound = AVAudioPlayer()
-    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "mp3")!)
+    var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,6 +122,10 @@ class MathLevelsViewController: UIViewController {
     }
     
     @IBAction func backToMainViewController() {
+        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
+        audioPlayerSound.prepareToPlay()
+        audioPlayerSound.play()
+        audioPlayerSound.volume = 0.3
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

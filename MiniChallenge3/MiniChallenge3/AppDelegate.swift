@@ -15,11 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var audioPlayerMusic = AVAudioPlayer()
-    var gameSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gameMusic", ofType: "mp3")!)
+    var gameSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("musicGame", ofType: "mp3")!)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-//        sleep(2)
         audioPlayerMusic = AVAudioPlayer(contentsOfURL: gameSound, error: nil)
         audioPlayerMusic.prepareToPlay()
         audioPlayerMusic.play()
