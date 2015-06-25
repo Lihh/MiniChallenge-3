@@ -27,8 +27,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-JQ-L0k">
-                                <rect key="frame" x="208" y="-118" width="176" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="XXXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-JQ-L0k">
+                                <rect key="frame" x="209" y="-118" width="176" height="36"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="iSP-eo-npW"/>
@@ -454,11 +454,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2t-hX-K17">
-                                <rect key="frame" x="100" y="694" width="50" height="50"/>
+                                <rect key="frame" x="100" y="694" width="50" height="55"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="DeL-5p-ZV2"/>
-                                    <constraint firstAttribute="height" constant="50" id="IPO-qR-BqV"/>
+                                    <constraint firstAttribute="height" constant="55" id="IPO-qR-BqV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="55"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
@@ -470,16 +470,22 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="58c-E3-NqQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpj-dG-gZW">
-                                <rect key="frame" x="215" y="694" width="50" height="50"/>
+                                <rect key="frame" x="215" y="694" width="50" height="55"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="krA-fz-5HN"/>
+                                    <constraint firstAttribute="height" constant="55" id="krA-fz-5HN"/>
                                     <constraint firstAttribute="width" constant="50" id="pZF-ik-icx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="55"/>
@@ -492,17 +498,23 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="CgG-1C-QSh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FY-sd-ni6">
-                                <rect key="frame" x="455" y="694" width="50" height="50"/>
+                                <rect key="frame" x="455" y="694" width="50" height="55"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="7Xz-H1-0g2"/>
-                                    <constraint firstAttribute="height" constant="50" id="dFE-cY-dAh"/>
+                                    <constraint firstAttribute="height" constant="55" id="dFE-cY-dAh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="55"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
@@ -514,9 +526,43 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="ZVT-uD-ueQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJe-OM-wZp">
+                                <rect key="frame" x="334" y="694" width="50" height="55"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8ds-SX-I0Y"/>
+                                    <constraint firstAttribute="height" constant="55" id="PEj-2s-6wh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="55"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="RKr-Gm-o6U"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-9w-olC">
@@ -529,28 +575,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJe-OM-wZp">
-                                <rect key="frame" x="334" y="694" width="50" height="50"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="8ds-SX-I0Y"/>
-                                    <constraint firstAttribute="height" constant="50" id="PEj-2s-6wh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="55"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="X">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buttonClick:" destination="wVC-2a-pJc" eventType="touchUpInside" id="RKr-Gm-o6U"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-8l-hBk">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
                                 <animations/>
@@ -561,7 +585,7 @@
                                     <action selector="btnBack:" destination="wVC-2a-pJc" eventType="touchUpInside" id="aXh-AK-8VV"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="DJ3-tN-LeK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="DJ3-tN-LeK">
                                 <rect key="frame" x="484" y="28" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2eg-AW-g6R"/>
@@ -574,9 +598,9 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="2eg-AW-g6R"/>
-                                        <exclude reference="WQR-gB-X9x"/>
-                                        <exclude reference="E83-wV-oKp"/>
                                         <exclude reference="E4V-a6-Mxd"/>
+                                        <exclude reference="E83-wV-oKp"/>
+                                        <exclude reference="WQR-gB-X9x"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -603,6 +627,7 @@
                             <constraint firstAttribute="centerX" secondItem="9IY-9w-olC" secondAttribute="centerX" id="AMa-SZ-kgs"/>
                             <constraint firstAttribute="centerX" secondItem="Gpj-dG-gZW" secondAttribute="centerX" constant="60" id="Cok-d0-4Pg"/>
                             <constraint firstItem="n77-3o-6oR" firstAttribute="top" secondItem="Chr-JQ-L0k" secondAttribute="bottom" constant="30" id="DJ7-0g-HQB"/>
+                            <constraint firstItem="XMO-3h-X6M" firstAttribute="top" secondItem="DJ3-tN-LeK" secondAttribute="bottom" id="Db0-38-no4"/>
                             <constraint firstAttribute="centerX" secondItem="Chr-JQ-L0k" secondAttribute="centerX" constant="4.5" id="EBI-51-BtX"/>
                             <constraint firstItem="UTI-JM-yFy" firstAttribute="top" secondItem="ee5-gz-FGa" secondAttribute="bottom" constant="30" id="EV2-3y-W4c"/>
                             <constraint firstAttribute="centerX" secondItem="K2t-hX-K17" secondAttribute="centerX" constant="175" id="Fbm-3r-CW0"/>
@@ -618,10 +643,12 @@
                             <constraint firstItem="YxU-Mv-EQx" firstAttribute="leading" secondItem="j7O-mL-QsO" secondAttribute="trailing" constant="65" id="NzL-2C-m4V"/>
                             <constraint firstItem="ee5-gz-FGa" firstAttribute="leading" secondItem="cMg-Jr-IGU" secondAttribute="leadingMargin" constant="60" id="OD8-sm-hDC"/>
                             <constraint firstItem="YPp-a3-9ih" firstAttribute="top" secondItem="Chr-JQ-L0k" secondAttribute="bottom" constant="30" id="OHF-sa-2Bb"/>
+                            <constraint firstAttribute="centerY" secondItem="DJ3-tN-LeK" secondAttribute="centerY" constant="-385" id="OaP-2D-2J0"/>
                             <constraint firstAttribute="centerX" secondItem="BJe-OM-wZp" secondAttribute="centerX" constant="-59" id="PQo-lI-4Om"/>
                             <constraint firstItem="0Xk-0Q-EuU" firstAttribute="top" secondItem="UTI-JM-yFy" secondAttribute="bottom" constant="30" id="QCd-oq-vAF"/>
                             <constraint firstItem="E4G-hg-07S" firstAttribute="top" secondItem="j7O-mL-QsO" secondAttribute="bottom" constant="30" id="QTA-Nk-ccb"/>
                             <constraint firstItem="Gpj-dG-gZW" firstAttribute="top" secondItem="9IY-9w-olC" secondAttribute="bottom" constant="30" id="RoE-rL-YAA"/>
+                            <constraint firstItem="DJ3-tN-LeK" firstAttribute="trailing" secondItem="cMg-Jr-IGU" secondAttribute="trailingMargin" id="UIb-3G-Igw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YxU-Mv-EQx" secondAttribute="trailing" constant="60" id="UR3-V9-fVL"/>
                             <constraint firstItem="UTI-JM-yFy" firstAttribute="leading" secondItem="cMg-Jr-IGU" secondAttribute="leadingMargin" constant="60" id="cej-dc-GpM"/>
                             <constraint firstItem="Dhe-QP-nBJ" firstAttribute="leading" secondItem="YPp-a3-9ih" secondAttribute="trailing" constant="65" id="dqp-JK-v4O"/>
@@ -637,12 +664,19 @@
                             <constraint firstItem="XMO-3h-X6M" firstAttribute="leading" secondItem="gO2-JM-UEA" secondAttribute="trailing" constant="65" id="qaV-hw-Wc4"/>
                             <constraint firstItem="jqJ-Wl-bQt" firstAttribute="leading" secondItem="0Xk-0Q-EuU" secondAttribute="trailing" constant="65" id="r1Q-Zg-g1z"/>
                             <constraint firstItem="jqJ-Wl-bQt" firstAttribute="top" secondItem="Jgk-Yv-erZ" secondAttribute="bottom" constant="30" id="rNk-xp-ajc"/>
+                            <constraint firstItem="X4W-Sz-DfO" firstAttribute="top" secondItem="DJ3-tN-LeK" secondAttribute="bottom" constant="50" id="tAq-uE-ZOO"/>
                             <constraint firstItem="9IY-9w-olC" firstAttribute="top" secondItem="0Xk-0Q-EuU" secondAttribute="bottom" constant="60" id="tST-02-8SE"/>
                             <constraint firstItem="YxU-Mv-EQx" firstAttribute="top" secondItem="XMO-3h-X6M" secondAttribute="bottom" constant="30" id="ttQ-nL-hYk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="T2c-e4-K4j" secondAttribute="trailing" constant="60" id="xuR-Wz-jao"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n77-3o-6oR" secondAttribute="trailing" constant="60" id="y47-cW-EgO"/>
                             <constraint firstItem="lb8-cS-xUJ" firstAttribute="top" secondItem="Dhe-QP-nBJ" secondAttribute="bottom" constant="30" id="y6r-3b-CXh"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Db0-38-no4"/>
+                                <exclude reference="OaP-2D-2J0"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="btnOption1" destination="K2t-hX-K17" id="7eF-FU-AK8"/>
