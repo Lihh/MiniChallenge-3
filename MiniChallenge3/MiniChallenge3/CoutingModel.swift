@@ -113,5 +113,5 @@ class CoutingModel: NSObject {
             /*option  1*/ false, /*  text   */   "5", /*option  2*/  true, /*  text   */   "6",
             /*option  3*/ false, /*  text   */   "7", /*option  4*/ false, /*text     */   "8")]
     //================================================================================
-   
+    
 }

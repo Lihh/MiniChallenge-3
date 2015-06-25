@@ -146,12 +146,12 @@ class ModelSyllables: NSObject
             /* Image 3  */ "CACHORRO",   /* Delete */ "CHORRO",
             /* Button 1 */ "KA", /* Delete */ false, /* Position */ 0,
             /* Button 2 */ "TA", /* Delete */ false, /* Position */ 0,
-            /* Button 3 */ "CA", /* Delete */ true,  /* Position */ 1,
-            /* Button 4 */ "NE", /* Delete */ false, /* Position */ 0,
-            /* Button 5 */ "ME", /* Delete */ true,  /* Position */ 2,
+            /* Button 3 */ "BO", /* Delete */ true,  /* Position */ 1,
+            /* Button 4 */ "ME", /* Delete */ false, /* Position */ 0,
+            /* Button 5 */ "NE", /* Delete */ true,  /* Position */ 2,
             /* Button 6 */ "LE", /* Delete */ false, /* Position */ 0,
             /* Button 7 */ "CO", /* Delete */ false, /* Position */ 0,
-            /* Button 8 */ "LO", /* Delete */ true,  /* Position */ 3),]
+            /* Button 8 */ "CA", /* Delete */ true,  /* Position */ 3),]
     //================================================================================
     
     

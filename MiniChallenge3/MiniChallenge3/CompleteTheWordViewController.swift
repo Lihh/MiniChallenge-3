@@ -167,8 +167,6 @@ class CompleteTheWordViewController: UIViewController {
         // Animation
         UIView.correctAnimation(self.view, buttonAnimate: buttonAnimate, xx: xx, yy: yy, displacementX: displacementX)
         
-        self.disableButtons()
-        
         // Game Win
         if self.finish == completeWord.levels[level].finish
         {
@@ -180,6 +178,7 @@ class CompleteTheWordViewController: UIViewController {
             {
                 self.persistence.newScore("completeTheWord", level: self.level, quantityOfStars: self.lifes)
             }
+            self.disableButtons()
             var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
         }
     }

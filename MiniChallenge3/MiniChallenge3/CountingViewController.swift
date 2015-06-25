@@ -412,7 +412,10 @@ class CountingViewController: UIViewController {
         UIView.updateScore(lifes, imgScore: imgScore)
         
         if lifes == 0
-        { var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false) }
+        {
+            self.disableButtons()
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.2, target: self, selector: Selector("congratulations"), userInfo: nil, repeats: false)
+        }
     }
     //============================================================
     
@@ -423,6 +426,11 @@ class CountingViewController: UIViewController {
     func correctAnimation(buttonAnimate: UIButton)
     {
         finish++
+        
+        if self.finish == self.counting.levels[self.level].finish
+        {
+            self.disableButtons()
+        }
         
         // ANIMATION
         UIView.animateWithDuration(0.1, delay: 0.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
@@ -439,13 +447,21 @@ class CountingViewController: UIViewController {
                                     }, completion: { (finished) -> Void in
                                         buttonAnimate.backgroundColor = UIColor.greenColor()
                                         buttonAnimate.enabled = false
-                                        if self.finish == self.counting.levels[self.level].finish { self.showQuestion() }
+                                        if self.finish == self.counting.levels[self.level].finish
+                                        { 
+                                            self.showQuestion()
+                                            self.btnOption1.enabled = true
+                                            self.btnOption2.enabled = true
+                                            self.btnOption3.enabled = true
+                                            self.btnOption4.enabled = true
+                                        }
                                 })
                         })
                 })
         }
         
         if finish >= counting.levels[level].finish+1 {
+            self.disableButtons()
             if persistence.verifyExistenceOfALevel("Counting", level: level) {
                 persistence.updateNumberOfStars("Counting", level: level, numberOfStars: lifes)
             } else {
@@ -506,5 +522,18 @@ class CountingViewController: UIViewController {
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         storyBoardLevels.numberOfStars = lifes
         presentViewController(storyBoardLevels, animated: true, completion: nil)
+    }
+    
+    func disableButtons()
+    {
+        button1.enabled = false ; button2.enabled = false ; button3.enabled = false
+        button4.enabled = false ; button5.enabled = false ; button6.enabled = false
+        button7.enabled = false ; button8.enabled = false ; button9.enabled = false
+        button10.enabled = false ; button11.enabled = false ; button12.enabled = false
+        button13.enabled = false ; button14.enabled = false ; button15.enabled = false
+        button16.enabled = false ; button17.enabled = false ; button18.enabled = false
+        button19.enabled = false ; button20.enabled = false
+        btnOption1.enabled = false ; btnOption2.enabled = false
+        btnOption3.enabled = false ; btnOption4.enabled = false
     }
 }
