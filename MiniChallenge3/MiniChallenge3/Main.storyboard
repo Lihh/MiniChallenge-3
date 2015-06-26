@@ -1317,17 +1317,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-gN-x2M" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="150" y="250" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-gN-x2M" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="100" y="250" width="400" height="100"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="2Xw-1I-mQX"/>
+                                    <constraint firstAttribute="width" constant="400" id="2Xw-1I-mQX"/>
                                     <constraint firstAttribute="height" constant="100" id="bq0-QR-WOr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Ex.1">
+                                <state key="normal" title="Calcule">
                                     <color key="titleColor" red="0.9882352941176471" green="0.37647058823529411" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1354,17 +1354,24 @@
                                     <action selector="backToMainViewController" destination="QBu-Aw-KsU" eventType="touchUpInside" id="oWJ-gj-V71"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-vc-d50" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="351" y="250" width="100" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matemática" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxu-rU-0fH">
+                                <rect key="frame" x="14" y="60" width="572" height="125"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="125"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-vc-d50" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="100" y="405" width="400" height="100"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="97U-hs-CLE"/>
+                                    <constraint firstAttribute="width" constant="400" id="97U-hs-CLE"/>
                                     <constraint firstAttribute="height" constant="100" id="aTl-GJ-jMQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Ex.2">
+                                <state key="normal" title="Contador">
                                     <color key="titleColor" red="0.9882352941176471" green="0.37647058823529411" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1377,36 +1384,20 @@
                                     <action selector="exerciseButtons:" destination="QBu-Aw-KsU" eventType="touchUpInside" id="Ypc-k3-zQa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matemática" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxu-rU-0fH">
-                                <rect key="frame" x="14" y="60" width="572" height="125"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="125"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.37647058823529411" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="LS6-gN-x2M" secondAttribute="centerX" constant="100" id="1hx-PC-aRG"/>
                             <constraint firstItem="bQH-jj-MRw" firstAttribute="top" secondItem="YPT-fO-QBl" secondAttribute="bottom" constant="8" id="3R4-rS-BqC"/>
                             <constraint firstItem="bQH-jj-MRw" firstAttribute="leading" secondItem="ZJ1-bE-9TB" secondAttribute="leadingMargin" id="4Dc-ZS-xEt"/>
                             <constraint firstItem="Oxu-rU-0fH" firstAttribute="top" secondItem="bQH-jj-MRw" secondAttribute="bottom" constant="2" id="57b-re-Fkw"/>
-                            <constraint firstAttribute="centerY" secondItem="LS6-gN-x2M" secondAttribute="centerY" id="BT5-TZ-jmK"/>
-                            <constraint firstAttribute="centerY" secondItem="LS6-gN-x2M" secondAttribute="centerY" id="DlT-UW-aXD"/>
-                            <constraint firstAttribute="centerX" secondItem="LS6-gN-x2M" secondAttribute="centerX" id="GCG-on-4V7"/>
-                            <constraint firstAttribute="centerX" secondItem="XfR-vc-d50" secondAttribute="centerX" constant="-101" id="ciQ-Qt-D3e"/>
-                            <constraint firstAttribute="centerX" secondItem="Oxu-rU-0fH" secondAttribute="centerX" constant="-11.5" id="gum-pp-4h8"/>
+                            <constraint firstAttribute="centerX" secondItem="LS6-gN-x2M" secondAttribute="centerX" id="LPp-iG-vIa"/>
+                            <constraint firstAttribute="centerX" secondItem="XfR-vc-d50" secondAttribute="centerX" id="akS-je-bvd"/>
+                            <constraint firstAttribute="centerX" secondItem="XfR-vc-d50" secondAttribute="centerX" id="ciQ-Qt-D3e"/>
+                            <constraint firstAttribute="centerY" secondItem="XfR-vc-d50" secondAttribute="centerY" constant="-150" id="i9n-Db-5dk"/>
                             <constraint firstAttribute="centerX" secondItem="Oxu-rU-0fH" secondAttribute="centerX" id="j2B-0u-io5"/>
-                            <constraint firstAttribute="centerY" secondItem="XfR-vc-d50" secondAttribute="centerY" id="ppT-t9-dMR"/>
+                            <constraint firstAttribute="centerY" secondItem="LS6-gN-x2M" secondAttribute="centerY" constant="50" id="jue-ih-U6I"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="gum-pp-4h8"/>
-                                <exclude reference="DlT-UW-aXD"/>
-                                <exclude reference="GCG-on-4V7"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKm-nP-Iwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1439,43 +1430,17 @@
                                     <action selector="backToMainViewController" destination="0E7-rl-yE5" eventType="touchUpInside" id="JCz-NA-jMm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvo-g0-CXK" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="351" y="250" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-6Q-ul6" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="100" y="250" width="400" height="100"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="GnK-Rc-zge"/>
-                                    <constraint firstAttribute="width" constant="100" id="g4D-Wy-JtX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Ex.2">
-                                    <color key="titleColor" red="0.0" green="0.60784313725490191" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="exerciseButtons:" destination="0E7-rl-yE5" eventType="touchUpInside" id="2yt-2E-1y7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sp-6Q-ul6" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="150" y="250" width="100" height="100"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="bFg-5t-KLJ"/>
                                     <constraint firstAttribute="height" constant="100" id="hbI-l9-bYI"/>
+                                    <constraint firstAttribute="width" constant="400" id="sg7-6b-GKB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Ex.1">
+                                <state key="normal" title="Forme a Palavra">
                                     <color key="titleColor" red="0.0" green="0.60784313725490191" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1498,25 +1463,45 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvo-g0-CXK" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="101" y="390" width="400" height="100"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GnK-Rc-zge"/>
+                                    <constraint firstAttribute="width" constant="400" id="g4D-Wy-JtX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Complete a Palavra">
+                                    <color key="titleColor" red="0.0" green="0.60784313725490191" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="exerciseButtons:" destination="0E7-rl-yE5" eventType="touchUpInside" id="2yt-2E-1y7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.60784313725490191" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="tXd-2l-7l6" secondAttribute="centerX" constant="-0.75" id="1eY-QG-TZT"/>
                             <constraint firstItem="jZT-aO-h2p" firstAttribute="top" secondItem="1OZ-pF-6n9" secondAttribute="bottom" constant="8" id="5uR-3k-Urs"/>
                             <constraint firstAttribute="centerX" secondItem="tXd-2l-7l6" secondAttribute="centerX" constant="-0.75" id="8yM-VG-xL4"/>
-                            <constraint firstAttribute="centerX" secondItem="1Sp-6Q-ul6" secondAttribute="centerX" constant="100" id="G2w-Zv-Con"/>
                             <constraint firstItem="tXd-2l-7l6" firstAttribute="top" secondItem="jZT-aO-h2p" secondAttribute="bottom" constant="2" id="Umt-xv-RrI"/>
-                            <constraint firstAttribute="centerY" secondItem="1Sp-6Q-ul6" secondAttribute="centerY" id="ZoW-Iv-KHM"/>
-                            <constraint firstAttribute="centerY" secondItem="cvo-g0-CXK" secondAttribute="centerY" id="jdy-T9-FGV"/>
-                            <constraint firstAttribute="centerX" secondItem="cvo-g0-CXK" secondAttribute="centerX" constant="-101" id="nPr-wU-bOx"/>
+                            <constraint firstAttribute="centerX" secondItem="1Sp-6Q-ul6" secondAttribute="centerX" id="ZVx-OH-lwE"/>
+                            <constraint firstAttribute="centerY" secondItem="1Sp-6Q-ul6" secondAttribute="centerY" constant="50" id="fjc-Xp-AwV"/>
+                            <constraint firstAttribute="centerY" secondItem="cvo-g0-CXK" secondAttribute="centerY" constant="-150" id="kpf-Dc-U7E"/>
+                            <constraint firstAttribute="centerX" secondItem="cvo-g0-CXK" secondAttribute="centerX" id="w0J-10-oDb"/>
                             <constraint firstItem="jZT-aO-h2p" firstAttribute="leading" secondItem="zta-ia-tsJ" secondAttribute="leadingMargin" id="xIp-qY-Wb2"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="1eY-QG-TZT"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="feS-e3-wcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1535,17 +1520,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOU-fU-amg" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="150" y="250" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOU-fU-amg" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="100" y="250" width="400" height="100"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Yo6-2J-KBd"/>
-                                    <constraint firstAttribute="width" constant="100" id="v8s-rT-N26"/>
+                                    <constraint firstAttribute="width" constant="400" id="v8s-rT-N26"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Ex.1">
+                                <state key="normal" title="Adivinhe o Animal">
                                     <color key="titleColor" red="0.070588235294117646" green="0.78823529411764703" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1575,17 +1560,24 @@
                                     <action selector="backToMainViewController" destination="3Sd-3y-i2g" eventType="touchUpInside" id="sDe-T6-dyJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDw-xl-2VW" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="351" y="250" width="100" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciência" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWK-do-Act">
+                                <rect key="frame" x="126" y="60" width="349" height="125"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="125"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDw-xl-2VW" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
+                                <rect key="frame" x="100" y="391" width="400" height="100"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="XeM-Hg-hul"/>
-                                    <constraint firstAttribute="width" constant="100" id="bdR-qQ-gaa"/>
+                                    <constraint firstAttribute="width" constant="400" id="bdR-qQ-gaa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="40"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Ex.2">
+                                <state key="normal" title="Classifique o Animal">
                                     <color key="titleColor" red="0.070588235294117646" green="0.78823529411764703" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1601,34 +1593,19 @@
                                     <action selector="exerciseButtons:" destination="3Sd-3y-i2g" eventType="touchUpInside" id="blq-sO-Og9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciência" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWK-do-Act">
-                                <rect key="frame" x="126" y="60" width="349" height="125"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="125"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.070588235294117646" green="0.78823529411764703" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="EWK-do-Act" secondAttribute="centerX" constant="-0.5" id="6a2-yz-3Kg"/>
-                            <constraint firstAttribute="centerY" secondItem="gOU-fU-amg" secondAttribute="centerY" id="DPZ-u8-xNq"/>
-                            <constraint firstAttribute="centerX" secondItem="gOU-fU-amg" secondAttribute="centerX" constant="100" id="GjN-lZ-MAu"/>
+                            <constraint firstAttribute="centerX" secondItem="gOU-fU-amg" secondAttribute="centerX" id="B1p-YQ-hrU"/>
                             <constraint firstItem="jIL-nw-idM" firstAttribute="top" secondItem="dGz-LO-k3L" secondAttribute="bottom" constant="8" id="Kag-0z-pQz"/>
-                            <constraint firstAttribute="centerY" secondItem="EWK-do-Act" secondAttribute="centerY" constant="148" id="gUa-xq-k9W"/>
-                            <constraint firstAttribute="centerX" secondItem="DDw-xl-2VW" secondAttribute="centerX" constant="-101" id="ryf-3Q-cQG"/>
+                            <constraint firstAttribute="centerY" secondItem="gOU-fU-amg" secondAttribute="centerY" constant="50" id="ORn-CK-b4R"/>
+                            <constraint firstAttribute="centerX" secondItem="DDw-xl-2VW" secondAttribute="centerX" id="hW0-pv-P5C"/>
                             <constraint firstItem="EWK-do-Act" firstAttribute="top" secondItem="jIL-nw-idM" secondAttribute="bottom" constant="2" id="tNU-M5-5qg"/>
-                            <constraint firstAttribute="centerY" secondItem="DDw-xl-2VW" secondAttribute="centerY" id="wAp-WR-97T"/>
+                            <constraint firstAttribute="centerY" secondItem="DDw-xl-2VW" secondAttribute="centerY" constant="-150" id="wAp-WR-97T"/>
                             <constraint firstItem="jIL-nw-idM" firstAttribute="leading" secondItem="6sn-oL-NgC" secondAttribute="leadingMargin" id="xR8-qr-Qsn"/>
-                            <constraint firstAttribute="centerX" secondItem="EWK-do-Act" secondAttribute="centerX" id="yRq-3P-69z"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="gUa-xq-k9W"/>
-                                <exclude reference="yRq-3P-69z"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmh-Yc-2Wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
