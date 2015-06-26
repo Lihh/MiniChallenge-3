@@ -42,8 +42,10 @@ class CompleteTheWordViewController: UIViewController {
     @IBOutlet weak var button5: UIButton!
     //============================================================
     
-    var audioPlayerSound = AVAudioPlayer()
+    var audioPlayer = AVAudioPlayer()
     var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
+    var soundRightAnswer = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("rightAnswer", ofType: "mp3")!)
+    var soundWrongAnswer = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("wrongAnswer", ofType: "mp3")!)
     
     
     // MARK: - VC Life Cycle
@@ -167,6 +169,9 @@ class CompleteTheWordViewController: UIViewController {
     {
         finish++
         
+        // Play Sound
+        self.playSound(soundWrongAnswer!, volume: 0.3)
+        
         // Set the Displacement of Button
         var xx = self.lblWord.frame.origin.x - buttonAnimate.frame.origin.x
         xx = xx + (48 * displacementX)
@@ -200,6 +205,9 @@ class CompleteTheWordViewController: UIViewController {
     {
         lifes--
         
+        // Play Sound
+        self.playSound(soundWrongAnswer!, volume: 0.3)
+        
         // Animation
         UIView.wrongAnimation(self.view, buttonAnimate: buttonAnimate, disableButton: true)
         
@@ -229,14 +237,22 @@ class CompleteTheWordViewController: UIViewController {
     { self.dismissViewControllerAnimated(true, completion: nil) }
     
     @IBAction func btnBack(sender: KPButton){
-        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
-        audioPlayerSound.prepareToPlay()
-        audioPlayerSound.play()
-        audioPlayerSound.volume = 0.3
+        self.playSound(gameSoundBlop!, volume: 0.3)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     //================================================================================
     
+    
+    // MARK: - Play Sound
+    //================================================================================
+    func playSound(sound:NSURL, volume:Float)
+    {
+        audioPlayer = AVAudioPlayer(contentsOfURL: sound, error: nil)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+        audioPlayer.volume = volume
+    }
+    //================================================================================
     
     func disableButtons()
     {

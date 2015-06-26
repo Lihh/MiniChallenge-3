@@ -727,14 +727,14 @@
                                     <segue destination="QBu-Aw-KsU" kind="presentation" identifier="segueOne" id="SSx-Eb-HM0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="educ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh3-I8-Cxw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="educ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh3-I8-Cxw">
                                 <rect key="frame" x="32" y="207" width="356" height="185"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9U-D5-zsB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9U-D5-zsB">
                                 <rect key="frame" x="484" y="188" width="97" height="185"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
@@ -746,7 +746,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T5-Mh-MPv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T5-Mh-MPv">
                                 <rect key="frame" x="391" y="207" width="106" height="185"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="185"/>
@@ -1354,7 +1354,7 @@
                                     <action selector="backToMainViewController" destination="QBu-Aw-KsU" eventType="touchUpInside" id="oWJ-gj-V71"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matemática" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxu-rU-0fH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Matemática" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxu-rU-0fH">
                                 <rect key="frame" x="14" y="60" width="572" height="125"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="125"/>
@@ -1456,7 +1456,7 @@
                                     <action selector="exerciseButtons:" destination="0E7-rl-yE5" eventType="touchUpInside" id="oTk-Op-Nj1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Português" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXd-2l-7l6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Português" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXd-2l-7l6">
                                 <rect key="frame" x="53" y="60" width="496" height="125"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="125"/>
@@ -1560,7 +1560,7 @@
                                     <action selector="backToMainViewController" destination="3Sd-3y-i2g" eventType="touchUpInside" id="sDe-T6-dyJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciência" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWK-do-Act">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ciência" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWK-do-Act">
                                 <rect key="frame" x="126" y="60" width="349" height="125"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="125"/>

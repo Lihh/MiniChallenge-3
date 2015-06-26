@@ -54,8 +54,10 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnOption8: UIButton!
     //================================================================================
     
-    var audioPlayerSound = AVAudioPlayer()
+    var audioPlayer = AVAudioPlayer()
     var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
+    var soundRightAnswer = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("rightAnswer", ofType: "mp3")!)
+    var soundWrongAnswer = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("wrongAnswer", ofType: "mp3")!)
     
     
     // MARK: - VC Lyfe Cycle
@@ -225,6 +227,9 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         // Score ++
         score++
         
+        // Play Sound
+        self.playSound(soundRightAnswer!, volume: 0.3)
+        
         // Displace the Syllable
         syllable.displaceButton(self.view ,button: button, buttonPosition: buttonPosition, labelPosition1: lblPositionSyllable1, labelPosition2: lblPositionSyllable2, labelPosition3: lblPositionSyllable3)
         
@@ -248,6 +253,9 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     //================================================================================
     func wrongButton(button: UIButton)
     {
+        // Play Sound
+        self.playSound(soundWrongAnswer!, volume: 0.3)
+        
         // Animate wrong Syllable
         UIView.wrongAnimation(self.view, buttonAnimate: button, disableButton: true)
         
@@ -271,10 +279,7 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Exit Game
     //================================================================================
     @IBAction func btnBack(sender: KPButton){
-        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
-        audioPlayerSound.prepareToPlay()
-        audioPlayerSound.play()
-        audioPlayerSound.volume = 0.3
+        self.playSound(gameSoundBlop!, volume: 0.3)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -288,6 +293,17 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
     
     func dismissView() {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    //================================================================================
+    
+    // MARK: - Play Sound
+    //================================================================================
+    func playSound(sound:NSURL, volume:Float)
+    {
+        audioPlayer = AVAudioPlayer(contentsOfURL: sound, error: nil)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+        audioPlayer.volume = volume
     }
     //================================================================================
     

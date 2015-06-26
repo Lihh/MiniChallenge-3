@@ -44,10 +44,12 @@ class GameCalculatorViewController: UIViewController {
     let calculator = CalculatorModel.sharedInstance
     //================================================================================
     
-    var audioPlayerSound = AVAudioPlayer()
+    var audioPlayer = AVAudioPlayer()
     var gameSoundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
+    var soundRightAnswer = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("rightAnswer", ofType: "mp3")!)
+    var soundWrongAnswer = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("wrongAnswer", ofType: "mp3")!)
 
-    
+
     
     // MARK: - VC Life Cycle
     //================================================================================
@@ -211,6 +213,9 @@ class GameCalculatorViewController: UIViewController {
         
         gameOver++
         
+        // Play Sound
+        self.playSound(soundRightAnswer!, volume: 0.3)
+        
         var x = CGFloat()
         var y = CGFloat()
         
@@ -246,6 +251,9 @@ class GameCalculatorViewController: UIViewController {
     // MARK: - Wrong Answer
     //================================================================================
     func wrongAnswer(buttonWrong: UIButton) {
+        
+        // Play Sound
+        self.playSound(soundWrongAnswer!, volume: 0.3)
         
         // Animation
         UIView.wrongAnimation(self.view, buttonAnimate: buttonWrong, disableButton: true)
@@ -303,10 +311,7 @@ class GameCalculatorViewController: UIViewController {
     }
     
     @IBAction func btnBack(sender: KPButton) {
-        audioPlayerSound = AVAudioPlayer(contentsOfURL: gameSoundBlop, error: nil)
-        audioPlayerSound.prepareToPlay()
-        audioPlayerSound.play()
-        audioPlayerSound.volume = 0.3
+        self.playSound(gameSoundBlop!, volume: 0.3)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -316,6 +321,17 @@ class GameCalculatorViewController: UIViewController {
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         storyBoardLevels.numberOfStars = lifes
         presentViewController(storyBoardLevels, animated: true, completion: nil)
+    }
+    //================================================================================
+    
+    // MARK: - Play Sound
+    //================================================================================
+    func playSound(sound:NSURL, volume:Float)
+    {
+        audioPlayer = AVAudioPlayer(contentsOfURL: sound, error: nil)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+        audioPlayer.volume = volume
     }
     //================================================================================
 

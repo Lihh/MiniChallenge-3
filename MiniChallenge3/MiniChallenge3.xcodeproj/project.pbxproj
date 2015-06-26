@@ -51,6 +51,9 @@
 		02D876191B12DC79002D61B8 /* URSO.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D876181B12DC79002D61B8 /* URSO.png */; };
 		02F88C681B04EBE3003C41E3 /* GameAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */; };
 		0B131EA51B1348A5009714EF /* tutorialHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B131EA41B1348A5009714EF /* tutorialHand.png */; };
+		0B440F641B3D943D00A79A64 /* gameWin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B440F631B3D943D00A79A64 /* gameWin.mp3 */; };
+		0B440F661B3D977900A79A64 /* rightAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B440F651B3D977900A79A64 /* rightAnswer.mp3 */; };
+		0B440F681B3D978E00A79A64 /* wrongAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B440F671B3D978E00A79A64 /* wrongAnswer.mp3 */; };
 		0B4622C81B18AD0700B2A200 /* CoutingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4622C71B18AD0700B2A200 /* CoutingModel.swift */; };
 		0B7259161B06230000117B4F /* completeTheWord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7259151B06230000117B4F /* completeTheWord.storyboard */; };
 		0B7259191B06234300117B4F /* CompleteTheWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */; };
@@ -84,7 +87,7 @@
 		EC9B4C631B3BBB6A009F25F7 /* Blop2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC9B4C621B3BBB6A009F25F7 /* Blop2.mp3 */; };
 		EC9B4C651B3BBC3A009F25F7 /* Blop.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EC9B4C641B3BBC3A009F25F7 /* Blop.m4a */; };
 		ECB21DA61B061C4A00246898 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB21DA51B061C4A00246898 /* Extensions.swift */; };
-		ECC8EC571B3AFF9A00DD9430 /* defeat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = ECC8EC561B3AFF9A00DD9430 /* defeat.m4a */; };
+		ECC8EC571B3AFF9A00DD9430 /* gameOver.m4a in Resources */ = {isa = PBXBuildFile; fileRef = ECC8EC561B3AFF9A00DD9430 /* gameOver.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +149,9 @@
 		02F88C651B04EB85003C41E3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02F88C671B04EBE3003C41E3 /* GameAnimalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAnimalsViewController.swift; sourceTree = "<group>"; };
 		0B131EA41B1348A5009714EF /* tutorialHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tutorialHand.png; sourceTree = "<group>"; };
+		0B440F631B3D943D00A79A64 /* gameWin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameWin.mp3; sourceTree = "<group>"; };
+		0B440F651B3D977900A79A64 /* rightAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rightAnswer.mp3; sourceTree = "<group>"; };
+		0B440F671B3D978E00A79A64 /* wrongAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongAnswer.mp3; sourceTree = "<group>"; };
 		0B4622C71B18AD0700B2A200 /* CoutingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoutingModel.swift; sourceTree = "<group>"; };
 		0B7259151B06230000117B4F /* completeTheWord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = completeTheWord.storyboard; sourceTree = "<group>"; };
 		0B7259181B06234300117B4F /* CompleteTheWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTheWordViewController.swift; sourceTree = "<group>"; };
@@ -179,7 +185,7 @@
 		EC9B4C621B3BBB6A009F25F7 /* Blop2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Blop2.mp3; sourceTree = "<group>"; };
 		EC9B4C641B3BBC3A009F25F7 /* Blop.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blop.m4a; sourceTree = "<group>"; };
 		ECB21DA51B061C4A00246898 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		ECC8EC561B3AFF9A00DD9430 /* defeat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = defeat.m4a; sourceTree = "<group>"; };
+		ECC8EC561B3AFF9A00DD9430 /* gameOver.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameOver.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,8 +464,11 @@
 			children = (
 				EC9B4C641B3BBC3A009F25F7 /* Blop.m4a */,
 				EC41BDED1B3ADCDE00EA31EA /* musicGame.mp3 */,
-				ECC8EC561B3AFF9A00DD9430 /* defeat.m4a */,
+				ECC8EC561B3AFF9A00DD9430 /* gameOver.m4a */,
+				0B440F631B3D943D00A79A64 /* gameWin.mp3 */,
 				EC9B4C621B3BBB6A009F25F7 /* Blop2.mp3 */,
+				0B440F651B3D977900A79A64 /* rightAnswer.mp3 */,
+				0B440F671B3D978E00A79A64 /* wrongAnswer.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -561,15 +570,18 @@
 				026C93D61B061D97004E8CA8 /* HumanBody.storyboard in Resources */,
 				02D876091B12DC4A002D61B8 /* PANELA.png in Resources */,
 				02D875ED1B12DBFE002D61B8 /* CAVALO.png in Resources */,
+				0B440F681B3D978E00A79A64 /* wrongAnswer.mp3 in Resources */,
+				0B440F661B3D977900A79A64 /* rightAnswer.mp3 in Resources */,
 				02D875F51B12DC1A002D61B8 /* ELEFANTE.png in Resources */,
 				EC9B4C651B3BBC3A009F25F7 /* Blop.m4a in Resources */,
 				0B7259161B06230000117B4F /* completeTheWord.storyboard in Resources */,
 				EC5B553F1B0A7C5800EBCB49 /* HollowStars.png in Resources */,
 				02CCF6671B04C442001AA118 /* Animals.storyboard in Resources */,
 				02D876191B12DC79002D61B8 /* URSO.png in Resources */,
-				ECC8EC571B3AFF9A00DD9430 /* defeat.m4a in Resources */,
+				ECC8EC571B3AFF9A00DD9430 /* gameOver.m4a in Resources */,
 				02D875E91B12DBF5002D61B8 /* CACHORRO.png in Resources */,
 				02D876131B12DC62002D61B8 /* RATO.png in Resources */,
+				0B440F641B3D943D00A79A64 /* gameWin.mp3 in Resources */,
 				02D875F11B12DC08002D61B8 /* COELHO.png in Resources */,
 				EC5B553C1B0A7C5800EBCB49 /* TwoStarsFilled.png in Resources */,
 				02D8760F1B12DC57002D61B8 /* PEIXE.png in Resources */,

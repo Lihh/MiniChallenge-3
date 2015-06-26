@@ -13,11 +13,11 @@ class CongratulationsViewController: UIViewController {
     
     let notificationCenter = NSNotificationCenter.defaultCenter()
     
-    var audioPlayerSound = AVAudioPlayer()
-    var blop2 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop2", ofType: "mp3")!)
-    
-    var audioPlayerDefeat = AVAudioPlayer()
-    var defeatSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("defeat", ofType: "m4a")!)
+    // Sounds
+    var audioPlayer = AVAudioPlayer()
+    var soundBlop = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Blop", ofType: "m4a")!)
+    var soundGameOver = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gameOver", ofType: "m4a")!)
+    var soundGameWin = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gameWin", ofType: "mp3")!)
     
     var numberOfStars = 0
     @IBOutlet weak var starsImageView: UIImageView!
@@ -25,37 +25,39 @@ class CongratulationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if numberOfStars == 0 {
+        if numberOfStars == 0
+        {
             starsImageView.image = UIImage(named: "HollowStars")
             congratulationsLabel.text = "Você Perdeu!"
-            audioPlayerSound = AVAudioPlayer(contentsOfURL: defeatSound, error: nil)
-            audioPlayerSound.prepareToPlay()
-            audioPlayerSound.play()
-            audioPlayerSound.volume = 0.7
+            self.playSound(soundGameOver!, volume: 0.7)
         } else if numberOfStars == 1 {
             starsImageView.image = UIImage(named: "OneStarFilled")
+            self.playSound(soundGameWin!, volume: 0.7)
         } else if numberOfStars == 2 {
             starsImageView.image = UIImage(named: "TwoStarsFilled")
+            self.playSound(soundGameWin!, volume: 0.7)
         } else {
             starsImageView.image = UIImage(named: "ThreeStarsFilled")
+            self.playSound(soundGameWin!, volume: 0.7)
         }
     }
 
     @IBAction func btnBack(sender: KPButton) {
-        print(blop2)
-        audioPlayerSound = AVAudioPlayer(contentsOfURL: blop2, error: nil)
-        audioPlayerSound.prepareToPlay()
-        audioPlayerSound.play()
-        audioPlayerSound.volume = 0.3
+        self.playSound(soundBlop!, volume: 0.3)
         notificationCenter.postNotificationName("backToLevels", object: self, userInfo: nil)
     }
     
     @IBAction func btnHome(sender: KPButton) {
-        audioPlayerSound = AVAudioPlayer(contentsOfURL: blop2, error: nil)
-        audioPlayerSound.prepareToPlay()
-        audioPlayerSound.play()
-        audioPlayerSound.volume = 0.3
+        self.playSound(soundBlop!, volume: 0.3)
         notificationCenter.postNotificationName("backToHome", object: self, userInfo: nil)
+    }
+    
+    func playSound(sound:NSURL, volume:Float)
+    {
+        audioPlayer = AVAudioPlayer(contentsOfURL: sound, error: nil)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+        audioPlayer.volume = volume
     }
     
 }
