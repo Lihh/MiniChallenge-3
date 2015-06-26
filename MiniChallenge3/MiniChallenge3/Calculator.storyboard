@@ -17,7 +17,6 @@
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
-            <string>BloggerSans-Medium</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -33,13 +32,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calcule" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wh-Ls-BVg">
-                                <rect key="frame" x="213" y="90" width="175" height="60"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="60"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N4-rc-uBj" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="16" y="28" width="30" height="30"/>
                                 <animations/>
@@ -50,28 +42,10 @@
                                     <action selector="btnBack:" destination="hto-YU-b2e" eventType="touchUpInside" id="WbP-fQ-WvY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1  +  2 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-i9-bPF">
-                                <rect key="frame" x="87" y="184" width="180" height="65"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3  +  4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdG-fK-QVH">
                                 <rect key="frame" x="87" y="267" width="180" height="65"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akG-4W-7nr">
-                                <rect key="frame" x="317" y="168" width="48" height="59"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="hz0-ud-k32"/>
-                                    <constraint firstAttribute="width" constant="48" id="k8I-6y-YuN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="65"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -83,16 +57,6 @@
                                     <constraint firstAttribute="width" constant="48" id="uy3-T6-6Si"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="65"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhZ-jx-1ju">
-                                <rect key="frame" x="415" y="168" width="75" height="81"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="81" id="Xnv-jZ-Y8o"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -281,20 +245,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiX-Zd-5On">
-                                <rect key="frame" x="16" y="192" width="50" height="50"/>
-                                <animations/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="C24-YD-dtB"/>
-                                    <constraint firstAttribute="width" constant="50" id="dTB-ko-3PD"/>
-                                </constraints>
-                                <state key="normal" image="tutorialHand.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="Spl-Td-b05">
                                 <rect key="frame" x="484" y="318" width="100" height="30"/>
                                 <animations/>
@@ -315,6 +265,48 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1  +  2 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-i9-bPF">
+                                <rect key="frame" x="87" y="110" width="180" height="65"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="=" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akG-4W-7nr">
+                                <rect key="frame" x="317" y="94" width="48" height="59"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="hz0-ud-k32"/>
+                                    <constraint firstAttribute="width" constant="48" id="k8I-6y-YuN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="65"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhZ-jx-1ju">
+                                <rect key="frame" x="415" y="94" width="75" height="81"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="Xnv-jZ-Y8o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="65"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiX-Zd-5On">
+                                <rect key="frame" x="16" y="118" width="50" height="50"/>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="C24-YD-dtB"/>
+                                    <constraint firstAttribute="width" constant="50" id="dTB-ko-3PD"/>
+                                </constraints>
+                                <state key="normal" image="tutorialHand.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.37647058823529411" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
@@ -335,7 +327,6 @@
                             <constraint firstItem="JNF-Ji-h45" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="P0k-fl-X2f"/>
                             <constraint firstItem="Gv5-2R-xu8" firstAttribute="top" secondItem="1c3-2C-aRL" secondAttribute="bottom" constant="70" id="QK3-cI-RRJ"/>
                             <constraint firstItem="Q1M-XS-Gke" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="R0p-RF-BQJ"/>
-                            <constraint firstAttribute="centerX" secondItem="0wh-Ls-BVg" secondAttribute="centerX" id="Rw2-fF-IUk"/>
                             <constraint firstItem="SoA-1I-qZH" firstAttribute="leading" secondItem="TdG-fK-QVH" secondAttribute="trailing" constant="50" id="TwG-Aw-YT0"/>
                             <constraint firstItem="eiX-Zd-5On" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" id="VZG-mT-v8E"/>
                             <constraint firstItem="VRN-i9-bPF" firstAttribute="top" secondItem="FhZ-jx-1ju" secondAttribute="bottom" constant="-65" id="Vxd-NF-7om"/>
@@ -347,8 +338,7 @@
                             <constraint firstItem="eiX-Zd-5On" firstAttribute="centerY" secondItem="VRN-i9-bPF" secondAttribute="centerY" constant="0.5" id="dEv-NG-keg"/>
                             <constraint firstItem="H55-3e-gis" firstAttribute="top" secondItem="LAK-7D-5XC" secondAttribute="bottom" constant="70" id="eip-5f-8BA"/>
                             <constraint firstItem="VRN-i9-bPF" firstAttribute="leading" secondItem="HWv-vq-eJ0" secondAttribute="leadingMargin" constant="94" id="lp0-Hy-C1T"/>
-                            <constraint firstAttribute="centerY" secondItem="VRN-i9-bPF" secondAttribute="centerY" constant="200" id="mDd-Fl-GnO"/>
-                            <constraint firstItem="0wh-Ls-BVg" firstAttribute="top" secondItem="0i5-kk-Siu" secondAttribute="bottom" constant="70" id="nw5-xm-UyS"/>
+                            <constraint firstAttribute="centerY" secondItem="VRN-i9-bPF" secondAttribute="centerY" constant="300" id="mDd-Fl-GnO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1c3-2C-aRL" secondAttribute="trailing" constant="94" id="oAT-7s-ejK"/>
                             <constraint firstItem="elo-LB-Dn4" firstAttribute="leading" secondItem="TdG-fK-QVH" secondAttribute="trailing" constant="148" id="rDE-AG-J2K"/>
                             <constraint firstItem="3cB-He-fQp" firstAttribute="top" secondItem="JNF-Ji-h45" secondAttribute="bottom" constant="70" id="tLl-dz-oNG"/>

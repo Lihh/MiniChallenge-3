@@ -14,7 +14,6 @@
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
             <string>BloggerSans-Medium</string>
-            <string>BloggerSans-Medium</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -30,13 +29,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Adivinhe o Animal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-fN-8Me">
-                                <rect key="frame" x="73" y="29" width="455" height="60"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="BloggerSans-Medium" family="Blogger Sans" pointSize="60"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CACHORRO.png" translatesAutoresizingMaskIntoConstraints="NO" id="C32-pP-D0x" customClass="KPImageView" customModule="MiniChallenge3" customModuleProvider="target">
                                 <rect key="frame" x="125" y="28" width="350" height="350"/>
                                 <animations/>
@@ -287,15 +279,12 @@
                         <animations/>
                         <color key="backgroundColor" red="0.070588235294117646" green="0.78823529411764703" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="C32-pP-D0x" firstAttribute="top" secondItem="wdS-fN-8Me" secondAttribute="bottom" constant="8" id="3Tk-jH-2Ca"/>
                             <constraint firstAttribute="centerX" secondItem="C32-pP-D0x" secondAttribute="centerX" id="3vs-ig-Jtc"/>
                             <constraint firstItem="MXS-f5-5s8" firstAttribute="centerY" secondItem="C32-pP-D0x" secondAttribute="centerY" constant="39" id="5p9-bv-dt6"/>
-                            <constraint firstAttribute="centerX" secondItem="wdS-fN-8Me" secondAttribute="centerX" id="8Ne-oE-hY1"/>
                             <constraint firstAttribute="centerX" secondItem="C32-pP-D0x" secondAttribute="centerX" id="8og-ij-Hwz"/>
                             <constraint firstAttribute="centerY" secondItem="hDb-V3-jzZ" secondAttribute="centerY" constant="-250" id="BSS-qZ-C1A"/>
                             <constraint firstItem="IVF-m7-m9m" firstAttribute="top" secondItem="nlG-Lk-iol" secondAttribute="bottom" constant="70" id="Baf-6K-n9c"/>
                             <constraint firstAttribute="centerY" secondItem="hL4-ow-wVw" secondAttribute="centerY" constant="-400" id="CWg-nJ-GgO"/>
-                            <constraint firstItem="wdS-fN-8Me" firstAttribute="top" secondItem="QGR-L6-YqV" secondAttribute="bottom" constant="50" id="Es1-QF-q6R"/>
                             <constraint firstItem="3MR-Oz-M3R" firstAttribute="trailing" secondItem="Ndm-al-DB1" secondAttribute="trailingMargin" id="JS8-f6-lFn"/>
                             <constraint firstAttribute="centerY" secondItem="C32-pP-D0x" secondAttribute="centerY" constant="-54" id="JUZ-p5-kdM"/>
                             <constraint firstItem="ogi-hX-Hbq" firstAttribute="leading" secondItem="Ndm-al-DB1" secondAttribute="leadingMargin" constant="50" id="LFx-rJ-Kkr"/>
@@ -320,7 +309,6 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="3Tk-jH-2Ca"/>
                                 <exclude reference="3vs-ig-Jtc"/>
                                 <exclude reference="JUZ-p5-kdM"/>
                             </mask>
