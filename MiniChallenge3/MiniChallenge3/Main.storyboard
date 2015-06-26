@@ -2145,13 +2145,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ML7-Mt-Bep" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="56" y="155" width="100" height="100"/>
+                                <rect key="frame" x="86" y="155" width="100" height="100"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FzP-i0-anz"/>
                                     <constraint firstAttribute="width" constant="100" id="OUZ-va-P8W"/>
                                 </constraints>
-                                <state key="normal" title="Back">
+                                <state key="normal" title="Voltar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -2170,32 +2170,6 @@
                                     <action selector="btnBack:" destination="0lE-yQ-D1B" eventType="touchUpInside" id="yX8-ZX-QP8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2X-Md-Kmd" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="344" y="155" width="100" height="100"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="7n3-ho-s5g"/>
-                                    <constraint firstAttribute="width" constant="100" id="wc8-Nh-xwd"/>
-                                </constraints>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnNext:" destination="0lE-yQ-D1B" eventType="touchUpInside" id="QGf-uh-dJX"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y3R-FD-Zaj">
                                 <rect key="frame" x="161" y="70" width="178" height="55"/>
                                 <animations/>
@@ -2212,13 +2186,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="997-g5-7pS" customClass="KPButton" customModule="MiniChallenge3" customModuleProvider="target">
-                                <rect key="frame" x="200" y="155" width="100" height="100"/>
+                                <rect key="frame" x="314" y="155" width="100" height="100"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="R1w-0a-Baz"/>
                                     <constraint firstAttribute="width" constant="100" id="T4m-dX-smk"/>
                                 </constraints>
-                                <state key="normal" title="Home">
+                                <state key="normal" title="Menu">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -2241,14 +2215,12 @@
                         <animations/>
                         <color key="backgroundColor" red="0.48016172189083761" green="0.88853608789156546" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="ML7-Mt-Bep" secondAttribute="centerX" constant="144" id="13E-r8-fs9"/>
-                            <constraint firstAttribute="centerY" secondItem="N2X-Md-Kmd" secondAttribute="centerY" constant="-70" id="3UI-oH-9RP"/>
                             <constraint firstAttribute="centerX" secondItem="y3R-FD-Zaj" secondAttribute="centerX" id="6wU-7z-mcZ"/>
                             <constraint firstAttribute="centerY" secondItem="ML7-Mt-Bep" secondAttribute="centerY" constant="-70" id="AxK-gd-mpb"/>
                             <constraint firstAttribute="centerY" secondItem="y3R-FD-Zaj" secondAttribute="centerY" constant="37.5" id="Din-pq-JOC"/>
-                            <constraint firstAttribute="centerX" secondItem="N2X-Md-Kmd" secondAttribute="centerX" constant="-144" id="MQ2-4n-CvF"/>
-                            <constraint firstAttribute="centerX" secondItem="997-g5-7pS" secondAttribute="centerX" id="PwY-iN-7yZ"/>
+                            <constraint firstItem="ML7-Mt-Bep" firstAttribute="leading" secondItem="QWs-Di-SRv" secondAttribute="leadingMargin" constant="70" id="J5H-A1-mG8"/>
                             <constraint firstAttribute="centerY" secondItem="997-g5-7pS" secondAttribute="centerY" constant="-70" id="QUv-hL-Sp1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="997-g5-7pS" secondAttribute="trailing" constant="70" id="aCF-3C-xvM"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>

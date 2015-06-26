@@ -58,12 +58,4 @@ class CongratulationsViewController: UIViewController {
         notificationCenter.postNotificationName("backToHome", object: self, userInfo: nil)
     }
     
-    @IBAction func btnNext(sender: KPButton) {
-        audioPlayerSound = AVAudioPlayer(contentsOfURL: blop2, error: nil)
-        audioPlayerSound.prepareToPlay()
-        audioPlayerSound.play()
-        audioPlayerSound.volume = 0.3
-        notificationCenter.postNotificationName("nextLevel", object: self, userInfo: nil)
-    }
-    
 }
