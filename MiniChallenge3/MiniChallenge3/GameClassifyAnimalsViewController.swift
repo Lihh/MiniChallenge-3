@@ -52,6 +52,14 @@ class GameClassifyAnimalsViewController: UIViewController {
         notificationCenter.addObserver(self, selector: Selector("getLvl:"), name: "CurrentLevelScienceExercise", object: nil)
     }
     
+    override func viewDidLayoutSubviews() {
+        for v in view.subviews {
+            if let vv = v as? UIControl {
+                vv.exclusiveTouch = true
+            }
+        }
+    }
+    
     override func viewWillAppear(animated: Bool)
     {
         //tutorial

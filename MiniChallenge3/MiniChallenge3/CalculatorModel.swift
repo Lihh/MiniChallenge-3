@@ -40,8 +40,8 @@ class CalculatorModel: NSObject {
             "0", false, "3", true, "7", false,
             "3", false, "6", true, "9", false),
         //5
-        (5, "10  -  5", "5",   "2  -  2", "0",
-            "5", true, "9", false, "6", false,
+        (5, "9  -  5", "4",   "2  -  2", "0",
+            "4", true, "9", false, "6", false,
             "0", true, "8", false, "1", false),
         //6
         (6, "6  -  4", "2",    "1  x  5", "5",
@@ -56,9 +56,9 @@ class CalculatorModel: NSObject {
             "8", true, "7", false, "0", false,
             "2", true, "4", false, "1", false),
         //9
-        (9, "10  ÷  2", "5",   "8  ÷  4", "2",
-            "0", false, "9", false, "5", true,
-            "7", false, "2", true, "4", false)]
+        (9, "8  ÷  2", "4",   "8  ÷  4", "2",
+            "0", false, "9", false, "4", true,
+            "7", false, "2", true, "6", false)]
     
     
    

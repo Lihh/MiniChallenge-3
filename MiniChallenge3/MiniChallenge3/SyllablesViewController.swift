@@ -67,6 +67,14 @@ class SyllablesViewController: UIViewController, UITextFieldDelegate {
         notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelPortugueseExercise", object: nil)
     }
     
+    override func viewDidLayoutSubviews() {
+        for v in view.subviews {
+            if let vv = v as? UIControl {
+                vv.exclusiveTouch = true
+            }
+        }
+    }
+    
     override func viewWillAppear(animated: Bool)
     {
         // Show Tutorial

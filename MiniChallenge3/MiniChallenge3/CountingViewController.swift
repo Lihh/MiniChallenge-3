@@ -70,8 +70,15 @@ class CountingViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
         notificationCenter.addObserver(self, selector: Selector("discoverLevel:"), name: "CurrentLevelMathExercise", object: nil)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        for v in view.subviews {
+            if let vv = v as? UIControl {
+                vv.exclusiveTouch = true
+            }
+        }
     }
     //================================================================================
     
