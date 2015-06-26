@@ -27,17 +27,21 @@ class MathViewController: UIViewController {
         
         let buttonTag = sender.tag
         var exercise = ""
+        var gameName = ""
         
         if buttonTag == 0 {
             exercise = "Calculator"
+            gameName = "Calcule"
         } else if buttonTag == 1 {
             exercise = "counting"
+            gameName = "Contador"
         }
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("MathLevels") as! MathLevelsViewController
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
         storyBoardLevels.exercise = exercise
+        storyBoardLevels.gameName = gameName
         presentViewController(storyBoardLevels, animated: true, completion: nil)
     }
 

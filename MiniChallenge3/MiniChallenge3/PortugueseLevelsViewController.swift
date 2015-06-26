@@ -31,8 +31,11 @@ class PortugueseLevelsViewController: UIViewController {
     @IBOutlet weak var buttonLevelEight: KPButton!
     @IBOutlet weak var buttonLevelNine: KPButton!
     
+    @IBOutlet weak var txtGameName: UILabel!
+    
     var notificationCenter = NSNotificationCenter.defaultCenter()
     var exercise = ""
+    var gameName = ""
     var persistence = Persistence.sharedInstance
     var scores = [Score]()
     var buttons = [UIButton]()
@@ -42,6 +45,8 @@ class PortugueseLevelsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        txtGameName.text = gameName
         
         notificationCenter.addObserver(self, selector: Selector("backToLevels"), name: "backToLevels", object: nil)
         

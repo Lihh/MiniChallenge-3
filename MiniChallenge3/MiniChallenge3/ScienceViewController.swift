@@ -26,17 +26,21 @@ class ScienceViewController: UIViewController {
         
         let buttonTag = sender.tag
         var exercise = ""
+        var gameName = ""
         
         if buttonTag == 0 {
             exercise = "Animals"
+            gameName = "Adivinhe o Animal"
         } else if buttonTag == 1 {
             exercise = "ClassifyAnimals"
+            gameName = "Classifique o Animal"
         }
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("ScienceLevels") as! ScienceLevelsViewController
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
         storyBoardLevels.exercise = exercise
+        storyBoardLevels.gameName = gameName
         presentViewController(storyBoardLevels, animated: true, completion: nil)
     }
     

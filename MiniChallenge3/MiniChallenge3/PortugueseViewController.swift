@@ -27,17 +27,21 @@ class PortugueseViewController: UIViewController {
         
         let buttonTag = sender.tag
         var exercise = ""
+        var gameName = ""
         
         if buttonTag == 0 {
             exercise = "gameSyllables"
+            gameName = "Forme a Palavra"
         } else if buttonTag == 1 {
             exercise = "completeTheWord"
+            gameName = "Complete a Palavra"
         }
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let storyBoardLevels = storyBoard.instantiateViewControllerWithIdentifier("PortugueseLevels") as! PortugueseLevelsViewController
         storyBoardLevels.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
         storyBoardLevels.exercise = exercise
+        storyBoardLevels.gameName = gameName
         presentViewController(storyBoardLevels, animated: true, completion: nil)
     }
     

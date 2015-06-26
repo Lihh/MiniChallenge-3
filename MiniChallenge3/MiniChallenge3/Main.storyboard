@@ -36,6 +36,9 @@
             <string>BloggerSans-Light</string>
             <string>BloggerSans-Light</string>
             <string>BloggerSans-Light</string>
+            <string>BloggerSans-Light</string>
+            <string>BloggerSans-Light</string>
+            <string>BloggerSans-Light</string>
         </mutableArray>
         <mutableArray key="Blogger Sans-Medium.otf">
             <string>BloggerSans-Medium</string>
@@ -512,6 +515,12 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nome do Jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIN-RO-A7u">
+                                <rect key="frame" x="52" y="-5" width="496" height="125"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HollowStars" translatesAutoresizingMaskIntoConstraints="NO" id="Szz-Op-887">
                                 <rect key="frame" x="52" y="190" width="100" height="30"/>
                                 <animations/>
@@ -550,6 +559,7 @@
                             <constraint firstAttribute="centerY" secondItem="2bI-LX-JPO" secondAttribute="centerY" id="Aaq-c0-Zgf"/>
                             <constraint firstAttribute="centerX" secondItem="aYD-l2-bvR" secondAttribute="centerX" constant="198" id="F4w-IM-Nlp"/>
                             <constraint firstItem="2bI-LX-JPO" firstAttribute="leading" secondItem="kqV-sx-ryg" secondAttribute="trailing" constant="98" id="Fma-sN-RaM"/>
+                            <constraint firstAttribute="centerX" secondItem="nIN-RO-A7u" secondAttribute="centerX" id="FnN-Jr-Rvx"/>
                             <constraint firstAttribute="centerX" secondItem="Szz-Op-887" secondAttribute="centerX" constant="198" id="J5u-1j-xR6"/>
                             <constraint firstAttribute="centerX" secondItem="2bI-LX-JPO" secondAttribute="centerX" id="JcJ-Om-lL5"/>
                             <constraint firstAttribute="centerY" secondItem="ICd-Sy-vbz" secondAttribute="centerY" constant="-168" id="KIa-nA-Kgk"/>
@@ -562,6 +572,7 @@
                             <constraint firstAttribute="centerX" secondItem="kqV-sx-ryg" secondAttribute="centerX" constant="198" id="QD6-jr-7Xd"/>
                             <constraint firstAttribute="centerX" secondItem="1Hq-Ed-wFG" secondAttribute="centerX" id="QbE-jN-TnP"/>
                             <constraint firstAttribute="centerY" secondItem="KCh-hX-l5m" secondAttribute="centerY" constant="168" id="RJw-Z6-7zc"/>
+                            <constraint firstItem="nIN-RO-A7u" firstAttribute="top" secondItem="HDh-aa-qKS" secondAttribute="bottom" constant="2" id="T6d-Na-76n"/>
                             <constraint firstItem="xfX-nk-fJ6" firstAttribute="top" secondItem="2bI-LX-JPO" secondAttribute="bottom" constant="108" id="Wxy-aK-5Ik"/>
                             <constraint firstAttribute="centerY" secondItem="hzw-dg-lyU" secondAttribute="centerY" constant="95" id="XGP-zz-TvG"/>
                             <constraint firstAttribute="centerX" secondItem="ICd-Sy-vbz" secondAttribute="centerX" constant="198" id="Z0X-1u-fn7"/>
@@ -615,6 +626,7 @@
                         <outlet property="starsLevelSix" destination="N7e-6o-m1H" id="Hqc-mF-bZa"/>
                         <outlet property="starsLevelThree" destination="hzw-dg-lyU" id="3Kz-PA-y7n"/>
                         <outlet property="starsLevelTwo" destination="1Hq-Ed-wFG" id="SWT-HY-7A4"/>
+                        <outlet property="txtGameName" destination="nIN-RO-A7u" id="dMc-LH-LoW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUk-R8-kdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1201,6 +1213,12 @@
                                     <action selector="transitionToLevel:" destination="Qy0-cx-rh3" eventType="touchUpInside" id="7GS-5J-5IG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nome do Jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnn-Iv-7qP">
+                                <rect key="frame" x="52" y="-5" width="496" height="125"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.60784313725490191" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
@@ -1215,8 +1233,10 @@
                             <constraint firstAttribute="centerY" secondItem="6XG-ns-gWS" secondAttribute="centerY" constant="-168" id="E3P-FY-I3p"/>
                             <constraint firstAttribute="centerX" secondItem="Mi5-7Y-2uT" secondAttribute="centerX" id="EFl-qi-tLq"/>
                             <constraint firstAttribute="centerX" secondItem="Bal-8X-unc" secondAttribute="centerX" constant="198" id="FQw-ZF-TYS"/>
+                            <constraint firstAttribute="centerX" secondItem="hnn-Iv-7qP" secondAttribute="centerX" id="Fnc-Ft-KNl"/>
                             <constraint firstAttribute="centerX" secondItem="Nex-PO-Gq9" secondAttribute="centerX" constant="-198" id="GZx-40-Lem"/>
                             <constraint firstItem="5pj-hc-Yir" firstAttribute="top" secondItem="OCH-TV-1g9" secondAttribute="bottom" constant="8" id="I4a-lW-aN1"/>
+                            <constraint firstItem="hnn-Iv-7qP" firstAttribute="top" secondItem="5pj-hc-Yir" secondAttribute="bottom" constant="2" id="IBp-rf-ZXj"/>
                             <constraint firstAttribute="centerY" secondItem="0dF-Eu-un0" secondAttribute="centerY" constant="168" id="IUY-JK-hdU"/>
                             <constraint firstAttribute="centerY" secondItem="fAK-iV-xOI" secondAttribute="centerY" constant="-168" id="KCM-gY-yKm"/>
                             <constraint firstAttribute="centerX" secondItem="Ekr-K0-kWC" secondAttribute="centerX" id="KDH-Jo-xcq"/>
@@ -1278,6 +1298,7 @@
                         <outlet property="starsLevelSix" destination="Q0n-eL-LfI" id="xOu-6V-NSp"/>
                         <outlet property="starsLevelThree" destination="Nex-PO-Gq9" id="08G-TE-4cf"/>
                         <outlet property="starsLevelTwo" destination="NW0-Bt-8bn" id="Jdw-kL-MDR"/>
+                        <outlet property="txtGameName" destination="hnn-Iv-7qP" id="b2P-mh-1Ny"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHh-52-7IV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2027,10 +2048,17 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nome do Jogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiH-p0-7pT">
+                                <rect key="frame" x="52" y="20" width="496" height="125"/>
+                                <fontDescription key="fontDescription" name="BloggerSans-Light" family="Blogger Sans" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.070588235294117646" green="0.78823529411764703" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="tiH-p0-7pT" firstAttribute="top" secondItem="x6n-CB-vI7" secondAttribute="bottom" constant="2" id="0fR-Nh-Ugd"/>
                             <constraint firstAttribute="centerY" secondItem="D53-ya-rcd" secondAttribute="centerY" constant="95" id="0fX-4S-FMn"/>
                             <constraint firstItem="x6n-CB-vI7" firstAttribute="top" secondItem="nmW-iN-Y5g" secondAttribute="bottom" constant="8" id="0qI-y8-86M"/>
                             <constraint firstAttribute="centerX" secondItem="1rh-PI-fkp" secondAttribute="centerX" constant="198" id="3MY-s7-eD7"/>
@@ -2052,6 +2080,7 @@
                             <constraint firstAttribute="centerX" secondItem="2Df-c6-oC0" secondAttribute="centerX" id="V1c-wj-h2h"/>
                             <constraint firstAttribute="centerY" secondItem="LMJ-1s-gtm" secondAttribute="centerY" constant="-168" id="WQD-vi-1Zn"/>
                             <constraint firstAttribute="centerX" secondItem="cHv-9v-Opc" secondAttribute="centerX" constant="-198" id="WRM-R3-O6r"/>
+                            <constraint firstAttribute="centerX" secondItem="tiH-p0-7pT" secondAttribute="centerX" id="Xee-i5-RrU"/>
                             <constraint firstAttribute="centerY" secondItem="dua-Mw-g0t" secondAttribute="centerY" id="YEf-cN-SuP"/>
                             <constraint firstAttribute="centerX" secondItem="TJH-7Z-9mS" secondAttribute="centerX" constant="198" id="bAJ-M5-8e9"/>
                             <constraint firstAttribute="centerX" secondItem="nk4-7a-Kst" secondAttribute="centerX" constant="198" id="by8-5d-hyu"/>
@@ -2096,6 +2125,7 @@
                         <outlet property="starsLevelSix" destination="Arh-L2-fgv" id="md9-Jy-J1t"/>
                         <outlet property="starsLevelThree" destination="NzG-8Q-zr2" id="KLy-tL-ihg"/>
                         <outlet property="starsLevelTwo" destination="D53-ya-rcd" id="ag4-eS-miz"/>
+                        <outlet property="txtGameName" destination="tiH-p0-7pT" id="osK-TZ-Hgd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="09q-Vh-Qla" userLabel="First Responder" sceneMemberID="firstResponder"/>
