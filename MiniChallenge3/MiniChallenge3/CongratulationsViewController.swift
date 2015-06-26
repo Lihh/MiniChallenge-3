@@ -32,13 +32,13 @@ class CongratulationsViewController: UIViewController {
             self.playSound(soundGameOver!, volume: 0.7)
         } else if numberOfStars == 1 {
             starsImageView.image = UIImage(named: "OneStarFilled")
-            self.playSound(soundGameWin!, volume: 0.7)
+            self.playSound(soundGameWin!, volume: 0.5)
         } else if numberOfStars == 2 {
             starsImageView.image = UIImage(named: "TwoStarsFilled")
-            self.playSound(soundGameWin!, volume: 0.7)
+            self.playSound(soundGameWin!, volume: 0.5)
         } else {
             starsImageView.image = UIImage(named: "ThreeStarsFilled")
-            self.playSound(soundGameWin!, volume: 0.7)
+            self.playSound(soundGameWin!, volume: 0.5)
         }
     }
 
